@@ -79,3 +79,6 @@ form.auth input{font:1rem var(--sans);padding:10px;border:1px solid var(--line);
 .complete{margin-top:40px;padding:18px;border:1px solid var(--line);border-radius:8px;background:var(--panel);font-family:var(--sans)}
 .foot{border-top:1px solid var(--line);margin-top:40px;padding:18px 16px;text-align:center;font:.85rem var(--sans);color:var(--muted)}
 .hidden{display:none!important}
+figure.pic{margin:20px 0}
+figure.pic img{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+figure.pic figcaption{font:.88rem var(--sans);color:var(--muted);margin-top:6px}
