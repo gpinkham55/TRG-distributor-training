@@ -91,6 +91,9 @@ create table if not exists quizzes (
   pass_pct int not null,
   max_attempts int not null
 );
+-- A test-out draws its questions from the module quiz's pool.
+alter table quizzes add column if not exists pool_quiz_id bigint references quizzes;
+create unique index if not exists quizzes_module_kind on quizzes (module_id, kind);
 
 create table if not exists questions (
   id bigint generated always as identity primary key,
@@ -100,6 +103,8 @@ create table if not exists questions (
   choices jsonb not null,            -- ["choice A", "choice B", ...]
   explanation text not null default ''
 );
+alter table questions add column if not exists code text;
+create unique index if not exists questions_code on questions (code);
 
 -- Answer keys. No policy grants read access, so the browser can never see them.
 create table if not exists question_keys (
@@ -125,21 +130,29 @@ create table if not exists attempt_answers (
 );
 
 -- Grades a submission on the server. answers = {"<question_id>": [choice indexes]}
+-- The submission must answer exactly draw_count questions from the quiz's pool.
+-- Passing marks the module complete.
 create or replace function grade_attempt(p_quiz_id bigint, answers jsonb)
 returns table (attempt_id bigint, score_pct int, passed boolean)
 language plpgsql security definer set search_path = public as $$
 #variable_conflict use_column
 declare
-  q quizzes; used int; total int; right_count int := 0; aid bigint; k record; pick int[];
+  q quizzes; pool bigint; used int; total int; matched int; right_count int := 0;
+  aid bigint; k record; pick int[]; key int[]; pct int;
 begin
   if auth.uid() is null then raise exception 'Sign in first'; end if;
   select * into q from quizzes where id = p_quiz_id;
   if not found then raise exception 'Quiz not found'; end if;
+  pool := coalesce(q.pool_quiz_id, q.id);
   select count(*) into used from quiz_attempts where user_id = auth.uid() and quiz_id = p_quiz_id;
   if used >= q.max_attempts then raise exception 'No attempts left'; end if;
 
-  -- Score against the full quiz length, so skipped questions count as wrong.
-  total := q.draw_count;
+  total := (select count(*) from jsonb_object_keys(answers));
+  select count(*) into matched from questions qq
+    where qq.quiz_id = pool and answers ? qq.id::text;
+  if total <> q.draw_count or matched <> q.draw_count then
+    raise exception 'Answer all % questions', q.draw_count;
+  end if;
 
   insert into quiz_attempts (user_id, quiz_id, score_pct, passed)
     values (auth.uid(), p_quiz_id, 0, false) returning id into aid;
@@ -147,16 +160,20 @@ begin
   for k in
     select qk.question_id, qk.correct from question_keys qk
     join questions qq on qq.id = qk.question_id
-    where qq.quiz_id = p_quiz_id and answers ? qk.question_id::text
+    where qq.quiz_id = pool and answers ? qk.question_id::text
   loop
-    pick := array(select jsonb_array_elements_text(answers -> k.question_id::text)::int order by 1);
-    insert into attempt_answers values (aid, k.question_id, pick, pick = (select array(select unnest(k.correct) order by 1)));
-    if pick = (select array(select unnest(k.correct) order by 1)) then right_count := right_count + 1; end if;
+    pick := array(select (jsonb_array_elements_text(answers -> k.question_id::text))::int order by 1);
+    key := array(select unnest(k.correct) order by 1);
+    insert into attempt_answers values (aid, k.question_id, pick, pick = key);
+    if pick = key then right_count := right_count + 1; end if;
   end loop;
 
-  update quiz_attempts set score_pct = round(100.0 * right_count / total),
-    passed = round(100.0 * right_count / total) >= q.pass_pct
-    where id = aid;
+  pct := round(100.0 * right_count / q.draw_count);
+  update quiz_attempts set score_pct = pct, passed = pct >= q.pass_pct where id = aid;
+  if pct >= q.pass_pct and q.module_id is not null then
+    insert into module_progress (user_id, module_id) values (auth.uid(), q.module_id)
+      on conflict do nothing;
+  end if;
   return query select qa.id, qa.score_pct, qa.passed from quiz_attempts qa where qa.id = aid;
 end $$;
 
@@ -239,7 +256,9 @@ create policy "read assignments" on assignments for select
 -- ---------- Table access ----------
 grant usage on schema public to anon, authenticated;
 grant select on modules, quizzes, skills to anon, authenticated;
-grant select on questions to authenticated;
+-- Questions: no access to explanation, which can give away the answer.
+revoke select on questions from anon, authenticated;
+grant select (id, quiz_id, kind, prompt, choices, code) on questions to authenticated;
 grant select, update on profiles to authenticated;
 grant select, insert, update, delete on module_progress, bookmarks to authenticated;
 grant select on quiz_attempts, attempt_answers, assignments to authenticated;

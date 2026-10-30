@@ -82,3 +82,14 @@ form.auth input{font:1rem var(--sans);padding:10px;border:1px solid var(--line);
 figure.pic{margin:20px 0}
 figure.pic img{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
 figure.pic figcaption{font:.88rem var(--sans);color:var(--muted);margin-top:6px}
+.quiz{display:grid;gap:18px;font-family:var(--sans)}
+.quiz fieldset{border:1px solid var(--line);border-radius:8px;padding:12px 16px 14px;margin:0}
+.quiz legend{padding:0 4px;font-size:1rem;line-height:1.45}
+.quiz label{display:flex;gap:10px;align-items:flex-start;padding:7px 4px;border-radius:5px;cursor:pointer;font-size:.97rem}
+.quiz label:hover{background:var(--panel)}
+.quiz input{margin-top:4px;accent-color:var(--navy)}
+.quiz fieldset.right{border-color:var(--tip);background:var(--tip-bg)}
+.quiz fieldset.wrong{border-color:var(--warn);background:var(--warn-bg)}
+.q-mark{margin:6px 0 0;font-weight:600;font-size:.9rem}
+.right .q-mark{color:var(--tip)}.wrong .q-mark{color:var(--warn)}
+.quiz-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
