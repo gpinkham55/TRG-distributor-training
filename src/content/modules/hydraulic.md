@@ -4,7 +4,7 @@ title: Hydraulic Hose, Fittings, and Threads
 week: 2
 minutes: 210
 signoff: true
-status: draft
+status: published
 summary: Hydraulic hose types, the thread and connection families, how to identify a fitting with calipers and gauges, and hydraulic safety.
 ---
 
