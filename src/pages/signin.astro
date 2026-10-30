@@ -26,6 +26,8 @@ import { u } from '../lib/url';
     let register = false;
     const say = (t: string, ok = false) => { m.textContent = t; m.className = `msg ${ok ? 'ok' : 'err'}`; };
     if (!supabase) { document.getElementById('off')!.classList.remove('hidden'); f.classList.add('hidden'); }
+    // Coming back from the confirmation email, or already signed in: go to My Progress.
+    supabase?.auth.getSession().then(({ data }) => { if (data.session) location.href = u('progress'); });
     mode.addEventListener('click', () => {
       register = !register;
       go.textContent = register ? 'Register' : 'Sign in';
