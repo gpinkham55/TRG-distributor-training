@@ -42,7 +42,7 @@ Stock and order status in the P21Play System may not match live exactly. When an
 3. Check the **title bar** or status bar for the system name before you start. Make this a habit every time you sign in.
 4. Sign out or lock your screen when you step away.
 
-[IMAGE EXAMPLE: The P21 sign-in window with the system or database selection highlighted]
+[IMAGE EXAMPLE: The P21 sign-in window. The title shows which system you are signing in to; this one says LIVE]
 
 > ⚠️ SAFETY & COMPLIANCE: Check which system you are in before you save anything. An order saved in live P21 by mistake can ship product and bill a customer for something they never ordered.
 
@@ -65,7 +65,7 @@ The areas you will use most in your first weeks:
 
 Add the windows you use every day to your **favorites** or toolbar so you can open them in one click.
 
-[IMAGE EXAMPLE: The P21 main menu with the Order Processing, Customers, and Inventory areas expanded and a favorites list on the side]
+[IMAGE EXAMPLE: The P21 menu open over Order Entry. Starred windows are your favorites]
 
 ### Searching for a record
 
