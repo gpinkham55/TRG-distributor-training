@@ -38,7 +38,7 @@ import { u } from '../lib/url';
       const fd = new FormData(f);
       const email = String(fd.get('email')), password = String(fd.get('password'));
       if (register) {
-        const { data, error } = await supabase.auth.signUp({ email, password, options: { data: { full_name: String(fd.get('name') || '') } } });
+        const { data, error } = await supabase.auth.signUp({ email, password, options: { emailRedirectTo: location.origin + u('signin'), data: { full_name: String(fd.get('name') || '') } } });
         if (error) return say(error.message);
         if (!data.session) return say('Check your email to confirm your account, then sign in.', true);
       } else {
