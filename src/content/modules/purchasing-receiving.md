@@ -4,7 +4,7 @@ title: Purchasing and Receiving
 week: 4
 minutes: 180
 signoff: true
-status: draft
+status: published
 summary: Purchase orders in P21, vendor lead times and promise dates, special orders, receiving and putaway, and problems at the dock.
 ---
 

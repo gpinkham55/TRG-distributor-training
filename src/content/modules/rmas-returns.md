@@ -4,7 +4,7 @@ title: RMAs and Returns
 week: 4
 minutes: 120
 signoff: true
-status: draft
+status: published
 summary: Return reasons and policy, entering an RMA in P21, credit or replacement, receiving and restocking returns, and vendor returns and warranty claims.
 ---
 
