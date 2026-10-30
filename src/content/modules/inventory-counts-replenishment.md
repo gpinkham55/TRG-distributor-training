@@ -4,7 +4,7 @@ title: Inventory Counts and Replenishment
 week: 4
 minutes: 165
 signoff: true
-status: draft
+status: published
 summary: Cycle and annual counts, min and max, replenishment suggestions, and transfers between locations.
 ---
 

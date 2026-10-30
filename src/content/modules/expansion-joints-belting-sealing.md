@@ -4,7 +4,7 @@ title: Expansion Joints, Belting, and Fluid Sealing, plus Capstone
 week: 4
 minutes: 180
 signoff: true
-status: draft
+status: published
 summary: Rubber expansion joints, conveyor and drive belting, O-rings, packing, and mechanical seals, then the capstone scenarios and the final exam.
 ---
 
