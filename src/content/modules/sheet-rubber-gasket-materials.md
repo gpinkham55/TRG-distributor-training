@@ -4,7 +4,7 @@ title: Sheet Rubber and Gasket Materials
 week: 3
 minutes: 90
 signoff: false
-status: draft
+status: published
 summary: Elastomer sheet rubber, compressed fiber sheet, PTFE and ePTFE, flexible graphite, and how to choose a gasket material for the service.
 ---
 

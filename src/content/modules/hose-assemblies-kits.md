@@ -4,7 +4,7 @@ title: Hose Assemblies as Kits
 week: 3
 minutes: 210
 signoff: true
-status: draft
+status: published
 summary: The assembly spec, how the shop cuts, cleans, and crimps an assembly, proof testing and tagging, and selling assemblies as kits and hose by the foot in P21.
 ---
 
