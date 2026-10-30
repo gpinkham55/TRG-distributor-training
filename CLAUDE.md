@@ -5,7 +5,7 @@ Generic four-week training course for any TRG branch or distributor (industrial 
 ## Stack
 - Astro 4 static site, built and deployed to GitHub Pages by `.github/workflows/deploy.yml` on every push to `main`. Pages source must be set to "GitHub Actions".
 - Supabase (free tier) for sign-in, progress, quizzes, and sign-offs. Settings live in `site.config.json` (URL and the public anon key only; never the service_role key).
-- Custom domain trgtraining.com. Until `public/CNAME` exists the site builds for `gpinkham55.github.io/trg-distributor-training/`. When the domain is live, add `public/CNAME` containing `trgtraining.com` and the build switches to the root path.
+- Custom domain trgtraining.com. Until `public/CNAME` exists the site builds for `gpinkham55.github.io/TRG-distributor-training/`. When the domain is live, add `public/CNAME` containing `trgtraining.com` and the build switches to the root path.
 - `.github/workflows/keepalive.yml` pings Supabase every 3 days so the free project does not pause.
 
 ## Content
