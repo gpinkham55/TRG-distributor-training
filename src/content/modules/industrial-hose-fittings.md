@@ -4,7 +4,7 @@ title: Industrial Hose and Fittings
 week: 2
 minutes: 180
 signoff: true
-status: draft
+status: published
 summary: The main industrial hose families, cam and groove, ground joint, universal, and threaded couplings, and how couplings are attached.
 ---
 

@@ -4,7 +4,7 @@ title: Order Entry and Quoting
 week: 2
 minutes: 240
 signoff: true
-status: draft
+status: published
 summary: Enter clean orders in P21, choose line dispositions, understand pricing and margin, build and convert quotes, and follow up on orders.
 ---
 

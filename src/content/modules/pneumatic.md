@@ -4,7 +4,7 @@ title: Pneumatic Hose, Tubing, and Fittings
 week: 2
 minutes: 135
 signoff: true
-status: draft
+status: published
 summary: Air hose and tubing materials, push-to-connect and compression fittings, quick coupler interchange types, air brake parts, and compressed air safety.
 ---
 
