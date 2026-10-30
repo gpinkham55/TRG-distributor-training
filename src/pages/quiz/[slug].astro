@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import QuizRunner from '../../components/QuizRunner.astro';
 import { getCollection } from 'astro:content';
 import { u } from '../../lib/url';
 export async function getStaticPaths() {
@@ -10,84 +11,5 @@ const { m } = Astro.props;
 const d = m.data;
 ---
 <Base title={`Module ${d.number} Quiz`} current="course">
-  <div class="prose" id="quiz" data-module={d.number} data-back={u(`modules/${m.slug}`)} data-signin={u('signin')}>
-    <p class="eyebrow">Week {d.week} · Module {d.number}</p>
-    <h1 id="q-title">{d.title}: Module Quiz</h1>
-    <p id="q-rules" class="meta"></p>
-    <div id="q-msg" class="msg hidden" role="status"></div>
-    <form id="q-form" class="quiz hidden"></form>
-    <div id="q-result" class="complete hidden"></div>
-    <p><a href={u(`modules/${m.slug}`)}>Back to Module {d.number}</a></p>
-  </div>
-  <script>
-    import { supabase } from '../../lib/supabase';
-    const box = document.getElementById('quiz')!;
-    const moduleId = Number(box.dataset.module);
-    const kind = new URLSearchParams(location.search).get('type') === 'test_out' ? 'test_out' : 'module';
-    const $ = (id: string) => document.getElementById(id)!;
-    const say = (t: string, cls = '') => { const e = $('q-msg'); e.innerHTML = t; e.className = `msg ${cls}`; };
-    const shuffle = <T,>(a: T[]) => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
-    const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]!));
-
-    (async () => {
-      if (kind === 'test_out') $('q-title').textContent = $('q-title').textContent!.replace('Module Quiz', 'Test-Out');
-      if (!supabase) return say('Quizzes are not switched on yet.', 'err');
-      const { data: s } = await supabase.auth.getSession();
-      if (!s.session) return say(`Sign in to take quizzes. <a href="${box.dataset.signin}">Sign in or register</a>`);
-
-      const { data: quiz } = await supabase.from('quizzes').select('*').eq('module_id', moduleId).eq('kind', kind).maybeSingle();
-      if (!quiz) return say('This quiz is not ready yet.', 'err');
-      $('q-rules').textContent = `${quiz.draw_count} questions · ${quiz.pass_pct}% to pass · ${quiz.max_attempts} ${quiz.max_attempts === 1 ? 'try' : 'tries'}`;
-
-      const { data: tries } = await supabase.from('quiz_attempts').select('score_pct, passed').eq('quiz_id', quiz.id);
-      const used = tries?.length || 0;
-      const passed = tries?.some((t) => t.passed);
-      if (passed) return say(`You passed this ${kind === 'test_out' ? 'test-out' : 'quiz'} with ${Math.max(...tries!.map((t) => t.score_pct))}%. Module ${moduleId} is complete.`, 'ok');
-      if (used >= quiz.max_attempts) return say(`You have used all ${quiz.max_attempts} ${quiz.max_attempts === 1 ? 'try' : 'tries'}. Talk to your mentor about next steps.`, 'err');
-      if (used) say(`Try ${used + 1} of ${quiz.max_attempts}. Your best so far: ${Math.max(...tries!.map((t) => t.score_pct))}%.`);
-
-      const { data: pool } = await supabase.from('questions').select('id, prompt, choices').eq('quiz_id', quiz.pool_quiz_id || quiz.id);
-      if (!pool || pool.length < quiz.draw_count) return say('This quiz is not ready yet.', 'err');
-      const drawn = shuffle(pool).slice(0, quiz.draw_count);
-
-      const form = $('q-form') as HTMLFormElement;
-      form.innerHTML = drawn.map((q, n) => {
-        const order = shuffle(q.choices.map((_: string, i: number) => i));
-        return `<fieldset class="q" data-id="${q.id}"><legend><b>${n + 1}.</b> ${esc(q.prompt)}</legend>` +
-          order.map((i: number) => `<label><input type="radio" name="q${q.id}" value="${i}" required> ${esc(q.choices[i])}</label>`).join('') +
-          `<p class="q-mark hidden"></p></fieldset>`;
-      }).join('') + `<button class="btn" type="submit">Submit answers</button>`;
-      form.classList.remove('hidden');
-
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const answers: Record<string, number[]> = {};
-        for (const q of drawn) {
-          const v = (form.querySelector(`input[name="q${q.id}"]:checked`) as HTMLInputElement | null)?.value;
-          if (v === undefined) return say('Answer every question before you submit.', 'err');
-          answers[q.id] = [Number(v)];
-        }
-        const btn = form.querySelector('button')!; btn.disabled = true;
-        const { data, error } = await supabase.rpc('grade_attempt', { p_quiz_id: quiz.id, answers });
-        if (error) { btn.disabled = false; return say(error.message, 'err'); }
-        const r = data[0];
-        const { data: marks } = await supabase.from('attempt_answers').select('question_id, correct').eq('attempt_id', r.attempt_id);
-        for (const mk of marks || []) {
-          const fs = form.querySelector(`fieldset[data-id="${mk.question_id}"]`)!;
-          fs.classList.add(mk.correct ? 'right' : 'wrong');
-          const p = fs.querySelector('.q-mark')!; p.textContent = mk.correct ? 'Correct' : 'Not correct'; p.classList.remove('hidden');
-        }
-        form.querySelectorAll('input').forEach((i) => (i.disabled = true)); btn.remove();
-        const left = quiz.max_attempts - used - 1;
-        const res = $('q-result');
-        res.innerHTML = r.passed
-          ? `<p><b>You scored ${r.score_pct}%. You passed.</b> Module ${moduleId} is marked complete.</p>`
-          : `<p><b>You scored ${r.score_pct}%.</b> You need ${quiz.pass_pct}% to pass. ` +
-            (left > 0 ? `You have ${left} ${left === 1 ? 'try' : 'tries'} left. Review the module, then <a href="">try again</a>; you will get a new set of questions.</p>`
-                      : `You have no tries left. Talk to your mentor about next steps.</p>`);
-        res.classList.remove('hidden'); $('q-msg').classList.add('hidden');
-        res.scrollIntoView({ behavior: 'smooth' });
-      });
-    })();
-  </script>
+  <QuizRunner eyebrow={`Week ${d.week} · Module ${d.number}`} title={`${d.title}: Module Quiz`} back={u(`modules/${m.slug}`)} backLabel={`Back to Module ${d.number}`} module={d.number} />
 </Base>

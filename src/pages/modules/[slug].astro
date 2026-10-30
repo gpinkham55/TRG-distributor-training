@@ -27,6 +27,7 @@ const d = m.data;
       <div class="quiz-links">
         <a class="btn" href={u(`quiz/${m.slug}`)}>Take the module quiz</a>
         <a class="btn alt" href={u(`quiz/${m.slug}?type=test_out`)}>Test out</a>
+        {d.number === 16 && <a class="btn" href={u('quiz/final')}>Take the final exam</a>}
       </div>
     </div>
     <p><a href={u('course')}>Back to the course outline</a></p>

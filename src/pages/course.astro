@@ -31,6 +31,10 @@ const written = new Map((await getCollection('modules')).map((m) => [m.data.numb
         </ul>
       </section>
     ))}
+    <section class="week">
+      <div class="week-h">Final Exam</div>
+      <ul class="mods"><li><span class="num">F</span><span class="t"><a href={u('quiz/final')}>Final Exam</a></span><span class="badge">48 questions · 85% to pass · 2 tries</span></li></ul>
+    </section>
   </div>
   <script>
     import { supabase } from '../lib/supabase';
