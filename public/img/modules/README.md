@@ -26,3 +26,16 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `fluid-conveyance-fundamentals-1` | 4 | Cut hose ends showing the tube, the wire reinforcement, and the cover | Yes |
 | `fluid-conveyance-fundamentals-2` | 4 | A hose assembly with two elbow fittings, showing where overall length is measured and the angle between the elbows |  |
 | `fluid-conveyance-fundamentals-3` | 4 | A page from a hose manufacturer's chemical compatibility chart with one chemical row and its ratings highlighted |  |
+| `industrial-hose-fittings-1` | 5 | Cut sections of five industrial hoses side by side: water, air, suction with helix, steam, and chemical |  |
+| `industrial-hose-fittings-2` | 5 | A set of cam and groove fittings laid out and labeled A, B, C, D, E, F, DC, and DP |  |
+| `industrial-hose-fittings-3` | 5 | Four hose ends side by side: a worm gear clamp, a double-bolt clamp, an interlocking clamp on a ground joint coupling, and a crimped ferrule |  |
+| `order-entry-quoting-1` | 6 | The Order Entry header with customer, ship-to, contact, PO number, required date, and carrier marked |  |
+| `order-entry-quoting-2` | 6 | A quote in P21 with the expiration date, lead time column, and the convert option marked |  |
+| `hydraulic-1` | 7 | Cut ends of 1-wire braid, 2-wire braid, and 4-spiral hydraulic hose side by side, showing the wire layers |  |
+| `hydraulic-2` | 7 | Male ends of NPT, JIC 37°, ORFS, O-ring boss, BSPP, and metric 24° fittings lined up and labeled |  |
+| `hydraulic-3` | 7 | Calipers measuring a male thread OD, a pitch gauge seated in the threads, and a seat angle gauge on a JIC cone |  |
+| `hydraulic-4` | 7 | An excavator with its hydraulic hoses and components labeled |  |
+| `pneumatic-1` | 8 | Rolls of polyurethane, nylon, and polyethylene tubing next to a red rubber air hose |  |
+| `pneumatic-2` | 8 | A cutaway push-to-connect fitting showing the release collar, the grip ring, and the O-ring, with a square-cut tube |  |
+| `pneumatic-3` | 8 | Industrial, automotive, and ARO plugs side by side, showing the different nose shapes |  |
+| `pneumatic-4` | 8 | A machine control panel plumbed with color-coded polyurethane tubing and push-to-connect fittings |  |
