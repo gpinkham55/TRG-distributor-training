@@ -11,7 +11,7 @@ Generic four-week training course for any TRG branch or distributor (industrial 
 ## Content
 - One file per module in `src/content/modules/<slug>.md`. Frontmatter: number, title, week, minutes, signoff, status (draft or published), summary.
 - The outline is `src/data/syllabus.ts`; module slugs there must match the content file names and the `modules` rows in `supabase/schema.sql`.
-- Callouts: a blockquote starting with 💡, ⚠️, or 📌 becomes a styled box. A paragraph `[IMAGE EXAMPLE: ...]` becomes an image placeholder. Both handled in `src/lib/callouts.mjs`.
+- Callouts: a blockquote starting with 💡, ⚠️, or 📌 becomes a styled box. A paragraph `[IMAGE EXAMPLE: ...]` becomes an image placeholder, or the picture `public/img/modules/<slug>-<n>.jpg|png|webp` when that file is in the repo (n counts placeholders in the module from 1). `public/img/modules/README.md` lists every slot; regenerate it when placeholders change. All handled in `src/lib/callouts.mjs`.
 - Answer keys never go in this repo or the browser. Quiz answers live in the `question_keys` table, which has no read policy; `grade_attempt()` grades on the server.
 
 ## Content rules
