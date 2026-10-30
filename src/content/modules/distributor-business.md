@@ -4,7 +4,7 @@ title: The Distributor Business
 week: 1
 minutes: 60
 signoff: false
-status: draft
+status: published
 summary: How an industrial rubber, hose, and gasket distributor works, who buys from us, the four industries this course covers, day-one vocabulary, and shop safety basics.
 ---
 

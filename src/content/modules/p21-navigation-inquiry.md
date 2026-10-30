@@ -4,7 +4,7 @@ title: P21 Navigation and Inquiry
 week: 1
 minutes: 150
 signoff: true
-status: draft
+status: published
 summary: Find your way around Prophet 21, then look up a customer, an item with its stock by location and price, and a customer's past orders.
 ---
 
