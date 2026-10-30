@@ -32,7 +32,7 @@ Almost every hose has three layers. Each layer has one job.
 | Reinforcement (middle) | Holds the pressure, or holds the hose open under vacuum | Textile braid or plies, wire braid, spiral wire, a steel or plastic helix |
 | Cover (outside) | Protects against abrasion, weather, ozone, and oil on the outside | Neoprene, EPDM, nitrile blends, PVC, polyurethane |
 
-[IMAGE EXAMPLE: A cutaway hose showing the tube, the reinforcement, and the cover, each labeled]
+[IMAGE EXAMPLE: Cut hose ends showing the tube, the wire reinforcement, and the cover]
 
 ### Reinforcement types
 

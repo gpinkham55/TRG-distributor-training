@@ -73,7 +73,9 @@ Much of a distributor's value comes from **fabrication**: turning bulk material 
 - **Kits:** several parts sold together under one item, such as a gasket set for a pump rebuild.
 - **Cut-to-length goods:** hose, sheet, and O-ring cord sold by the foot or the square inch.
 
-[IMAGE EXAMPLE: A hose assembly bench with a crimper, a cutoff saw, a reel rack, and finished tagged assemblies]
+[IMAGE EXAMPLE: A hose assembly bench with a crimper, a cutoff saw, and a rack of crimp dies]
+
+[IMAGE EXAMPLE: Finished industrial hose assemblies with couplings attached, laid out for shipping]
 
 > 💡 KEY TAKEAWAY: A distributor sells products, but customers return for service: the right part, fast, built correctly, with answers they trust.
 
@@ -143,7 +145,9 @@ A pulp and paper mill turns wood chips into pulp, then into paper or paperboard.
 | Paper machine | Water and wash-down hose, rubber seals, belting, custom gaskets |
 | Wood yard and material handling | Conveyor belting, abrasive slurry hose |
 
-[IMAGE EXAMPLE: A paper machine wet end with water spray lines and hoses along the frame]
+[IMAGE EXAMPLE: A pulp and paper mill]
+
+[IMAGE EXAMPLE: A paper machine. Water, steam, and chemical lines run its full length]
 
 > 📌 INDUSTRY INSIGHT: Mills plan **outages** months ahead. A buyer may ask for a quote on 200 gaskets with pricing held for 60 days. Accuracy and lead time on outage quotes win the next year's business.
 
@@ -159,7 +163,9 @@ Farms, ranches, and their equipment dealers run on water, chemicals, and hydraul
 | Grain handling | Conveyor belting, material handling hose |
 | Livestock and wash-down | Water hose, nozzles, hose reels |
 
-[IMAGE EXAMPLE: A center-pivot irrigation system with the pump station, suction hose, and discharge lines in view]
+[IMAGE EXAMPLE: A combine harvesting wheat. Hydraulic hose runs the header, the reel, and the unloading auger]
+
+[IMAGE EXAMPLE: A center-pivot irrigation system with a chemical injection pump at the pivot point]
 
 > 📌 INDUSTRY INSIGHT: Agriculture is seasonal. A broken hose during planting or harvest is an emergency, and the farmer often drives in with the failed part in hand.
 
@@ -174,7 +180,9 @@ Chemical plants make and move hazardous liquids and gases. Every product that to
 | Pumps and valves | Mechanical seals, O-rings, packing |
 | Tanks and vessels | Manway gaskets, lined-vessel gaskets |
 
-[IMAGE EXAMPLE: A chemical tank truck unloading station with a PTFE-lined hose and a dry-disconnect coupling]
+[IMAGE EXAMPLE: A chemical plant: process piping, tanks, and pumps]
+
+[IMAGE EXAMPLE: A tank truck unloading through suction hoses and quick couplings]
 
 > ⚠️ SAFETY & COMPLIANCE: In chemical service, never guess compatibility. Ask for the exact chemical, concentration, and temperature, and check the manufacturer's chemical resistance chart. A wrong guess can cause a leak, an injury, or a release.
 
@@ -190,7 +198,7 @@ Excavators, loaders, dozers, cranes, and trucks depend on high-pressure hydrauli
 | Fuel and fluid service | Fuel and oil hose, fittings, hose reels |
 | Dust control and dewatering | Water hose, suction and discharge hose |
 
-[IMAGE EXAMPLE: An excavator boom with its hydraulic hoses and fittings labeled]
+[IMAGE EXAMPLE: An excavator at work. Hydraulic hoses run along the boom to the cylinders that move the arm and bucket]
 
 > ⚠️ SAFETY & COMPLIANCE: Hydraulic systems run at thousands of psi. A pinhole leak can inject fluid through skin and cause a serious injury. Never run a hand along a pressurized hose to find a leak.
 
