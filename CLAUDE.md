@@ -18,6 +18,7 @@ Generic four-week training course for any TRG branch or distributor (industrial 
 - Professional textbook tone, plain English. No em dashes. Avoid: "because", "matters", "while" as a contrast, "exists/existing", times of day and days of the week, "naming/named".
 - No real rates, costs, or margins. Pricing examples use placeholders only (material markup ×3.00, shop rate $150/hr).
 - No employee names. No lot or heat traceability.
+- Call the test system "the P21Play System" (heading form: "P21Play System").
 - Safety: safety glasses when cutting or operating equipment; follow your branch's rules.
 - Drafts: Greg reviews one module at a time through Week 1, then a week at a time.
 
