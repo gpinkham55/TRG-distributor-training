@@ -21,8 +21,13 @@ const d = m.data;
     </div>
     <Content />
     <div class="complete" id="complete" data-module={d.number}>
-      <p id="c-out">Sign in to save your progress. <a href={u('signin')}>Sign in or register</a></p>
-      <p id="c-in" class="hidden"><button class="btn" id="c-btn">Mark module complete</button> <span id="c-msg"></span></p>
+      <h3 style="margin-top:0">Finish this module</h3>
+      <p>Pass the module quiz (10 questions, 80% to pass, 3 tries) to mark Module {d.number} complete. Already know this material? Take the test-out instead (10 questions, 90% to pass, 1 try).{d.signoff && ' The mentor sign-off still applies.'}</p>
+      <p id="c-status" class="hidden"></p>
+      <div class="quiz-links">
+        <a class="btn" href={u(`quiz/${m.slug}`)}>Take the module quiz</a>
+        <a class="btn alt" href={u(`quiz/${m.slug}?type=test_out`)}>Test out</a>
+      </div>
     </div>
     <p><a href={u('course')}>Back to the course outline</a></p>
   </article>
@@ -30,22 +35,16 @@ const d = m.data;
     import { supabase } from '../../lib/supabase';
     const box = document.getElementById('complete')!;
     const id = Number(box.dataset.module);
-    const btn = document.getElementById('c-btn') as HTMLButtonElement;
-    const msg = document.getElementById('c-msg')!;
-    function done() { btn.disabled = true; btn.textContent = 'Completed'; }
-    (async () => { if (supabase) {
+    (async () => {
+      if (!supabase) return;
       const { data } = await supabase.auth.getSession();
-      const user = data.session?.user;
-      if (user) {
-        document.getElementById('c-out')!.classList.add('hidden');
-        document.getElementById('c-in')!.classList.remove('hidden');
-        const { data: row } = await supabase.from('module_progress').select('module_id').eq('module_id', id).maybeSingle();
-        if (row) done();
-        btn.addEventListener('click', async () => {
-          const { error } = await supabase.from('module_progress').upsert({ user_id: user.id, module_id: id });
-          if (error) msg.textContent = 'Could not save. Try again.'; else done();
-        });
+      if (!data.session) return;
+      const { data: row } = await supabase.from('module_progress').select('completed_at').eq('module_id', id).maybeSingle();
+      if (row) {
+        const st = document.getElementById('c-status')!;
+        st.innerHTML = '<span class="badge done">Complete</span>';
+        st.classList.remove('hidden');
       }
-    } })();
+    })();
   </script>
 </Base>

@@ -4,7 +4,7 @@ title: Customer Records in P21
 week: 1
 minutes: 135
 signoff: true
-status: draft
+status: published
 summary: Add and maintain contacts and ship-tos, including the tax, carrier, and delivery settings on each ship-to.
 ---
 

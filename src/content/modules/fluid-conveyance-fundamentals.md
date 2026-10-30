@@ -4,7 +4,7 @@ title: Fluid Conveyance Fundamentals
 week: 1
 minutes: 90
 signoff: false
-status: draft
+status: published
 summary: How a hose is built, the STAMPED method, hose sizes and dash sizes, pressure, vacuum, and temperature ratings, and chemical compatibility.
 ---
 
