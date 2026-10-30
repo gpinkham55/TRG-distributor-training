@@ -1,0 +1,14 @@
+{
+  "name": "trg-distributor-training",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.45.4",
+    "astro": "4.16.18"
+  }
+}

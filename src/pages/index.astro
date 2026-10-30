@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/url';
+---
+<Base title="Home" current="home">
+  <section class="hero prose">
+    <p class="eyebrow">Shared core curriculum</p>
+    <h1>Industrial Distribution Training</h1>
+    <p>A four-week course for anyone new to an industrial rubber, hose, and gasket branch. No experience needed. You'll learn how the business works, how to find your way around Prophet 21, and how to size, quote, build, buy, and return the products we sell.</p>
+    <p><a class="btn" href={u('course')}>View the course</a> <a class="btn alt" href={u('signin')}>Sign in or register</a></p>
+  </section>
+  <div class="cards">
+    <div class="card"><b>Read at your own pace</b><span>Every module is open to read. Sign in to track your progress.</span></div>
+    <div class="card"><b>Test out of what you know</b><span>Already know a topic? Pass the test-out and move on.</span></div>
+    <div class="card"><b>Mentor sign-offs</b><span>Hands-on skills get checked and signed off by your mentor at the branch.</span></div>
+  </div>
+  <div class="prose">
+    <h2>How the course works</h2>
+    <ul>
+      <li><b>Four weeks, sixteen modules.</b> Each week covers four modules. Most modules take one to two hours of reading plus practice.</li>
+      <li><b>Practice in a test system.</b> All P21 practice goes in your branch's test company, never in live P21.</li>
+      <li><b>Quizzes.</b> Each module ends with a quiz. You need 80% to pass. A final exam closes Week 4.</li>
+    </ul>
+    <aside class="callout callout-warn"><p>⚠️ SAFETY: Wear safety glasses any time you cut material or operate shop equipment.</p></aside>
+  </div>
+</Base>
