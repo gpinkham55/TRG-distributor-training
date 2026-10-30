@@ -14,7 +14,7 @@ Prophet 21 (P21) is the system every branch uses to look up customers and items,
 
 After this module you will be able to:
 
-1. Sign in to the correct system and tell P21PLAY from live P21.
+1. Sign in to the correct system and tell the P21Play System from live P21.
 2. Open windows from the menu, search for records, move between tabs, and keep more than one window open.
 3. Tell an inquiry window from a maintenance window, and use the right one.
 4. Find a customer and read its account, terms, notes, ship-tos, and contacts.
@@ -23,21 +23,21 @@ After this module you will be able to:
 
 > 📌 INDUSTRY INSIGHT: Window and field labels in this module follow standard P21. Each branch can rename fields, hide tabs, and add custom fields. Your mentor will point out where your branch's screens differ. Write those differences in your notebook.
 
-## 2.1 Live P21 and P21PLAY
+## 2.1 Live P21 and the P21Play System
 
-TRG runs two copies of P21. **Live P21** is the real system: orders entered there ship, print, and bill. **P21PLAY** is the test system, a copy of live data used for training. Every practice task in this course goes in P21PLAY, never in live P21, until your mentor moves you over.
+TRG runs two copies of P21. **Live P21** is the real system: orders entered there ship, print, and bill. The **P21Play System** is a copy of live data used for training. Every practice task in this course goes in the P21Play System, never in live P21, until your mentor moves you over.
 
-|  | Live P21 | P21PLAY |
+|  | Live P21 | P21Play System |
 |---|---|---|
 | What it holds | Real customers, items, orders, and stock | A copy of live data, refreshed from time to time |
 | What happens when you save | Orders print in the warehouse, POs go to vendors, invoices go to customers | Nothing leaves the building |
 | When you use it | After your mentor signs you off on that task | All practice in this course |
 
-Stock and order status in P21PLAY may not match live exactly. When an exercise and P21PLAY disagree, trust P21PLAY and note what you found.
+Stock and order status in the P21Play System may not match live exactly. When an exercise and the P21Play System disagree, trust the P21Play System and note what you found.
 
 ### Signing in
 
-1. Open P21 from the shortcut your branch set up. You may see a list of systems or databases; pick P21PLAY for practice.
+1. Open P21 from the shortcut your branch set up. You may see a list of systems or databases; pick the P21Play System for practice.
 2. Sign in with **your own user ID and password**. Never use a shared login. Every order, quote, and change carries the ID of the person who made it.
 3. Check the **title bar** or status bar for the system name before you start. Make this a habit every time you sign in.
 4. Sign out or lock your screen when you step away.
@@ -106,7 +106,7 @@ Customers, ship-tos, items, and orders can carry notes. A note set to pop up app
 
 ### Common mistakes
 
-- Working in live P21 when you meant P21PLAY.
+- Working in live P21 when you meant the P21Play System.
 - Opening a maintenance window to look and saving a change by accident.
 - Clicking past a pop-up note without reading it.
 - Searching on a full name, finding nothing, and assuming the record is missing.
@@ -256,7 +256,7 @@ The unit of measure tells you what one unit of the item is. Read it every time b
 
 ## 2.6 Practice, Knowledge Check, and Test-Out
 
-### Practice in P21PLAY
+### Practice in the P21Play System
 
 Your mentor picks three real accounts and three items for these exercises. Write your answers in your notebook and bring them to your mentor.
 
