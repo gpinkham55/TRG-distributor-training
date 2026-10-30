@@ -4,7 +4,7 @@ title: Flanges, Gaskets, and Installation
 week: 3
 minutes: 90
 signoff: false
-status: draft
+status: published
 summary: Flange faces and pressure classes, flange gasket dimensions, bolt tightening, and troubleshooting a leaking flange.
 ---
 

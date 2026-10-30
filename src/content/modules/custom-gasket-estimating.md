@@ -4,7 +4,7 @@ title: Custom Gasket Fabrication and Estimating
 week: 3
 minutes: 210
 signoff: true
-status: draft
+status: published
 summary: Waterjet and die cutting, material yield and nesting, scrap, cutting time, the house pricing formula with placeholder values, and selling cut gaskets in P21.
 ---
 
