@@ -53,3 +53,11 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `custom-gasket-estimating-3` | 12 | Two nests of the same ring gasket side by side, a square grid and a staggered grid, with parts-per-sheet counts labeled |  |
 | `custom-gasket-estimating-4` | 12 | A full-face PTFE gasket installed on an FRP flange in a chemical plant, bolts in a star pattern |  |
 | `custom-gasket-estimating-5` | 12 | An irrigation pump discharge flange on a farm, with an EPDM gasket visible between the flanges |  |
+| `purchasing-receiving-1` | 13 | Purchase Order Entry with the vendor, ship-to, item lines, cost, and promise date marked |  |
+| `purchasing-receiving-2` | 13 | A receiving bench with a packing list, the PO on screen, and a special-order item tagged with a customer order number |  |
+| `inventory-counts-replenishment-1` | 14 | A count sheet on a clipboard next to a bin of fittings, with the counted quantity written and no expected quantity shown |  |
+| `inventory-counts-replenishment-2` | 14 | A transfer in P21 showing the from location, the to location, the item, and the quantity shipped and received |  |
+| `rmas-returns-1` | 15 | RMA entry in P21 with the customer, original invoice, item, quantity, return reason, and RMA number marked |  |
+| `expansion-joints-belting-sealing-1` | 16 | A single-arch rubber expansion joint with control rods installed between a pump and its discharge pipe |  |
+| `expansion-joints-belting-sealing-2` | 16 | A section of conveyor belt showing the plies and covers, beside classical and narrow V-belts with their part numbers visible |  |
+| `expansion-joints-belting-sealing-3` | 16 | An O-ring kit, a coil of braided packing with cut rings, and a cartridge mechanical seal side by side |  |

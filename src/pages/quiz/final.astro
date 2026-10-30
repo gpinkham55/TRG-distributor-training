@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import QuizRunner from '../../components/QuizRunner.astro';
+import { u } from '../../lib/url';
+---
+<Base title="Final Exam" current="course">
+  <QuizRunner eyebrow="Week 4 · Final exam" title="Final Exam" back={u('course')} backLabel="Back to the course outline" final />
+</Base>

@@ -149,7 +149,9 @@ begin
 
   total := (select count(*) from jsonb_object_keys(answers));
   select count(*) into matched from questions qq
-    where qq.quiz_id = pool and answers ? qq.id::text;
+    where answers ? qq.id::text
+      and (qq.quiz_id = pool
+           or (q.kind = 'final' and qq.quiz_id in (select z.id from quizzes z where z.kind = 'module')));
   if total <> q.draw_count or matched <> q.draw_count then
     raise exception 'Answer all % questions', q.draw_count;
   end if;
@@ -160,7 +162,9 @@ begin
   for k in
     select qk.question_id, qk.correct from question_keys qk
     join questions qq on qq.id = qk.question_id
-    where qq.quiz_id = pool and answers ? qk.question_id::text
+    where answers ? qk.question_id::text
+      and (qq.quiz_id = pool
+           or (q.kind = 'final' and qq.quiz_id in (select z.id from quizzes z where z.kind = 'module')))
   loop
     pick := array(select (jsonb_array_elements_text(answers -> k.question_id::text))::int order by 1);
     key := array(select unnest(k.correct) order by 1);
@@ -176,6 +180,11 @@ begin
   end if;
   return query select qa.id, qa.score_pct, qa.passed from quiz_attempts qa where qa.id = aid;
 end $$;
+
+-- The final exam draws from every module quiz pool (3 questions per module).
+insert into quizzes (module_id, kind, draw_count, pass_pct, max_attempts)
+select null, 'final', 48, 85, 2
+where not exists (select 1 from quizzes where kind = 'final');
 
 -- ---------- Mentor sign-offs ----------
 create table if not exists skills (
