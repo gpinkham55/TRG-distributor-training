@@ -39,3 +39,17 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `pneumatic-2` | 8 | A cutaway push-to-connect fitting showing the release collar, the grip ring, and the O-ring, with a square-cut tube |  |
 | `pneumatic-3` | 8 | Industrial, automotive, and ARO plugs side by side, showing the different nose shapes |  |
 | `pneumatic-4` | 8 | A machine control panel plumbed with color-coded polyurethane tubing and push-to-connect fittings |  |
+| `hose-assemblies-kits-1` | 9 | A failed hydraulic assembly on the counter beside a tape measure, with the layline and both fittings visible |  |
+| `hose-assemblies-kits-2` | 9 | A crimper with a die set open, a hose with a fitting inserted to its depth mark, and calipers checking a finished crimp |  |
+| `hose-assemblies-kits-3` | 9 | A finished assembly with a metal or printed tag showing the branch, assembly number, working pressure, and test date |  |
+| `sheet-rubber-gasket-materials-1` | 10 | Rolls of red SBR, black neoprene, white FDA nitrile, and orange silicone sheet on a rack |  |
+| `sheet-rubber-gasket-materials-2` | 10 | A gasket maker's P×T chart with three zones shaded and one service point plotted |  |
+| `sheet-rubber-gasket-materials-3` | 10 | Sheets of filled PTFE, ePTFE, and flexible graphite with a tanged stainless insert, side by side |  |
+| `flanges-gaskets-installation-1` | 11 | A raised face flange with a ring gasket and a flat face flange with a full-face gasket, side by side |  |
+| `flanges-gaskets-installation-2` | 11 | A full-face gasket with its ID, OD, bolt circle, and one bolt hole dimensioned |  |
+| `flanges-gaskets-installation-3` | 11 | An 8-bolt flange with the bolts numbered in star pattern order: 1, 5, 3, 7, 2, 6, 4, 8 |  |
+| `custom-gasket-estimating-1` | 12 | A waterjet cutting head over a sheet of compressed gasket material, with nested full-face gaskets partly cut |  |
+| `custom-gasket-estimating-2` | 12 | A steel rule die on a press bed, showing the blade, ejection rubber, and a finished gasket beside it |  |
+| `custom-gasket-estimating-3` | 12 | Two nests of the same ring gasket side by side, a square grid and a staggered grid, with parts-per-sheet counts labeled |  |
+| `custom-gasket-estimating-4` | 12 | A full-face PTFE gasket installed on an FRP flange in a chemical plant, bolts in a star pattern |  |
+| `custom-gasket-estimating-5` | 12 | An irrigation pump discharge flange on a farm, with an EPDM gasket visible between the flanges |  |
