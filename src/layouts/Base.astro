@@ -1,0 +1,45 @@
+---
+import '../styles/global.css';
+import { u } from '../lib/url';
+interface Props { title: string; current?: string; description?: string }
+const { title, current = '', description = 'Training for industrial rubber, hose, and gasket distribution.' } = Astro.props;
+const nav = [
+  ['course', 'Course', 'course'],
+  ['progress', 'My Progress', 'progress'],
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{title} | TRG Distributor Training</title>
+<meta name="description" content={description} />
+<link rel="icon" href={u('favicon.svg')} type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" />
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <a class="brand" href={u('')}><img src={u('trg-logo.svg')} alt="TRG Distribution" width="150" height="30" /><span>Training</span></a>
+  <nav class="nav">
+    {nav.map(([k, label, path]) => <a href={u(path)} aria-current={current === k ? 'page' : undefined}>{label}</a>)}
+    <a href={u('signin')} id="nav-auth" aria-current={current === 'signin' ? 'page' : undefined}>Sign in</a>
+  </nav>
+</div></header>
+<main class="wrap"><slot /></main>
+<footer class="foot">TRG Distributor Training. Course content is free to read. Sign in to save progress and take quizzes.</footer>
+<script>
+  import { supabase } from '../lib/supabase';
+  const a = document.getElementById('nav-auth');
+  if (supabase && a) {
+    supabase.auth.getSession().then(({ data }) => {
+      if (data.session) { a.textContent = 'Sign out'; a.dataset.out = '1'; }
+    });
+    a.addEventListener('click', async (e) => {
+      if (a.dataset.out) { e.preventDefault(); await supabase.auth.signOut(); location.reload(); }
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/url';
+---
+<Base title="Sign in" current="signin">
+  <div class="prose">
+    <h1>Sign in or Register</h1>
+    <p>Use any email address and a password of at least 8 characters. New here? Pick Register; your account is ready right away.</p>
+    <div id="off" class="msg err hidden">Sign-in isn't switched on yet. You can still read every module.</div>
+    <form class="auth" id="f">
+      <label>Email <input type="email" name="email" autocomplete="email" required /></label>
+      <label>Password <input type="password" name="password" minlength="8" autocomplete="current-password" required /></label>
+      <label id="name-row" class="hidden">Your name <input type="text" name="name" autocomplete="name" /></label>
+      <div><button class="btn" type="submit" id="go">Sign in</button> <button class="btn alt" type="button" id="mode">Register instead</button></div>
+      <div id="m" class="msg hidden" role="status"></div>
+    </form>
+  </div>
+  <script>
+    import { supabase } from '../lib/supabase';
+    import { u } from '../lib/url';
+    const f = document.getElementById('f') as HTMLFormElement;
+    const m = document.getElementById('m')!;
+    const go = document.getElementById('go')!;
+    const mode = document.getElementById('mode')!;
+    const nameRow = document.getElementById('name-row')!;
+    let register = false;
+    const say = (t: string, ok = false) => { m.textContent = t; m.className = `msg ${ok ? 'ok' : 'err'}`; };
+    if (!supabase) { document.getElementById('off')!.classList.remove('hidden'); f.classList.add('hidden'); }
+    mode.addEventListener('click', () => {
+      register = !register;
+      go.textContent = register ? 'Register' : 'Sign in';
+      mode.textContent = register ? 'Sign in instead' : 'Register instead';
+      nameRow.classList.toggle('hidden', !register);
+    });
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!supabase) return;
+      const fd = new FormData(f);
+      const email = String(fd.get('email')), password = String(fd.get('password'));
+      if (register) {
+        const { data, error } = await supabase.auth.signUp({ email, password, options: { data: { full_name: String(fd.get('name') || '') } } });
+        if (error) return say(error.message);
+        if (!data.session) return say('Check your email to confirm your account, then sign in.', true);
+      } else {
+        const { error } = await supabase.auth.signInWithPassword({ email, password });
+        if (error) return say(error.message);
+      }
+      location.href = u('progress');
+    });
+  </script>
+</Base>

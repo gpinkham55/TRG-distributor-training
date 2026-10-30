@@ -1,0 +1,51 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { u } from '../../lib/url';
+export async function getStaticPaths() {
+  const mods = await getCollection('modules');
+  return mods.map((m) => ({ params: { slug: m.slug }, props: { m } }));
+}
+const { m } = Astro.props;
+const { Content } = await m.render();
+const d = m.data;
+---
+<Base title={`Module ${d.number}: ${d.title}`} current="course" description={d.summary}>
+  <article class="prose">
+    <p class="eyebrow">Week {d.week} · Module {d.number}</p>
+    <h1>{d.title}</h1>
+    <div class="meta">
+      <span>About {d.minutes} minutes</span>
+      <span>{d.signoff ? 'Mentor sign-off required' : 'No mentor sign-off'}</span>
+      {d.status === 'draft' && <span class="badge draft">Draft</span>}
+    </div>
+    <Content />
+    <div class="complete" id="complete" data-module={d.number}>
+      <p id="c-out">Sign in to save your progress. <a href={u('signin')}>Sign in or register</a></p>
+      <p id="c-in" class="hidden"><button class="btn" id="c-btn">Mark module complete</button> <span id="c-msg"></span></p>
+    </div>
+    <p><a href={u('course')}>Back to the course outline</a></p>
+  </article>
+  <script>
+    import { supabase } from '../../lib/supabase';
+    const box = document.getElementById('complete')!;
+    const id = Number(box.dataset.module);
+    const btn = document.getElementById('c-btn') as HTMLButtonElement;
+    const msg = document.getElementById('c-msg')!;
+    function done() { btn.disabled = true; btn.textContent = 'Completed'; }
+    (async () => { if (supabase) {
+      const { data } = await supabase.auth.getSession();
+      const user = data.session?.user;
+      if (user) {
+        document.getElementById('c-out')!.classList.add('hidden');
+        document.getElementById('c-in')!.classList.remove('hidden');
+        const { data: row } = await supabase.from('module_progress').select('module_id').eq('module_id', id).maybeSingle();
+        if (row) done();
+        btn.addEventListener('click', async () => {
+          const { error } = await supabase.from('module_progress').upsert({ user_id: user.id, module_id: id });
+          if (error) msg.textContent = 'Could not save. Try again.'; else done();
+        });
+      }
+    } })();
+  </script>
+</Base>

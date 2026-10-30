@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import { SYLLABUS } from '../data/syllabus';
+import { u } from '../lib/url';
+---
+<Base title="My Progress" current="progress">
+  <div class="prose">
+    <h1>My Progress</h1>
+    <p id="out">Sign in to see your progress. <a href={u('signin')}>Sign in or register</a></p>
+    <div id="in" class="hidden">
+      <p id="who"></p>
+      <p><b id="count">0</b> of {SYLLABUS.length} modules complete.</p>
+      <div class="tw"><table>
+        <thead><tr><th>Module</th><th>Title</th><th>Status</th></tr></thead>
+        <tbody>
+          {SYLLABUS.map((m) => <tr data-module={m.n}><td>{m.n}</td><td>{m.title}</td><td class="st">Not started</td></tr>)}
+        </tbody>
+      </table></div>
+      <p>Quiz scores and mentor sign-offs will show here once quizzes go live.</p>
+    </div>
+  </div>
+  <script>
+    import { supabase } from '../lib/supabase';
+    (async () => {
+      if (!supabase) return;
+      const { data } = await supabase.auth.getSession();
+      const user = data.session?.user;
+      if (!user) return;
+      document.getElementById('out')!.classList.add('hidden');
+      document.getElementById('in')!.classList.remove('hidden');
+      document.getElementById('who')!.textContent = `Signed in as ${user.email}`;
+      const { data: rows } = await supabase.from('module_progress').select('module_id, completed_at');
+      for (const r of rows || []) {
+        const td = document.querySelector(`tr[data-module="${r.module_id}"] .st`);
+        if (td) td.textContent = `Complete (${new Date(r.completed_at).toLocaleDateString()})`;
+      }
+      document.getElementById('count')!.textContent = String(rows?.length || 0);
+    })();
+  </script>
+</Base>
