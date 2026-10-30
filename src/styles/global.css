@@ -48,7 +48,7 @@ li{margin:4px 0}
 .callout-warn{background:var(--warn-bg);border-color:var(--warn)}
 .callout-note{background:var(--note-bg);border-color:var(--note)}
 figure.ph{margin:20px 0;padding:28px 18px;border:2px dashed var(--line);border-radius:8px;background:var(--panel);text-align:center}
-figure.ph figcaption{font:italic .9rem var(--sans);color:var(--muted)}
+figure.ph figcaption{font:italic calc(.9rem - 2pt) var(--sans);color:#9aa3ad}
 .btn{display:inline-block;font:600 .95rem var(--sans);padding:10px 18px;border-radius:5px;border:2px solid var(--navy);background:var(--navy);color:#fff;text-decoration:none;cursor:pointer}
 .btn.alt{background:transparent;color:var(--link);border-color:currentColor}
 .btn:disabled{opacity:.55;cursor:default}
@@ -81,7 +81,7 @@ form.auth input{font:1rem var(--sans);padding:10px;border:1px solid var(--line);
 .hidden{display:none!important}
 figure.pic{margin:20px 0}
 figure.pic img{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
-figure.pic figcaption{font:.88rem var(--sans);color:var(--muted);margin-top:6px}
+figure.pic figcaption{font:italic calc(.88rem - 2pt) var(--sans);color:#9aa3ad;margin-top:6px}
 .quiz{display:grid;gap:18px;font-family:var(--sans)}
 .quiz fieldset{border:1px solid var(--line);border-radius:8px;padding:12px 16px 14px;margin:0}
 .quiz legend{padding:0 4px;font-size:1rem;line-height:1.45}
