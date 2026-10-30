@@ -15,7 +15,7 @@ Every quote, order acknowledgment, packing list, and invoice comes from the cust
 After this module you will be able to:
 
 1. Explain what bad customer data costs the branch and the customer.
-2. Search for an existing contact or ship-to before adding a new one.
+2. Search P21 for a contact or ship-to before adding a new one.
 3. Add a contact, link it to the right customer and ship-to, and set its roles and documents.
 4. Retire a contact who left without losing history.
 5. Add a ship-to with a correct delivery address, carrier, and delivery instructions.
