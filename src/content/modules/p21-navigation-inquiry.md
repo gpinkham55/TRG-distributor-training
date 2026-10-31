@@ -136,7 +136,7 @@ One customer can have many ship-tos and many contacts. Some companies have more 
 7. Note the **salesperson** on the account so you know who to keep informed.
 8. Check **open orders** and **open quotes** before you create anything new. A customer calling to "order those gaskets" may already have a quote waiting.
 
-[IMAGE EXAMPLE: Customer Master Inquiry with the bill-to address, terms, salesperson, and the Ship To and Contacts tabs marked]
+[IMAGE EXAMPLE: Customer Master Inquiry with the physical address, Credit tab, status, and terms, and the Ship To/Salesrep and Contacts highlighted]
 
 ### Fields to check every time
 
