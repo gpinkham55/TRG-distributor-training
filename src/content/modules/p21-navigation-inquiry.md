@@ -131,7 +131,7 @@ One customer can have many ship-tos and many contacts. Some companies have more 
 2. Search by customer ID, part of the name, phone number, or city.
 3. **Confirm the right account.** Check the physical address and the ship-to list before you go on. If two accounts look alike, ask the caller which plant, location or address they are calling about.
 4. On the **Credit** tab, check the account status and terms. An account on COD or Hold status changes what you can promise; ask your mentor before you go on.
-5. Read the **notes**: PO required, release numbers, receiving hours, tax exemption, brand preferences.
+5. Check **Customer notes**: PO required, release numbers, receiving hours, tax exemption, brand preferences.
 6. Look at the **ship-tos** and **contacts**. Is the caller listed? Is the delivery address on file?
 7. Note the **salesperson** on the account so you know who to keep informed.
 8. Check **open orders** and **open quotes** before you create anything new. A customer calling to "order those gaskets" may already have a quote waiting.
