@@ -18,7 +18,7 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `distributor-business-10` | 1 | An excavator at work. Hydraulic hoses run along the boom to the cylinders that move the arm and bucket | Yes |
 | `p21-navigation-inquiry-1` | 2 | The P21 sign-in window. The title shows which system you are signing in to; this one says LIVE | Yes |
 | `p21-navigation-inquiry-2` | 2 | The P21 menu open over Order Entry. Starred windows are your favorites | Yes |
-| `p21-navigation-inquiry-3` | 2 | Customer Master Inquiry with the bill-to address, terms, salesperson, and the Ship To and Contacts tabs marked |  |
+| `p21-navigation-inquiry-3` | 2 | Customer Master Inquiry with the physical address, Credit tab, status, and terms, and the Ship To/Salesrep and Contacts highlighted |  |
 | `p21-navigation-inquiry-4` | 2 | Item Master Inquiry showing the item description, unit of measure, and the location tab with on hand, allocated, and available columns |  |
 | `p21-navigation-inquiry-5` | 2 | A customer's sales history filtered by date range, with one hose line selected and the order number visible |  |
 | `customer-records-1` | 3 | Contact Maintenance with name, title, phone, email, the customer link, and the document settings marked |  |
