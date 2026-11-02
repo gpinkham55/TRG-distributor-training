@@ -37,7 +37,7 @@ A purchase order (PO) is your branch's order to a vendor. It tells the vendor wh
 7. Add notes for the vendor: tagging, test reports, packing, or delivery instructions.
 8. **Save** and send the PO to the vendor by your branch's method.
 
-[IMAGE EXAMPLE: Purchase Order Entry with the vendor, ship-to, item lines, cost, and promise date marked]
+[IMAGE EXAMPLE: Purchase Order Entry main screen with the vendor, ship-to, and promise date highlighted, and the tab that holds the item lines highlighted; blur any cost]
 
 > ⚠️ SAFETY & COMPLIANCE: Costs on a PO are private. Never share vendor cost with a customer, and never send a customer a copy of a vendor PO.
 

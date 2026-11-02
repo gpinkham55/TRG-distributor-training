@@ -9,7 +9,7 @@ const written = new Map((await getCollection('modules')).map((m) => [m.data.numb
   <div class="prose">
     <p class="eyebrow">Course outline</p>
     <h1>Four Weeks, Sixteen Modules</h1>
-    <p>Work the modules in order. Modules marked Draft are under review and may change. Modules without a link are still being written.</p>
+    <p>Work the modules in order.</p>
   </div>
   <div class="weeks">
     {WEEKS.map((w) => (
@@ -22,7 +22,6 @@ const written = new Map((await getCollection('modules')).map((m) => [m.data.numb
               <li data-module={m.n}>
                 <span class="num">{m.n}</span>
                 <span class="t">{doc ? <a href={u(`modules/${doc.slug}`)}>{m.title}</a> : <span class="soon">{m.title}</span>}</span>
-                {doc && doc.data.status === 'draft' && <span class="badge draft">Draft</span>}
                 {!doc && <span class="badge">Coming</span>}
                 <span class="badge done hidden">Done</span>
               </li>

@@ -72,7 +72,7 @@ Add the windows you use every day to your **favorites** or toolbar so you can op
 Most ID fields (customer, ship-to, contact, item, order) open a search window.
 
 1. Type part of the value, then press Tab or click the lookup button.
-2. Search on the **shortest piece that is unique**. "RIVERB" finds more than "Riverbend Paper Company, Inc." and catches spelling differences.
+2. Search on the **shortest piece that is unique**. "SOUTHEAST" finds more than "Southeastern Paper Mill, Inc." and catches spelling differences.
 3. If too many records come back, add a second filter such as city, phone, or ZIP code.
 4. Pick the record, then confirm it is the right one before you go on.
 
@@ -119,7 +119,7 @@ Before you quote, enter an order, or answer a question, know who the customer is
 
 | Record | What it is | Example |
 |---|---|---|
-| Customer (bill-to) | The account that gets the invoice | Riverbend Paper Company, billed to its accounts payable office |
+| Customer (bill-to) | The account that gets the invoice | Southeastern Paper Mill, billed to its accounts payable office |
 | Ship-to | A delivery address under the customer | The mill, a warehouse across town, a second plant |
 | Contact | A person at the customer | A buyer, a maintenance planner, an accounts payable clerk |
 
@@ -136,7 +136,7 @@ One customer can have many ship-tos and many contacts. Some companies have more 
 7. Note the **salesperson** on the account so you know who to keep informed.
 8. Check **open orders** and **open quotes** before you create anything new. A customer calling to "order those gaskets" may already have a quote waiting.
 
-[IMAGE EXAMPLE: Customer Master Inquiry with the physical address, Credit tab, status, and terms, and the Ship To/Salesrep and Contacts highlighted]
+[IMAGE EXAMPLE: Customer Master Inquiry main screen with the customer ID and contacts highlighted, and the Physical Address, Credit Status, Ship To / Salesrep, Customer Sales History, Open Orders, and Open Quotes tabs highlighted]
 
 ### Fields to check every time
 
@@ -176,7 +176,7 @@ Most requests come down to three questions: do you have it, where is it, and wha
 7. Check the **price for this customer**. Enter the customer ID so the customer's own pricing applies, not a list price.
 8. Look at **recent sales** of the item to see who buys it and in what quantities.
 
-[IMAGE EXAMPLE: Item Master Inquiry showing the item description, unit of measure, and the location tab with on hand, allocated, and available columns]
+[IMAGE EXAMPLE: Item Master Inquiry main screen with the item ID, description, location, available quantity, and unit of measure highlighted, and the Inventory, Open PO, Open Order, and Open Quote tabs highlighted]
 
 ### Reading stock quantities
 
@@ -198,10 +198,12 @@ The unit of measure tells you what one unit of the item is. Read it every time b
 | Unit | Meaning | Typical items |
 |---|---|---|
 | EA | Each, one piece | Fittings, clamps, couplings, cut gaskets |
+| SI | Square inch | Gasket sheet and sheet rubber sold by the piece |
+| SF | Square foot | Sheet rubber and gasket sheet in larger pieces |
 | FT | Foot | Bulk hose, tubing, cord |
-| SI | Square inch | Gasket sheet sold by the piece |
 | RL | Roll | Full rolls of sheet rubber or tape |
-| BX, PK | Box, pack | O-ring kits, small parts sold in packs |
+
+EA, SI, and SF are the most common units across TRG. Some branches use other units, such as BX (box) or PK (pack); your mentor will show you the ones your branch uses.
 
 > 💡 KEY TAKEAWAY: 100 SI of gasket sheet is a piece about 10 in x 10 in, not 100 sheets. Read the unit before you read the quantity.
 
@@ -241,7 +243,7 @@ The unit of measure tells you what one unit of the item is. Read it every time b
 5. Open the **order** to see the other lines on it. A hose often ships with fittings, clamps, or a matching assembly on the same order.
 6. Read the item description back to the customer to confirm. Ask whether anything has changed: length, end fittings, temperature, or media.
 
-[IMAGE EXAMPLE: A customer's sales history filtered by date range, with one hose line selected and the order number visible]
+[IMAGE EXAMPLE: Customer Master Inquiry main screen with the customer ID highlighted and the Customer Sales History tab highlighted, open to a date range with one hose line and its order number]
 
 > 💡 KEY TAKEAWAY: Sales history answers "what did we sell them" with facts. Use it before you ask the customer to describe the part again.
 
@@ -270,7 +272,7 @@ Your mentor picks three real accounts and three items for these exercises. Write
 ### Knowledge check (practice, not graded)
 
 1. You want to check a customer's terms. Do you open an inquiry window or a maintenance window?
-2. A search for "Riverbend Paper Company Inc" finds nothing. What do you try next?
+2. A search for "Southeastern Paper Mill Inc" finds nothing. What do you try next?
 3. An item shows 120 on hand and 90 allocated. How many can you promise a new order?
 4. A customer orders 300 SI of gasket sheet. About how big a piece is that?
 5. A caller says, "Send me what we got back in March." Where do you look first?

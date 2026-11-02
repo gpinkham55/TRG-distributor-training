@@ -53,7 +53,7 @@ Each branch sets its own return policy, time limits, and restocking fees. Your m
 5. Add a note: who called, why, and anything the customer said about the part.
 6. Save the RMA and give the customer the **RMA number**. Ask them to mark it on the package or bring it to the counter.
 
-[IMAGE EXAMPLE: RMA entry in P21 with the customer, original invoice, item, quantity, return reason, and RMA number marked]
+[IMAGE EXAMPLE: RMA Entry main screen with the customer, original invoice, and RMA number highlighted, and the tab that holds the item, quantity, and return reason highlighted]
 
 > ⚠️ SAFETY & COMPLIANCE: A hose returned from service may still hold fluid, pressure, or chemical residue. Ask what it carried, and handle it as dirty until you know otherwise (Module 1).
 
