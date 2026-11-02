@@ -17,7 +17,7 @@ After this module you will be able to:
 1. Explain what a distributor adds between the manufacturer and the end user.
 2. Describe the main customer types and how each one buys.
 3. Name where our products are used in pulp and paper, agriculture, chemical manufacturing, and heavy equipment.
-4. Use the basic vocabulary of the counter and the order desk.
+4. Use the basic vocabulary of the business.
 5. Follow the shop safety basics.
 
 ## 1.1 What a Distributor Does
@@ -93,7 +93,7 @@ Distributors serve seven main customer types, and each one buys differently: wha
 | Other distributors and resellers | Buyer at the other company | Price, availability, fast shipping | "Do you have 100 feet of 2-inch suction hose in stock?" |
 | Walk-in and cash customers | Anyone at the counter | Speed and a straight answer | "Can you match this fitting?" |
 
-> 📌 INDUSTRY INSIGHT: **MRO** (maintenance, repair, and operations) customers buy to keep equipment running, often in a hurry. **OEM** (original equipment manufacturer) customers buy parts that go into the products they build, usually on a schedule. Most branches serve both, and the order desk handles them very differently.
+> 📌 INDUSTRY INSIGHT: **MRO** (maintenance, repair, and operations) customers buy to keep equipment running, often in a hurry. **OEM** (original equipment manufacturer) customers buy parts that go into the products they build, usually on a schedule. Most branches serve both and handle them very differently.
 
 ### How requests arrive
 
@@ -206,7 +206,7 @@ Excavators, loaders, dozers, cranes, and trucks depend on high-pressure hydrauli
 
 ## 1.4 Words You'll Hear on Day One
 
-These 24 terms come up on the first day at the counter or the order desk. Later modules explain each one in depth; the full list of abbreviations is in the Reference section.
+These 24 terms come up on the first day. Later modules explain each one in depth; the full list of abbreviations is in the Reference section.
 
 | Term | Meaning |
 |---|---|
