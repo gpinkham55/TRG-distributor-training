@@ -41,7 +41,7 @@ The header holds everything that applies to the whole order. Most of it fills in
 10. Confirm the **carrier** and **freight terms** from the ship-to.
 11. Add an **order note** for anything picking, shipping, or billing needs to know.
 
-[IMAGE EXAMPLE: The Order Entry header with customer, ship-to, contact, PO number, required date, and carrier marked]
+[IMAGE EXAMPLE: Order Entry main screen with the customer, ship-to, contact, PO number, and required date highlighted, and the tabs that hold the carrier and line items highlighted]
 
 ### The PO field
 
@@ -176,7 +176,7 @@ A quote is your written price, quantity, lead time, and expiration date. A clear
 3. Recheck quantity, price, and the expiration date. If the quote expired, confirm cost before you honor it.
 4. Confirm the quote now shows as converted.
 
-[IMAGE EXAMPLE: A quote in P21 with the expiration date, lead time column, and the convert option marked]
+[IMAGE EXAMPLE: Order Entry main screen for a quote with the quote flag and expiration date highlighted, and the tabs or buttons that hold the lead time and convert-to-order option highlighted]
 
 > 📌 INDUSTRY INSIGHT: Mill outage quotes can run to hundreds of lines. Buyers compare price, but they also remember who quoted accurately and on time. Every line you get right on a big quote builds the next one.
 
@@ -213,7 +213,7 @@ A quote is your written price, quantity, lead time, and expiration date. A clear
 
 ### Practice in the P21Play System
 
-1. **Stock order.** A practice caller from Riverbend Paper, Mill No. 2 orders 25 ft of a stocked hose and 4 fittings on their PO. Enter the order, read it back, save it, and give the order number.
+1. **Stock order.** A practice caller from Southeastern Paper Mill, Mill No. 2 orders 25 ft of a stocked hose and 4 fittings on their PO. Enter the order, read it back, save it, and give the order number.
 2. **Short stock.** Enter an order for more than you have available. Check other locations, then choose the right disposition and explain why.
 3. **Special order.** Enter an order for an item your branch does not stock. Use disposition S.
 4. **Margin.** Calculate margin and markup for an item that costs $12.50 and sells for $20.00.

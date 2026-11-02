@@ -20,7 +20,10 @@ Generic four-week training course for any TRG branch or distributor (industrial 
 - No employee names. No lot or heat traceability.
 - Call the test system "the P21Play System" (heading form: "P21Play System").
 - Safety: safety glasses when cutting or operating equipment; follow your branch's rules.
-- Drafts: Greg reviews one module at a time through Week 1, then a week at a time.
+- All 16 modules are published. The site shows no draft labels; new modules get Greg's review in a Claude Doc first.
+- Made-up customer for examples: "Southeastern Paper Mill". Mark made-up callers as practice callers.
+- Units of measure: EA, SI, and SF are the most common across TRG. BX is not used company-wide.
+- P21 image prompts: highlight what shows on the window's main screen, and highlight the tabs that hold the rest. Blur names, credit, costs, and sales figures in real screenshots. P21Play System screenshots are still to come.
 
 ## Database
 - `supabase/schema.sql` is re-runnable. Run it in the Supabase SQL Editor after any change.

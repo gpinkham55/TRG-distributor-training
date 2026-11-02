@@ -93,7 +93,7 @@ A transfer moves stock from one location to another. Use it for a customer order
 5. When it arrives, **receive the transfer** in P21, the same way you receive a PO.
 6. Put stock away or set it aside for the customer's order.
 
-[IMAGE EXAMPLE: A transfer in P21 showing the from location, the to location, the item, and the quantity shipped and received]
+[IMAGE EXAMPLE: Transfer Entry main screen with the from location and to location highlighted, and the tab that holds the items and the quantities shipped and received highlighted]
 
 > 📌 INDUSTRY INSIGHT: A transfer that ships but is never received leaves stock "in transit" in P21. Neither branch can sell it. Receive transfers the day they arrive.
 

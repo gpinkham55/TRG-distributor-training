@@ -67,7 +67,7 @@ One person can hold more than one role at a small customer. At a large plant, ea
 6. Set which **documents** the contact receives by email (quotes, acknowledgments, invoices).
 7. **Save**. Then open Customer Master Inquiry and confirm the contact shows on the account.
 
-[IMAGE EXAMPLE: Contact Maintenance with name, title, phone, email, the customer link, and the document settings marked]
+[IMAGE EXAMPLE: Contact Maintenance main screen with the name, title, phone, and email highlighted, and the tabs that hold the customer link and document settings highlighted]
 
 ### Steps: a contact leaves the company
 
@@ -94,7 +94,7 @@ A ship-to is a delivery address under a customer. It controls where the product 
 
 1. **Search first.** Open the customer's ship-to list and look for the address. Most "new" addresses turn out to be a building, gate, or dock already on file.
 2. Open **Ship To Maintenance** and enter the customer ID.
-3. Enter the **ship-to name** as it should print on the packing list. Include the site so drivers and receivers can tell sites apart (for example, "Riverbend Paper, Mill No. 2").
+3. Enter the **ship-to name** as it should print on the packing list. Include the site so drivers and receivers can tell sites apart (for example, "Southeastern Paper Mill, Mill No. 2").
 4. Enter **Address 1**, **Address 2**, **City**, **State**, and **ZIP code**. Use Address 2 for the building, gate, or dock.
 5. Enter the site's **phone number**.
 6. Set the **salesperson** and **territory** to match the account.
@@ -104,7 +104,7 @@ A ship-to is a delivery address under a customer. It controls where the product 
 10. Set the **default location**: the branch that ships to this address.
 11. **Save**, then reopen the ship-to and confirm every field saved.
 
-[IMAGE EXAMPLE: Ship To Maintenance with the name, address lines, carrier, delivery instructions, and tax fields marked]
+[IMAGE EXAMPLE: Ship To Maintenance main screen with the ship-to name and address highlighted, and the tabs that hold the carrier, delivery instructions, and tax settings highlighted]
 
 ### What goes where
 
@@ -185,7 +185,7 @@ Write instructions the driver and the warehouse can act on:
 Your mentor picks the accounts. Do every task in the P21Play System and bring your notes to your mentor.
 
 1. **Search before you add.** Your mentor gives you three contact names. Search each one by last name, email, and phone. Write which ones are already in P21 and on which account.
-2. **Add a contact.** A practice caller says: "This is Dana Ruiz, the new buyer at Riverbend Paper, Mill No. 2. Send quotes to me." Add Dana, link her to the account and the ship-to, set her role and documents, and confirm she shows on the account.
+2. **Add a contact.** A practice caller says: "This is Dana Ruiz, the new buyer at Southeastern Paper Mill, Mill No. 2. Send quotes to me." Add Dana, link her to the account and the ship-to, set her role and documents, and confirm she shows on the account.
 3. **Retire a contact.** The practice caller adds: "Pat Owens retired. Pat used to get our quotes." Mark Pat inactive and move the quote documents to Dana.
 4. **Add a ship-to.** A practice caller asks you to deliver to a new warehouse: 410 Industrial Park Road, Building C, Dock 4, call the dock before every delivery. Add the ship-to with the right fields for each piece of information.
 5. **Update or add.** For each of the four statements in the "Update or add new?" table in 3.3, tell your mentor what you would do and why.

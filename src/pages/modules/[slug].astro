@@ -24,7 +24,6 @@ const d = m.data;
     <div class="meta">
       <span>About {d.minutes} minutes</span>
       <span>{d.signoff ? 'Mentor sign-off required' : 'No mentor sign-off'}</span>
-      {d.status === 'draft' && <span class="badge draft">Draft</span>}
     </div>
     <Content />
     <div class="complete" id="complete" data-module={d.number}>
