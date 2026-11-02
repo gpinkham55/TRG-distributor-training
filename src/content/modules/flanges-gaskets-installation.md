@@ -129,7 +129,7 @@ When a customer calls about a leak, ask what changed and work through the likely
 
 > 💡 KEY TAKEAWAY: Most flange leaks come from installation, not the gasket. Ask how it was installed before you sell a "better" gasket.
 
-## 11.5 Practice, Knowledge Check, and Test-Out
+## 11.5 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
 
@@ -152,7 +152,6 @@ When a customer calls about a leak, ask what changed and work through the likely
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass. Module 11 has no hands-on sign-off.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 11 complete.

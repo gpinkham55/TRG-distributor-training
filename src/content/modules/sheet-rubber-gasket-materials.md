@@ -130,7 +130,7 @@ Start with the media, then check temperature and pressure, then the flange.
 
 > 📌 INDUSTRY INSIGHT: High-pressure flanges (Class 600 and up) often use spiral-wound metal gaskets, which are bought as finished parts, not cut from sheet. Module 11 covers flange classes.
 
-## 10.5 Practice, Knowledge Check, and Test-Out
+## 10.5 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
 
@@ -153,7 +153,6 @@ Start with the media, then check temperature and pressure, then the flange.
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass. Module 10 has no hands-on sign-off.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 10 complete.

@@ -97,7 +97,7 @@ A transfer moves stock from one location to another. Use it for a customer order
 
 > 📌 INDUSTRY INSIGHT: A transfer that ships but is never received leaves stock "in transit" in P21. Neither branch can sell it. Receive transfers the day they arrive.
 
-## 14.6 Practice, Knowledge Check, and Test-Out
+## 14.6 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
 
@@ -117,8 +117,7 @@ A transfer moves stock from one location to another. Use it for a customer order
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 14 complete. The mentor sign-off still applies.
 - **Mentor sign-off:** complete a cycle count of the bins your mentor assigns, with every count in the right unit and every variance recounted.

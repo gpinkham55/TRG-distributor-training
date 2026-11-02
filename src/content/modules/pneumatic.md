@@ -135,7 +135,7 @@ Trucks, trailers, and buses stop with air brakes. Brake hose, tubing, and fittin
 
 [IMAGE EXAMPLE: A machine control panel plumbed with color-coded polyurethane tubing and push-to-connect fittings]
 
-## 8.5 Practice, Knowledge Check, and Test-Out
+## 8.5 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
 
@@ -158,8 +158,7 @@ Trucks, trailers, and buses stop with air brakes. Brake hose, tubing, and fittin
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 8 complete. The mentor sign-off still applies.
 - **Mentor sign-off:** identify 6 pneumatic fittings your mentor hands you, by type, size, and interchange.

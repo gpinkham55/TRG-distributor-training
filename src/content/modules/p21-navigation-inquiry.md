@@ -256,7 +256,7 @@ EA, SI, and SF are the most common units across TRG. Some branches use other uni
 - Missing the fittings or clamps that shipped on the same order.
 - Quoting last year's price without checking the current price for the customer.
 
-## 2.6 Practice, Knowledge Check, and Test-Out
+## 2.6 Practice, Knowledge Check, and Module Quiz
 
 ### Practice in the P21Play System
 
@@ -281,8 +281,7 @@ Your mentor picks three real accounts and three items for these exercises. Write
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 2's reading complete. The mentor sign-off below still applies.
 - **Mentor sign-off:** with your mentor watching, find a customer, an item, and a past order on your own, using only the information a caller would give you.

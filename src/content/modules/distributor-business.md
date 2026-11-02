@@ -258,7 +258,7 @@ Three hazards from the products we sell come up again and again in this course. 
 
 > 💡 KEY TAKEAWAY: The safest answer to a customer is sometimes "Let me check that with my mentor." Never guess on steam, chemicals, or high-pressure hydraulics.
 
-## 1.6 Knowledge Check and Test-Out
+## 1.6 Knowledge Check and Module Quiz
 
 ### Knowledge check (practice, not graded)
 
@@ -271,7 +271,6 @@ Three hazards from the products we sell come up again and again in this course. 
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass. Module 1 has no hands-on sign-off.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 1's reading complete.

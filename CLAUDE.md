@@ -12,12 +12,13 @@ Generic four-week training course for any TRG branch or distributor (industrial 
 - One file per module in `src/content/modules/<slug>.md`. Frontmatter: number, title, week, minutes, signoff, status (draft or published), summary.
 - The outline is `src/data/syllabus.ts`; module slugs there must match the content file names and the `modules` rows in `supabase/schema.sql`.
 - Callouts: a blockquote starting with 💡, ⚠️, or 📌 becomes a styled box. A paragraph `[IMAGE EXAMPLE: ...]` becomes an image placeholder, or the picture `public/img/modules/<slug>-<n>.jpg|png|webp` when that file is in the repo (n counts placeholders in the module from 1). `public/img/modules/README.md` lists every slot; regenerate it when placeholders change. All handled in `src/lib/callouts.mjs`.
+- Quizzes: no test-out. Each module quiz is 10 questions, 80% to pass, 3 tries. Scenario questions (codes `Mxx-S1`, `Mxx-S2`, ...) appear on every attempt; the rest are drawn from the module's 25-question pool. Final exam: 48 questions, 85%, 2 tries.
 - Answer keys never go in this repo or the browser. Quiz answers live in the `question_keys` table, which has no read policy; `grade_attempt()` grades on the server.
 
 ## Content rules
 - Professional textbook tone, plain English. No em dashes. Avoid: "because", "matters", "while" as a contrast, "exists/existing", times of day and days of the week, "naming/named".
 - No real rates, costs, or margins. Pricing examples use placeholders only (material markup ×3.00, shop rate $150/hr).
-- No employee names. No lot or heat traceability.
+- No employee names. No lot, serial, or heat traceability.
 - Call the test system "the P21Play System" (heading form: "P21Play System").
 - Safety: safety glasses when cutting or operating equipment; follow your branch's rules.
 - All 16 modules are published. The site shows no draft labels; new modules get Greg's review in a Claude Doc first.

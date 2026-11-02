@@ -208,7 +208,7 @@ This table is a starting point only. Always confirm with the hose manufacturer's
 
 > 💡 KEY TAKEAWAY: Ask for three things on every chemical hose: the exact chemical, its concentration, and its temperature.
 
-## 4.6 Practice, Knowledge Check, and Test-Out
+## 4.6 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
 
@@ -231,7 +231,6 @@ This table is a starting point only. Always confirm with the hose manufacturer's
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass. Module 4 has no hands-on sign-off.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 4 complete.

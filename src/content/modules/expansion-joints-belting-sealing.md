@@ -137,7 +137,7 @@ Work each scenario with your mentor playing the customer. Do every P21 step in t
 
 ### Final sign-off
 
-Your Manager signs you off when you have passed every module quiz or test-out, finished every mentor sign-off, worked the four capstone scenarios, and passed the final exam.
+Your Manager signs you off when you have passed every module quiz, finished every mentor sign-off, worked the four capstone scenarios, and passed the final exam.
 
 ### Knowledge check (practice, not graded)
 
@@ -150,7 +150,6 @@ Your Manager signs you off when you have passed every module quiz or test-out, f
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 16 complete.
