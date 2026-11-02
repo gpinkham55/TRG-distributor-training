@@ -28,6 +28,14 @@ Generic four-week training course for any TRG branch or distributor (industrial 
 - Units of measure: EA, SI, and SF are the most common across TRG. BX is not used company-wide.
 - P21 image prompts: highlight what shows on the window's main screen, and highlight the tabs that hold the rest. Blur names, credit, costs, and sales figures in real screenshots. P21Play System screenshots are still to come.
 
+## Communication tone and style
+- No flowery, abstract, poetic, or marketing-style summaries. Use direct, operational, practical language focused on doing the job right and preventing errors.
+- Write from a frontline operational perspective, speaking directly to a branch or shop employee. Focus on task accuracy, handoffs between roles, and what a mistake does to every step after it. Do not romanticize processes or describe idealized smooth outcomes.
+- Use clear, straightforward imperative sentences.
+- Incorrect: "A complete order becomes a clean pick, a correct build, an on-time delivery, and an invoice the customer pays without a call."
+- Correct: "Every step depends on the one before it being done right. A mistake in one step makes each step after more difficult and prone to subsequent errors. Do the job right every step of the way."
+- Incorrect: "Excellence ensures operational harmony." Correct: "Do the job right every step of the way."
+
 ## Database
 - `supabase/schema.sql` is re-runnable. Run it in the Supabase SQL Editor after any change.
 - Progress is tracked per module in `module_progress`.
