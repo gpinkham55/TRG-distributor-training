@@ -22,6 +22,7 @@ Generic four-week training course for any TRG branch or distributor (industrial 
 - Call the test system "the P21Play System" (heading form: "P21Play System").
 - Safety: safety glasses when cutting or operating equipment; follow your branch's rules.
 - All 16 modules are published. The site shows no draft labels; new modules get Greg's review in a Claude Doc first.
+- Never describe something by what it is not ("X, not Y", "X instead of Y", "X rather than Y"). Say what it is.
 - Leave out location phrases the reader already understands: "at the desk", "at the sales desk", "at the branch", "on the shop floor", "the call".
 - Made-up customer for examples: "Southeastern Paper Mill". Mark made-up callers as practice callers.
 - Units of measure: EA, SI, and SF are the most common across TRG. BX is not used company-wide.
