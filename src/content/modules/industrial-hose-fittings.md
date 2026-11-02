@@ -148,7 +148,7 @@ The coupling is only as good as the way it is held on the hose. Pick the attachm
 
 > 💡 KEY TAKEAWAY: The same 2 in cam and groove fitting shows up on a farm, a job site, and a chemical plant. What changes is the material of the fitting, the gasket, and the hose behind it.
 
-## 5.5 Practice, Knowledge Check, and Test-Out
+## 5.5 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
 
@@ -171,8 +171,7 @@ The coupling is only as good as the way it is held on the hose. Pick the attachm
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 5 complete. The mentor sign-off still applies.
 - **Mentor sign-off:** identify 10 industrial fittings your mentor hands you, by type and size.

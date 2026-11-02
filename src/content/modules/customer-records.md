@@ -178,7 +178,7 @@ Write instructions the driver and the warehouse can act on:
 
 > 💡 KEY TAKEAWAY: A ship-to is right when a driver who has never been there could deliver to it, and accounting could bill it, without calling anyone.
 
-## 3.5 Practice, Knowledge Check, and Test-Out
+## 3.5 Practice, Knowledge Check, and Module Quiz
 
 ### Practice in the P21Play System
 
@@ -203,8 +203,7 @@ Your mentor picks the accounts. Do every task in the P21Play System and bring yo
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 3's reading complete. The mentor sign-off still applies.
 - **Mentor sign-off:** with your mentor watching, add one contact and one ship-to in the P21Play System from a practice call, with every field correct.

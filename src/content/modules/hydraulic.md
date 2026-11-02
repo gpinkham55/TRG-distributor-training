@@ -166,7 +166,7 @@ Pipe thread sizes are nominal; the actual outside diameter is larger than the si
 
 > 💡 KEY TAKEAWAY: When an equipment customer calls with a burst hose, get the machine make and model, the hose layline if it is readable, and both fitting ends. With those three, the shop can build it right the first time.
 
-## 7.5 Practice, Knowledge Check, and Test-Out
+## 7.5 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
 
@@ -189,8 +189,7 @@ Pipe thread sizes are nominal; the actual outside diameter is larger than the si
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 7 complete. The mentor sign-off still applies.
 - **Mentor sign-off:** identify 10 hydraulic threads your mentor hands you, by type and dash size, using calipers and gauges.

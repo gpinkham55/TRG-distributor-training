@@ -142,7 +142,7 @@ Bulk hose sold without fittings is sold by the foot (FT) from a reel.
 
 > 💡 KEY TAKEAWAY: P21 counts feet, not reels. Before you promise a long continuous length, have someone look at the reel.
 
-## 9.5 Practice, Knowledge Check, and Test-Out
+## 9.5 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
 
@@ -165,8 +165,7 @@ Bulk hose sold without fittings is sold by the foot (FT) from a reel.
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 9 complete. The mentor sign-off still applies.
 - **Mentor sign-off:** build, measure, and tag one assembly from a written spec, with the crimp diameter in tolerance and the length within the shop's standard.

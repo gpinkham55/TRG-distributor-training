@@ -101,7 +101,7 @@ Accounting pays the vendor when three things agree: the **PO** (what you ordered
 
 > 📌 INDUSTRY INSIGHT: Reels of hose and pallets of sheet are heavy. Use the forklift or reel stand you are trained on, and never lift a reel by hand. Follow your branch's lifting and equipment rules.
 
-## 13.5 Practice, Knowledge Check, and Test-Out
+## 13.5 Practice, Knowledge Check, and Module Quiz
 
 ### Practice in the P21Play System
 
@@ -123,8 +123,7 @@ Accounting pays the vendor when three things agree: the **PO** (what you ordered
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 13 complete. The mentor sign-off still applies.
 - **Mentor sign-off:** with your mentor watching, enter a PO and receive it in the P21Play System, including one short line.

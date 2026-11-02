@@ -209,7 +209,7 @@ A quote is your written price, quantity, lead time, and expiration date. A clear
 - Sending the customer to the vendor. They bought from you; you follow up.
 - Canceling and reentering an order, which breaks the link to the PO and the history.
 
-## 6.6 Practice, Knowledge Check, and Test-Out
+## 6.6 Practice, Knowledge Check, and Module Quiz
 
 ### Practice in the P21Play System
 
@@ -233,8 +233,7 @@ A quote is your written price, quantity, lead time, and expiration date. A clear
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 6 complete. The mentor sign-off still applies.
 - **Mentor sign-off:** with your mentor watching, enter one order and one quote in the P21Play System from practice calls, with no errors that would ship the wrong product or bill the wrong price.

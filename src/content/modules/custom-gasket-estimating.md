@@ -191,7 +191,7 @@ Sheet and roll goods are bought in one unit and sold in another. P21 converts be
 
 [IMAGE EXAMPLE: An irrigation pump discharge flange on a farm, with an EPDM gasket visible between the flanges]
 
-## 12.10 Practice, Knowledge Check, and Test-Out
+## 12.10 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
 
@@ -213,8 +213,7 @@ Use the placeholder values in this module (3.00 multiplier, $150 per hour, $0.05
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 12 complete. The mentor sign-off still applies.
 - **Mentor sign-off:** price a custom gasket job your mentor gives you, using your branch's real figures, within 10% of your mentor's quote.

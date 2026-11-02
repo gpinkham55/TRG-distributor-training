@@ -92,7 +92,7 @@ Each branch sets its own return policy, time limits, and restocking fees. Your m
 
 > ⚠️ SAFETY & COMPLIANCE: Never promise a customer a warranty credit before the maker decides. Say you will send it in and call them with the result.
 
-## 15.6 Practice, Knowledge Check, and Test-Out
+## 15.6 Practice, Knowledge Check, and Module Quiz
 
 ### Practice in the P21Play System
 
@@ -113,8 +113,7 @@ Each branch sets its own return policy, time limits, and restocking fees. Your m
 
 Work these on your own, then check your answers with your mentor.
 
-### Module quiz and test-out
+### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Test-out:** 10 questions; 90% to pass. Passing marks Module 15 complete. The mentor sign-off still applies.
 - **Mentor sign-off:** with your mentor watching, enter an RMA and a replacement order in the P21Play System from a practice call.

@@ -28,11 +28,10 @@ const d = m.data;
     <Content />
     <div class="complete" id="complete" data-module={d.number}>
       <h3 style="margin-top:0">Finish this module</h3>
-      <p>Pass the module quiz (10 questions, 80% to pass, 3 tries) to mark Module {d.number} complete. Already know this material? Take the test-out instead (10 questions, 90% to pass, 1 try).{d.signoff && ' The mentor sign-off still applies.'}</p>
+      <p>Pass the module quiz (10 questions, 80% to pass, 3 tries) to mark Module {d.number} complete. Every trainee completes the module and the quiz.{d.signoff && ' The mentor sign-off still applies.'}</p>
       <p id="c-status" class="hidden"></p>
       <div class="quiz-links">
         <a class="btn" href={u(`quiz/${m.slug}`)}>Take the module quiz</a>
-        <a class="btn alt" href={u(`quiz/${m.slug}?type=test_out`)}>Test out</a>
         {d.number === 16 && <a class="btn" href={u('quiz/final')}>Take the final exam</a>}
       </div>
     </div>
