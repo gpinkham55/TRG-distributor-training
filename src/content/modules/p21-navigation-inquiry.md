@@ -318,16 +318,16 @@ Price depends on the customer. Check a customer's price in Sales Pricing Inquiry
 
 ### Order Inquiry
 
-Order Inquiry shows one order from entry to invoice. Open it by order number, by the customer's PO number, or from a line in sales history.
+Order Inquiry shows one order from entry to invoice. Open it by order or by item, or from a line in sales history, then drill into the order. The line items open on the main screen.
 
 | Where | What to read | What it tells you |
 |---|---|---|
 | Main screen | Order number, customer, ship-to, PO number, status | Which order you have and where it stands |
-| Lines | Item, quantity ordered, quantity shipped, UOM, disposition | What was ordered and what is still open |
+| Main screen, line items | Item, quantity ordered, quantity shipped, UOM, disposition | What was ordered and what is still open |
 | Shipments | Ship date, carrier, quantity shipped | What left the building and when |
 | Invoices | Invoice number and date | What has billed |
 
-[IMAGE EXAMPLE: Order Inquiry main screen with the order number, customer, PO number, and status highlighted, and the Lines, Shipments, and Invoices tabs highlighted]
+[IMAGE EXAMPLE: Order Inquiry main screen with the order number, customer, PO number, status, and line items highlighted, and the Shipments and Invoices tabs highlighted]
 
 ### Answering the common questions
 
