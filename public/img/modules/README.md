@@ -6,21 +6,17 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 
 | File name | Module | What the picture shows | Done |
 |---|---|---|---|
-| `distributor-business-1` | 1 | A simple flow graphic: hose mill and gasket sheet maker on the left, the branch warehouse and fabrication shop in the middle, a paper mill, a farm, a chemical plant, and an excavator on the right | Yes |
-| `distributor-business-2` | 1 | A hose assembly bench with a crimper, a cutoff saw, and a rack of crimp dies | Yes |
-| `distributor-business-3` | 1 | Finished industrial hose assemblies with couplings attached, laid out for shipping | Yes |
-| `distributor-business-4` | 1 | A pulp and paper mill | Yes |
-| `distributor-business-5` | 1 | A paper machine. Water, steam, and chemical lines run its full length | Yes |
-| `distributor-business-6` | 1 | A combine harvesting wheat. Hydraulic hose runs the header, the reel, and the unloading auger | Yes |
-| `distributor-business-7` | 1 | A center-pivot irrigation system with a chemical injection pump at the pivot point | Yes |
-| `distributor-business-8` | 1 | A chemical plant: process piping, tanks, and pumps | Yes |
-| `distributor-business-9` | 1 | A tank truck unloading through suction hoses and quick couplings | Yes |
-| `distributor-business-10` | 1 | An excavator at work. Hydraulic hoses run along the boom to the cylinders that move the arm and bucket | Yes |
+| `distributor-business-1` | 1 | Flow graphic: hose mill and gasket sheet maker on the left, the branch warehouse and fabrication shop in the middle, a paper mill, a farm, a chemical plant, and an excavator on the right | Yes |
+| `distributor-business-2` | 1 | A pulp and paper mill | Yes |
+| `distributor-business-3` | 1 | A combine harvesting wheat. Hydraulic hose runs the header, the reel, and the unloading auger | Yes |
+| `distributor-business-4` | 1 | A chemical plant: process piping, tanks, and pumps | Yes |
+| `distributor-business-5` | 1 | An excavator at work. Hydraulic hoses run along the boom to the cylinders | Yes |
+| `distributor-business-6` | 1 | Order sourcing: one saved order fills from stock, the shop, a transfer, a special order, or a direct ship, and every path ends in one invoice | Yes |
 | `p21-navigation-inquiry-1` | 2 | The P21 sign-in window. The title shows which system you are signing in to; this one says LIVE | Yes |
 | `p21-navigation-inquiry-2` | 2 | The P21 menu open over Order Entry. Starred windows are your favorites | Yes |
 | `p21-navigation-inquiry-3` | 2 | Customer Master Inquiry main screen with the customer ID and contacts highlighted, and the Physical Address, Credit Status, Ship To / Salesrep, Customer Sales History, Open Orders, and Open Quotes tabs highlighted | Yes |
 | `p21-navigation-inquiry-4` | 2 | Item Master Inquiry main screen with the item ID, description, location, available quantity, and unit of measure highlighted, and the Inventory, Open PO, Open Order, and Open Quote tabs highlighted | Yes |
-| `p21-navigation-inquiry-5` | 2 | Customer Master Inquiry main screen with the customer ID highlighted and the Customer Sales History tab highlighted, open to a date range with one hose line and its order number |  |
+| `p21-navigation-inquiry-5` | 2 | Customer Master Inquiry main screen with the customer ID highlighted and the Customer Sales History tab highlighted, open to a date range with one hose line and its order number | Yes |
 | `customer-records-1` | 3 | Contact Maintenance main screen with the name, title, phone, and email highlighted, and the tabs that hold the customer link and document settings highlighted |  |
 | `customer-records-2` | 3 | Ship To Maintenance main screen with the ship-to name and address highlighted, and the tabs that hold the carrier, delivery instructions, and tax settings highlighted |  |
 | `fluid-conveyance-fundamentals-1` | 4 | Cut hose ends showing the tube, the wire reinforcement, and the cover | Yes |
