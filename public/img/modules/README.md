@@ -14,9 +14,10 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `distributor-business-6` | 1 | Order sourcing: one saved order fills from stock, the shop, a transfer, a special order, or a direct ship, and every path ends in one invoice | Yes |
 | `p21-navigation-inquiry-1` | 2 | The P21 sign-in window. The title shows which system you are signing in to; this one says LIVE | Yes |
 | `p21-navigation-inquiry-2` | 2 | The P21 menu open over Order Entry. Starred windows are your favorites | Yes |
-| `p21-navigation-inquiry-3` | 2 | Customer Master Inquiry main screen with the customer ID and contacts highlighted, and the Physical Address, Credit Status, Ship To / Salesrep, Customer Sales History, Open Orders, and Open Quotes tabs highlighted | Yes |
-| `p21-navigation-inquiry-4` | 2 | Item Master Inquiry main screen with the item ID, description, location, available quantity, and unit of measure highlighted, and the Inventory, Open PO, Open Order, and Open Quote tabs highlighted | Yes |
+| `p21-navigation-inquiry-3` | 2 | Customer Master Inquiry main screen with the customer ID and contacts highlighted, and the Physical Address, Credit Status, Ship To / Salesrep, Customer Notes, Customer Sales History, Open Orders, and Open Quotes tabs highlighted | Yes |
+| `p21-navigation-inquiry-4` | 2 | Item Master Inquiry main screen with the item ID, description, location, net quantity available, and unit of measure highlighted, and the Inventory, Open PO, Open Order, Transfer, and Substitute tabs highlighted | Yes |
 | `p21-navigation-inquiry-5` | 2 | Customer Master Inquiry main screen with the customer ID highlighted and the Customer Sales History tab highlighted, open to a date range with one hose line and its order number | Yes |
+| `p21-navigation-inquiry-6` | 2 | Order Inquiry main screen with the order number, customer, PO number, and status highlighted, and the Lines, Shipments, and Invoices tabs highlighted |  |
 | `customer-records-1` | 3 | Contact Maintenance main screen with the name, title, phone, and email highlighted, and the tabs that hold the customer link and document settings highlighted |  |
 | `customer-records-2` | 3 | Ship To Maintenance main screen with the ship-to name and address highlighted, and the tabs that hold the carrier, delivery instructions, and tax settings highlighted |  |
 | `fluid-conveyance-fundamentals-1` | 4 | Cut hose ends showing the tube, the wire reinforcement, and the cover | Yes |
