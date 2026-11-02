@@ -7,10 +7,17 @@ export async function getStaticPaths() {
   return mods.map((m) => ({ params: { slug: m.slug }, props: { m } }));
 }
 const { m } = Astro.props;
-const { Content } = await m.render();
+const { Content, headings } = await m.render();
+const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
 const d = m.data;
 ---
 <Base title={`Module ${d.number}: ${d.title}`} current="course" description={d.summary}>
+  <div class="layout">
+  <nav class="toc" aria-label="On this page">
+    <b>On this page</b>
+    {toc.map((h) => <a class={`l${h.depth}`} href={`#${h.slug}`}>{h.text}</a>)}
+    <a href="#complete">Finish this module</a>
+  </nav>
   <article class="prose">
     <p class="eyebrow">Week {d.week} · Module {d.number}</p>
     <h1>{d.title}</h1>
@@ -32,6 +39,7 @@ const d = m.data;
     </div>
     <p><a href={u('course')}>Back to the course outline</a></p>
   </article>
+  </div>
   <script>
     import { supabase } from '../../lib/supabase';
     const box = document.getElementById('complete')!;
