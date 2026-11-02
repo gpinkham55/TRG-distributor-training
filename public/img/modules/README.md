@@ -17,7 +17,7 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `p21-navigation-inquiry-3` | 2 | Customer Master Inquiry main screen with the customer ID and contacts highlighted, and the Physical Address, Credit Status, Ship To / Salesrep, Customer Notes, Customer Sales History, Open Orders, and Open Quotes tabs highlighted | Yes |
 | `p21-navigation-inquiry-4` | 2 | Item Master Inquiry main screen with the item ID, description, location, net quantity available, and unit of measure highlighted, and the Inventory, Open PO, Open Order, Transfer, and Substitute tabs highlighted | Yes |
 | `p21-navigation-inquiry-5` | 2 | Customer Master Inquiry main screen with the customer ID highlighted and the Customer Sales History tab highlighted, open to a date range with one hose line and its order number | Yes |
-| `p21-navigation-inquiry-6` | 2 | Order Inquiry main screen with the order number, customer, PO number, and status highlighted, and the Lines, Shipments, and Invoices tabs highlighted |  |
+| `p21-navigation-inquiry-6` | 2 | Order Inquiry main screen with the order number, customer, PO number, status, and line items highlighted, and the Shipments and Invoices tabs highlighted |  |
 | `customer-records-1` | 3 | Contact Maintenance main screen with the name, title, phone, and email highlighted, and the tabs that hold the customer link and document settings highlighted |  |
 | `customer-records-2` | 3 | Ship To Maintenance main screen with the ship-to name and address highlighted, and the tabs that hold the carrier, delivery instructions, and tax settings highlighted |  |
 | `fluid-conveyance-fundamentals-1` | 4 | Cut hose ends showing the tube, the wire reinforcement, and the cover | Yes |
