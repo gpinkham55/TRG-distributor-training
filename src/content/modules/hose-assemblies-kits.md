@@ -2,170 +2,261 @@
 number: 9
 title: Hose Assemblies as Kits
 week: 3
-minutes: 210
-signoff: true
+minutes: 240
+signoff: false
 status: published
-summary: The assembly spec, how the shop cuts, cleans, and crimps an assembly, proof testing and tagging, and selling assemblies as kits and hose by the foot in P21.
+summary: The assembly spec, cut length, the build and crimp check, hydrostatic testing and tagging, entering assemblies as kits in P21, and cut-to-length hose and remnants.
 ---
 
-A hose assembly is bulk hose cut to length with a fitting attached on each end, tested, and tagged. It is the product a branch builds most often. This module covers the spec you need before building, how the shop builds and crimps an assembly, how it is tested and tagged, and how assemblies and cut-to-length hose are set up and sold in P21.
+A hose assembly is bulk hose cut to length with a fitting on each end. It is the product a branch builds most often. Every step depends on the step before it. This module covers the spec, the build, the crimp chart, testing and tagging, assemblies as kits in P21, and cut-to-length hose.
 
 ### Learning objectives
 
 After this module you will be able to:
 
 1. Write a complete assembly spec from a customer request or a failed hose.
-2. Explain the build steps: cut, clean, insert, crimp, and check.
-3. Read a crimp chart and check a crimp diameter with calipers.
-4. Explain proof testing and what goes on an assembly tag.
-5. Sell an assembly as a kit and bulk hose by the foot in P21.
+2. Figure the cut length from the overall length and the fitting cutoffs.
+3. Explain the build steps: cut, clean, skive when required, insert, crimp, check, and cap.
+4. Read a crimp chart and check a crimp diameter with calipers against its tolerance.
+5. Explain hydrostatic testing, test certificates, and what goes on an assembly tag.
+6. Enter an assembly as a kit item in P21 with the spec in the extended description.
+7. Sell bulk hose by the foot and check reels and remnants before promising a continuous length.
 
-> ⚠️ SAFETY & COMPLIANCE: Wear safety glasses when cutting hose or running the crimper. Crimp only after your mentor has trained you on that machine and signed off that you can crimp on your own.
+> ⚠️ SAFETY & COMPLIANCE: Wear safety glasses when cutting hose or running the crimper. Run the saw and the crimper only after your mentor trains you on that machine.
 
 ## 9.1 The Assembly Spec
 
-The spec is everything the shop needs to build the assembly right the first time. Get it before you quote. Most of it comes from the STAMPED questions (Module 4).
+The spec is everything the shop needs to build the assembly. Get it before you quote. Most of it comes from the STAMPED questions (Module 4).
 
 | Spec item | Example |
 |---|---|
 | Hose type and size | 2-wire hydraulic, -8 (1/2 in ID) |
-| Working pressure needed | 3,000 psi |
+| Working pressure needed | 3,000 psi, including surges |
+| Media and temperature | Petroleum hydraulic oil, 180°F |
 | Fitting, end 1 | -8 female JIC 37° swivel, straight |
 | Fitting, end 2 | -8 female JIC 37° swivel, 90° elbow |
 | Overall length | 48 in, end of fitting to end of fitting (centerline of the elbow's sealing face) |
-| Orientation | Angle between two elbows, if both ends are elbows |
+| Orientation | Angle between two elbows, when both ends are elbows |
 | Guards or sleeves | Nylon abrasion sleeve, 36 in |
-| Quantity | 2 |
-| Testing and tagging | Proof test; tag with the customer's equipment number |
 
 ### From a failed hose
 
-When a customer brings in a failed assembly:
-
-1. Read the layline for the hose type, size, and pressure.
-2. Identify each fitting (Module 7) and note any elbows.
-3. Measure the overall length and the orientation between elbows.
-4. Ask why it failed: rubbing, heat, kinking, or age. A different hose, a sleeve, or a different fitting angle may prevent the next failure.
+1. Ask what it carried, and wear gloves when handling it.
+2. Read the layline for the hose type, size, and pressure.
+3. Identify each fitting (Module 7) and note any elbows.
+4. Measure the overall length and the orientation between elbows.
+5. Ask why it failed: rubbing, heat, kinking, or age. A different hose, a sleeve, or a different fitting angle may prevent the next failure.
+6. Write the spec in the order line's extended description.
 
 [IMAGE EXAMPLE: A failed hydraulic assembly on the counter beside a tape measure, with the layline and both fittings visible]
 
-> 💡 KEY TAKEAWAY: A complete spec on the order is the difference between a right first build and a second trip for the customer.
+> 💡 KEY TAKEAWAY: The shop builds from the written spec. A spec missing one item gets built wrong or held until someone calls the customer back.
 
 ## 9.2 Building an Assembly
 
-Your mentor teaches the build at the bench. This section explains each step so you know what the shop does and why it takes the time it does.
-
-| Step | What happens | Why |
+| Step | What happens | Reason |
 |---|---|---|
-| 1. Figure the cut length | Overall length minus the length each fitting adds (the "cutoff" from the fitting chart) | The fittings add length; cutting to the overall length makes the assembly too long |
+| 1. Figure the cut length | Overall length minus each fitting's cutoff from the maker's chart | The fittings add length; a hose cut to the overall length builds too long |
 | 2. Cut | Square cut on the hose saw | A crooked cut leaves the hose short of the fitting stop |
-| 3. Clean | Blow clean with cleaning pellets (projectiles) or filtered air | Rubber and wire dust from the saw damages pumps and valves |
-| 4. Skive, if required | Remove cover (and sometimes inner tube) where the fitting goes | Only for hose and fittings the maker lists as skive type; most modern fittings are no-skive |
-| 5. Mark and insert | Mark the insertion depth, push the fitting in to the mark | A fitting not fully inserted can blow off |
-| 6. Crimp | Crimp with the die set and crimp diameter from the maker's chart | The right squeeze holds the fitting; too little leaks or blows off, too much cuts the wire |
-| 7. Check | Measure the crimp diameter with calipers; check length and elbow angle | Catches a wrong die or setting before the hose leaves the shop |
-| 8. Cap | Cap or plug both ends | Keeps dirt out until install |
+| 3. Clean | Blow clean with cleaning projectiles or filtered air | Rubber and wire dust from the saw damages pumps and valves |
+| 4. Skive, when required | Remove the cover where the fitting goes | Only for hose and fittings the maker lists as skive type; most current fittings are no-skive |
+| 5. Mark and insert | Mark the insertion depth, push the fitting in to the mark | A fitting short of the mark can blow off |
+| 6. Crimp | Crimp with the die set and setting from the maker's chart | Too little squeeze leaks or blows off; too much cuts the wire |
+| 7. Check | Measure the crimp diameter with calipers; check length and orientation | Catches a wrong die or setting before the hose leaves the shop |
+| 8. Sleeve or guard | Slide on any sleeve or spring guard | Protects the cover where it rubs |
+
+### Figuring the cut length
+
+Each fitting adds length beyond the end of the hose. The maker's chart lists this as the **cutoff** for each fitting. Subtract both cutoffs from the overall length.
+
+Example with placeholder cutoffs: a 48 in overall assembly with a straight female JIC (cutoff 1.50 in) and a 90° female JIC elbow (cutoff 2.50 in).
+
+| Step | Math | Result |
+|---|---|---|
+| Overall length |  | 48.00 in |
+| Less both cutoffs | 48.00 − 1.50 − 2.50 | 44.00 in |
+| Cut length in feet | 44.00 ÷ 12 | 3.67 FT |
 
 [IMAGE EXAMPLE: A crimper with a die set open, a hose with a fitting inserted to its depth mark, and calipers checking a finished crimp]
 
-### The crimp chart
+> 📌 INDUSTRY INSIGHT: Most fitting blow-offs potentially come from three shop errors: the wrong fitting for the hose, a fitting short of the depth mark, or the wrong crimp diameter.
 
-Every hose and fitting maker publishes a crimp chart. For each hose type, size, and fitting series, it lists the die set, the crimper setting, and the **crimp diameter** with a tolerance. Check the finished crimp with calipers against that number.
+## 9.3 The Crimp Chart and Crimp Tolerances
 
-> ⚠️ SAFETY & COMPLIANCE: Crimp only matched hose and fittings from the maker's chart. A crimp outside the chart's tolerance gets cut off and rebuilt, not sent out.
+Every hose and fitting maker publishes a crimp chart. For each hose type, size, and fitting series, it lists:
 
-> 📌 INDUSTRY INSIGHT: Most fitting blow-offs in the field come from three shop errors: the wrong fitting for the hose, a fitting not pushed in to the depth mark, or the wrong crimp diameter. A 10-second caliper check catches the last one.
-
-## 9.3 Testing and Tagging
-
-### Proof testing
-
-A proof test fills the assembly with water and raises it to a set pressure, often twice the working pressure for hydraulic hose, and holds it for 30 to 60 seconds. A good assembly shows no leaks, no bulges, and no movement at the fittings.
-
-| Test | Who asks for it |
+| Chart item | What it tells the shop |
 |---|---|
-| Proof test on every assembly | Steam, chemical, and some plant hydraulic customers; your branch's standard |
-| Proof test on request | Many customers ask for it on critical lines |
-| Test certificate | Customers who need a record for their safety or quality files |
+| Hose and fitting series | Which fittings are approved on which hose |
+| Die set | The dies that go in the crimper |
+| Crimper setting | The dial or micrometer setting for that die |
+| Crimp diameter | The finished diameter across the crimped ferrule |
+| Tolerance | How far the crimp diameter may be above or below the target |
+| Skive or no-skive | Whether the cover comes off first |
 
-> ⚠️ SAFETY & COMPLIANCE: Test with water, never with air or gas. A hose that fails during an air test releases stored energy and can whip or explode. Use the test bench's guard and stay clear when it is under pressure.
+### Steps: check a crimp
+
+1. Find the hose type, size, and fitting series on the maker's chart.
+2. Read the target crimp diameter and its tolerance.
+3. Measure the finished crimp with calipers across the flats of the ferrule, in two places 90° apart.
+4. Compare both readings with the target and tolerance.
+5. In tolerance: the assembly moves on. Out of tolerance: cut the fitting off and rebuild.
+
+> ⚠️ SAFETY & COMPLIANCE: Crimp only matched hose and fittings from one maker's chart. Cut off and rebuild any crimp outside the chart's tolerance.
+
+> 💡 KEY TAKEAWAY: Always refer to the crimp chart to ensure fittings are crimped within manufacturer established tolerances.
+
+## 9.4 Testing and Tagging
+
+### Hydrostatic testing
+
+A hydrostatic test fills the assembly with water, raises it to the test pressure, and holds it for a set time. The test pressure and hold time come from the hose maker or the NAHAD guidelines for that hose type. A good assembly shows no leaks, no bulges, and no movement at the fittings.
+
+> ⚠️ SAFETY & COMPLIANCE: Test with water. A hose that fails under air or gas releases stored energy and can whip or explode. Close the guard and stay clear when performing the test.
 
 ### The assembly tag
 
-A tag lets the customer reorder and lets anyone see what the hose is rated for.
+A tag lets the customer reorder and shows what the hose is rated for.
 
 - Your branch and its phone number
 - Assembly or item number
 - Hose type, size, and working pressure
-- Test pressure and test date, if tested
-- The customer's equipment or tag number, if they gave one
+- Test pressure and test date, when tested
+- The customer's equipment or tag number, when they gave one
 
 [IMAGE EXAMPLE: A finished assembly with a metal or printed tag showing the branch, assembly number, working pressure, and test date]
 
-> 💡 KEY TAKEAWAY: A good tag sells the next hose. When a customer can read your assembly number off a failed hose, the reorder takes one call.
+> 💡 KEY TAKEAWAY: When a customer can read your assembly number off a failed hose, the reorder call comes to you..
 
-## 9.4 Assemblies as Kits in P21, and Cut-to-Length Hose
+## 9.5 Assemblies as Kits in P21
 
-### What a kit is
+Enter every hose assembly as a **kit**: one item sold by the each (EA), made of component items. When the kit ships, P21 takes each component out of stock and adds up the cost.
 
-In P21, a hose assembly is set up as a **kit**: one item sold by the each (EA), made of component items. When the kit ships, P21 takes each component out of stock and adds up the cost.
-
-Example kit: a 48 in, -8 two-wire assembly with two female JIC swivels, one of them a 90° elbow.
+Example kit: the 48 in, -8 two-wire assembly from 9.2.
 
 | Component | Unit | Quantity per kit |
 |---|---|---|
-| -8 two-wire hydraulic hose | FT | 3.75 (the cut length, from 9.2) |
+| -8 two-wire hydraulic hose | FT | 3.67 (the cut length) |
 | -8 female JIC swivel, straight | EA | 1 |
 | -8 female JIC swivel, 90° elbow | EA | 1 |
 | Assembly labor | HR | 0.25 |
 
-Labor is priced at the shop rate in 15-minute increments. This course uses a placeholder shop rate of $150 per hour; your manager gives you your branch's real rate.
+Labor is priced at the shop rate. This course uses a placeholder shop rate of $150 per hour; your manager gives you your branch's rate.
 
 ### Steps: sell an assembly
 
-1. Search for an assembly item that matches the spec. Repeat assemblies usually have their own item, often with the customer's part number.
-2. If one is on file, enter it on the order and confirm the spec with the customer.
-3. If none is on file, ask your mentor whether to set up a new kit item or enter the components as separate lines. Never guess the build.
-4. Put the overall length, the elbow angle, and any test or tag request in the line note.
-5. Check with the shop before you promise a ship date.
+1. Press **F8** and check Customer Sales History. Repeat assemblies usually have their own kit item, often with the customer's part number.
+2. When a kit item is on file, enter it and read the spec back to the customer.
+3. When no kit item is on file, bring in your mentor to set up the kit part number.
+4. Put the overall length, orientation, sleeve, and test or tag request in the line's **extended description**.
+5. Press **F2** and check net available on the hose and every fitting.
+6. Check the shop's schedule before you promise a ship date.
 
-> 📌 INDUSTRY INSIGHT: Each branch sets up kits a little differently, and some use production orders to build them. Follow your branch's setup; your mentor shows you which one you use.
+> 📌 INDUSTRY INSIGHT: A kit item on file makes reorders easy. Set up a kit for any assembly a customer is likely to buy again.
 
-### Cut-to-length hose
+## 9.6 Cut-to-Length Hose and Remnants
 
 Bulk hose sold without fittings is sold by the foot (FT) from a reel.
 
-- Check the **available** feet before you promise a quantity.
-- P21 shows the total feet in stock, not the length on each reel. A customer who needs one continuous 100 ft length needs one reel or remnant with at least 100 ft on it. Ask the warehouse to check.
-- Ask whether the customer needs one piece or several. "100 ft" and "four 25 ft pieces" are different cuts.
-- Many branches have a minimum cut or a cut charge for short lengths. Ask your mentor.
+- Check **net available** feet before you promise a quantity.
+- P21 shows the total feet in stock, across every reel and remnant. A customer who needs one continuous 100 FT length needs one reel or remnant with at least 100 FT. Ask the warehouse to check.
+- Ask whether the customer needs one piece or several. "100 feet" is not the same price as  "four 25 foot pieces".
 
-> 💡 KEY TAKEAWAY: P21 counts feet, not reels. Before you promise a long continuous length, have someone look at the reel.
+### Using remnants
 
-## 9.5 Practice, Knowledge Check, and Module Quiz
+1. Check the remnant rack before you cut a full reel.
+2. Use the shortest remnant that fills the order.
+3. Tag the drop left after the cut with the hose type, size, and length, and put it on the remnant rack.
+
+| Order | On hand | Cut from |
+|---|---|---|
+| 22 FT | 18 FT, 25 FT, and 30 FT remnants, and a new reel | The 25 FT remnant |
+| 40 FT | 18 FT, 25 FT, and 30 FT remnants, and a new reel | The reel |
+| 18 FT | 18 FT and 25 FT remnants | The 18 FT remnant |
+
+> 💡 KEY TAKEAWAY: P21 counts feet. Before you promise a long continuous length, have someone look at the reels and the remnant rack.
+
+## 9.7 Case Study, What If, and Rookie Mistakes
+
+### Case study: the tagged reorder
+
+A planner emails a photo of a hose tag: "Need four more of these for the press section. Test certs required."
+
+1. **The tag.** It shows the branch, the kit item number, 1 in steam hose, 250 psi working pressure, and a test date.
+2. **P21.** F8, Customer Sales History, filtered on the kit item: the last order was six assemblies with the same spec. The rep opens the order and reads the extended description: 72 in overall, crimped steam fittings from the hose maker's chart, test and tag.
+3. **Stock.** F2 shows 30 FT of 1 in steam hose net available; four assemblies need about 22 FT. All fittings and ferrules are on hand.
+4. **Order.** The rep enters the kit item, quantity 4, with "Hydrostatic test. Test certificates required." in the extended description, and checks the shop: ready in two days.
+5. **Shop.** The shop builds all four. The crimp check passes on all four.
+6. **Test.** All four pass the hydrostatic test. The shop tags each one and prints four certificates.
+7. **Ship.** The rep confirms the shipment and emails the certificates to the planner.
+
+The tag made the reorder one email.
+
+### What if...
+
+| Situation | What to do | Reason |
+|---|---|---|
+| No kit item matches the spec | Bring in your mentor to set up the kit | The shop builds from the kit and the spec |
+| The customer gives only "same as before" | Find the kit in Customer Sales History and read the spec back | History holds the exact build |
+| The shop is out of one fitting | Ask your mentor; switch hose and fittings together to one maker's system | Mixed systems blow off |
+| A crimp measures outside tolerance | Cut it off and rebuild | An out-of-tolerance crimp can blow off |
+| A long continuous length is needed | Have the warehouse check reels and remnants | P21 counts total feet |
+| The customer needs a test certificate | Put it in the extended description at order entry | The shop tests and prints it with the build |
+
+### Rookie mistakes
+
+| Mistake | What it causes | The habit that prevents it |
+|---|---|---|
+| Cutting hose to the overall length | An assembly too long | Subtract both fitting cutoffs |
+| Skipping the cleaning step | Contamination in the customer's system | Clean every cut |
+| Missing the depth mark | A fitting that blows off | Mark and insert to the mark |
+| Skipping the caliper check | A bad crimp shipped | Measure every crimp in two places |
+| Cutting a new reel when a remnant fits | Untagged drops and lost money | Check the remnant rack first |
+
+## 9.8 Assembly Terms
+
+| Term | Meaning |
+|---|---|
+| Assembly | Bulk hose with fittings attached, built to order |
+| Spec | Everything the shop needs to build the assembly |
+| Overall length | End of one fitting to the end of the other |
+| Cutoff | The length a fitting adds beyond the end of the hose |
+| Cut length | Overall length minus both cutoffs |
+| Cleaning projectile | A foam plug blown through the hose to clean it |
+| Skive | Removing the cover before crimping |
+| Insertion depth | How far the hose goes into the fitting; marked before crimping |
+| Crimp chart | The maker's table of dies, settings, and crimp diameters |
+| Crimp diameter | The measured diameter of a finished crimp |
+| Tolerance | The allowed range above and below the target crimp diameter |
+| Hydrostatic test | A pressure test with water |
+| Test certificate | A record of the test pressure, date, and result |
+| Kit | An assembly set up in P21 as one item with component items |
+| Component | One item inside a kit: hose, fitting, sleeve, labor |
+| Remnant (drop) | The piece left after a cut |
+
+## 9.9 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
 
 1. **Spec.** Your mentor hands you a failed assembly. Write a complete spec: hose, fittings, overall length, orientation, and any sleeve.
-2. **Crimp chart.** Look up the die set and crimp diameter for a -8 two-wire hose with the matching fittings in your branch's crimp chart.
-3. **Watch a build.** Watch your mentor build, crimp, check, and tag an assembly. Write each step.
-4. **Build.** With your mentor beside you, build one assembly from a spec, measure the crimp, and tag it.
-5. **P21 kit.** Look up an assembly item in the P21Play System and list its components and quantities.
-6. **Cut-to-length.** A practice caller wants 150 ft of 2 in suction hose in one piece. Check stock and say what you would ask the warehouse.
+2. **Cut length.** Using the maker's chart, figure the cut length for a 60 in -8 assembly with a straight female JIC on one end and a 45° female JIC elbow on the other.
+3. **Crimp chart.** Look up the die set, setting, crimp diameter, and tolerance for a -8 two-wire hose with the matching fittings.
+4. **Watch a build.** Watch your mentor build, crimp, check, test, and tag an assembly. Write each step.
+5. **Build.** With your mentor beside you, build one assembly from a spec, measure the crimp in two places, and tag it.
 
-### Knowledge check (practice, not graded)
+### Knowledge check (practice)
 
 1. Why is the cut length shorter than the overall length?
 2. What does the crimp chart give you for each hose and fitting?
-3. What should you test an assembly with: water or air?
-4. List three things on an assembly tag.
-5. A kit ships. What does P21 do with the components?
-6. P21 shows 300 ft of a hose in stock. Can you promise one continuous 150 ft piece?
-7. What is the most common cause of a fitting blowing off?
+3. How many places do you measure a crimp, and what do you do with an out-of-tolerance crimp?
+4. What do you test an assembly with?
+5. List three things on an assembly tag.
+6. A kit ships. What does P21 do with the components?
+7. P21 shows 300 FT of a hose in stock. Can you promise one continuous 150 FT piece?
+8. Where does a test certificate request go on the order?
 
 Work these on your own, then check your answers with your mentor.
 
 ### Module quiz
 
-- **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Mentor sign-off:** build, measure, and tag one assembly from a written spec, with the crimp diameter in tolerance and the length within the shop's standard.
+Pass the module quiz to complete this module. The quiz has 10 questions: the module's scenario questions plus questions drawn from the module pool. You need 80% to pass and have 3 tries.
