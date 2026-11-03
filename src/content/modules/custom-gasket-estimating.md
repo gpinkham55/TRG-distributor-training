@@ -2,41 +2,62 @@
 number: 12
 title: Custom Gasket Fabrication and Estimating
 week: 3
-minutes: 210
-signoff: true
+minutes: 240
+signoff: false
 status: published
-summary: Waterjet and die cutting, material yield and nesting, scrap, cutting time, the house pricing formula with placeholder values, and selling cut gaskets in P21.
+summary: Waterjet, die, and hand cutting, job intake, material yield and nesting, scrap and remnants, cutting time, the house pricing formula with placeholder values, and quoting and selling cut gaskets as kits in P21.
 ---
 
-Many branches cut custom gaskets from sheet on a waterjet or with a steel rule die. This module explains how custom gaskets are made, how to figure the material and time a job takes, and how to price it with the house formula. All rates, costs, and markups here are placeholder values for teaching; your manager gives you your branch's real figures.
+Many branches cut custom gaskets from sheet on a waterjet or with a steel rule die. This module covers how custom gaskets are made, how to take in a job, how to figure the material and time it takes, and how to price it with the house formula. A pricing mistake on a cut gasket shows up on every piece in the order. All rates, costs, and markups here are placeholder values for teaching; your manager gives you your branch's figures.
 
 ### Learning objectives
 
 After this module you will be able to:
 
-1. Choose between waterjet and die cutting for a custom gasket job.
-2. Calculate the square inches of material a job uses, including spacing and scrap.
-3. Estimate machine and labor time and round it to the next 15 minutes.
-4. Price a gasket job with the house formula and convert it to a price each.
-5. Set up and sell a cut gasket in P21 using the right units of measure.
+1. Choose between waterjet, die, and hand cutting for a custom gasket job.
+2. Take in a job: drawing or DXF, dimensions, material, and quantity.
+3. Calculate the square inches a job uses, including spacing, edge margin, and scrap.
+4. Estimate waterjet and die cutting time and round labor up to the next 15 minutes.
+5. Price a job with the house formula and convert it to a price each.
+6. Set up and sell a cut gasket as a kit in P21 with the right units of measure.
 
-## 12.1 How Custom Gaskets Are Made
+> ⚠️ SAFETY & COMPLIANCE: Wear safety glasses when cutting. Run the waterjet or die press only after your mentor trains you on that machine.
 
-A custom gasket starts as sheet or roll material and is cut to a drawing, a sample, or a standard flange size. Distributors use three cutting methods.
+## 12.1 Cutting Methods and Job Intake
+
+A custom gasket starts as sheet or roll material and is cut to a drawing, a sample, or a standard flange size.
 
 | Method | How it works | Best for | Limits |
 |---|---|---|---|
 | Waterjet | A high-pressure water stream, often with garnet abrasive, follows a CNC path from a DXF or CAD file | Short and medium runs, prototypes, complex shapes, thick or hard materials, metal | Slower per part than a die on long runs |
-| Steel rule die | A press drives a steel blade formed to the part shape through the material | Long repeat runs of the same part, thin soft materials | A die costs money and time to make; one die per shape |
+| Steel rule die | A press drives a steel blade formed to the part shape through the material | Long repeat runs of one part, thin soft materials | A die costs money and time to make; one die per shape |
 | Hand or circle cutter | A circle cutter, knife, or punch | One-off emergency repairs, simple rings | Slow, less accurate, no repeatability |
 
 [IMAGE EXAMPLE: A waterjet cutting head over a sheet of compressed gasket material, with nested full-face gaskets partly cut]
 
 [IMAGE EXAMPLE: A steel rule die on a press bed, showing the blade, ejection rubber, and a finished gasket beside it]
 
-> 📌 INDUSTRY INSIGHT: Most new custom gasket business is cut on the waterjet. It needs no tooling, turns jobs in hours instead of weeks, and handles one piece or a thousand. Die cutting stays in use for high-volume repeat parts where the die is already made.
+> 📌 INDUSTRY INSIGHT: Most new custom gasket business is cut on the waterjet. It needs no tooling, turns jobs in hours, and handles one piece or a thousand. Die cutting stays in use for high-volume repeat parts with a die already made.
 
-> ⚠️ SAFETY & COMPLIANCE: Wear safety glasses when cutting. Run the waterjet or die press only after your mentor has trained you on that machine.
+### Job intake
+
+| What you need | Best source | Fallback |
+|---|---|---|
+| Shape and dimensions | A DXF or CAD file | A dimensioned drawing, a standard flange size, a tracing, or a sample part |
+| Material and thickness | The drawing or spec callout (Module 10) | The service: media, temperature, pressure |
+| Quantity and repeat volume | The customer | Ask: "How many a year?" |
+| Delivery | The customer | Check the waterjet schedule before you promise |
+
+### Steps: take in a custom gasket job
+
+1. Ask for a DXF first. It saves programming time and removes measuring errors.
+2. Without a file, get a dimensioned drawing or a tracing on paper with the bolt holes marked.
+3. With only a sample part, measure it and have your mentor confirm before you quote.
+4. Confirm the material for the service (Module 10).
+5. Ask the quantity now and the expected yearly volume. Volume decides waterjet or die.
+6. Write every detail in the quote line's extended description.
+
+> ⚠️ SAFETY & COMPLIANCE: Old gasket samples from steam lines may contain asbestos. Handle them as little as possible and ask your mentor.
 
 ## 12.2 Material Yield and Nesting
 
@@ -50,33 +71,39 @@ Every part takes up more than its own size. It needs a **footprint**: the part's
 
 Round each count **down**: a partial part is scrap.
 
-**Worked example (footprint).** A 4 in Class 150 full-face gasket is 9.00 in OD. With 0.125 in spacing the footprint is 9.125 in × 9.125 in = **83.27 in²**. On a 60 in × 60 in sheet with a 0.5 in edge margin: (60 − 1.0) ÷ 9.125 = 6.47, so 6 across and 6 down = **36 parts per sheet**.
+**Worked example.** A 4 in Class 150 full-face gasket is 9.00 in OD. With 0.125 in spacing the footprint is 9.125 in × 9.125 in = **83.27 in²**. On a 60 in × 60 in sheet with a 0.5 in edge margin: (60 − 1.0) ÷ 9.125 = 6.47, so 6 across and 6 down = **36 parts per sheet**.
 
 ### Nesting tips
 
 - Cut small rings from the center drop of large rings when the order mixes sizes. The drop from a 4 in Class 150 ring (4.50 in ID) yields a 2 in ring (4.12 in OD).
-- Stagger round parts in rows (offset like eggs in a carton) to beat the square grid by 5% to 10%.
+- Stagger round parts in rows, offset like eggs in a carton, to beat the square grid by 5% to 10%.
 - Turn long, narrow parts to match the sheet's long side or the roll width.
 
 [IMAGE EXAMPLE: Two nests of the same ring gasket side by side, a square grid and a staggered grid, with parts-per-sheet counts labeled]
 
-> 💡 KEY TAKEAWAY: Price from the footprint, not the part. A 9 in round gasket has a 63.6 in² area but uses 83.3 in² of sheet.
+> 💡 KEY TAKEAWAY: Price from the footprint. A 9 in round gasket has a 63.6 in² area and uses 83.3 in² of sheet.
 
-## 12.3 Scrap and Waste
+## 12.3 Scrap and Remnants
 
-Not all leftover material can be sold again. A **scrap factor** adds a percentage to the material used to cover what is thrown away.
+Some leftover material goes back to stock; the rest is scrap. A **scrap factor** adds a percentage to the material used to cover what is thrown away.
 
 - **Material used** = footprint × quantity × (1 + scrap factor)
 
 | Situation | Typical scrap factor (illustrative) |
 |---|---|
 | Cut from a remnant that would otherwise be scrapped | 0% |
-| Simple rings or rectangles, leftover sheet goes back to stock | 5% |
+| Simple rings or rectangles; leftover sheet goes back to stock | 5% |
 | Irregular shapes, odd-shaped leftovers | 10% to 20% |
-| Roll width doesn't divide evenly into the part width | 15% to 25% |
+| Roll width divides unevenly into the part width | 15% to 25% |
 | Small job that opens a full sheet of an expensive material nobody else buys | Charge the full sheet |
 
-> ⚠️ SAFETY & COMPLIANCE: Never cut a gasket from a remnant unless you can confirm its material and grade. Mislabeled scrap in a steam or chemical line can fail under pressure. If the remnant isn't labeled, don't use it.
+### Remnant rules
+
+1. Check the remnant rack before you open a new sheet.
+2. Confirm the remnant's material, thickness, and grade from its label.
+3. Label every leftover piece with the material, thickness, and size before it goes back on the rack.
+
+> ⚠️ SAFETY & COMPLIANCE: Cut gaskets only from labeled remnants. Mislabeled scrap in a steam or chemical line can fail under pressure.
 
 ## 12.4 Waterjet Cutting Time
 
@@ -84,10 +111,10 @@ Waterjet time has four parts. Estimate each, then add them.
 
 | Time element | What drives it | Illustrative figure |
 |---|---|---|
-| Programming and nesting | Customer sends a DXF (fast); drawing from a sketch or a sample part (slow) | 5 to 15 min with a DXF; 15 to 60 min from a sample |
+| Programming and nesting | DXF from the customer (fast); drawing from a sketch or sample (slow) | 5 to 15 min with a DXF; 15 to 60 min from a sample |
 | Cutting | Total cut length ÷ cutting speed; speed falls as material gets thicker or harder | 40 to 120 in/min for 1/8 in soft sheet |
 | Pierces | Each hole and each part outline starts with a pierce | 1 to 3 seconds each |
-| Handling | Loading the sheet, unloading, cleaning, counting, bagging, labeling | 10 to 20 min per job |
+| Handling | Loading, unloading, cleaning, counting, bagging, labeling | 10 to 20 min per job |
 
 For a round gasket with bolt holes:
 
@@ -96,7 +123,7 @@ For a round gasket with bolt holes:
 
 For other shapes, the CAD program reports the cut length.
 
-> 📌 INDUSTRY INSIGHT: Garnet abrasive, pump wear, and power are real costs of waterjet time. Shops either build them into one hourly shop rate (as this module does) or track abrasive separately.
+> 📌 INDUSTRY INSIGHT: Garnet abrasive, pump wear, and power are real costs of waterjet time. Shops either build them into one hourly shop rate, as this module does, or track abrasive separately.
 
 ## 12.5 Die Cutting
 
@@ -107,7 +134,7 @@ Die cutting trades a one-time tooling cost for very fast cutting.
 | Steel rule die | Part size and the length of blade it needs | $200 to $800 per die |
 | Press setup | Mounting the die, setting depth, first-piece check | 15 min |
 | Press rate | Strokes per hour × parts per stroke | 300 to 900 strokes per hour |
-| Die ownership | Customer-owned tooling (billed once) or spread into the part price | Spread over the expected repeat quantity |
+| Die ownership | Customer-owned tooling billed once, or spread into the part price | Spread over the expected repeat quantity |
 
 **Illustrative comparison: 4 in Class 150 full-face gasket** (labor at the $150 per hour placeholder rate)
 
@@ -121,7 +148,7 @@ Die cutting trades a one-time tooling cost for very fast cutting.
 
 ## 12.6 The House Pricing Formula
 
-Every custom gasket quote uses the same two-part formula: material at cost times a markup multiplier, plus labor at the shop hourly rate in 15-minute increments. This module uses placeholder values, a **3.00 multiplier** and **$150 per hour**, so the math is easy to follow. Your manager gives you your branch's real figures.
+Every custom gasket quote uses the same two-part formula: material at cost times a markup multiplier, plus labor at the shop hourly rate in 15-minute increments. This module uses placeholder values, a **3.00 multiplier** and **$150 per hour**, so the math is easy to follow. Your manager gives you your branch's figures.
 
 - **Material price** = square inches used × cost per square inch × markup multiplier
 - **Labor price** = labor hours, rounded up to the next quarter hour × shop rate
@@ -130,11 +157,11 @@ Every custom gasket quote uses the same two-part formula: material at cost times
 
 Always round labor **up** to the next quarter hour: 61 minutes is 1.25 hours.
 
-> ⚠️ SAFETY & COMPLIANCE: Never share your branch's real markup, shop rate, or cost with a customer. Quote the price only.
+> ⚠️ SAFETY & COMPLIANCE: Never share your branch's markup, shop rate, or cost with a customer. Quote the price only.
 
-## 12.7 Worked Example
+### Worked example
 
-**Request:** 50 pieces, 4 in Class 150 full-face gasket, 1/8 in compressed sheet, 8 bolt holes at 0.75 in. Sheet cost is an illustrative $0.05 per square inch.
+**Request:** 50 pieces, 4 in Class 150 full-face gasket, 1/8 in compressed sheet, 8 bolt holes at 0.75 in. Placeholder sheet cost: $0.05 per square inch.
 
 | Step | Calculation | Result |
 |---|---|---|
@@ -150,35 +177,40 @@ Always round labor **up** to the next quarter hour: 61 minutes is 1.25 hours.
 | 10. Job price | $624.49 + $262.50 | **$886.99** |
 | 11. Price each | $886.99 ÷ 50 | **$17.74 EA** |
 
-**If the leftover can't go back to stock**, charge the 2 full sheets the job opens instead: 7,200 in² × $0.05 × 3.00 = $1,080.00 material, $1,342.50 job price, $26.85 each.
+**When the leftover can't go back to stock**, charge the 2 full sheets the job uses: 7,200 in² × $0.05 × 3.00 = $1,080.00 material, $1,342.50 job price, $26.85 each.
 
-> ⚠️ SAFETY & COMPLIANCE: Confirm the material is rated for the service (pressure, temperature, and media) before you price it. A cheap quote on the wrong material is a leak waiting to happen.
+> ⚠️ SAFETY & COMPLIANCE: Confirm the material is rated for the service (pressure, temperature, and media) before you price it. A cheap quote on the wrong material costs the customer more and costs you a customer.
 
-## 12.8 Units of Measure and Kits in P21
+## 12.7 Units of Measure, Kits, and Quoting in P21
 
 Sheet and roll goods are bought in one unit and sold in another. P21 converts between them with the unit conversions set on the item.
 
-| From | To square inches | Example |
-|---|---|---|
-| 1 square foot | 144 in² | A 2 ft × 3 ft piece = 864 in² |
-| 1 square yard | 1,296 in² | |
-| 1 sheet, 60 in × 60 in | 3,600 in² | |
-| 1 sheet, 60 in × 63 in | 3,780 in² | |
-| 1 roll, 36 in wide × 25 ft | 36 × 300 = 10,800 in² | |
-| 1 linear foot of 36 in roll | 432 in² | |
+### Selling a cut gasket as a kit
 
-**Selling a cut gasket as a kit.** Set up the gasket as its own item sold by the each (EA). Its components are the sheet (in square inches per piece) and the labor item (in hours per piece). P21 then costs and prices the gasket per EA and takes the right amount of sheet out of stock when the order ships. Module 9 covers kits for hose assemblies the same way.
+Set up the gasket as its own item sold by the each (EA). Its components are the sheet (in SI per piece) and the labor item (in hours per piece). P21 then prices the gasket per EA and takes the right amount of sheet out of stock when the order ships. Module 9 covers kits the same way for hose assemblies.
 
 | Kit component | Quantity per EA (worked example) |
 |---|---|
-| Compressed sheet, sold by in² | 83.27 in² |
-| Waterjet labor, sold by hour | 1.75 ÷ 50 = 0.035 hr |
+| Compressed sheet, sold in SI | 83.27 SI |
+| Waterjet labor, in hours | 1.75 ÷ 50 = 0.035 hr |
 
-**Cut-to-length sheet and cord.** Sheet rubber sold off the roll and O-ring cord sold by the foot follow the same rules as cut-to-length hose (Module 9): check the units, check the available quantity, and ask whether the customer needs one piece or several.
+### Steps: quote and order a cut gasket
 
-> 📌 INDUSTRY INSIGHT: Check both units on a sheet item before you quote. Buying by the sheet and selling by the square inch is common; mixing them up turns a $20 gasket into a five-figure order line.
+1. Work the price with the house formula (12.6).
+2. In Order Entry set as a quote, enter the gasket kit item when one is on file. Your mentor or manager sets up a new kit item.
+3. Put the drawing number, material, and thickness in the line's extended description.
+4. Give the lead time from the waterjet schedule.
+5. When the customer accepts, convert the quote to an order (Module 6).
 
-## 12.9 Field Applications
+### Cut-to-length sheet and cord
+
+Sheet rubber sold off the roll and O-ring cord sold by the foot follow the cut-to-length rules from Module 9: check the unit, check net available, and ask whether the customer needs one piece or several.
+
+> 📌 INDUSTRY INSIGHT: Check both units on a sheet item before you quote. Buying by the sheet and selling by the square inch is common.
+
+## 12.8 Field Applications, Case Study, What If, and Rookie Mistakes
+
+### Field applications
 
 | Industry | Typical custom gaskets | Usual materials |
 |---|---|---|
@@ -191,6 +223,62 @@ Sheet and roll goods are bought in one unit and sold in another. P21 converts be
 
 [IMAGE EXAMPLE: An irrigation pump discharge flange on a farm, with an EPDM gasket visible between the flanges]
 
+### Case study: the manway gasket
+
+The planner emails a sketch of a tank manway cover: an 18 in × 24 in oval, 2 in wide, with 16 bolt holes. "Need 6, for the white water tank. We buy these every outage."
+
+1. **Intake.** The rep asks for a DXF; the mill has none. The planner traces the old gasket on paper with the bolt holes marked and emails a photo with a tape measure beside it.
+2. **Material.** White water is mill process water at about 120°F. 1/8 in EPDM fits the service.
+3. **Programming.** Drawing the shape from a tracing takes 45 min. The rep saves the DXF for the next outage.
+4. **Yield.** The footprint is 18.125 × 24.125 = 437.27 in². Six parts use 2,624 in²; the leftover goes back to stock.
+5. **Price.** The rep works the house formula with the branch's figures and quotes a price each.
+6. **P21.** The mentor sets up a kit item for the gasket with the DXF file reference in the description. The next outage reorder is one line.
+
+The first order paid for the setup. Every reorder after it takes half the time for the same price.
+
+### What if...
+
+| Situation | What to do | Reason |
+|---|---|---|
+| The customer has only a sample part | Measure it and have your mentor confirm before you quote | A measuring error repeats on every piece |
+| The order is 20 pieces needed tomorrow | Quote waterjet | No tooling, fast turnaround |
+| A repeat customer's volume grows to thousands | Quote both waterjet and die | A die wins large repeat runs |
+| The job opens a full sheet of a rare material | Charge the full sheet | Nobody else buys the leftover |
+| A remnant has no label | Leave it out of the job | Unknown material can fail in service |
+| The customer asks for your shop rate | Quote the price only | Rates and margins stay inside the branch |
+
+### Rookie mistakes
+
+| Mistake | What it causes | The habit that prevents it |
+|---|---|---|
+| Pricing from the part area | Material priced short on every job | Price from the footprint |
+| Rounding labor down | Labor given away | Round up to the next quarter hour |
+| Rounding parts per sheet up | Promising parts that don't fit | Round down; a partial part is scrap |
+| Skipping programming time | A loss on one-off jobs | Add programming and handling every time |
+| Mixing up sheet and SI units | A wildly wrong order line | Check both units on the item |
+| Quoting a die on a 20-piece job | A lost order on price and lead time | Compare waterjet and die by quantity |
+
+## 12.9 Fabrication and Estimating Terms
+
+| Term | Meaning |
+|---|---|
+| Waterjet | A CNC machine that cuts with a high-pressure water stream |
+| Garnet abrasive | The sand added to the waterjet stream for hard materials |
+| Steel rule die | A steel blade formed to a part shape and pressed through sheet |
+| DXF | A CAD file format the waterjet program reads |
+| Kerf | The width the cutting stream removes |
+| Footprint | A part's outer box plus spacing |
+| Spacing | The gap between parts on the sheet |
+| Edge margin | The gap between parts and the sheet edge |
+| Nesting | Arranging parts on a sheet to use the least material |
+| Yield | Parts per sheet or roll |
+| Scrap factor | The percent added to material used to cover waste |
+| Pierce | The start point where the stream breaks through the sheet |
+| Cut length | The total length of all cuts on one part |
+| Markup multiplier | The factor applied to material cost (placeholder ×3.00) |
+| Shop rate | The hourly labor rate (placeholder $150/hr) |
+| Quarter hour | Labor is billed in 15-minute increments, rounded up |
+
 ## 12.10 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
@@ -198,22 +286,23 @@ Sheet and roll goods are bought in one unit and sold in another. P21 converts be
 Use the placeholder values in this module (3.00 multiplier, $150 per hour, $0.05 per square inch) unless your mentor gives you others.
 
 1. **Footprint.** A rectangular gasket is 8 in × 12 in with 0.125 in spacing. Find its footprint and how many fit on a 60 in × 60 in sheet with a 0.5 in edge margin.
-2. **Price a job.** Price 25 pieces of a 3 in Class 150 full-face gasket (7.50 in OD, 3.50 in ID, 4 holes at 0.75 in) using the steps in 12.7.
+2. **Price a job.** Price 25 pieces of a 3 in Class 150 full-face gasket (7.50 in OD, 3.50 in ID, 4 holes at 0.75 in) using the steps in 12.6.
 3. **Waterjet or die.** For 20 pieces and for 2,000 pieces of the same part, say which method you would quote and why.
 4. **Units.** A 60 in × 60 in sheet item is bought by the sheet and sold by the square inch. How many square inches are in 4 sheets?
-5. **P21 kit.** Look up a cut gasket item in the P21Play System and list its components and quantities per EA.
+5. **Intake.** Your mentor hands you a sample gasket with no drawing. Measure it and list what you would confirm before quoting.
+6. **P21 kit.** Look up a cut gasket kit item in the P21Play System and list its components and quantities per EA.
 
-### Knowledge check (practice, not graded)
+### Knowledge check (practice)
 
-1. A part's bounding box is 6 in × 10 in with 0.125 in spacing. What is its footprint?
+1. A part's outer box is 6 in × 10 in with 0.125 in spacing. What is its footprint?
 2. A job takes 47 minutes of labor. How many hours do you bill?
 3. Material used is 2,000 in² at $0.08 per in² with a 3.00 markup multiplier. What is the material price?
 4. A customer needs 20 odd-shaped gaskets by tomorrow. Waterjet or die?
 5. How many square inches are in 3 sheets of 60 in × 60 in?
+6. What file do you ask the customer for first?
 
 Work these on your own, then check your answers with your mentor.
 
 ### Module quiz
 
-- **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Mentor sign-off:** price a custom gasket job your mentor gives you, using your branch's real figures, within 10% of your mentor's quote.
+Pass the module quiz to complete this module. The quiz has 10 questions: the module's scenario questions plus questions drawn from the module pool. You need 80% to pass and have 3 tries.
