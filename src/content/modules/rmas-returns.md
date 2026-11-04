@@ -96,7 +96,7 @@ Each branch sets its own return policy, time limits, and restocking fees. Your m
 
 ### Practice in the P21Play System
 
-1. **Return reasons.** Your mentor reads five return requests. Sort each by reason and say whether it can be returned.
+1. **Return reasons.** Your Manager reads five return requests. Sort each by reason and say whether it can be returned.
 2. **RMA for credit.** A practice customer ordered ten -8 JIC fittings and needs -6. Enter an RMA for the ten -8 fittings against the original invoice.
 3. **Replacement.** For the same customer, enter a replacement order for ten -6 fittings and note the RMA number on it.
 4. **Receive.** Receive the return against the RMA and decide whether the fittings go back to stock.
@@ -111,9 +111,9 @@ Each branch sets its own return policy, time limits, and restocking fees. Your m
 5. A returned fitting has a missing O-ring. Does it go back to stock?
 6. Who decides whether a warranty claim is approved?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 
 - **Module quiz:** 10 questions drawn from a pool of 25; 80% to pass.
-- **Mentor sign-off:** with your mentor watching, enter an RMA and a replacement order in the P21Play System from a practice call.
+- **Manager sign-off:** with your Manager watching, enter an RMA and a replacement order in the P21Play System from a practice call.

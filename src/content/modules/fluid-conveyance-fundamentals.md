@@ -24,7 +24,7 @@ After this module you will be able to:
 8. Identify the standards behind hose: NAHAD, the ARPM Hose Handbook, SAE J517, and the EN hose standards.
 9. Record a complete hose spec in P21 so the shop and the next rep build the same hose.
 
-> ⚠️ SAFETY & COMPLIANCE: A hose assembly fails at its weakest point: the hose, the fitting, or the way they are joined. Never guess on pressure, temperature, or chemicals. When you are unsure, stop and ask your mentor.
+> ⚠️ SAFETY & COMPLIANCE: A hose assembly fails at its weakest point: the hose, the fitting, or the way they are joined. Never guess on pressure, temperature, or chemicals. When you are unsure, stop and ask your Manager.
 
 ## 4.1 How a Hose Is Built
 
@@ -251,7 +251,7 @@ Use this table as a starting point. Confirm every chemical on the hose manufactu
 3. Look up the chemical in the **manufacturer's compatibility chart** for the tube material.
 4. Read the rating. Charts rate each chemical excellent, good, fair, or not recommended, by letter or number.
 5. Check the **fittings** and any **seals** the same way. A stainless fitting may hold where brass or aluminum fails.
-6. When the chemical is missing from the chart or rated fair, stop and ask your mentor or the manufacturer.
+6. When the chemical is missing from the chart or rated fair, stop and ask your Manager or the manufacturer.
 
 [IMAGE EXAMPLE: A page from a hose manufacturer's chemical compatibility chart with one chemical row and its ratings highlighted]
 
@@ -337,8 +337,8 @@ The hose did its job. The fittings were wrong for the media from the first order
 |---|---|---|
 | The customer only knows the size | Ask the other six STAMPED questions before you quote | A hose picked on size alone is a guess |
 | The layline is worn off | Measure ID and length, identify the ends, and ask all seven questions | A neighboring hose may be a different type |
-| A chemical is missing from the chart | Stop and ask your mentor or the manufacturer | A wrong guess releases the chemical |
-| The customer wants water hose on a steam line "for now" | Decline it, offer steam hose with steam fittings and clamps, and bring in your mentor | A water hose on steam bursts and burns |
+| A chemical is missing from the chart | Stop and ask your Manager or the manufacturer | A wrong guess releases the chemical |
+| The customer wants water hose on a steam line "for now" | Decline it, offer steam hose with steam fittings and clamps, and bring in your Manager | A water hose on steam bursts and burns |
 | System pressure is 2,000 psi with 2,800 psi spikes | Pick hose and fittings rated for at least 2,800 psi | Surges count against the working pressure |
 | A suction line keeps collapsing | Check for a softwall hose, heat, or a tight bend | Only hardwall hose holds its shape under vacuum |
 | A fuel or powder transfer hose | Confirm static-dissipating construction and grounding | A static spark can ignite vapor or dust |
@@ -388,11 +388,11 @@ The hose did its job. The fittings were wrong for the media from the first order
 
 ### Practice
 
-1. **Cut sections.** Your mentor gives you cut pieces of three hoses. For each, point out the tube, reinforcement, and cover, and give the reinforcement type.
+1. **Cut sections.** Your Manager gives you cut pieces of three hoses. For each, point out the tube, reinforcement, and cover, and give the reinforcement type.
 2. **Read laylines.** Read the layline on five hoses in stock. Write the maker, hose type, ID, and working pressure for each.
 3. **Measure.** Measure the ID of three unmarked hoses with calipers and give the dash size.
 4. **Orientation.** Measure the overall length and the angle between the elbows on a stocked assembly.
-5. **STAMPED interview.** Your mentor plays a customer who asks for "a hose for our tank truck." Ask the STAMPED questions until you have all seven answers, and write them in the order line's extended description.
+5. **STAMPED interview.** Your Manager plays a customer who asks for "a hose for our tank truck." Ask the STAMPED questions until you have all seven answers, and write them in the order line's extended description.
 6. **Compatibility.** On a maker's chart, write the rating for EPDM and for nitrile with diesel fuel, 50% caustic soda at 150°F, acetone, and hot water at 180°F.
 7. **P21.** Press F2 and find a bulk steam hose and a bulk suction hose. Write the UOM, net available, and any substitutes.
 
@@ -408,7 +408,7 @@ The hose did its job. The fittings were wrong for the media from the first order
 8. Saturated steam at 150 psi is about how hot?
 9. Where do you write the STAMPED answers so the shop sees them?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

@@ -21,7 +21,7 @@ After this module you will be able to:
 5. Price a job with the house formula and convert it to a price each.
 6. Set up and sell a cut gasket as a kit in P21 with the right units of measure.
 
-> ⚠️ SAFETY & COMPLIANCE: Wear safety glasses when cutting. Run the waterjet or die press only after your mentor trains you on that machine.
+> ⚠️ SAFETY & COMPLIANCE: Wear safety glasses when cutting. Run the waterjet or die press only after your Manager trains you on that machine.
 
 ## 12.1 Cutting Methods and Job Intake
 
@@ -52,12 +52,12 @@ A custom gasket starts as sheet or roll material and is cut to a drawing, a samp
 
 1. Ask for a DXF first. It saves programming time and removes measuring errors.
 2. Without a file, get a dimensioned drawing or a tracing on paper with the bolt holes marked.
-3. With only a sample part, measure it and have your mentor confirm before you quote.
+3. With only a sample part, measure it and have your Manager confirm before you quote.
 4. Confirm the material for the service (Module 10).
 5. Ask the quantity now and the expected yearly volume. Volume decides waterjet or die.
 6. Write every detail in the quote line's extended description.
 
-> ⚠️ SAFETY & COMPLIANCE: Old gasket samples from steam lines may contain asbestos. Handle them as little as possible and ask your mentor.
+> ⚠️ SAFETY & COMPLIANCE: Old gasket samples from steam lines may contain asbestos. Handle them as little as possible and ask your Manager.
 
 ## 12.2 Material Yield and Nesting
 
@@ -197,7 +197,7 @@ Set up the gasket as its own item sold by the each (EA). Its components are the 
 ### Steps: quote and order a cut gasket
 
 1. Work the price with the house formula (12.6).
-2. In Order Entry set as a quote, enter the gasket kit item when one is on file. Your mentor or manager sets up a new kit item.
+2. In Order Entry set as a quote, enter the gasket kit item when one is on file. Your Manager sets up a new kit item.
 3. Put the drawing number, material, and thickness in the line's extended description.
 4. Give the lead time from the waterjet schedule.
 5. When the customer accepts, convert the quote to an order (Module 6).
@@ -232,7 +232,7 @@ The planner emails a sketch of a tank manway cover: an 18 in × 24 in oval, 2 in
 3. **Programming.** Drawing the shape from a tracing takes 45 min. The rep saves the DXF for the next outage.
 4. **Yield.** The footprint is 18.125 × 24.125 = 437.27 in². Six parts use 2,624 in²; the leftover goes back to stock.
 5. **Price.** The rep works the house formula with the branch's figures and quotes a price each.
-6. **P21.** The mentor sets up a kit item for the gasket with the DXF file reference in the description. The next outage reorder is one line.
+6. **P21.** The Manager sets up a kit item for the gasket with the DXF file reference in the description. The next outage reorder is one line.
 
 The first order paid for the setup. Every reorder after it takes half the time for the same price.
 
@@ -240,7 +240,7 @@ The first order paid for the setup. Every reorder after it takes half the time f
 
 | Situation | What to do | Reason |
 |---|---|---|
-| The customer has only a sample part | Measure it and have your mentor confirm before you quote | A measuring error repeats on every piece |
+| The customer has only a sample part | Measure it and have your Manager confirm before you quote | A measuring error repeats on every piece |
 | The order is 20 pieces needed tomorrow | Quote waterjet | No tooling, fast turnaround |
 | A repeat customer's volume grows to thousands | Quote both waterjet and die | A die wins large repeat runs |
 | The job opens a full sheet of a rare material | Charge the full sheet | Nobody else buys the leftover |
@@ -283,13 +283,13 @@ The first order paid for the setup. Every reorder after it takes half the time f
 
 ### Practice
 
-Use the placeholder values in this module (3.00 multiplier, $150 per hour, $0.05 per square inch) unless your mentor gives you others.
+Use the placeholder values in this module (3.00 multiplier, $150 per hour, $0.05 per square inch) unless your Manager gives you others.
 
 1. **Footprint.** A rectangular gasket is 8 in × 12 in with 0.125 in spacing. Find its footprint and how many fit on a 60 in × 60 in sheet with a 0.5 in edge margin.
 2. **Price a job.** Price 25 pieces of a 3 in Class 150 full-face gasket (7.50 in OD, 3.50 in ID, 4 holes at 0.75 in) using the steps in 12.6.
 3. **Waterjet or die.** For 20 pieces and for 2,000 pieces of the same part, say which method you would quote and why.
 4. **Units.** A 60 in × 60 in sheet item is bought by the sheet and sold by the square inch. How many square inches are in 4 sheets?
-5. **Intake.** Your mentor hands you a sample gasket with no drawing. Measure it and list what you would confirm before quoting.
+5. **Intake.** Your Manager hands you a sample gasket with no drawing. Measure it and list what you would confirm before quoting.
 6. **P21 kit.** Look up a cut gasket kit item in the P21Play System and list its components and quantities per EA.
 
 ### Knowledge check (practice)
@@ -301,7 +301,7 @@ Use the placeholder values in this module (3.00 multiplier, $150 per hour, $0.05
 5. How many square inches are in 3 sheets of 60 in × 60 in?
 6. What file do you ask the customer for first?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

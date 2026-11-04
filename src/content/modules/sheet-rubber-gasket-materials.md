@@ -21,7 +21,7 @@ After this module you will be able to:
 5. Pick a gasket material from the media, temperature, pressure, and flange.
 6. Sell sheet in P21 in the right unit (SI, SF, or the roll) and store and handle it correctly.
 
-> ⚠️ SAFETY & COMPLIANCE: Old gaskets, especially from steam lines and older plants, may contain asbestos. Never cut, grind, or sand an old gasket a customer brings in. Handle it as little as possible and ask your mentor how your branch deals with it.
+> ⚠️ SAFETY & COMPLIANCE: Old gaskets, especially from steam lines and older plants, may contain asbestos. Never cut, grind, or sand an old gasket a customer brings in. Handle it as little as possible and ask your Manager how your branch deals with it.
 
 ## 10.1 Elastomer Sheet Rubber
 
@@ -114,7 +114,7 @@ M2BG714 describes a typical nitrile compound. Letters and numbers after it (A14,
 
 ASTM F104 classifies fiber and other nonmetallic gasket sheet with a line callout: a type, a class, and numbers for properties such as compressibility, recovery, and fluid resistance. The maker's data sheet lists the F104 callout for each grade. Match it to the callout on the customer's drawing.
 
-> ⚠️ SAFETY & COMPLIANCE: A callout on a drawing or PO is part of the order. Cut from sheet that meets it, or bring in your mentor before you quote a substitute.
+> ⚠️ SAFETY & COMPLIANCE: A callout on a drawing or PO is part of the order. Cut from sheet that meets it, or bring in your Manager before you quote a substitute.
 
 ## 10.3 Compressed Fiber Sheet and the P×T Chart
 
@@ -194,7 +194,7 @@ Start with the media, then check temperature and pressure, then the flange.
 4. Plot pressure and temperature on the maker's P×T chart.
 5. Check the flange: material, condition, and class (Module 11).
 6. Pick the thickness: 1/16 in for flat, smooth flanges; thicker for uneven ones.
-7. When the service is outside what you know, stop and ask your mentor.
+7. When the service is outside what you know, stop and ask your Manager.
 
 > ⚠️ SAFETY & COMPLIANCE: For steam, chemicals, and anything above low pressure, confirm the material with the maker's chemical chart and P×T rating.
 
@@ -257,9 +257,9 @@ The flange was fine. The material was wrong for the media from the start.
 |---|---|---|
 | A customer wants "red rubber" for steam | Check the steam pressure and temperature; offer fiber or graphite | Rubber sheet fails on steam |
 | A drawing calls out ASTM D2000 | Match the full callout on a data sheet before you cut | The callout is part of the order |
-| A customer brings an old steam gasket to copy | Don't cut, grind, or sand it; ask your mentor | It may contain asbestos |
+| A customer brings an old steam gasket to copy | Don't cut, grind, or sand it; ask your Manager | It may contain asbestos |
 | The roll label is missing | Set the roll aside until it is identified | A wrong material fails in service |
-| A chemical is missing from the chart | Stop and ask your mentor or the maker | Compatibility can't be guessed |
+| A chemical is missing from the chart | Stop and ask your Manager or the maker | Compatibility can't be guessed |
 | Glass-lined or FRP flanges | Offer ePTFE or soft rubber | Hard sheet needs bolt load those flanges can't take |
 
 ### Rookie mistakes
@@ -299,8 +299,8 @@ The flange was fine. The material was wrong for the media from the start.
 ### Practice
 
 1. **Read labels.** At the sheet rack, read the label on five rolls or sheets. Write the material, durometer, thickness, and width.
-2. **Rubber by touch.** Your mentor gives you samples of red SBR, neoprene, nitrile, EPDM, and silicone with the labels hidden. Identify what you can, then check.
-3. **D2000.** Your mentor gives you a D2000 callout from a drawing. Break it into its parts and find a sheet that meets it.
+2. **Rubber by touch.** Your Manager gives you samples of red SBR, neoprene, nitrile, EPDM, and silicone with the labels hidden. Identify what you can, then check.
+3. **D2000.** Your Manager gives you a D2000 callout from a drawing. Break it into its parts and find a sheet that meets it.
 4. **P×T chart.** Plot 150 psi saturated steam (about 366°F) on a compressed fiber chart and a graphite chart. Say which zone each falls in.
 5. **Pick a material.** For each service in the 10.5 table, find a sheet item your branch stocks that fits.
 6. **P21.** Press F2 and find 1/8 in 60 durometer neoprene. Enter a 12 in × 36 in piece in its UOM.
@@ -317,7 +317,7 @@ The flange was fine. The material was wrong for the media from the start.
 8. A point plots in zone 3 on a P×T chart. What do you do?
 9. A customer brings in an old steam gasket and asks you to cut a copy. What do you watch for?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

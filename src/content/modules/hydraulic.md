@@ -285,7 +285,7 @@ The abrasion caused the failure. The sleeve keeps the new hose from failing the 
 |---|---|---|
 | The layline is worn off | Measure ID, identify both ends, ask the machine make and model and the system pressure | A guessed rating can burst |
 | A fitting threads on and then binds | Stop and identify both threads | Mismatched threads leak or blow apart |
-| The customer wants a cheaper braided hose in place of spiral | Check pressure and impulse ratings; bring in your mentor | Spiral handles surges braid may not |
+| The customer wants a cheaper braided hose in place of spiral | Check pressure and impulse ratings; bring in your Manager | Spiral handles surges braid may not |
 | The machine runs a fire-resistant fluid | Get the exact fluid and check the maker's chart | Phosphate ester attacks standard hose |
 | The customer wants fittings from another brand on your hose | Use one maker's system | Mixed systems blow off |
 | The hose sits next to an exhaust | Add a heat sleeve and check the temperature rating | Heat cracks the cover and tube |
@@ -336,7 +336,7 @@ The abrasion caused the failure. The sleeve keeps the new hose from failing the 
 
 1. **Laylines.** Read the layline on five hydraulic hoses in stock. Write the type, dash size, working pressure, and date code.
 2. **Braid and spiral.** Look at cut ends of braid and spiral hose and count the wire layers.
-3. **Seal types.** Your mentor hands you 6 male fittings. Sort them by how they seal: threads, metal seat, or O-ring.
+3. **Seal types.** Your Manager hands you 6 male fittings. Sort them by how they seal: threads, metal seat, or O-ring.
 4. **Thread ID.** Using calipers, a pitch gauge, and a seat gauge, identify 5 fittings by type and dash size. Write each step.
 5. **Orientation.** Measure the overall length and the orientation of a stocked assembly with two elbows.
 6. **Couplers.** Identify a poppet ag coupler and a flat face coupler by sight.
@@ -353,7 +353,7 @@ The abrasion caused the failure. The sleeve keeps the new hose from failing the 
 8. Why do hose and fittings come from one maker's system?
 9. A customer wants to find a leak by running a hand along the hose. What do you tell them?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

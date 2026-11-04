@@ -301,7 +301,7 @@ Prophet 21 (P21) records every step of the order life cycle. This section is a m
 | The item shows on hand but nothing is available | Check Open Order for what is allocated, then Open PO and Transfer for what is coming | On-hand stock that is allocated belongs to another customer |
 | The account is on Hold | Take the order, tell the customer you need to check one thing, and bring in your manager | Only a manager or accounting releases a hold; the customer never hears the details |
 | A chemical customer says "it's just an acid" | Ask for the exact chemical, concentration, and temperature, or the SDS | Compatibility depends on all three |
-| The PO lists a standard you do not recognize | Write it down and ask your mentor before you promise a date | The standard is part of the order and may need paperwork |
+| The PO lists a standard you do not recognize | Write it down and ask your Manager before you promise a date | The standard is part of the order and may need paperwork |
 
 ### Rookie mistakes
 
@@ -321,7 +321,7 @@ The one shop rule every trainee follows from the first day: wear safety glasses 
 | Situation | What to do | Rule behind it |
 |---|---|---|
 | Cutting hose, sheet, or belting | Safety glasses on before you start | OSHA 1910.133, eye protection |
-| Operating a crimper, saw, press, or waterjet | Safety glasses on, and only after your mentor has trained you on that machine | Branch training rules |
+| Operating a crimper, saw, press, or waterjet | Safety glasses on, and only after your Manager has trained you on that machine | Branch training rules |
 | Working on or near a machine a customer is servicing | It must be locked out before anyone touches it | OSHA 1910.147, lockout/tagout |
 | Moving reels and pallets | Use the forklift or reel stand only if you are trained and authorized | OSHA 1910.178, powered industrial trucks |
 | Handling chemicals or a chemical-soaked part | Read the SDS, wear the listed protection | OSHA 1910.1200, hazard communication |
@@ -332,7 +332,7 @@ Three hazards from the products we sell come up again and again in this course:
 2. **Steam.** Steam service needs steam-rated hose, steam fittings, and the right clamps. A wrong substitute can burst and cause severe burns.
 3. **Chemicals.** The wrong hose or gasket in chemical service can fail and release the chemical. Always confirm compatibility.
 
-> ⚠️ SAFETY & COMPLIANCE: Wear safety glasses whenever you cut or operate equipment. It is the one rule with no exceptions. The safest answer to a customer is sometimes "Let me check that with my mentor." Never guess on steam, chemicals, or high-pressure hydraulics.
+> ⚠️ SAFETY & COMPLIANCE: Wear safety glasses whenever you cut or operate equipment. It is the one rule with no exceptions. The safest answer to a customer is sometimes "Let me check that with my Manager." Never guess on steam, chemicals, or high-pressure hydraulics.
 
 ## 1.7 Words You'll Hear on Day One
 
@@ -375,7 +375,7 @@ Three hazards from the products we sell come up again and again in this course:
 1. **Find the customer.** Search for one of your branch's large accounts by part of its name, then by phone number. Write down the customer ID, the number of ship-tos, and the terms.
 2. **Find an item.** Look up a stocked hose and a stocked fitting. Write down the net quantity available and the unit of measure for each.
 3. **Follow an order.** Open a recent order for that customer in Order Inquiry. Write down each line's item, quantity, unit, and disposition.
-4. **Walk the branch.** With your mentor, find the counter, the will-call area, the staging area, the remnant rack, and the shop. Write down who works in each.
+4. **Walk the branch.** With your Manager, find the counter, the will-call area, the staging area, the remnant rack, and the shop. Write down who works in each.
 
 ### Knowledge check (practice)
 
@@ -388,7 +388,7 @@ Three hazards from the products we sell come up again and again in this course:
 7. Which line disposition sends a special-order need to the buyer?
 8. How should you look for a leak on a pressurized hydraulic hose?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

@@ -186,7 +186,7 @@ insert into quizzes (module_id, kind, draw_count, pass_pct, max_attempts)
 select null, 'final', 48, 85, 2
 where not exists (select 1 from quizzes where kind = 'final');
 
--- ---------- Mentor sign-offs ----------
+-- ---------- Manager sign-offs ----------
 create table if not exists skills (
   id bigint generated always as identity primary key,
   module_id int not null references modules,

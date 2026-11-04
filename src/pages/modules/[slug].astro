@@ -23,12 +23,12 @@ const d = m.data;
     <h1>{d.title}</h1>
     <div class="meta">
       <span>About {d.minutes} minutes</span>
-      <span>{d.signoff ? 'Mentor sign-off required' : 'No mentor sign-off'}</span>
+      <span>{d.signoff ? 'Manager sign-off required' : 'No Manager sign-off'}</span>
     </div>
     <Content />
     <div class="complete" id="complete" data-module={d.number}>
       <h3 style="margin-top:0">Finish this module</h3>
-      <p>Pass the module quiz (10 questions, 80% to pass, 3 tries) to mark Module {d.number} complete. Every trainee completes the module and the quiz.{d.signoff && ' The mentor sign-off still applies.'}</p>
+      <p>Pass the module quiz (10 questions, 80% to pass, 3 tries) to mark Module {d.number} complete. Every trainee completes the module and the quiz.{d.signoff && ' The Manager sign-off still applies.'}</p>
       <p id="c-status" class="hidden"></p>
       <div class="quiz-links">
         <a class="btn" href={u(`quiz/${m.slug}`)}>Take the module quiz</a>

@@ -23,7 +23,7 @@ After this module you will be able to:
 7. Print a pick ticket, and explain how a confirmed shipment creates the invoice.
 8. Answer "where's my order?" with facts from the order and the PO behind it.
 
-> 📌 INDUSTRY INSIGHT: Do every exercise in the P21Play System. Until your mentor clears you, your mentor reviews every live order or quote you enter before it is saved or released.
+> 📌 INDUSTRY INSIGHT: Do every exercise in the P21Play System. Until your Manager clears you, your Manager reviews every live order or quote you enter before it is saved or released.
 
 ## 6.1 The Order Header
 
@@ -110,7 +110,7 @@ The disposition tells P21 what to do with the part of a line you can't ship from
 | T | Transfer | Pulls stock from another location | Another branch has it |
 | C | Cancel | Cancels the short quantity | The customer declines the rest |
 
-Your branch may use only some of these codes. Confirm the active codes with your mentor.
+Your branch may use only some of these codes. Confirm the active codes with your Manager.
 
 ### Special order or direct ship?
 
@@ -276,7 +276,7 @@ The quote was good for the whole outage: every price checked, every assembly ful
 | Stock is short | Check other locations and open POs, then ask the customer: partial now or all together | The disposition depends on the customer's answer |
 | The item is unstocked and the customer picks up | Disposition S | The vendor ships to your branch |
 | The vendor ships straight to the customer and that is fine with them | Disposition D | The PO carries only that item, with the customer's ship-to |
-| A price looks far off history | Check Sales Pricing Inquiry and ask your mentor | Price libraries and costs change |
+| A price looks far off history | Check Sales Pricing Inquiry and ask your Manager | Price libraries and costs change |
 | The customer accepts an expired quote | Confirm cost before you honor it | Vendor costs move |
 | A received PO line hasn't shipped | Ask the warehouse to find it | The product is likely in the building |
 
@@ -323,15 +323,15 @@ The quote was good for the whole outage: every price checked, every assembly ful
 ### Practice in the P21Play System
 
 1. **Stock order.** A practice caller from Southeastern Paper Mill, Mill No. 2 orders 25 FT of a stocked hose and 4 fittings on their PO. Enter the order, read it back, save it.
-2. **Units.** Enter a line for a 12 in × 24 in piece of a sheet item sold in SI. Show your mentor the quantity you entered.
+2. **Units.** Enter a line for a 12 in × 24 in piece of a sheet item sold in SI. Show your Manager the quantity you entered.
 3. **Short stock.** Enter an order for more than you have available. Check other locations, pick the disposition, and explain why.
-4. **Special order and direct ship.** Enter one unstocked item as S and one as D. Tell your mentor what is different about each PO.
+4. **Special order and direct ship.** Enter one unstocked item as S and one as D. Tell your Manager what is different about each PO.
 5. **Kit item.** Enter a hose assembly as a kit item with the STAMPED answers in the extended description.
 6. **Price.** Check one item's price for two customers in Sales Pricing Inquiry and compare each with history.
 7. **Margin.** Calculate margin and markup for an item that costs $12.50 and sells for $20.00.
 8. **Quote.** Build a quote for three items, one of them unstocked, with an expiration date, lead times, and a note. Convert it to an order with a PO.
 9. **Pick ticket.** Print the pick ticket for your order from the Front Counter tab.
-10. **Follow-up.** Your mentor gives you an order with a backordered line. Find the PO behind it and tell your mentor what you would say to the customer.
+10. **Follow-up.** Your Manager gives you an order with a backordered line. Find the PO behind it and tell your Manager what you would say to the customer.
 
 ### Knowledge check (practice)
 
@@ -343,7 +343,7 @@ The quote was good for the whole outage: every price checked, every assembly ful
 6. Where do you print a pick ticket, and what creates the invoice?
 7. A PO shows received and the order line hasn't shipped. What does that usually mean?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

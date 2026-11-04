@@ -26,7 +26,7 @@ After this module you will be able to:
 
 ## 2.1 Signing In and Reading the P21 Screen
 
-TRG runs two copies of P21. **Live P21** is the real system: orders saved there print, ship, and bill. The **P21Play System** is a copy of live data for training. Do every practice task in this course in the P21Play System until your mentor moves you to live P21.
+TRG runs two copies of P21. **Live P21** is the real system: orders saved there print, ship, and bill. The **P21Play System** is a copy of live data for training. Do every practice task in this course in the P21Play System until your Manager moves you to live P21.
 
 Stock and order status in the P21Play System lag behind live P21. When an exercise and the P21Play System disagree, trust the P21Play System and write down what you found.
 
@@ -175,7 +175,7 @@ One customer has many ship-to's and many contacts. Some companies have several c
 1. Press **F8** to open Customer Master Inquiry.
 2. Search by customer ID, part of the company, phone number, or city.
 3. **Confirm the right account.** Check the physical address and the ship-to list. When two accounts look alike, ask the caller which plant, location, or address they are calling about.
-4. On the **Credit Status** tab, check the account status and terms. An account on COD or Hold changes what you can promise; bring in your mentor before you go on.
+4. On the **Credit Status** tab, check the account status and terms. An account on COD or Hold changes what you can promise; bring in your Manager before you go on.
 5. Read the **Customer Notes**: PO required, release numbers, receiving hours, tax exemption, brand preferences.
 6. Check the **Ship To / Salesrep** tab. Is the delivery address on file? Who is the salesperson?
 7. Check the **contacts**. Is the caller listed, with the right phone and email?
@@ -220,7 +220,7 @@ Most requests come down to three questions: do you have it, where is it, and whe
 ### Steps
 
 1. Press **F2** to open Item Master Inquiry.
-2. Search by item ID, a word from the description, a manufacturer part number, or the customer's part number. Your mentor will show you how your branch builds item IDs.
+2. Search by item ID, a word from the description, a manufacturer part number, or the customer's part number. Your Manager will show you how your branch builds item IDs.
 3. Read the full **description** and the **unit of measure** (UOM).
 4. Check your **location**: net quantity available.
 5. On the **Inventory** tab, check other locations. Another branch may have it and can transfer it.
@@ -289,7 +289,7 @@ Price depends on the customer. Check a customer's price in Sales Pricing Inquiry
 1. Search again with less text, or with a manufacturer or customer part number.
 2. Try another description. A customer's "cam lock" is a cam and groove fitting; a "red rubber" sheet is SBR.
 3. Check the Substitute tab on a similar item.
-4. Ask your mentor. The item may need a special order or a new item setup; Module 6 covers both.
+4. Ask your Manager. The item may need a special order or a new item setup; Module 6 covers both.
 
 ## 2.5 Orders, Quotes, and Sales History
 
@@ -365,9 +365,9 @@ The planner described the hose in one sentence. Sales history supplied the item,
 |---|---|---|
 | A customer search finds nothing | Search again with less text, then by phone number and city | The account may be spelled differently than the caller says it |
 | Two accounts match the caller | Read both physical addresses and ask which plant, location, or address | Each account bills and ships differently |
-| The caller is missing from the contacts | Take their phone and email, finish the request, and tell your mentor so the contact gets added (Module 3) | Every order needs a contact who can answer questions |
+| The caller is missing from the contacts | Take their phone and email, finish the request, and tell your Manager so the contact gets added (Module 3) | Every order needs a contact who can answer questions |
 | An item shows on hand and 0 net available | Check the Open Order tab for who holds it, then Open PO and Transfer for what is coming | Allocated stock belongs to another customer's order |
-| The item is out everywhere | Check the Substitute tab, then ask your mentor about a special order | A substitute or a special order can still fill the need |
+| The item is out everywhere | Check the Substitute tab, then ask your Manager about a special order | A substitute or a special order can still fill the need |
 | A customer needs one continuous length | Have the warehouse check the reels and remnants before you promise it | P21 counts total feet; it can be in several pieces |
 | Sales history shows the item at an old price | Check the current price in Sales Pricing Inquiry | Prices change; last year's price is history |
 | A pop-up note appears | Read it all before you close it | It holds account rules every order must follow |
@@ -417,15 +417,15 @@ The planner described the hose in one sentence. Sales history supplied the item,
 
 ### Practice in the P21Play System
 
-Your mentor picks three real accounts and three items for these exercises. Write your answers in your notebook and bring them to your mentor.
+Your Manager picks three real accounts and three items for these exercises. Write your answers in your notebook and bring them to your Manager.
 
 1. **Navigation.** Add Customer Master Inquiry, Item Master Inquiry, Order Inquiry, and Order Entry to your favorites. Open Customer Master Inquiry with F8 and Item Master Inquiry with F2. List the tabs in each.
 2. **Customer lookup.** For each account, write down the customer ID, physical address city, terms, salesperson, number of ship-tos, and any notes that pop up.
-3. **Two accounts, one company.** Your mentor gives you a company with more than one account. Find each account by phone number and by city. Write what makes them different.
+3. **Two accounts, one company.** Your Manager gives you a company with more than one account. Find each account by phone number and by city. Write what makes them different.
 4. **Item lookup.** For each item, write the item ID, description, UOM, net available at your location, the location with the most stock, the next open PO date, and any substitutes.
 5. **Who holds it.** Find an item with allocated stock. On the Open Order tab, write the orders that hold it.
 6. **Units.** Convert: 54 in of hose to FT; a 24 in × 36 in piece of sheet to SI and SF.
-7. **Same as last time.** Your mentor plays a customer: "I need the same hose you sent us a few months back." Find the item, quantity, UOM, PO, and order number, then open the order and list every line.
+7. **Same as last time.** Your Manager plays a customer: "I need the same hose you sent us a few months back." Find the item, quantity, UOM, PO, and order number, then open the order and list every line.
 8. **Where's my order.** Find an open order for one of your accounts in Order Inquiry. Write its status and what is still open.
 
 ### Knowledge check (practice)
@@ -439,7 +439,7 @@ Your mentor picks three real accounts and three items for these exercises. Write
 7. How do you confirm you picked the right account when a company has three?
 8. Which key opens Item Master Inquiry, and which opens Customer Master Inquiry?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

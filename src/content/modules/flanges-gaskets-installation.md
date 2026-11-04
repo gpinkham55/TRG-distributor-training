@@ -233,7 +233,7 @@ When a customer calls about a leak, ask what changed and work through the likely
 ### At the counter
 
 - Read the class and size cast on the flange or stamped on the old gasket.
-- Measure an old gasket's ID, OD, and bolt holes. Old steam gaskets may contain asbestos: handle them as little as possible and ask your mentor.
+- Measure an old gasket's ID, OD, and bolt holes. Old steam gaskets may contain asbestos: handle them as little as possible and ask your Manager.
 - When the customer has only a pipe size, ask the class and face before you quote.
 
 ## 11.7 Case Study, What If, and Rookie Mistakes
@@ -297,7 +297,7 @@ A better gasket helped. Installing it with the star pattern and passes fixed the
 
 ### Practice
 
-1. **Flange ID.** Your mentor shows you two flanges. Identify the face, the pipe size, and the class from the markings.
+1. **Flange ID.** Your Manager shows you two flanges. Identify the face, the pipe size, and the class from the markings.
 2. **Look-ups.** Write the full-face gasket dimensions for 3 in and 6 in Class 150 flanges, and the ring OD and bolt circle for a 4 in Class 300 flange.
 3. **Measure.** Measure a non-standard gasket or flange: ID, OD, bolt circle, number and size of holes.
 4. **Spiral wound.** Read the color code on a spiral wound gasket in stock and say the winding and filler.
@@ -314,7 +314,7 @@ A better gasket helped. Installing it with the star pattern and passes fixed the
 7. Why tighten bolts in passes and a star pattern?
 8. A gasket leaks on one side only. What is a likely cause?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 
