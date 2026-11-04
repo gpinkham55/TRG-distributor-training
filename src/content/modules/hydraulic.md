@@ -5,10 +5,10 @@ week: 2
 minutes: 240
 signoff: false
 status: published
-summary: Hydraulic hose types and laylines, fluids, temperature, and impulse, the thread and connection families, identifying a thread with calipers and gauges, fitting styles, quick couplers, crimping basics, and hydraulic safety.
+summary: Hydraulic hose types and laylines, fluids, temperature, and impulse, the thread and connection families, how fittings seal, leaks and installation, identifying a thread with calipers and gauges, fitting styles, quick couplers, crimping basics, and hydraulic safety.
 ---
 
-Hydraulic hoses are pressurized lines that help machinery and heavy equipment perform work, sometimes under thousands of psi. It is the most common hose assembly a branch builds. It's also the most dangerous to get wrong. This module covers hydraulic hose types, fluids and ratings, the thread and connection families, how to identify a fitting with calipers and gauges, fitting styles, and hydraulic safety. Module 9 covers building and testing assemblies.
+Hydraulic hoses are pressurized lines that help machinery and heavy equipment perform work, sometimes under thousands of psi. It is the most common hose assembly a branch builds. It's also the most dangerous to get wrong. This module covers hydraulic hose types, fluids and ratings, the thread and connection families, how fittings seal and why they leak, how to identify a fitting with calipers and gauges, fitting styles, and hydraulic safety. Module 9 covers building and testing assemblies.
 
 ### Learning objectives
 
@@ -17,12 +17,13 @@ After this module you will be able to:
 1. Tell braided hose from spiral hose and match each to its pressure and impulse needs.
 2. Read SAE and EN hose designations on a layline.
 3. Check the hoses tube against the hydraulic fluid and the temperature.
-4. Describe how NPT, JIC, SAE 45°, ORFS, O-ring boss, BSP, metric, JIS, and flange connections seal.
-5. Identify a thread using calipers, a thread pitch gauge, and a seat angle gauge.
-6. Describe fitting styles, elbows, orientation, and quick couplers.
-7. Explain why hose and fittings should come from one maker's system, crimped to that maker's spec.
-8. Explain the hydraulic injection hazard and how to avoid it.
-9. Gather what the shop needs to build a replacement hydraulic assembly in P21.
+4. Describe how NPT, NPSM, JIC, SAE 45°, ORFS, O-ring boss, BSP, metric, JIS, and flange connections seal.
+5. Tell parallel threads from tapered threads, and name the five sealing methods and the common causes of leaks.
+6. Identify a thread using calipers, a thread pitch gauge, and a seat angle gauge.
+7. Describe fitting styles, elbows, orientation, and quick couplers.
+8. Explain why hose and fittings should come from one maker's system, crimped to that maker's spec.
+9. Explain the hydraulic injection hazard and how to avoid it.
+10. Gather what the shop needs to build a replacement hydraulic assembly in P21.
 
 > ⚠️ SAFETY & COMPLIANCE: Never hold, bend, or run a hand along a hydraulic hose under pressure. A pinhole leak can inject oil through skin, and the injury can look minor at first, but has life threatening potential.
 
@@ -109,6 +110,7 @@ Every hydraulic connection seals one of three ways: on the threads, on a metal s
 | Connection | Thread | Seals on | How to spot it |
 |---|---|---|---|
 | NPT and NPTF | Tapered, 60° thread form | The threads (with sealant, or a tight dryseal fit on NPTF) | Threads get smaller toward the end; no seat or O-ring |
+| NPSM | Straight 60° pipe thread | A 30° seat in the female swivel, against the male's 30° cone or the chamfer on an NPT male | Female swivel on pipe-thread hose ends; mates with an NPT or NPSM male |
 | JIC 37° flare | Straight UN/UNF | Metal 37° cone seat | Male has a 37° cone at the tip; the most common hydraulic fitting in North America |
 | SAE 45° flare | Straight UN/UNF | Metal 45° seat | Looks like JIC; used on low-pressure fuel, oil, and refrigerant lines |
 | ORFS (O-ring face seal) | Straight UN | O-ring in a groove on the flat face of the male | Flat face with an O-ring; very leak resistant |
@@ -121,22 +123,153 @@ Every hydraulic connection seals one of three ways: on the threads, on a metal s
 
 [IMAGE EXAMPLE: Male ends of NPT, JIC 37°, ORFS, O-ring boss, BSPP, and metric 24° fittings lined up and labeled]
 
+[IMAGE EXAMPLE: NPSM and NPT: an NPSM female swivel seals on a 30° seat, and the threads only hold]
+
 > ⚠️ SAFETY & COMPLIANCE: Some different thread types screw together for a few turns, then leak or blow apart under pressure. JIC 37° and SAE 45° share thread sizes; NPT and BSPT look alike. Never force a fitting, and never use thread sealant to try and make a mismatched pair seal.
 
 > 📌 INDUSTRY INSIGHT: Heavy equipment built in the US uses mostly JIC, ORFS, and O-ring boss. European and Asian machines often use BSPP, metric, or JIS connections. Ask who made the machine; it narrows the search fast.
 
-## 7.4 Identifying a Thread
+## 7.4 How Fittings Seal
+
+Most hydraulic leaks start with one wrong idea: that every threaded fitting seals on its threads. Many fittings seal on an O-ring, a metal cone, a cutting ring, or a bonded washer, and the threads only hold the parts together. Tightening harder won't stop a leak on these fittings. It strips threads, flattens the seat, or cuts the O-ring.
+
+[IMAGE EXAMPLE: Common hydraulic adapters: JIC, ORB, NPT, and ORFS ends on elbows, tees, and straight fittings]
+
+### Holding and sealing
+
+Every fitting does two jobs:
+
+1. **Hold** the connection together under pressure.
+2. **Seal** the fluid in.
+
+On some fittings the threads do both. On others the threads only supply the clamping force, and a separate surface seals. On an ORFS fitting, the threads pull the flat face tight against the O-ring and never touch the oil.
+
+| Sealing method | Typical connections | What seals |
+|---|---|---|
+| O-ring | ORB, ORFS | A rubber O-ring |
+| Metal to metal | JIC 37°, SAE 45°, DIN 2353 cutting ring | A machined cone or a cutting ring |
+| Thread | NPT, NPTF, BSPT | Tapered threads wedged together |
+| Parallel thread | BSPP, metric | An O-ring, a bonded washer, or a seat |
+| Bonded washer | BSPP and metric male ends | Rubber bonded to a steel washer |
+
+A scratch, dent, or dirt on a sealing surface leaks even when the two fittings match. Check the seat, the face, and the O-ring before the fitting goes in.
+
+### Parallel and tapered threads
+
+[IMAGE EXAMPLE: BSPP and BSPT: a parallel thread keeps the same diameter, and a tapered thread gets smaller toward the end]
+
+- **Parallel (straight) threads** keep the same diameter from end to end: BSPP, metric, ORB, JIC, and ORFS. The threads hold; an O-ring, bonded washer, or metal seat seals.
+- **Tapered threads** get smaller toward the end: NPT, NPTF, and BSPT. Tightening wedges the threads together, and the threads are the seal.
+
+| Feature | Parallel thread | Tapered thread |
+|---|---|---|
+| Thread shape | Same diameter end to end | Gets smaller toward the end |
+| Do the threads seal? | No | Yes |
+| Extra seal needed | O-ring, bonded washer, or seat | Thread sealant or PTFE tape on NPT |
+| Reuse | Many times, with a new O-ring or washer | Limited; the threads deform each time |
+| Overtightening | Less sensitive | More sensitive; can crack a port |
+
+Mating the wrong thread forms leaks right away or ruins the threads.
+
+### O-ring seals: ORB and ORFS
+
+[IMAGE EXAMPLE: ORB and ORFS: the ORB O-ring sits behind the threads, and the ORFS O-ring sits in the flat face]
+
+- **ORB (O-ring boss):** the O-ring sits at the base of the male thread and seals against the chamfer in the port.
+- **ORFS (O-ring face seal):** the O-ring sits in a groove on the male's flat face and seals against the flat face of the female.
+
+O-ring fittings resist leaks and vibration well and go back together many times with a new O-ring. Most new equipment uses them. Match the O-ring material to the fluid (Module 16).
+
+### Metal-to-metal seals: JIC, SAE 45°, and DIN
+
+[IMAGE EXAMPLE: JIC 37° and SAE 45° male flares side by side with their seat angles marked]
+
+Two machined surfaces press together, with no rubber in the seal.
+
+- **JIC 37°** and **SAE 45°** flares seal cone to seat. They share thread sizes and do not seal to each other.
+- **DIN 2353 cutting ring** fittings bite into a metal tube as the nut tightens. The ring grips the tube and seals it.
+
+Metal seals handle high pressure and heat and last a long time. A nicked or flattened cone leaks, and more torque only flattens it further.
+
+### Thread seals: NPT, NPTF, and BSPT
+
+[IMAGE EXAMPLE: NPT and NPTF male threads side by side: NPT seals with sealant or tape, and NPTF is a dryseal thread]
+
+The threads deform slightly as they tighten and form the seal.
+
+- **NPT** needs thread sealant or PTFE tape. Keep tape off the first thread so pieces don't get into the system.
+- **NPTF (dryseal)** threads are made to seal metal to metal without sealant.
+- **BSPT** seals the same way with a 55° thread.
+
+Thread seals are simple and easy to find. They have limited reuse and are sensitive to torque.
+
+### Bonded washers
+
+[IMAGE EXAMPLE: A BSPP male adapter with two bonded sealing washers]
+
+A bonded washer (often called a Dowty washer) is a steel washer with a rubber ring bonded to its inside edge. It seals a BSPP or metric male end against a flat port face. It is low cost and easy to install. Replace it each time the fitting comes off.
+
+### Comparing the methods
+
+| Connection | Leak resistance | Reuse | Vibration | Installation |
+|---|---|---|---|---|
+| ORFS | Excellent | Excellent | Excellent | Easy |
+| ORB | Excellent | Excellent | Excellent | Easy |
+| BSPP with O-ring or bonded washer | Excellent | Excellent | Excellent | Easy |
+| DIN 2353 cutting ring | Excellent | Good | Excellent | Moderate |
+| JIC 37° | Very good | Very good | Good | Moderate |
+| Bonded washer | Very good | Moderate | Good | Easy |
+| NPT | Good | Limited | Moderate | Difficult |
+
+The machine and its pressure, heat, and vibration decide the connection. Replace like with like.
+
+### Why fittings leak
+
+[IMAGE EXAMPLE: Leaking NPT fitting troubleshooting: loose fit, no thread sealing, overtightening, and damaged threads]
+
+Most leaks can be prevented. The common causes:
+
+- BSP mixed with NPT
+- A damaged or missing O-ring
+- A scratched or flattened cone seat
+- Cross-threading
+- Too little or too much torque
+- Dirt on a sealing surface
+- A damaged ferrule or cutting ring used again
+- Poorly machined fittings
+
+Customers often blame the fitting. Installation errors cause a large share of field failures.
+
+### Installing fittings
+
+[IMAGE EXAMPLE: Confirm thread type, sealing method, and torque: don't force a fitting, don't mix standards, seal tapered threads, and use the right torque]
+
+Pass this checklist along to customers who install their own fittings:
+
+1. Confirm the fitting standard on both sides.
+2. Inspect the sealing surfaces.
+3. Replace damaged O-rings and bonded washers.
+4. Lubricate the O-ring with clean system fluid when the maker calls for it.
+5. Tighten to the maker's torque with a calibrated torque tool.
+6. Keep sealant and tape off O-ring and flare fittings.
+7. Never overtighten.
+
+> ⚠️ SAFETY & COMPLIANCE: Sealant or tape on an O-ring or flare fitting doesn't help it seal, and loose pieces can get into the hydraulic system. Use sealant on tapered pipe threads only.
+
+> 💡 KEY TAKEAWAY: Find how a fitting seals before you match it. Threads hold; the seal may be an O-ring, a cone, a ring, a washer, or the threads themselves.
+
+## 7.5 Identifying a Thread
 
 You need three tools: **calipers**, a **thread pitch gauge** (inch and metric), and a **seat angle gauge**. Work through the steps in order.
 
 ### Steps
 
-1. **Find the seal.** Look for an O-ring on the face, an O-ring behind the threads, a cone seat, or only threads (7.3).
+1. **Find the seal.** Look for an O-ring on the face, an O-ring behind the threads, a cone seat, a bonded washer, or only threads (7.3 and 7.4).
 2. **Tapered or straight?** Hold the fitting at eye level. Tapered threads get smaller toward the end; measure the first and last full thread with calipers to check.
 3. **Measure the thread diameter.** On a male thread, measure the outside diameter across the threads. On a female thread, measure the inside diameter. A female measures a little smaller than its matching male.
 4. **Measure the pitch.** Try the inch leaves first; find the one that sits flat in the threads with no light showing. When no inch leaf fits, try metric.
-5. **Check the seat angle.** Set the seat gauge against the cone or flare: JIC 37°, SAE flare 45°, DIN metric 24°, JIS 30°.
-6. **Match it to a chart.** Use the tables below and the maker's thread ID guide.
+5. **Check the seat angle.** Set the seat gauge against the cone or flare: JIC 37°, SAE flare 45°, DIN metric 24°, JIS and NPSM 30°.
+6. **Match it to a chart.** Use the tables below and the maker's thread ID guide. Never identify a fitting by thread size alone; several standards share sizes.
 
 [IMAGE EXAMPLE: Calipers measuring a male thread OD, a pitch gauge seated in the threads, and a seat angle gauge on a JIC cone]
 
@@ -181,11 +314,13 @@ Pipe thread sizes are nominal. The actual outside diameter is larger than the si
 | 3/4 | 14 | 1.050 | 14 | 1.041 |
 | 1 | 11-1/2 | 1.315 | 11 | 1.309 |
 
+[IMAGE EXAMPLE: Measuring an NPT thread: OD with calipers, threads per inch with a pitch gauge, the taper at both ends, and a final check with an NPT ring gauge]
+
 > 💡 KEY TAKEAWAY: A 1/2 in pipe thread measures about 0.84 in across. When a customer says "half-inch fitting," it's best to measure before you assume.
 
 > 📌 INDUSTRY INSIGHT: At 1/2 in and 3/4 in, NPT and BSP both have 14 threads per inch, so the pitch gauge can't tell them apart. Check the thread angle (60° NPT, 55° BSP) and ask where the machine was built.
 
-## 7.5 Fitting Styles, Quick Couplers, and Crimping Basics
+## 7.6 Fitting Styles, Quick Couplers, and Crimping Basics
 
 ### Fitting styles
 
@@ -221,7 +356,7 @@ The shop builds the assembly (Module 9). You need to know enough to give the sho
 
 > ⚠️ SAFETY & COMPLIANCE: A crimp outside the maker's tolerance can blow off under pressure. If a particular fitting is not in stock, shops often re-crimp a customers fitting on a new hose as a temporary fix to get the customer working again. Never guarantee a hydraulic assembly built from another maker's fittings on your hose.
 
-## 7.6 Hydraulic Safety, Industry Applications, and P21
+## 7.7 Hydraulic Safety, Industry Applications, and P21
 
 ### Safety
 
@@ -263,7 +398,7 @@ The shop builds the assembly (Module 9). You need to know enough to give the sho
 
 > 💡 KEY TAKEAWAY: When an equipment customer calls with a burst hose, get the machine make and model, the layline, and both fitting ends. The shop can build it with this info.
 
-## 7.7 Case Study, What If, and Rookie Mistakes
+## 7.8 Case Study, What If, and Rookie Mistakes
 
 ### Case study: the boom hose
 
@@ -303,7 +438,7 @@ The abrasion caused the failure. The sleeve keeps the new hose from failing the 
 | Quoting without the fluid | A tube that swells on special fluids | Ask the exact fluid |
 | Feeling for a leak | Fluid injection | Cardboard or wood, with the system shut down |
 
-## 7.8 Hydraulic Terms
+## 7.9 Hydraulic Terms
 
 | Term | Meaning |
 |---|---|
@@ -317,6 +452,10 @@ The abrasion caused the failure. The sleeve keeps the new hose from failing the 
 | SAE 45° | A flare fitting that seals on a 45° seat |
 | ORFS | O-ring face seal |
 | ORB | SAE O-ring boss: an O-ring behind the male thread |
+| NPSM | Straight pipe thread; the female swivel seals on a 30° seat |
+| Parallel / tapered thread | Same diameter end to end / gets smaller toward the end |
+| Bonded washer | A steel washer with a bonded rubber seal; also called a Dowty washer |
+| DIN 2353 | Metric cutting ring tube fitting |
 | BSPP / BSPT | British parallel / tapered pipe thread |
 | DIN 24° | A metric fitting that seals on a 24° cone |
 | Code 61 / Code 62 | SAE four-bolt flange series; 62 is the higher pressure |
@@ -330,7 +469,7 @@ The abrasion caused the failure. The sleeve keeps the new hose from failing the 
 | Flat face coupler | A quick coupler with flat mating faces (ISO 16028) |
 | Fluid injection | Oil forced through skin by a pinhole leak |
 
-## 7.9 Practice, Knowledge Check, and Module Quiz
+## 7.10 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
 
@@ -346,12 +485,14 @@ The abrasion caused the failure. The sleeve keeps the new hose from failing the 
 1. Which construction handles repeated pressure surges better: braid or spiral?
 2. What does EN 853 2SN describe?
 3. How does a JIC fitting seal? How does an ORFS fitting seal?
-4. What is the thread on a -8 JIC fitting?
-5. A male pipe thread measures about 0.84 in across with 14 threads per inch. What size is it?
-6. NPT and BSP both have 14 threads per inch at 1/2 in. How do you tell them apart?
-7. A machine runs phosphate ester fluid. What do you check?
-8. Why do hose and fittings come from one maker's system?
-9. A customer wants to find a leak by running a hand along the hose. What do you tell them?
+4. Do the threads seal on a BSPP fitting? On a BSPT fitting?
+5. What is the thread on a -8 JIC fitting?
+6. A male pipe thread measures about 0.84 in across with 14 threads per inch. What size is it?
+7. NPT and BSP both have 14 threads per inch at 1/2 in. How do you tell them apart?
+8. A machine runs phosphate ester fluid. What do you check?
+9. Why do hose and fittings come from one maker's system?
+10. A customer wants to find a leak by running a hand along the hose. What do you tell them?
+11. A customer wants to wrap PTFE tape on an ORFS fitting to stop a leak. What do you tell them?
 
 Work these on your own, then check your answers with your Manager.
 
