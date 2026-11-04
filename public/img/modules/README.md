@@ -56,6 +56,6 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `inventory-counts-replenishment-2` | 14 | Transfer Entry main screen with the from location and to location highlighted, and the tab that holds the items and the quantities shipped and received highlighted |  |
 | `rmas-returns-1` | 15 | RMA Entry main screen with the customer, original invoice, and RMA number highlighted, and the Order Notes tab highlighted |  |
 | `rmas-returns-2` | 15 | Previously Sold Items Query screen with the Invoice No., Item ID, Customer PO number, and the Add checkbox highlighted |  |
-| `expansion-joints-belting-sealing-1` | 16 | A single-arch rubber expansion joint with control rods installed between a pump and its discharge pipe | Yes |
-| `expansion-joints-belting-sealing-2` | 16 | A section of conveyor belt showing the plies and covers, beside classical and narrow V-belts with their part numbers visible | Yes |
-| `expansion-joints-belting-sealing-3` | 16 | An O-ring kit, a coil of braided packing with cut rings, and a cartridge mechanical seal side by side | Yes |
+| `expansion-joints-belting-sealing-1` | 16 | A single-arch rubber expansion joint with control rods installed between a pump and its discharge pipe |  |
+| `expansion-joints-belting-sealing-2` | 16 | A section of conveyor belt showing the plies and covers, beside classical and narrow V-belts with their part numbers visible |  |
+| `expansion-joints-belting-sealing-3` | 16 | An O-ring kit, a coil of braided packing with cut rings, and a cartridge mechanical seal side by side |  |
