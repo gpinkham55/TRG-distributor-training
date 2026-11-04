@@ -30,8 +30,18 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `order-entry-quoting-2` | 6 | Order Entry main screen for a quote with the quote flag and expiration date highlighted, and the tabs or buttons that hold the lead time and convert-to-order option highlighted |  |
 | `hydraulic-1` | 7 | Cut ends of 1-wire braid, 2-wire braid, and 4-spiral hydraulic hose side by side, showing the wire layers | Yes |
 | `hydraulic-2` | 7 | Male ends of NPT, JIC 37°, ORFS, O-ring boss, BSPP, and metric 24° fittings lined up and labeled | Yes |
-| `hydraulic-3` | 7 | Calipers measuring a male thread OD, a pitch gauge seated in the threads, and a seat angle gauge on a JIC cone | Yes |
-| `hydraulic-4` | 7 | An excavator with its hydraulic hoses and components labeled | Yes |
+| `hydraulic-3` | 7 | NPSM and NPT: an NPSM female swivel seals on a 30° seat, and the threads only hold | Yes |
+| `hydraulic-4` | 7 | Common hydraulic adapters: JIC, ORB, NPT, and ORFS ends on elbows, tees, and straight fittings | Yes |
+| `hydraulic-5` | 7 | BSPP and BSPT: a parallel thread keeps the same diameter, and a tapered thread gets smaller toward the end | Yes |
+| `hydraulic-6` | 7 | ORB and ORFS: the ORB O-ring sits behind the threads, and the ORFS O-ring sits in the flat face | Yes |
+| `hydraulic-7` | 7 | JIC 37° and SAE 45° male flares side by side with their seat angles marked | Yes |
+| `hydraulic-8` | 7 | NPT and NPTF male threads side by side: NPT seals with sealant or tape, and NPTF is a dryseal thread | Yes |
+| `hydraulic-9` | 7 | A BSPP male adapter with two bonded sealing washers | Yes |
+| `hydraulic-10` | 7 | Leaking NPT fitting troubleshooting: loose fit, no thread sealing, overtightening, and damaged threads | Yes |
+| `hydraulic-11` | 7 | Confirm thread type, sealing method, and torque: don't force a fitting, don't mix standards, seal tapered threads, and use the right torque | Yes |
+| `hydraulic-12` | 7 | Calipers measuring a male thread OD, a pitch gauge seated in the threads, and a seat angle gauge on a JIC cone | Yes |
+| `hydraulic-13` | 7 | Measuring an NPT thread: OD with calipers, threads per inch with a pitch gauge, the taper at both ends, and a final check with an NPT ring gauge | Yes |
+| `hydraulic-14` | 7 | An excavator with its hydraulic hoses and components labeled | Yes |
 | `pneumatic-1` | 8 | Rolls of polyurethane, nylon, and polyethylene tubing next to a red rubber air hose | Yes |
 | `pneumatic-2` | 8 | A cutaway push-to-connect fitting showing the release collar, the grip ring, and the O-ring, with a square-cut tube | Yes |
 | `pneumatic-3` | 8 | Industrial, automotive, and ARO plugs side by side, showing the different nose shapes | Yes |
@@ -56,6 +66,6 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `inventory-counts-replenishment-2` | 14 | Transfer Entry main screen with the from location and to location highlighted, and the tab that holds the items and the quantities shipped and received highlighted |  |
 | `rmas-returns-1` | 15 | RMA Entry main screen with the customer, original invoice, and RMA number highlighted, and the Order Notes tab highlighted |  |
 | `rmas-returns-2` | 15 | Previously Sold Items Query screen with the Invoice No., Item ID, Customer PO number, and the Add checkbox highlighted |  |
-| `expansion-joints-belting-sealing-1` | 16 | A single-arch rubber expansion joint with control rods installed between a pump and its discharge pipe |  |
-| `expansion-joints-belting-sealing-2` | 16 | A section of conveyor belt showing the plies and covers, beside classical and narrow V-belts with their part numbers visible |  |
-| `expansion-joints-belting-sealing-3` | 16 | An O-ring kit, a coil of braided packing with cut rings, and a cartridge mechanical seal side by side |  |
+| `expansion-joints-belting-sealing-1` | 16 | A single-arch rubber expansion joint with control rods installed between a pump and its discharge pipe | Yes |
+| `expansion-joints-belting-sealing-2` | 16 | A section of conveyor belt showing the plies and covers, beside classical and narrow V-belts with their part numbers visible | Yes |
+| `expansion-joints-belting-sealing-3` | 16 | An O-ring kit, a coil of braided packing with cut rings, and a cartridge mechanical seal side by side | Yes |
