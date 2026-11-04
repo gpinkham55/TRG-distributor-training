@@ -43,7 +43,6 @@ export function callouts({ base = '' } = {}) {
             if (ext) {
               return el('figure', { className: ['pic'] }, [
                 el('img', { src: `${base}/img/modules/${slug}-${n}.${ext}`, alt: m[1], loading: 'lazy' }),
-                el('figcaption', {}, [txt(m[1])]),
               ]);
             }
             return el('figure', { className: ['ph'] }, [
