@@ -38,7 +38,7 @@ const { eyebrow, title, back, backLabel, module, final } = Astro.props;
       const used = tries?.length || 0;
       const passed = tries?.some((t) => t.passed);
       if (passed) return say(isFinal ? `You passed the final exam with ${Math.max(...tries!.map((t) => t.score_pct))}%. See your Manager for final sign-off.` : `You passed this quiz with ${Math.max(...tries!.map((t) => t.score_pct))}%. Module ${moduleId} is complete.`, 'ok');
-      if (used >= quiz.max_attempts) return say(`You have used all ${quiz.max_attempts} ${quiz.max_attempts === 1 ? 'try' : 'tries'}. Talk to your mentor about next steps.`, 'err');
+      if (used >= quiz.max_attempts) return say(`You have used all ${quiz.max_attempts} ${quiz.max_attempts === 1 ? 'try' : 'tries'}. Talk to your Manager about next steps.`, 'err');
       if (used) say(`Try ${used + 1} of ${quiz.max_attempts}. Your best so far: ${Math.max(...tries!.map((t) => t.score_pct))}%.`);
 
       let drawn: any[] = [];
@@ -96,7 +96,7 @@ const { eyebrow, title, back, backLabel, module, final } = Astro.props;
           ? (isFinal ? `<p><b>You scored ${r.score_pct}%. You passed the final exam.</b> See your Manager for final sign-off.</p>` : `<p><b>You scored ${r.score_pct}%. You passed.</b> Module ${moduleId} is marked complete.</p>`)
           : `<p><b>You scored ${r.score_pct}%.</b> You need ${quiz.pass_pct}% to pass. ` +
             (left > 0 ? `You have ${left} ${left === 1 ? 'try' : 'tries'} left. Review, then <a href="">try again</a>; you will get a new set of questions.</p>`
-                      : `You have no tries left. Talk to your mentor about next steps.</p>`);
+                      : `You have no tries left. Talk to your Manager about next steps.</p>`);
         res.classList.remove('hidden'); $('q-msg').classList.add('hidden');
         res.scrollIntoView({ behavior: 'smooth' });
       });

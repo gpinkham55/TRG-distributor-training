@@ -52,11 +52,11 @@ You start changing records in this module. Change only the records your role own
 | Ship-to tax exemption | Accounting | Collect the certificate and send it to accounting |
 | New customer account | Accounting | Gather the details and hand them off |
 | Terms, credit limit, credit status | Your manager or accounting | Never change them; report what the customer told you |
-| Salesperson on the account | Your manager | Report a mismatch to your mentor |
+| Salesperson on the account | Your manager | Report a mismatch to your Manager |
 
 > ⚠️ SAFETY & COMPLIANCE: Never delete a contact or ship-to. Old orders and invoices point to them. Mark the record inactive.
 
-> 📌 INDUSTRY INSIGHT: Do all practice in the P21Play System. In live P21, write down the bad data you find and give it to your mentor until your mentor clears you to make changes.
+> 📌 INDUSTRY INSIGHT: Do all practice in the P21Play System. In live P21, write down the bad data you find and give it to your Manager until your Manager clears you to make changes.
 
 ## 3.2 Contact Maintenance
 
@@ -179,7 +179,7 @@ Sales tax follows the delivery address. P21 uses the ship-to's tax settings to c
 |---|---|
 | Normal taxable delivery | Set the tax jurisdiction for the delivery address |
 | The customer says they are tax exempt | Ask for the exemption certificate and send it to accounting. Accounting marks the ship-to exempt once the certificate is on file. |
-| Will call (the customer picks up) | Tax follows your branch's address; your mentor shows you how your branch sets it up |
+| Will call (the customer picks up) | Tax follows your branch's address; your Manager shows you how your branch sets it up |
 | Delivery to another state | Ask accounting before you set the tax fields |
 | A certificate expires | Tell accounting; the customer needs a new one on file |
 
@@ -215,7 +215,7 @@ Freight terms say who pays shipping and how it shows on the invoice.
 | Prepaid and add | The branch pays the carrier; the customer pays the branch | A freight line on the invoice |
 | Collect | The customer pays the carrier | No freight line; the carrier bills the customer |
 
-Set the terms the customer buys on. When you don't know them, ask your mentor before you set them.
+Set the terms the customer buys on. When you don't know them, ask your Manager before you set them.
 
 ### Delivery instructions
 
@@ -250,11 +250,11 @@ One call changed three records. The next gasket order to the warehouse prints th
 | Situation | What to do | Reason |
 |---|---|---|
 | The caller is already in P21 on another account | Ask which account they buy for; link them to the right one | A contact on the wrong account gets the wrong documents |
-| One address has two ship-to's | Tell your mentor; keep using the one with the order history | Duplicates split sales history |
+| One address has two ship-to's | Tell your Manager; keep using the one with the order history | Duplicates split sales history |
 | A customer asks to ship to a PO box | Ask for the street address of the receiving site. | Company policy: We can't ship to a P.O. Box |
 | A customer wants their terms or credit limit changed | Take the details and hand them to your manager | Terms and credit belong to your manager and accounting |
 | A caller says "put me on the invoices" | Pass the call to accounting - only accounting changes the contact that receives receipts | AP changes affect how the branch gets paid |
-| The ship-to's salesperson differs from the account's | Tell your mentor | Commissions and account ownership follow the salesperson |
+| The ship-to's salesperson differs from the account's | Tell your Manager | Commissions and account ownership follow the salesperson |
 | A new customer with no account calls to order | Take the details and send them to accounting | Accounting directs customers in creating new customer accounts |
 
 ### Rookie mistakes
@@ -295,15 +295,15 @@ One call changed three records. The next gasket order to the warehouse prints th
 
 ### Practice in the P21Play System
 
-Your mentor picks the accounts. Do every task in the P21Play System and bring your notes to your mentor.
+Your Manager picks the accounts. Do every task in the P21Play System and bring your notes to your Manager.
 
-1. **Search before you add.** Your mentor gives you three contacts. Search each one by last name, email, and phone. Write which ones are already in P21 and on which account.
+1. **Search before you add.** Your Manager gives you three contacts. Search each one by last name, email, and phone. Write which ones are already in P21 and on which account.
 2. **Add a contact.** A practice caller says: "This is Dana Ruiz, the new buyer at Southeastern Paper Mill, Mill No. 2. Send quotes to me." Add Dana, link her to the account and the ship-to, set her role and documents, and confirm she shows on the account.
 3. **Retire a contact.** The practice caller adds: "Pat Owens retired. Pat used to get our quotes." Mark Pat inactive and move the quote setting to Dana.
 4. **Add a ship-to.** The practice caller asks you to deliver to a new warehouse: 410 Industrial Park Road, Building C, Dock 4, call the dock before every delivery. Add the ship-to with each piece of information in the right field.
-5. **Update or add.** For each statement in the "Update or add new?" table in 3.3, tell your mentor what you would do and why.
-6. **Find the errors.** Your mentor shows you a ship-to with three planted mistakes. Find and fix them.
-7. **Tax exempt.** A practice caller says, "We're tax exempt, take the tax off." Tell your mentor every step you take and who does what.
+5. **Update or add.** For each statement in the "Update or add new?" table in 3.3, tell your Manager what you would do and why.
+6. **Find the errors.** Your Manager shows you a ship-to with three planted mistakes. Find and fix them.
+7. **Tax exempt.** A practice caller says, "We're tax exempt, take the tax off." Tell your Manager every step you take and who does what.
 
 ### Knowledge check (practice)
 
@@ -316,7 +316,7 @@ Your mentor picks the accounts. Do every task in the P21Play System and bring yo
 7. Where do you put "call 30 minutes before delivery"?
 8. The customer pays the carrier directly. Which freight term is that?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

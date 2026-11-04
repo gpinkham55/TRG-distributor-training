@@ -190,7 +190,7 @@ A coupling holds only as well as the way it is attached. Pick the method from th
 ### Finding hose and couplings
 
 1. Press **F2** and search bulk hose by family and size ("suction ," "steam "), or by the maker's part number from the layline.
-2. Search couplings by type, size, and material ("cam C 2 SS," "ground joint"). Your mentor shows you how your branch describes them.
+2. Search couplings by type, size, and material ("cam C 2 SS," "ground joint"). Your Manager shows you how your branch describes them.
 3. Read the **UOM**: bulk hose in FT, couplings and clamps in EA.
 4. Read **net available** for the hose and every coupling and clamp. One missing clamp holds up the whole assembly.
 5. Check the **Substitute** tab for approved alternates with the same material and rating.
@@ -236,7 +236,7 @@ The pump starved for water: layflat was on the suction side. The right hose on e
 | An air hose coupling keeps coming apart | Add safety pins and a whip check; check the lugs for wear | Universal couplings vibrate loose |
 | A fitting "won't seal" on a 3/4 in water line | Check for GHT forced onto NPT, or the reverse | The two threads look alike and seal differently |
 | A tank truck driver needs a different coupling than the plant's | Ask the plant which connection it runs and match it | The plant's connection decides the coupling |
-| The coupling chart lists no approved fitting for the hose | Ask your mentor or the hose maker | An unapproved coupling may blow off |
+| The coupling chart lists no approved fitting for the hose | Ask your Manager or the hose maker | An unapproved coupling may blow off |
 
 ### Rookie mistakes
 
@@ -278,11 +278,11 @@ The pump starved for water: layflat was on the suction side. The right hose on e
 
 ### Practice
 
-1. **Hose families.** Walk the hose racks with your mentor. For each family in 5.1, find one hose in stock and read its layline.
-2. **Cam and groove.** Your mentor lays out a mixed set of cam and groove fittings. Sort them by type letter, size, and material.
+1. **Hose families.** Walk the hose racks with your Manager. For each family in 5.1, find one hose in stock and read its layline.
+2. **Cam and groove.** Your Manager lays out a mixed set of cam and groove fittings. Sort them by type letter, size, and material.
 3. **Coupling ID.** Identify a ground joint coupling, a universal coupling, a king nipple, a combination nipple, a GHT fitting, and a flanged end.
 4. **Attachment.** Look at three finished assemblies in the shop. Say how each coupling is attached and why that method fits the hose.
-5. **STAMPED.** Your mentor plays a farmer: "I need a hose for my irrigation pump." Ask the STAMPED questions, including which side of the pump.
+5. **STAMPED.** Your Manager plays a farmer: "I need a hose for my irrigation pump." Ask the STAMPED questions, including which side of the pump.
 6. **P21.** Press F2 and find a 2 in suction hose, a 2 in type C aluminum coupler, a 2 in type E aluminum adapter, and the clamps or ferrules the maker lists. Write net available for each.
 
 ### Knowledge check (practice)
@@ -297,7 +297,7 @@ The pump starved for water: layflat was on the suction side. The right hose on e
 8. Why must bolted clamps on steam hose be retightened?
 9. How do you enter a hose assembly on an order?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

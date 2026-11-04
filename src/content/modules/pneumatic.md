@@ -269,7 +269,7 @@ The tech asked for "the same as last time." The last time was the wrong size. Me
 7. What is the pressure limit for compressed air used for cleaning?
 8. A tool "has no power." What do you ask about the hose?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

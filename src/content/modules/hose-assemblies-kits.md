@@ -22,7 +22,7 @@ After this module you will be able to:
 6. Enter an assembly as a kit item in P21 with the spec in the extended description.
 7. Sell bulk hose by the foot and check reels and remnants before promising a continuous length.
 
-> ⚠️ SAFETY & COMPLIANCE: Wear safety glasses when cutting hose or running the crimper. Run the saw and the crimper only after your mentor trains you on that machine.
+> ⚠️ SAFETY & COMPLIANCE: Wear safety glasses when cutting hose or running the crimper. Run the saw and the crimper only after your Manager trains you on that machine.
 
 ## 9.1 The Assembly Spec
 
@@ -147,7 +147,7 @@ Labor is priced at the shop rate. This course uses a placeholder shop rate of $1
 
 1. Press **F8** and check Customer Sales History. Repeat assemblies usually have their own kit item, often with the customer's part number.
 2. When a kit item is on file, enter it and read the spec back to the customer.
-3. When no kit item is on file, bring in your mentor to set up the kit part number.
+3. When no kit item is on file, bring in your Manager to set up the kit part number.
 4. Put the overall length, orientation, sleeve, and test or tag request in the line's **extended description**.
 5. Press **F2** and check net available on the hose and every fitting.
 6. Check the shop's schedule before you promise a ship date.
@@ -196,9 +196,9 @@ The tag made the reorder one email.
 
 | Situation | What to do | Reason |
 |---|---|---|
-| No kit item matches the spec | Bring in your mentor to set up the kit | The shop builds from the kit and the spec |
+| No kit item matches the spec | Bring in your Manager to set up the kit | The shop builds from the kit and the spec |
 | The customer gives only "same as before" | Find the kit in Customer Sales History and read the spec back | History holds the exact build |
-| The shop is out of one fitting | Ask your mentor; switch hose and fittings together to one maker's system | Mixed systems blow off |
+| The shop is out of one fitting | Ask your Manager; switch hose and fittings together to one maker's system | Mixed systems blow off |
 | A crimp measures outside tolerance | Cut it off and rebuild | An out-of-tolerance crimp can blow off |
 | A long continuous length is needed | Have the warehouse check reels and remnants | P21 counts total feet |
 | The customer needs a test certificate | Put it in the extended description at order entry | The shop tests and prints it with the build |
@@ -238,11 +238,11 @@ The tag made the reorder one email.
 
 ### Practice
 
-1. **Spec.** Your mentor hands you a failed assembly. Write a complete spec: hose, fittings, overall length, orientation, and any sleeve.
+1. **Spec.** Your Manager hands you a failed assembly. Write a complete spec: hose, fittings, overall length, orientation, and any sleeve.
 2. **Cut length.** Using the maker's chart, figure the cut length for a 60 in -8 assembly with a straight female JIC on one end and a 45° female JIC elbow on the other.
 3. **Crimp chart.** Look up the die set, setting, crimp diameter, and tolerance for a -8 two-wire hose with the matching fittings.
-4. **Watch a build.** Watch your mentor build, crimp, check, test, and tag an assembly. Write each step.
-5. **Build.** With your mentor beside you, build one assembly from a spec, measure the crimp in two places, and tag it.
+4. **Watch a build.** Watch your Manager build, crimp, check, test, and tag an assembly. Write each step.
+5. **Build.** With your Manager beside you, build one assembly from a spec, measure the crimp in two places, and tag it.
 
 ### Knowledge check (practice)
 
@@ -255,7 +255,7 @@ The tag made the reorder one email.
 7. P21 shows 300 FT of a hose in stock. Can you promise one continuous 150 FT piece?
 8. Where does a test certificate request go on the order?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

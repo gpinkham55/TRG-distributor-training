@@ -120,7 +120,7 @@ Many pumps use mechanical seals instead of packing. They are ordered by part num
 
 ### Capstone scenarios
 
-Work each scenario with your mentor playing the customer. Do every P21 step in the P21Play System. Your mentor checks the questions you asked, the records you touched, and the order or quote you built.
+Work each scenario with your Manager playing the customer. Do every P21 step in the P21Play System. Your Manager checks the questions you asked, the records you touched, and the order or quote you built.
 
 | Industry | Scenario | Modules it draws on |
 |---|---|---|
@@ -137,7 +137,7 @@ Work each scenario with your mentor playing the customer. Do every P21 step in t
 
 ### Final sign-off
 
-Your Manager signs you off when you have passed every module quiz, finished every mentor sign-off, worked the four capstone scenarios, and passed the final exam.
+Your Manager signs you off when you have passed every module quiz, finished every Manager sign-off, worked the four capstone scenarios, and passed the final exam.
 
 ### Knowledge check (practice, not graded)
 
@@ -148,7 +148,7 @@ Your Manager signs you off when you have passed every module quiz, finished ever
 5. A stuffing box bore is 2.5 in and the shaft is 1.75 in. What size packing do you need?
 6. What four things do you ask for to quote a mechanical seal?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

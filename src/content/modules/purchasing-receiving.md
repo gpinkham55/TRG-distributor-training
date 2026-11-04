@@ -210,11 +210,11 @@ A planner calls: "You told me our PTFE expansion joint would be here last week. 
 ### Practice in the P21Play System
 
 1. **Read a PO.** Open three open POs and write the vendor, items, quantities, units, and promise dates.
-2. **Enter a PO.** Enter a stock PO for two items your mentor gives you. Check the purchasing unit on each.
+2. **Enter a PO.** Enter a stock PO for two items your Manager gives you. Check the purchasing unit on each.
 3. **Special order.** Enter a customer order with an S line, find the purchase need or PO it creates, and note how they link.
 4. **Direct ship.** Enter a D line and check that the PO ship-to is the customer's address.
 5. **Receive.** Receive the PO from exercise 2 with one line short. Note what P21 shows for the open quantity.
-6. **Dock problems.** Your mentor describes three deliveries: one short, one with a crushed carton, and one with the wrong item. Say what you would do with each.
+6. **Dock problems.** Your Manager describes three deliveries: one short, one with a crushed carton, and one with the wrong item. Say what you would do with each.
 
 ### Knowledge check (practice)
 
@@ -227,7 +227,7 @@ A planner calls: "You told me our PTFE expansion joint would be here last week. 
 7. What three documents must agree before accounting pays a vendor?
 8. A vendor sells hose by the 250 FT reel. What do you check on the PO?
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 

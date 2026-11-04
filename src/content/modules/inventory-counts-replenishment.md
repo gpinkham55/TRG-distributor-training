@@ -69,7 +69,7 @@ The warehouse runs cycle counts. Everyone helps at the annual count.
 | Sheet and roll goods | Measure each piece and convert to the item's unit (SI, SF, or roll) |
 | Boxed fittings | Count open boxes by the piece; count sealed boxes by the box quantity |
 | Kits and assemblies on the shelf | Count the finished kit item in EA; leave its components alone |
-| Special-order stock set aside for a customer | Count it under its own item; tell your mentor it is allocated |
+| Special-order stock set aside for a customer | Count it under its own item; tell your Manager it is allocated |
 
 > 💡 KEY TAKEAWAY: Count what is there, in the unit P21 uses. A count of "1 reel" on an item kept in feet is a 499-foot error on a 500 FT reel.
 
@@ -221,11 +221,11 @@ The count found the gap. The kit item stops it from happening again.
 
 ### Practice
 
-1. **Cycle count.** Count 10 bins your mentor assigns, using a blind count list. Include one hose reel with remnants and one sheet item.
-2. **Variance.** Compare your counts to P21 with your mentor. For each difference, work the steps in 14.3 and suggest a likely cause.
+1. **Cycle count.** Count 10 bins your Manager assigns, using a blind count list. Include one hose reel with remnants and one sheet item.
+2. **Variance.** Compare your counts to P21 with your Manager. For each difference, work the steps in 14.3 and suggest a likely cause.
 3. **Min and max.** For three items, look up the min, max, and net available in the P21Play System. Work out what replenishment would suggest, rounded to the pack size.
 4. **Transfer.** Enter a customer order line with the T disposition from another location in the P21Play System, then receive the transfer.
-5. **Annual count prep.** Walk one aisle with your mentor and list what must happen before an annual count there.
+5. **Annual count prep.** Walk one aisle with your Manager and list what must happen before an annual count there.
 
 ### Knowledge check (practice)
 
@@ -237,7 +237,7 @@ The count found the gap. The kit item stops it from happening again.
 6. What happens when a transfer ships and is never received?
 7. A count is short. List three places to check before you call it a variance.
 
-Work these on your own, then check your answers with your mentor.
+Work these on your own, then check your answers with your Manager.
 
 ### Module quiz
 
