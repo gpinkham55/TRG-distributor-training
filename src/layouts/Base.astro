@@ -24,6 +24,7 @@ const nav = [
   <a class="brand" href={u('')}><img src={u('trg-logo.svg')} alt="TRG Distribution" width="150" height="30" /><span>Training</span></a>
   <nav class="nav">
     {nav.map(([k, label, path]) => <a href={u(path)} aria-current={current === k ? 'page' : undefined}>{label}</a>)}
+    <a href={u('admin')} id="nav-admin" class="hidden" aria-current={current === 'admin' ? 'page' : undefined}>Trainee Activity</a>
     <a href={u('signin')} id="nav-auth" aria-current={current === 'signin' ? 'page' : undefined}>Sign in</a>
   </nav>
 </div></header>
@@ -34,7 +35,12 @@ const nav = [
   const a = document.getElementById('nav-auth');
   if (supabase && a) {
     supabase.auth.getSession().then(({ data }) => {
-      if (data.session) { a.textContent = 'Sign out'; a.dataset.out = '1'; }
+      if (data.session) {
+        a.textContent = 'Sign out'; a.dataset.out = '1';
+        supabase.rpc('is_admin').then(({ data: isAdmin }) => {
+          if (isAdmin) document.getElementById('nav-admin')?.classList.remove('hidden');
+        });
+      }
     });
     a.addEventListener('click', async (e) => {
       if (a.dataset.out) { e.preventDefault(); await supabase.auth.signOut(); location.reload(); }
