@@ -26,14 +26,23 @@ create table if not exists profiles (
 create or replace function handle_new_user() returns trigger
 language plpgsql security definer set search_path = public as $$
 begin
-  insert into profiles (id, full_name)
-  values (new.id, coalesce(new.raw_user_meta_data->>'full_name', ''))
+  insert into profiles (id, full_name, role)
+  values (new.id, coalesce(new.raw_user_meta_data->>'full_name', ''),
+          case when exists (select 1 from admin_emails where lower(email) = lower(new.email))
+               then 'admin'::user_role else 'trainee'::user_role end)
   on conflict (id) do nothing;
   return new;
 end $$;
 drop trigger if exists on_auth_user_created on auth.users;
 create trigger on_auth_user_created after insert on auth.users
   for each row execute function handle_new_user();
+
+-- Emails listed here become admins when they register (and on the next schema run).
+-- No policy grants read access; add rows in the SQL Editor only.
+create table if not exists admin_emails (
+  email text primary key
+);
+alter table admin_emails enable row level security;
 
 -- True when the signed-in user is an instructor or admin.
 create or replace function is_staff() returns boolean
@@ -209,6 +218,47 @@ create table if not exists assignments (
   primary key (trainee_id, instructor_id)
 );
 
+-- ---------- Time on each module ----------
+-- The module page adds the seconds a signed-in trainee spends on it.
+create table if not exists module_time (
+  user_id uuid not null references auth.users on delete cascade,
+  module_id int not null references modules,
+  seconds int not null default 0,
+  first_seen timestamptz not null default now(),
+  last_seen timestamptz not null default now(),
+  primary key (user_id, module_id)
+);
+
+create or replace function log_module_time(p_module_id int, p_seconds int)
+returns void language plpgsql security definer set search_path = public as $$
+begin
+  if auth.uid() is null then return; end if;
+  if p_seconds is null or p_seconds < 1 then return; end if;
+  insert into module_time (user_id, module_id, seconds)
+    values (auth.uid(), p_module_id, least(p_seconds, 120))
+  on conflict (user_id, module_id) do update
+    set seconds = module_time.seconds + least(p_seconds, 120), last_seen = now();
+end $$;
+
+-- ---------- Admin report ----------
+create or replace function is_admin() returns boolean
+language sql stable security definer set search_path = public as $$
+  select exists (select 1 from profiles where id = auth.uid() and role = 'admin');
+$$;
+
+-- Every user with email, for the admin page. Admins only.
+create or replace function admin_users()
+returns table (id uuid, email text, full_name text, branch text, role user_role,
+               created_at timestamptz, last_sign_in_at timestamptz)
+language plpgsql stable security definer set search_path = public as $$
+begin
+  if not is_admin() then raise exception 'Admins only'; end if;
+  return query
+    select p.id, u.email::text, p.full_name, p.branch, p.role, p.created_at, u.last_sign_in_at
+    from profiles p join auth.users u on u.id = p.id
+    order by u.email;
+end $$;
+
 -- ---------- Row-level security ----------
 alter table profiles enable row level security;
 alter table modules enable row level security;
@@ -222,6 +272,7 @@ alter table attempt_answers enable row level security;
 alter table skills enable row level security;
 alter table skill_signoffs enable row level security;
 alter table assignments enable row level security;
+alter table module_time enable row level security;
 
 drop policy if exists "own profile or staff" on profiles;
 create policy "own profile or staff" on profiles for select using (id = auth.uid() or is_staff());
@@ -258,6 +309,10 @@ create policy "read signoffs" on skill_signoffs for select using (user_id = auth
 drop policy if exists "staff sign off" on skill_signoffs;
 create policy "staff sign off" on skill_signoffs for insert with check (is_staff() and signed_by = auth.uid());
 
+-- Time is written only by log_module_time.
+drop policy if exists "read own time" on module_time;
+create policy "read own time" on module_time for select using (user_id = auth.uid() or is_staff());
+
 drop policy if exists "read assignments" on assignments;
 create policy "read assignments" on assignments for select
   using (trainee_id = auth.uid() or instructor_id = auth.uid() or is_staff());
@@ -275,6 +330,18 @@ grant select, insert on skill_signoffs to authenticated;
 revoke all on question_keys from anon, authenticated;
 revoke execute on function grade_attempt(bigint, jsonb) from public, anon;
 grant execute on function grade_attempt(bigint, jsonb) to authenticated;
+grant select on module_time to authenticated;
+revoke all on admin_emails from anon, authenticated;
+revoke execute on function log_module_time(int, int) from public, anon;
+grant execute on function log_module_time(int, int) to authenticated;
+revoke execute on function admin_users() from public, anon;
+grant execute on function admin_users() to authenticated;
 
--- To make yourself admin after you register, run (with your email):
--- update profiles set role = 'admin' where id = (select id from auth.users where email = 'you@example.com');
+-- Promote anyone already registered whose email is on the admin list.
+update profiles set role = 'admin'
+where role <> 'admin'
+  and id in (select u.id from auth.users u join admin_emails a on lower(a.email) = lower(u.email));
+
+-- To make someone an admin, add their email to admin_emails in the SQL Editor:
+--   insert into admin_emails (email) values ('you@example.com') on conflict do nothing;
+-- then run this file again (or the update just above). New sign-ups on the list become admins automatically.

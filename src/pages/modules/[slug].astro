@@ -40,12 +40,39 @@ const d = m.data;
   </div>
   <script>
     import { supabase } from '../../lib/supabase';
+    // Counts seconds while the page is visible and the trainee has been active
+    // in the last 5 minutes, and saves them every 30 seconds.
+    function trackTime(moduleId: number) {
+      const IDLE_MS = 5 * 60 * 1000;
+      let lastActive = Date.now();
+      let pending = 0;
+      const mark = () => { lastActive = Date.now(); };
+      for (const ev of ['mousemove', 'keydown', 'scroll', 'touchstart', 'click']) {
+        window.addEventListener(ev, mark, { passive: true });
+      }
+      const flush = () => {
+        if (pending < 1 || !supabase) return;
+        const s = pending; pending = 0;
+        supabase.rpc('log_module_time', { p_module_id: moduleId, p_seconds: s }).then(({ error }) => {
+          if (error) pending += s;
+        });
+      };
+      setInterval(() => {
+        if (document.visibilityState === 'visible' && Date.now() - lastActive < IDLE_MS) pending += 1;
+        if (pending >= 30) flush();
+      }, 1000);
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') flush(); else mark();
+      });
+      window.addEventListener('pagehide', flush);
+    }
     const box = document.getElementById('complete')!;
     const id = Number(box.dataset.module);
     (async () => {
       if (!supabase) return;
       const { data } = await supabase.auth.getSession();
       if (!data.session) return;
+      trackTime(id);
       const { data: row } = await supabase.from('module_progress').select('completed_at').eq('module_id', id).maybeSingle();
       if (row) {
         const st = document.getElementById('c-status')!;
