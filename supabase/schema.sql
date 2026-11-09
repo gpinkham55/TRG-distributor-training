@@ -240,6 +240,16 @@ begin
     set seconds = module_time.seconds + least(p_seconds, 120), last_seen = now();
 end $$;
 
+-- ---------- Time on each quiz attempt ----------
+alter table quiz_attempts add column if not exists seconds int;
+
+-- The quiz page saves the active seconds once, right after grading.
+create or replace function log_attempt_time(p_attempt_id bigint, p_seconds int)
+returns void language sql security definer set search_path = public as $$
+  update quiz_attempts set seconds = least(greatest(coalesce(p_seconds, 0), 0), 14400)
+  where id = p_attempt_id and user_id = auth.uid() and seconds is null;
+$$;
+
 -- ---------- Admin report ----------
 create or replace function is_admin() returns boolean
 language sql stable security definer set search_path = public as $$
@@ -257,6 +267,22 @@ begin
     select p.id, u.email::text, p.full_name, p.branch, p.role, p.created_at, u.last_sign_in_at
     from profiles p join auth.users u on u.id = p.id
     order by u.email;
+end $$;
+
+-- Questions, the trainee's answers, and the correct answers for one attempt. Admins only.
+create or replace function admin_attempt_answers(p_attempt_id bigint)
+returns table (question_id bigint, code text, prompt text, choices jsonb, chosen int[],
+               correct_choices int[], is_correct boolean, explanation text)
+language plpgsql stable security definer set search_path = public as $$
+begin
+  if not is_admin() then raise exception 'Admins only'; end if;
+  return query
+    select q.id, q.code, q.prompt, q.choices, aa.chosen, k.correct, aa.correct, q.explanation
+    from attempt_answers aa
+    join questions q on q.id = aa.question_id
+    left join question_keys k on k.question_id = aa.question_id
+    where aa.attempt_id = p_attempt_id
+    order by aa.correct, q.id;
 end $$;
 
 -- ---------- Row-level security ----------
@@ -331,6 +357,10 @@ revoke all on question_keys from anon, authenticated;
 revoke execute on function grade_attempt(bigint, jsonb) from public, anon;
 grant execute on function grade_attempt(bigint, jsonb) to authenticated;
 grant select on module_time to authenticated;
+revoke execute on function log_attempt_time(bigint, int) from public, anon;
+grant execute on function log_attempt_time(bigint, int) to authenticated;
+revoke execute on function admin_attempt_answers(bigint) from public, anon;
+grant execute on function admin_attempt_answers(bigint) to authenticated;
 revoke all on admin_emails from anon, authenticated;
 revoke execute on function log_module_time(int, int) from public, anon;
 grant execute on function log_module_time(int, int) to authenticated;

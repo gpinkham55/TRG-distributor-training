@@ -71,6 +71,14 @@ const { eyebrow, title, back, backLabel, module, final } = Astro.props;
       }).join('') + `<button class="btn" type="submit">Submit answers</button>`;
       form.classList.remove('hidden');
 
+      // Active seconds on the quiz: page visible and some activity in the last 5 minutes.
+      let quizSec = 0, lastActive = Date.now();
+      const mark = () => { lastActive = Date.now(); };
+      for (const ev of ['mousemove', 'keydown', 'scroll', 'touchstart', 'click']) window.addEventListener(ev, mark, { passive: true });
+      const timer = setInterval(() => {
+        if (document.visibilityState === 'visible' && Date.now() - lastActive < 5 * 60 * 1000) quizSec += 1;
+      }, 1000);
+
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
         const answers: Record<string, number[]> = {};
@@ -83,6 +91,8 @@ const { eyebrow, title, back, backLabel, module, final } = Astro.props;
         const { data, error } = await supabase.rpc('grade_attempt', { p_quiz_id: quiz.id, answers });
         if (error) { btn.disabled = false; return say(error.message, 'err'); }
         const r = data[0];
+        clearInterval(timer);
+        supabase.rpc('log_attempt_time', { p_attempt_id: r.attempt_id, p_seconds: quizSec }).then(() => {});
         const { data: marks } = await supabase.from('attempt_answers').select('question_id, correct').eq('attempt_id', r.attempt_id);
         for (const mk of marks || []) {
           const fs = form.querySelector(`fieldset[data-id="${mk.question_id}"]`)!;
