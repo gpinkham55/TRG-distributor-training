@@ -8,11 +8,11 @@ import { u } from '../lib/url';
     <h1>Trainee Activity</h1>
     <p id="a-msg" class="msg" data-signin={u('signin')}>Loading…</p>
     <div id="a-in" class="hidden">
-      <p>Time counts while a module page is open and the trainee has been active in the last 5 minutes. Select a trainee to see each module.</p>
+      <p>Time counts while a module or quiz page is open and the trainee has been active in the last 5 minutes. Select a trainee to see each module, then select a quiz score to see the questions and answers.</p>
       <p><button class="btn alt" id="a-csv" type="button">Download CSV</button></p>
       <div class="tw"><table id="a-sum">
         <thead><tr>
-          <th>Email</th><th>Name</th><th>Modules complete</th><th>Total time</th>
+          <th>Email</th><th>Name</th><th>Modules complete</th><th>Course minutes</th><th>Quiz minutes</th><th>Total minutes</th>
           <th>Quizzes passed</th><th>Final exam</th><th>Last active</th>
         </tr></thead>
         <tbody></tbody>
@@ -20,9 +20,13 @@ import { u } from '../lib/url';
       <div id="a-detail" class="hidden">
         <h2 id="d-title"></h2>
         <div class="tw"><table>
-          <thead><tr><th>Module</th><th>Title</th><th>Time</th><th>Quiz attempts</th><th>Best</th><th>Status</th></tr></thead>
+          <thead><tr><th>Module</th><th>Title</th><th>Course minutes</th><th>Quiz minutes</th><th>Quiz attempts</th><th>Best</th><th>Status</th></tr></thead>
           <tbody id="d-body"></tbody>
         </table></div>
+        <div id="qa" class="hidden">
+          <h3 id="qa-title"></h3>
+          <div id="qa-body"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -33,6 +37,13 @@ import { u } from '../lib/url';
     #a-sum tbody tr:hover,#a-sum tbody tr.sel{background:var(--panel)}
     .pass{color:var(--tip);font-weight:600}
     .fail{color:var(--warn)}
+    .try{background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;font:inherit}
+    .qa-item{border:1px solid var(--line);border-radius:8px;padding:.6rem .9rem;margin:.6rem 0}
+    .qa-item.ok{border-left:6px solid var(--tip)}
+    .qa-item.no{border-left:6px solid var(--warn)}
+    .qa-item ul{margin:.3rem 0 0;padding-left:1.2rem}
+    .qa-item li.chosen{font-weight:600}
+    .qa-item .exp{color:var(--muted);margin:.4rem 0 0}
   </style>
   <script>
     import { supabase } from '../lib/supabase';
@@ -46,6 +57,7 @@ import { u } from '../lib/url';
       const h = Math.floor(sec / 3600), m = Math.round((sec % 3600) / 60);
       return h ? `${h}h ${m}m` : `${m}m`;
     };
+    const mins = (sec: number) => String(Math.round((sec || 0) / 60));
     const day = (d?: string | null) => (d ? new Date(d).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' }) : '');
 
     (async () => {
@@ -57,7 +69,7 @@ import { u } from '../lib/url';
 
       const [quizzes, attempts, progress, times] = await Promise.all([
         supabase.from('quizzes').select('id, module_id, kind'),
-        supabase.from('quiz_attempts').select('user_id, quiz_id, score_pct, passed, created_at').order('created_at'),
+        supabase.from('quiz_attempts').select('id, user_id, quiz_id, score_pct, passed, seconds, created_at').order('created_at'),
         supabase.from('module_progress').select('user_id, module_id, completed_at'),
         supabase.from('module_time').select('user_id, module_id, seconds, last_seen'),
       ]);
@@ -80,20 +92,47 @@ import { u } from '../lib/url';
 
       const rows = [...per.values()];
       const summary = (r: any) => {
-        const total = Object.values(r.time).reduce((a: number, b: any) => a + (b as number), 0) as number;
+        const course = Object.values(r.time).reduce((a: number, b: any) => a + (b as number), 0) as number;
+        const quiz = [...Object.values(r.att).flat(), ...r.final].reduce((a: number, b: any) => a + (b.seconds || 0), 0) as number;
         const passed = Object.values(r.att).filter((l: any) => l.some((a: any) => a.passed)).length;
         const fb = r.final.length ? Math.max(...r.final.map((a: any) => a.score_pct)) : null;
         const fp = r.final.some((a: any) => a.passed);
-        return { total, passed, done: Object.keys(r.done).length, final: fb === null ? '' : `${fb}%${fp ? ' passed' : ''} (${r.final.length} of 2 tries)` };
+        return { course, quiz, passed, done: Object.keys(r.done).length, final: fb === null ? '' : `${fb}%${fp ? ' passed' : ''} (${r.final.length} of 2 tries)` };
       };
 
       const body = document.querySelector('#a-sum tbody')!;
       body.innerHTML = rows.map((r, i) => {
         const s = summary(r);
         return `<tr data-i="${i}"><td>${esc(r.u.email)}${r.u.role !== 'trainee' ? ` <span class="badge">${esc(r.u.role)}</span>` : ''}</td>
-          <td>${esc(r.u.full_name)}</td><td>${s.done} of ${SYL.length}</td><td>${hm(s.total)}</td>
+          <td>${esc(r.u.full_name)}</td><td>${s.done} of ${SYL.length}</td><td>${mins(s.course)}</td><td>${mins(s.quiz)}</td><td>${mins(s.course + s.quiz)}</td>
           <td>${s.passed} of ${SYL.length}</td><td>${esc(s.final) || 'Not taken'}</td><td>${esc(day(r.last))}</td></tr>`;
       }).join('');
+
+      let current: any = null;
+      const tryBtn = (a: any, label: string) =>
+        `<button type="button" class="try ${a.passed ? 'pass' : 'fail'}" data-attempt="${a.id}" data-label="${esc(label)}">${a.score_pct}%</button> <small>${esc(day(a.created_at))}${a.seconds ? `, ${mins(a.seconds)} min` : ''}</small>`;
+
+      const showAnswers = async (id: number, label: string) => {
+        const box = document.getElementById('qa')!, out = document.getElementById('qa-body')!;
+        const a = [...Object.values(current.att).flat(), ...current.final].find((x: any) => x.id === id) as any;
+        document.getElementById('qa-title')!.textContent = `${current.u.full_name || current.u.email}: ${label}, ${a.score_pct}% on ${day(a.created_at)}`;
+        out.innerHTML = '<p>Loading…</p>';
+        box.classList.remove('hidden');
+        const { data, error } = await supabase!.rpc('admin_attempt_answers', { p_attempt_id: id });
+        if (error) { out.innerHTML = `<p class="msg err">${esc(error.message)}</p>`; return; }
+        out.innerHTML = (data || []).map((q: any, n: number) => {
+          const ch: string[] = q.choices || [];
+          const picked = new Set<number>(q.chosen || []), right = new Set<number>(q.correct_choices || []);
+          return `<div class="qa-item ${q.is_correct ? 'ok' : 'no'}"><b>${n + 1}. ${q.is_correct ? 'Correct' : 'Missed'}</b> <small>${esc(q.code || '')}</small><br>${esc(q.prompt)}
+            <ul>${ch.map((c, i) => `<li class="${picked.has(i) ? 'chosen' : ''}">${esc(c)}${picked.has(i) ? ' <span class="badge">Trainee answer</span>' : ''}${right.has(i) ? ' <span class="badge done">Correct answer</span>' : ''}</li>`).join('')}</ul>
+            ${q.explanation ? `<p class="exp">${esc(q.explanation)}</p>` : ''}</div>`;
+        }).join('') || '<p>No answers saved for this attempt.</p>';
+        box.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+      document.getElementById('d-body')!.addEventListener('click', (e) => {
+        const b = (e.target as HTMLElement).closest('button.try') as HTMLElement | null;
+        if (b) showAnswers(Number(b.dataset.attempt), b.dataset.label || 'Quiz');
+      });
 
       const show = (i: number) => {
         const r = rows[i];
@@ -101,11 +140,18 @@ import { u } from '../lib/url';
         document.getElementById('d-title')!.textContent = `${r.u.full_name || r.u.email}: module detail`;
         document.getElementById('d-body')!.innerHTML = SYL.map((m) => {
           const list: any[] = r.att[m.n] || [];
-          const tries = list.map((a) => `<span class="${a.passed ? 'pass' : 'fail'}">${a.score_pct}%</span> <small>${esc(day(a.created_at))}</small>`).join('<br>');
+          const tries = list.map((a) => tryBtn(a, `Module ${m.n} quiz`)).join('<br>');
+          const qsec = list.reduce((t, a) => t + (a.seconds || 0), 0);
           const best = list.length ? Math.max(...list.map((a) => a.score_pct)) + '%' : '';
           const st = r.done[m.n] ? `<span class="badge done">Complete</span> <small>${esc(day(r.done[m.n]))}</small>` : (r.time[m.n] ? 'In progress' : 'Not started');
-          return `<tr><td>${m.n}</td><td>${esc(m.title)}</td><td>${hm(r.time[m.n] || 0)}</td><td>${tries || 'None'}</td><td>${best}</td><td>${st}</td></tr>`;
-        }).join('');
+          return `<tr><td>${m.n}</td><td>${esc(m.title)}</td><td>${mins(r.time[m.n] || 0)}</td><td>${mins(qsec)}</td><td>${tries || 'None'}</td><td>${best}</td><td>${st}</td></tr>`;
+        }).join('') + (() => {
+          const list: any[] = r.final;
+          const best = list.length ? Math.max(...list.map((a) => a.score_pct)) + '%' : '';
+          return `<tr><td>Final</td><td>Final exam</td><td></td><td>${mins(list.reduce((t, a) => t + (a.seconds || 0), 0))}</td><td>${list.map((a) => tryBtn(a, 'Final exam')).join('<br>') || 'None'}</td><td>${best}</td><td>${list.some((a) => a.passed) ? '<span class="badge done">Passed</span>' : ''}</td></tr>`;
+        })();
+        document.getElementById('qa')!.classList.add('hidden');
+        current = r;
         const d = document.getElementById('a-detail')!;
         d.classList.remove('hidden');
         d.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -116,17 +162,17 @@ import { u } from '../lib/url';
       });
 
       document.getElementById('a-csv')!.addEventListener('click', () => {
-        const head = ['Email', 'Name', 'Branch', 'Role', 'Module', 'Title', 'Minutes', 'Attempts', 'Scores', 'Best', 'Passed', 'Completed'];
+        const head = ['Email', 'Name', 'Branch', 'Role', 'Module', 'Title', 'Course minutes', 'Quiz minutes', 'Attempts', 'Scores', 'Best', 'Passed', 'Completed'];
         const out = [head];
         for (const r of rows) for (const m of SYL) {
           const list: any[] = r.att[m.n] || [];
           out.push([r.u.email, r.u.full_name, r.u.branch, r.u.role, String(m.n), m.title,
-            String(Math.round((r.time[m.n] || 0) / 60)), String(list.length), list.map((a) => a.score_pct + '%').join(' '),
+            mins(r.time[m.n] || 0), mins(list.reduce((t, a) => t + (a.seconds || 0), 0)), String(list.length), list.map((a) => a.score_pct + '%').join(' '),
             list.length ? Math.max(...list.map((a) => a.score_pct)) + '%' : '', list.some((a) => a.passed) ? 'Yes' : 'No',
             r.done[m.n] ? new Date(r.done[m.n]).toLocaleDateString() : '']);
         }
         for (const r of rows) for (const a of r.final) {
-          out.push([r.u.email, r.u.full_name, r.u.branch, r.u.role, 'Final', 'Final exam', '', '', a.score_pct + '%', '', a.passed ? 'Yes' : 'No', new Date(a.created_at).toLocaleDateString()]);
+          out.push([r.u.email, r.u.full_name, r.u.branch, r.u.role, 'Final', 'Final exam', '', mins(a.seconds || 0), '', a.score_pct + '%', '', a.passed ? 'Yes' : 'No', new Date(a.created_at).toLocaleDateString()]);
         }
         const csv = out.map((row) => row.map((c) => `"${String(c ?? '').replace(/"/g, '""')}"`).join(',')).join('\r\n');
         const a = document.createElement('a');
