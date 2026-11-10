@@ -49,7 +49,7 @@ Temperature ranges are approximate. Check the maker's data sheet for the exact g
 | Nitrile (Buna-N, NBR) | Oils, fuels, hydraulic fluid | Ozone and sunlight, ketones | -20 to 225 |
 | EPDM | Water, steam, weather, many dilute acids and caustics | Petroleum oils and fuels | -40 to 300 |
 | FKM (often sold as Viton) | Fuels, oils, many acids, high heat | Ketones, steam, some amines | -10 to 400 |
-| Silicone | Very wide temperature range, food contact | Abrasion, tearing, steam at pressure | -80 to 450 |
+| Silicone | Very wide temperature range, food contact in FDA-compliant grades | Abrasion, tearing, steam at pressure | -80 to 450 |
 | Gum rubber | Abrasion, cushioning; pure natural rubber | Oils, heat | -20 to 160 |
 
 [IMAGE EXAMPLE: Rolls of red SBR, black neoprene, white FDA nitrile, and orange silicone sheet on a rack]
@@ -63,7 +63,7 @@ Temperature ranges are approximate. Check the maker's data sheet for the exact g
 | 70 | A shoe heel | Gaskets with higher bolt load, wear pads |
 | 80 to 90 | Hard rubber | Wear strips, high-load pads |
 
-> 📌 INDUSTRY INSIGHT: Sheet rubber often goes by color at the counter: "red rubber," "black neoprene," "white food grade." Read the polymer and durometer on the roll label before you cut; the color only narrows it down.
+> 📌 INDUSTRY INSIGHT: Sheet rubber often goes by color: "red rubber," "black neoprene," "white food grade." Read the polymer and durometer on the roll label before you cut; the color only narrows it down.
 
 > 💡 KEY TAKEAWAY: Rubber gaskets fit low pressure and moderate heat. For steam, high heat, or high pressure, step up to compressed fiber, PTFE, or graphite.
 
@@ -84,7 +84,7 @@ A D2000 callout describes a rubber compound by its heat resistance, oil swell, h
 | 7 | Durometer: 70 Shore A, ±5 |
 | 14 | Tensile strength: 14 MPa minimum |
 
-M2BG714 describes a typical nitrile compound. Letters and numbers after it (A14, B14, EO14) add specific tests. When a drawing calls out D2000, the material must meet every part of the line, so confirm it on the data sheet.
+M2BG714 describes a typical nitrile compound. Letters and numbers after it (A14, B14, EO14) add specific tests. The 14 in a suffix is a test code. When a drawing calls out D2000, the material must meet every part of the line, so confirm it on the data sheet.
 
 | Type letter | Heat test |
 |---|---|
@@ -169,7 +169,7 @@ Flexible graphite handles very high temperatures and is a standard choice for st
 
 [IMAGE EXAMPLE: Sheets of filled PTFE, ePTFE, and flexible graphite with a tanged stainless insert, side by side]
 
-> 📌 INDUSTRY INSIGHT: Graphite and some PTFE grades lose their seal when creased. Store them flat and handle them by the edges, at the rack and in the shop.
+> 📌 INDUSTRY INSIGHT: Graphite and some PTFE grades lose their seal when creased. Store them flat and handle them by the edges.
 
 ## 10.5 Choosing a Gasket Material
 
@@ -183,8 +183,10 @@ Start with the media, then check temperature and pressure, then the flange.
 | Oils, fuels, hydraulic fluid | Nitrile, FKM, nitrile-bound compressed fiber | EPDM, natural rubber |
 | Strong acids | Silica-filled PTFE, ePTFE, FKM for some acids | Most rubber, most fiber sheet |
 | Strong caustics | Barium sulfate-filled PTFE, EPDM at lower temperatures | Silica-filled PTFE |
-| Food and beverage | FDA white nitrile, EPDM, or silicone; PTFE | Anything unmarked for food |
+| Food and beverage | FDA-compliant white nitrile, EPDM, silicone, or PTFE | Anything unmarked for food |
 | Glass-lined, plastic, or FRP flanges | ePTFE, soft rubber | Hard sheet that needs high bolt load |
+
+Only sheet the maker's label or data sheet states is FDA-compliant goes in food service.
 
 ### Steps: pick a gasket material
 
@@ -227,7 +229,7 @@ Start with the media, then check temperature and pressure, then the flange.
 
 ### Storage and handling
 
-- Store rubber rolls on their side, out of sunlight, away from motors and welders (ozone).
+- Store rubber rolls horizontal on a rack or bar, out of sunlight, away from motors and welders (ozone).
 - Store graphite, PTFE, and fiber sheet flat.
 - Keep FDA sheet bagged and away from oily stock.
 - Label every partial roll and cut piece with the material, thickness, and durometer.
@@ -240,9 +242,9 @@ Start with the media, then check temperature and pressure, then the flange.
 
 ### Case study: the bleach plant gasket
 
-A planner calls: "We keep losing the gaskets on the caustic line in the bleach plant. Same red rubber every time. Can you send something better?"
+A practice caller, a planner at Southeastern Paper Mill, calls: "We keep losing the gaskets on the caustic line in the bleach plant. Same red rubber every time. Can you send something better?"
 
-1. **STAMPED for a gasket.** 4 in Class 150 raised face flanges, carbon steel, in good shape. Media: 50% caustic soda. Temperature: 160°F. Pressure: 90 psi.
+1. **Gather the gasket spec: flange, media, temperature, pressure.** 4 in Class 150 raised face flanges, carbon steel, in good shape. Media: 50% caustic soda. Temperature: 160°F. Pressure: 90 psi.
 2. **The failure.** Red SBR swells and softens in strong caustic at that temperature. That explains the repeat leaks.
 3. **Chemical chart.** The maker rates barium sulfate-filled PTFE excellent with 50% caustic at 160°F, and silica-filled PTFE poor. EPDM rates good at lower temperatures and fair at 160°F.
 4. **P×T chart.** 90 psi at 160°F plots in zone 1 for 1/16 in barium sulfate-filled PTFE.
@@ -255,7 +257,7 @@ The flange was fine. The material was wrong for the media from the start.
 
 | Situation | What to do | Reason |
 |---|---|---|
-| A customer wants "red rubber" for steam | Check the steam pressure and temperature; offer fiber or graphite | Rubber sheet fails on steam |
+| A customer wants "red rubber" for steam | Check the steam pressure and temperature; offer EPDM for low-pressure steam inside its temperature limit, and fiber or graphite above that | Red rubber, neoprene, and nitrile fail on steam |
 | A drawing calls out ASTM D2000 | Match the full callout on a data sheet before you cut | The callout is part of the order |
 | A customer brings an old steam gasket to copy | Don't cut, grind, or sand it; ask your Manager | It may contain asbestos |
 | The roll label is missing | Set the roll aside until it is identified | A wrong material fails in service |
@@ -267,7 +269,7 @@ The flange was fine. The material was wrong for the media from the start.
 | Mistake | What it causes | The habit that prevents it |
 |---|---|---|
 | Picking sheet by color | The wrong polymer in service | Read the label |
-| Rubber sheet on steam | A blown gasket and a burn hazard | Use fiber or graphite for steam |
+| Red rubber, neoprene, or nitrile on steam | A blown gasket and a burn hazard | Use EPDM for low-pressure steam inside its temperature limit. Use fiber or graphite above that |
 | Silica-filled PTFE on caustic | A failed gasket | Use barium sulfate-filled PTFE on caustic |
 | 1/8 in fiber on flat, smooth flanges | More creep and lower pressure capacity | Use 1/16 in when the flanges allow |
 | Folding graphite sheet | A creased gasket that leaks | Store flat, handle by the edges |
@@ -291,7 +293,7 @@ The flange was fine. The material was wrong for the media from the start.
 | PTFE envelope | A PTFE jacket over a gasket insert |
 | Flexible graphite | Graphite sheet for high heat and steam |
 | Tanged insert | A thin stainless sheet with punched teeth inside graphite gaskets |
-| FDA grade | Compounds approved to touch food |
+| FDA grade | Sheet the maker's label or data sheet states is FDA-compliant for food contact |
 | Ozone | A gas from motors and welders that cracks some rubbers |
 
 ## 10.9 Practice, Knowledge Check, and Module Quiz
@@ -309,7 +311,7 @@ The flange was fine. The material was wrong for the media from the start.
 
 1. What does durometer measure?
 2. In M2BG714, what do the 7 and the 14 mean?
-3. Which elastomer is the usual choice for oil and fuel?
+3. What is the usual lowest-cost choice for oil and fuel at moderate heat?
 4. Which elastomer is the usual choice for hot water and steam at low pressure?
 5. Why is most PTFE gasket sheet filled?
 6. Which filled PTFE fits strong caustics?

@@ -45,7 +45,7 @@ A rubber expansion joint is a flexible section bolted into a pipeline. It absorb
 | Flanges | Full-face rubber flanges that seal against the pipe flange |
 | Retaining rings | Split steel rings behind the rubber flanges that spread the bolt load |
 
-Match the tube to the media the same way you match a hose tube (Module 10): EPDM for hot water and steam condensate, nitrile for oil, neoprene for general service, chlorobutyl or FKM for chemicals per the maker's chart.
+Match the tube to the media the same way you match a gasket elastomer (Module 10): EPDM for hot water and steam condensate, nitrile for oil, neoprene for general service, chlorobutyl or FKM for chemicals per the maker's chart.
 
 ### Specs to gather
 
@@ -67,7 +67,7 @@ Match the tube to the media the same way you match a hose tube (Module 10): EPDM
 ### Installation points to pass along
 
 - Install the retaining rings behind the rubber flanges. Rubber flanges seal on their own; no extra gasket is used.
-- Tighten bolts in a star pattern and retighten after the first heat cycle, per the maker's bolt torque.
+- Tighten bolts in a star pattern to the maker's bolt torque. Retighten only after the line has cooled, been depressurized, and been locked out, and only when the maker allows it.
 - Keep the arch clean: no paint, no insulation over it, and no welding sparks near it.
 - Set the joint at its face-to-face length. Stretching or squeezing it to fill a gap uses up its rated movement before the line starts.
 
@@ -84,7 +84,7 @@ Branches sell two kinds of belting: conveyor belt that carries material, and dri
 | Spec | Meaning | Example |
 |---|---|---|
 | Width | Belt width in inches | 24 in |
-| Plies and rating | Fabric layers and the strength in pounds per inch of width (PIW) | 2-ply, 220 PIW |
+| Plies and rating | Fabric layers and the rated working tension in pounds per inch of belt width (PIW) | 2-ply, 220 PIW |
 | Cover thickness | Top cover × bottom cover | 3/16 in × 1/16 in |
 | Cover grade | Abrasion, heat, oil, or food resistance | Abrasion-resistant for gravel; heat-resistant for hot ash |
 | Length | Feet off the roll, or endless length for a spliced belt | 150 ft |
@@ -107,8 +107,8 @@ V-belts carry power from a motor to a pump, fan, or machine. The part number giv
 | Banded | Two or more belts joined across the top | 3/5V1000 = three 5V belts banded together |
 | Cogged | Notched underside for small pulleys and less heat | AX48 = cogged A48 |
 
-- On a drive with more than one groove, replace all the belts as a **matched set**. One new belt beside worn ones carries the whole load and fails first.
-- A worn belt is often stretched. Read the number off the belt; when it's worn off, measure the outside length and the top width.
+- On a drive with more than one groove, replace all the belts as a **matched set**. A new belt beside worn ones runs tighter, carries most of the load, and fails first.
+- A worn belt is often stretched. Read the number off the belt; when it's worn off, measure the outside length and the top width. For a classical belt, subtract about 2 in (A), 3 in (B), or 4 in (C) from the measured outside length to get the belt number.
 - Agricultural equipment often uses belts with the equipment maker's own part numbers. Cross-reference the number before you quote.
 
 [IMAGE EXAMPLE: A section of conveyor belt showing the plies and covers, beside classical and narrow V-belts with their part numbers visible]
@@ -119,7 +119,7 @@ V-belts carry power from a motor to a pump, fan, or machine. The part number giv
 
 ### O-rings
 
-An O-ring is sized by its **inside diameter (ID)** and **cross section (CS)**. Most inch O-rings follow the AS568 standard, which gives each size a dash number. The first digit of the dash number tells you the cross section.
+An O-ring is sized by its **inside diameter (ID)** and **cross section (CS)**. Most inch O-rings follow the AS568 standard, which gives each size a dash number. For the -0xx (from -004) through -4xx series the first digit gives the cross section.
 
 | AS568 series | Cross section (in) |
 |---|---|
@@ -141,6 +141,7 @@ Braided compression packing seals pump shafts and valve stems inside a stuffing 
 
 - **Packing size** = (stuffing box bore − shaft diameter) ÷ 2
 - **Number of rings** = stuffing box depth ÷ packing size, rounded down.
+- **Length per ring** = (shaft diameter + packing size) × 3.14. Multiply by the ring count and add an allowance.
 - Cut rings to fit the shaft, and stagger the joints of each ring 90° from the last.
 - Pump packing needs a small steady drip to cool and lubricate it. A dry packed pump burns the packing and scores the shaft.
 - Materials include PTFE, graphite, aramid, and blends. Choose by media, temperature, and shaft speed.
@@ -153,6 +154,8 @@ Braided compression packing seals pump shafts and valve stems inside a stuffing 
 | Packing size | (2.5 − 1.75) ÷ 2 = 0.375 in (3/8) |
 | Stuffing box depth | 2.25 in |
 | Rings | 2.25 ÷ 0.375 = 6 rings |
+| Length per ring | (1.75 + 0.375) × 3.14 = 6.67 in |
+| Total length | 6.67 × 6 = 40 in, about 3.3 FT before allowance |
 
 ### Mechanical seals
 
@@ -161,7 +164,7 @@ Many pumps use mechanical seals. A mechanical seal has a spinning face on the sh
 1. The **pump make and model**
 2. The **shaft or sleeve size**
 3. The **seal type or part number** on the old seal
-4. The **media and temperature**
+4. The **media, temperature, and pressure**
 
 A cartridge seal comes assembled and is easier to install. A component seal comes in pieces and is set up on the shaft. When the customer can't find a part number, ask for a photo of the seal and the pump nameplate.
 
@@ -189,7 +192,7 @@ Check the item's unit of measure in Item Maintenance before you enter a quantity
 1. Search for the item by part number or description. For a special-order item with no stock item, ask your Manager which item to use.
 2. Enter the quantity in the item's unit of measure.
 3. Put the full spec in the line's **extended description**: for an expansion joint, size, face-to-face, drilling, elastomer, control rods, and tag number; for conveyor belt, width, plies, covers, grade, length, and splice.
-4. For a quote, mark the order as a quote. Quotes expire in 30 days.
+4. For a quote, mark the order as a quote. Set the expiration 30 days out unless the customer asks for longer (Module 6).
 5. For a special-order or direct-ship line, set the disposition and enter the PO to the vendor.
 6. Set up a customer part number when the customer orders the same item by their own number or tag.
 
@@ -199,10 +202,10 @@ Check the item's unit of measure in Item Maintenance before you enter a quantity
 
 ### Case study: an expansion joint for the outage list
 
-A maintenance planner emails an outage list. One line reads "6 in expansion joint, tag P-204 discharge."
+A practice caller, a maintenance planner at Southeastern Paper Mill, emails an outage list. One line reads "6 in expansion joint, tag P-204 discharge."
 
 1. The rep checks the customer part numbers and past orders for tag P-204. Nothing is on file.
-2. The rep calls the planner and asks for the specs: 6 in pipe, 6 in face-to-face, Class 150 drilling, white water at 140°F and 60 psi, single arch, no control rods today.
+2. The rep calls the planner and asks for the specs: 6 in pipe, 6 in face-to-face, Class 150 drilling, white water (paper machine process water) at 140°F and 60 psi, single arch, EPDM tube, movements per the maker's standard single arch, no control rods today.
 3. The planner mentions the old joint is stretched and the bolts keep loosening. The rep asks how the pipe is anchored and suggests the planner have their engineer check whether control rods are needed.
 4. The engineer calls back: add control rods.
 5. The rep enters a quote with the item and the full spec in the extended description, including "tag P-204" and "with control rods."
@@ -215,8 +218,8 @@ The next outage, the planner orders "P-204" and the order repeats.
 
 | What if... | Do this |
 |---|---|
-| The customer only has the size of an expansion joint | Ask for face-to-face, drilling, media, temperature, and pressure before you quote |
-| A V-belt's number is worn off | Measure outside length and top width, or get the number off a matching belt on the drive |
+| The customer only has the size of an expansion joint | Ask for every spec in the 16.1 table before you quote |
+| A V-belt's number is worn off | Measure outside length and top width, or get the number off a matching belt on the drive. For a classical belt, subtract about 2 in (A), 3 in (B), or 4 in (C) from the measured outside length to get the belt number |
 | A customer wants one belt for a three-groove drive | Quote the matched set of three and explain why |
 | The O-ring size is unknown | Measure the groove, or ask for the fitting or part it seals |
 | The customer can't find a seal part number | Get the pump make, model, and nameplate photo, and a photo of the old seal |
@@ -227,7 +230,7 @@ The next outage, the planner orders "P-204" and the order repeats.
 | Mistake | What it causes |
 |---|---|
 | Quoting an expansion joint by pipe size alone | Wrong length or drilling, and a special order that can't go back |
-| Selling one V-belt on a multi-groove drive | The new belt carries the load and fails first |
+| Selling one V-belt on a multi-groove drive | A new belt beside worn ones runs tighter, carries most of the load, and fails first |
 | Matching an O-ring by size and ignoring material | The ring swells or cracks in the media |
 | Packing size guessed from the shaft alone | Rings too thin or too thick for the stuffing box |
 | Spec left out of the extended description | The buyer doesn't know how to order |
@@ -240,7 +243,7 @@ The next outage, the planner orders "P-204" and the order repeats.
 | Face-to-face | An expansion joint's length from flange face to flange face |
 | Control rods | Rods across a joint that limit how far it stretches |
 | Retaining rings | Steel rings behind rubber flanges that spread the bolt load |
-| PIW | Pounds per inch of width: a conveyor belt's strength rating |
+| PIW | Pounds per inch of belt width: a conveyor belt's rated working tension |
 | Matched set | All belts on a multi-groove drive, replaced together |
 | AS568 | The standard dash-number sizes for inch O-rings |
 | Cross section | An O-ring's thickness |
@@ -249,11 +252,11 @@ The next outage, the planner orders "P-204" and the order repeats.
 
 ## 16.7 Capstone Scenarios
 
-Work each scenario in the P21Play System. Ask and answer each question the scenario calls for.
+Your Manager plays the practice caller. Ask every spec question and enter the result in the P21Play System.
 
 | Industry | Scenario | Modules it draws on |
 |---|---|---|
-| Pulp and paper | A mill planner calls: a steam hose at the No. 2 machine washdown station burst, and they need two more for the outage list with a quote on 40 Class 150 compressed fiber gaskets. | 2, 4, 5, 6, 9, 11, 12 |
+| Pulp and paper | A mill planner calls: a steam hose at the No. 2 machine washdown station burst, and they need one replacement now and two spares for the outage list with a quote on 40 Class 150 compressed fiber gaskets. | 2, 4, 5, 6, 9, 10, 11, 12 |
 | Agriculture | A farmer walks in with a split sprayer hose and a worn drive belt off a combine during harvest. He has an account but no PO. | 3, 5, 6, 8, 9, 16 |
 | Chemical | A plant buyer needs PTFE-lined transfer hose with stainless cam and groove ends for 50% caustic soda, plus gaskets for the unloading flange. The hose is not in stock. | 4, 5, 6, 10, 11, 13 |
 | Heavy equipment | A contractor's excavator boom hose burst on a job site. He sends a photo of the layline and needs it the same day. Your branch is short one fitting; another branch has it. Later, he returns an extra fitting he didn't use. | 2, 6, 7, 9, 14, 15 |
@@ -266,7 +269,7 @@ Work each scenario in the P21Play System. Ask and answer each question the scena
 - Items, quantities, and units of measure correct
 - Spec in the extended description on every special or built item
 - Disposition, PO, or transfer entered where needed
-- Return or credit handled by the RMA steps
+- Return or credit handled by the RMA steps (heavy equipment scenario)
 
 ## 16.8 Final Exam, Final Sign-Off, Knowledge Check, and Module Quiz
 
@@ -278,7 +281,7 @@ Work each scenario in the P21Play System. Ask and answer each question the scena
 4. Work out a packing size and ring count, and enter the footage on an order.
 5. Show all four to your Manager.
 
-### Knowledge check
+### Knowledge check (practice)
 
 1. What are the specs to gather for a rubber expansion joint?
 2. What do control rods on an expansion joint do?
@@ -287,6 +290,8 @@ Work each scenario in the P21Play System. Ask and answer each question the scena
 5. A stuffing box bore is 2.5 in and the shaft is 1.75 in. What size packing do you need?
 6. What four things do you ask for to quote a mechanical seal?
 
+Work these on your own, then check your answers with your Manager.
+
 ### Module quiz
 
 The module quiz has 10 questions. You need 80% to pass, and you have 3 tries. The scenario questions appear on every try.
@@ -294,8 +299,8 @@ The module quiz has 10 questions. You need 80% to pass, and you have 3 tries. Th
 ### Final exam
 
 - **48 questions** drawn from all 16 module question pools, 3 from each module.
-- **85% to pass.** You get **2 tries**, with a different set of questions each time.
-- Take it after you finish all 16 modules and the capstone.
+- **85% to pass.** You get **2 tries**. The questions are drawn again for each try.
+- The final exam opens after you pass all 16 module quizzes. Finish the capstone first.
 
 ### Final sign-off
 
