@@ -109,9 +109,9 @@ A **variance** is the difference between your count and P21's on-hand quantity. 
 Each stocked item at a location can carry a **min** (reorder point) and a **max** (order-up-to level).
 
 - When **net available** stock falls to or below the min, the item needs reordering. The trigger also counts customer backordered quantities and unreceived quantities on POs.
-- The reorder quantity brings stock back up to the max, rounded to the vendor's pack or reel size.
+- The reorder quantity brings stock back up to the max, rounded up to the vendor's next full pack or reel.
 
-**Example:** a fitting has a min of 10 and a max of 40. Net available is 8, with nothing backordered and nothing on a PO. The suggested order is 40 − 8 = 32. The vendor sells in boxes of 10, so the buyer orders 30 or 40.
+**Example:** a fitting has a min of 10 and a max of 40. Net available is 8, with nothing backordered and nothing on a PO. The suggested order is 40 − 8 = 32. The vendor sells in boxes of 10, so the buyer rounds up and orders 40.
 
 ### Setting min and max
 
@@ -221,7 +221,7 @@ A cycle count lists 1 in steam hose. P21 shows 375 FT on hand.
 
 1. **Cycle count.** Count 10 bins your Manager assigns, using a blind count list. Include one hose reel with remnants and one sheet item.
 2. **Variance.** Compare your counts to P21 with your Manager. For each difference, work the steps in 14.3 and suggest a likely cause.
-3. **Min and max.** For three items, look up the min, max, and net available in the P21Play System. Work out what replenishment would suggest, rounded to the pack size.
+3. **Min and max.** For three items, look up the min, max, and net available in the P21Play System. Work out what replenishment would suggest, rounded up to the next full pack.
 4. **Transfer.** Enter a customer order line with the T disposition from another location in the P21Play System, then receive the transfer.
 5. **Annual count prep.** Walk one aisle with your Manager and list what must happen before an annual count there.
 
