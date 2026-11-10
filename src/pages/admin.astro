@@ -8,7 +8,7 @@ import { u } from '../lib/url';
     <h1>Trainee Activity</h1>
     <p id="a-msg" class="msg" data-signin={u('signin')}>Loading…</p>
     <div id="a-in" class="hidden">
-      <p>Time counts while a module or quiz page is open and the trainee has been active in the last 5 minutes. Select a trainee to see each module, then select a quiz score to see the questions and answers.</p>
+      <p>Minutes are reported by the trainee's browser. Time counts while a module or quiz page is open and the trainee has been active in the last 5 minutes. Select a trainee to see each module, then select a quiz score to see the questions and answers.</p>
       <p><button class="btn alt" id="a-csv" type="button">Download CSV</button></p>
       <div class="tw"><table id="a-sum">
         <thead><tr>
@@ -68,8 +68,8 @@ import { u } from '../lib/url';
       if (ue) return fail(ue.message.includes('Admins only') ? 'This page is for admins only.' : ue.message);
 
       const [quizzes, attempts, progress, times] = await Promise.all([
-        supabase.from('quizzes').select('id, module_id, kind'),
-        supabase.from('quiz_attempts').select('id, user_id, quiz_id, score_pct, passed, seconds, created_at').order('created_at'),
+        supabase.from('quizzes').select('id, module_id, kind, max_attempts'),
+        supabase.from('quiz_attempts').select('id, user_id, quiz_id, score_pct, passed, seconds, created_at').not('submitted_at', 'is', null).order('created_at'),
         supabase.from('module_progress').select('user_id, module_id, completed_at'),
         supabase.from('module_time').select('user_id, module_id, seconds, last_seen'),
       ]);
@@ -77,6 +77,7 @@ import { u } from '../lib/url';
       if (err) return fail(err.message);
 
       const qById = new Map((quizzes.data || []).map((q: any) => [q.id, q]));
+      const finalTries = (quizzes.data || []).find((q: any) => q.kind === 'final')?.max_attempts ?? 2;
       type U = { id: string; email: string; full_name: string; branch: string; role: string; last_sign_in_at: string | null };
       const per = new Map<string, any>();
       for (const u of users as U[]) per.set(u.id, { u, time: {}, att: {}, done: {}, final: [] as any[], last: u.last_sign_in_at });
@@ -97,7 +98,7 @@ import { u } from '../lib/url';
         const passed = Object.values(r.att).filter((l: any) => l.some((a: any) => a.passed)).length;
         const fb = r.final.length ? Math.max(...r.final.map((a: any) => a.score_pct)) : null;
         const fp = r.final.some((a: any) => a.passed);
-        return { course, quiz, passed, done: Object.keys(r.done).length, final: fb === null ? '' : `${fb}%${fp ? ' passed' : ''} (${r.final.length} of 2 tries)` };
+        return { course, quiz, passed, done: Object.keys(r.done).length, final: fb === null ? '' : `${fb}%${fp ? ' passed' : ''} (${r.final.length} of ${finalTries} tries)` };
       };
 
       const body = document.querySelector('#a-sum tbody')!;
@@ -174,7 +175,9 @@ import { u } from '../lib/url';
         for (const r of rows) for (const a of r.final) {
           out.push([r.u.email, r.u.full_name, r.u.branch, r.u.role, 'Final', 'Final exam', '', mins(a.seconds || 0), '', a.score_pct + '%', '', a.passed ? 'Yes' : 'No', new Date(a.created_at).toLocaleDateString()]);
         }
-        const csv = out.map((row) => row.map((c) => `"${String(c ?? '').replace(/"/g, '""')}"`).join(',')).join('\r\n');
+        // A leading =, +, -, @, tab, or return makes a spreadsheet run the cell as a formula.
+        const cell = (c: unknown) => { const t = String(c ?? ''); return `"${(/^[=+\-@\t\r]/.test(t) ? "'" + t : t).replace(/"/g, '""')}"`; };
+        const csv = out.map((row) => row.map(cell).join(',')).join('\r\n');
         const a = document.createElement('a');
         a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
         a.download = 'trainee-activity.csv';

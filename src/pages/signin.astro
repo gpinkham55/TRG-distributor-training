@@ -5,13 +5,14 @@ import { u } from '../lib/url';
 <Base title="Sign in" current="signin">
   <div class="prose">
     <h1>Sign in or Register</h1>
-    <p>Use any email address and a password of at least 8 characters. New here? Pick Register; your account is ready right away.</p>
+    <p id="intro">Use your email address and a password of at least 8 characters. New here? Pick Register.</p>
     <div id="off" class="msg err hidden">Sign-in isn't switched on yet. You can still read every module.</div>
     <form class="auth" id="f">
       <label>Email <input type="email" name="email" autocomplete="email" required /></label>
       <label>Password <input type="password" name="password" minlength="8" autocomplete="current-password" required /></label>
       <label id="name-row" class="hidden">Your name <input type="text" name="name" autocomplete="name" /></label>
       <div><button class="btn" type="submit" id="go">Sign in</button> <button class="btn alt" type="button" id="mode">Register instead</button></div>
+      <p><a href="#" id="forgot">Forgot your password?</a></p>
       <div id="m" class="msg hidden" role="status"></div>
     </form>
   </div>
@@ -23,23 +24,51 @@ import { u } from '../lib/url';
     const go = document.getElementById('go')!;
     const mode = document.getElementById('mode')!;
     const nameRow = document.getElementById('name-row')!;
+    const forgot = document.getElementById('forgot')!;
+    const pw = f.querySelector('input[name="password"]') as HTMLInputElement;
     let register = false;
+    // "recover": the trainee followed the link in a password reset email.
+    let recover = false;
     const say = (t: string, ok = false) => { m.textContent = t; m.className = `msg ${ok ? 'ok' : 'err'}`; };
     if (!supabase) { document.getElementById('off')!.classList.remove('hidden'); f.classList.add('hidden'); }
     // Coming back from the confirmation email, or already signed in: go to My Progress.
-    supabase?.auth.getSession().then(({ data }) => { if (data.session) location.href = u('progress'); });
+    const fromResetLink = location.hash.includes('type=recovery');
+    supabase?.auth.onAuthStateChange((event) => {
+      if (event !== 'PASSWORD_RECOVERY') return;
+      recover = true;
+      document.getElementById('intro')!.textContent = 'Enter a new password of at least 8 characters.';
+      (f.querySelector('input[name="email"]') as HTMLInputElement).closest('label')!.classList.add('hidden');
+      (f.querySelector('input[name="email"]') as HTMLInputElement).required = false;
+      pw.autocomplete = 'new-password';
+      go.textContent = 'Save new password';
+      mode.classList.add('hidden'); forgot.classList.add('hidden'); nameRow.classList.add('hidden');
+    });
+    supabase?.auth.getSession().then(({ data }) => { if (data.session && !fromResetLink && !recover) location.href = u('progress'); });
+    forgot.addEventListener('click', async (e) => {
+      e.preventDefault();
+      if (!supabase) return;
+      const email = String(new FormData(f).get('email') || '').trim();
+      if (!email) return say('Enter your email address, then select Forgot your password.');
+      const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: location.origin + u('signin') });
+      say(error ? error.message : 'If that address has an account, a reset link is on its way. Check your email.', !error);
+    });
     mode.addEventListener('click', () => {
       register = !register;
       go.textContent = register ? 'Register' : 'Sign in';
       mode.textContent = register ? 'Sign in instead' : 'Register instead';
       nameRow.classList.toggle('hidden', !register);
+      pw.autocomplete = register ? 'new-password' : 'current-password';
+      forgot.classList.toggle('hidden', register);
     });
     f.addEventListener('submit', async (e) => {
       e.preventDefault();
       if (!supabase) return;
       const fd = new FormData(f);
       const email = String(fd.get('email')), password = String(fd.get('password'));
-      if (register) {
+      if (recover) {
+        const { error } = await supabase.auth.updateUser({ password });
+        if (error) return say(error.message);
+      } else if (register) {
         const { data, error } = await supabase.auth.signUp({ email, password, options: { emailRedirectTo: location.origin + u('signin'), data: { full_name: String(fd.get('name') || '') } } });
         if (error) return say(error.message);
         if (!data.session) return say('Check your email to confirm your account, then sign in.', true);

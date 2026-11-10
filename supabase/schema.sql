@@ -22,14 +22,13 @@ create table if not exists profiles (
   created_at timestamptz not null default now()
 );
 
--- New sign-ups get a trainee profile automatically.
+-- New sign-ups get a trainee profile automatically. Signing up never grants
+-- admin: with email confirmation off, anyone could register a listed address first.
 create or replace function handle_new_user() returns trigger
 language plpgsql security definer set search_path = public as $$
 begin
-  insert into profiles (id, full_name, role)
-  values (new.id, coalesce(new.raw_user_meta_data->>'full_name', ''),
-          case when exists (select 1 from admin_emails where lower(email) = lower(new.email))
-               then 'admin'::user_role else 'trainee'::user_role end)
+  insert into profiles (id, full_name)
+  values (new.id, coalesce(new.raw_user_meta_data->>'full_name', ''))
   on conflict (id) do nothing;
   return new;
 end $$;
@@ -37,7 +36,8 @@ drop trigger if exists on_auth_user_created on auth.users;
 create trigger on_auth_user_created after insert on auth.users
   for each row execute function handle_new_user();
 
--- Emails listed here become admins when they register (and on the next schema run).
+-- Accounts whose email is listed here become admins when this file is run.
+-- Add an email only after that person has registered and signed in.
 -- No policy grants read access; add rows in the SQL Editor only.
 create table if not exists admin_emails (
   email text primary key
@@ -138,56 +138,159 @@ create table if not exists attempt_answers (
   primary key (attempt_id, question_id)
 );
 
--- Grades a submission on the server. answers = {"<question_id>": [choice indexes]}
--- The submission must answer exactly draw_count questions from the quiz's pool.
--- Passing marks the module complete.
-create or replace function grade_attempt(p_quiz_id bigint, answers jsonb)
-returns table (attempt_id bigint, score_pct int, passed boolean)
+-- An attempt is open (submitted_at is null) from the draw until it is graded.
+alter table quiz_attempts add column if not exists submitted_at timestamptz;
+
+-- The questions drawn for each attempt. Written only by start_attempt.
+create table if not exists attempt_questions (
+  attempt_id bigint not null references quiz_attempts on delete cascade,
+  question_id bigint not null references questions,
+  position int not null default 0,
+  primary key (attempt_id, question_id)
+);
+
+-- Attempts graded before draws were stored have no drawn questions: mark them graded.
+update quiz_attempts a set submitted_at = a.created_at
+where a.submitted_at is null
+  and not exists (select 1 from attempt_questions aq where aq.attempt_id = a.id);
+
+-- Draws the questions for an attempt on the server and returns them.
+-- Module quiz: every scenario question (code ending -S1, -S2, ...) plus a random
+-- draw from the pool. Final exam: the same number from every module pool.
+-- An open attempt is returned again as drawn, so a reload never shows a new set.
+-- A try is used when the attempt is graded.
+create or replace function start_attempt(p_quiz_id bigint) returns jsonb
 language plpgsql security definer set search_path = public as $$
-#variable_conflict use_column
 declare
-  q quizzes; pool bigint; used int; total int; matched int; right_count int := 0;
-  aid bigint; k record; pick int[]; key int[]; pct int;
+  q quizzes; pool bigint; aid bigint; used int; per int; n_mod int; n_drawn int;
+  resumed boolean := false;
 begin
   if auth.uid() is null then raise exception 'Sign in first'; end if;
   select * into q from quizzes where id = p_quiz_id;
   if not found then raise exception 'Quiz not found'; end if;
-  pool := coalesce(q.pool_quiz_id, q.id);
-  select count(*) into used from quiz_attempts where user_id = auth.uid() and quiz_id = p_quiz_id;
-  if used >= q.max_attempts then raise exception 'No attempts left'; end if;
+  -- One draw at a time for each trainee and quiz.
+  perform pg_advisory_xact_lock(hashtextextended(auth.uid()::text || ':' || p_quiz_id::text, 0));
 
-  total := (select count(*) from jsonb_object_keys(answers));
-  select count(*) into matched from questions qq
-    where answers ? qq.id::text
-      and (qq.quiz_id = pool
-           or (q.kind = 'final' and qq.quiz_id in (select z.id from quizzes z where z.kind = 'module')));
-  if total <> q.draw_count or matched <> q.draw_count then
-    raise exception 'Answer all % questions', q.draw_count;
+  select qa.id into aid from quiz_attempts qa
+    where qa.user_id = auth.uid() and qa.quiz_id = p_quiz_id and qa.submitted_at is null
+    order by qa.id limit 1;
+  if aid is not null then
+    resumed := true;
+  else
+    if exists (select 1 from quiz_attempts qa
+               where qa.user_id = auth.uid() and qa.quiz_id = p_quiz_id and qa.passed) then
+      raise exception 'You already passed this quiz';
+    end if;
+    select count(*) into used from quiz_attempts qa
+      where qa.user_id = auth.uid() and qa.quiz_id = p_quiz_id and qa.submitted_at is not null;
+    if used >= q.max_attempts then raise exception 'No attempts left'; end if;
+    if q.kind = 'final' and exists (
+        select 1 from quizzes z where z.kind = 'module'
+          and not exists (select 1 from quiz_attempts qa
+                          where qa.quiz_id = z.id and qa.user_id = auth.uid() and qa.passed)) then
+      raise exception 'Pass every module quiz before you take the final exam';
+    end if;
+
+    insert into quiz_attempts (user_id, quiz_id, score_pct, passed)
+      values (auth.uid(), p_quiz_id, 0, false) returning id into aid;
+
+    if q.kind = 'final' then
+      select count(*) into n_mod from quizzes z where z.kind = 'module';
+      per := q.draw_count / greatest(n_mod, 1);
+      insert into attempt_questions (attempt_id, question_id)
+        select aid, t.id from (
+          select qq.id, row_number() over (partition by qq.quiz_id order by random()) as rn
+          from questions qq
+          join quizzes z on z.id = qq.quiz_id and z.kind = 'module'
+          join question_keys qk on qk.question_id = qq.id) t
+        where t.rn <= per;
+      select count(*) into n_drawn from attempt_questions aq where aq.attempt_id = aid;
+      insert into attempt_questions (attempt_id, question_id)
+        select aid, t.id from (
+          select qq.id from questions qq
+          join quizzes z on z.id = qq.quiz_id and z.kind = 'module'
+          join question_keys qk on qk.question_id = qq.id
+          where not exists (select 1 from attempt_questions aq
+                            where aq.attempt_id = aid and aq.question_id = qq.id)
+          order by random()
+          limit greatest(q.draw_count - n_drawn, 0)) t;
+    else
+      pool := coalesce(q.pool_quiz_id, q.id);
+      insert into attempt_questions (attempt_id, question_id)
+        select aid, t.id from (
+          select qq.id from questions qq
+          join question_keys qk on qk.question_id = qq.id
+          where qq.quiz_id = pool
+          order by (qq.code ~ '-S[0-9]+$') desc nulls last, random()
+          limit q.draw_count) t;
+    end if;
+
+    select count(*) into n_drawn from attempt_questions aq where aq.attempt_id = aid;
+    if n_drawn <> q.draw_count then raise exception 'This quiz is not ready yet'; end if;
+
+    update attempt_questions aq set position = s.rn
+      from (select x.question_id, row_number() over (order by random()) as rn
+            from attempt_questions x where x.attempt_id = aid) s
+      where aq.attempt_id = aid and aq.question_id = s.question_id;
   end if;
 
-  insert into quiz_attempts (user_id, quiz_id, score_pct, passed)
-    values (auth.uid(), p_quiz_id, 0, false) returning id into aid;
+  return jsonb_build_object(
+    'attempt_id', aid,
+    'resumed', resumed,
+    'questions', (
+      select jsonb_agg(jsonb_build_object('id', qq.id, 'prompt', qq.prompt, 'choices', qq.choices)
+                       order by aq.position)
+      from attempt_questions aq join questions qq on qq.id = aq.question_id
+      where aq.attempt_id = aid));
+end $$;
+
+-- Grades an open attempt on the server. answers = {"<question_id>": [choice indexes]}
+-- The submission must answer exactly the questions start_attempt drew.
+-- Passing a module quiz marks the module complete.
+drop function if exists grade_attempt(bigint, jsonb);
+create function grade_attempt(p_attempt_id bigint, answers jsonb)
+returns table (attempt_id bigint, score_pct int, passed boolean)
+language plpgsql security definer set search_path = public as $$
+#variable_conflict use_column
+declare
+  att quiz_attempts; q quizzes; total int; drawn int; matched int; right_count int := 0;
+  k record; pick int[]; key int[]; pct int;
+begin
+  if auth.uid() is null then raise exception 'Sign in first'; end if;
+  select * into att from quiz_attempts qa
+    where qa.id = p_attempt_id and qa.user_id = auth.uid() for update;
+  if not found then raise exception 'Attempt not found'; end if;
+  if att.submitted_at is not null then raise exception 'This attempt is already graded'; end if;
+  select * into q from quizzes z where z.id = att.quiz_id;
+
+  if jsonb_typeof(answers) <> 'object' then raise exception 'Answers are not readable'; end if;
+  total := (select count(*) from jsonb_object_keys(answers));
+  select count(*), count(*) filter (where answers ? aq.question_id::text)
+    into drawn, matched
+    from attempt_questions aq where aq.attempt_id = p_attempt_id;
+  if drawn = 0 or total <> drawn or matched <> drawn then
+    raise exception 'Answer all % questions', drawn;
+  end if;
 
   for k in
-    select qk.question_id, qk.correct from question_keys qk
-    join questions qq on qq.id = qk.question_id
-    where answers ? qk.question_id::text
-      and (qq.quiz_id = pool
-           or (q.kind = 'final' and qq.quiz_id in (select z.id from quizzes z where z.kind = 'module')))
+    select aq.question_id, qk.correct from attempt_questions aq
+    left join question_keys qk on qk.question_id = aq.question_id
+    where aq.attempt_id = p_attempt_id
   loop
     pick := array(select (jsonb_array_elements_text(answers -> k.question_id::text))::int order by 1);
     key := array(select unnest(k.correct) order by 1);
-    insert into attempt_answers values (aid, k.question_id, pick, pick = key);
-    if pick = key then right_count := right_count + 1; end if;
+    insert into attempt_answers values (p_attempt_id, k.question_id, pick, k.correct is not null and pick = key);
+    if k.correct is not null and pick = key then right_count := right_count + 1; end if;
   end loop;
 
-  pct := round(100.0 * right_count / q.draw_count);
-  update quiz_attempts set score_pct = pct, passed = pct >= q.pass_pct where id = aid;
+  pct := round(100.0 * right_count / drawn);
+  update quiz_attempts qa set score_pct = pct, passed = pct >= q.pass_pct, submitted_at = now()
+    where qa.id = p_attempt_id;
   if pct >= q.pass_pct and q.module_id is not null then
     insert into module_progress (user_id, module_id) values (auth.uid(), q.module_id)
       on conflict do nothing;
   end if;
-  return query select qa.id, qa.score_pct, qa.passed from quiz_attempts qa where qa.id = aid;
+  return query select qa.id, qa.score_pct, qa.passed from quiz_attempts qa where qa.id = p_attempt_id;
 end $$;
 
 -- The final exam draws from every module quiz pool (3 questions per module).
@@ -234,20 +337,25 @@ returns void language plpgsql security definer set search_path = public as $$
 begin
   if auth.uid() is null then return; end if;
   if p_seconds is null or p_seconds < 1 then return; end if;
+  -- Credit no more seconds than have passed since the last save.
   insert into module_time (user_id, module_id, seconds)
     values (auth.uid(), p_module_id, least(p_seconds, 120))
   on conflict (user_id, module_id) do update
-    set seconds = module_time.seconds + least(p_seconds, 120), last_seen = now();
+    set seconds = module_time.seconds + greatest(least(p_seconds, 120,
+          floor(extract(epoch from now() - module_time.last_seen))::int), 0),
+        last_seen = now();
 end $$;
 
 -- ---------- Time on each quiz attempt ----------
 alter table quiz_attempts add column if not exists seconds int;
 
--- The quiz page saves the active seconds once, right after grading.
+-- The quiz page saves the active seconds once, right after grading. The value
+-- is capped at the time between the draw and the grading.
 create or replace function log_attempt_time(p_attempt_id bigint, p_seconds int)
 returns void language sql security definer set search_path = public as $$
-  update quiz_attempts set seconds = least(greatest(coalesce(p_seconds, 0), 0), 14400)
-  where id = p_attempt_id and user_id = auth.uid() and seconds is null;
+  update quiz_attempts set seconds = least(greatest(coalesce(p_seconds, 0), 0), 14400,
+           ceil(extract(epoch from submitted_at - created_at))::int)
+  where id = p_attempt_id and user_id = auth.uid() and seconds is null and submitted_at is not null;
 $$;
 
 -- ---------- Admin report ----------
@@ -295,6 +403,7 @@ alter table questions enable row level security;
 alter table question_keys enable row level security;
 alter table quiz_attempts enable row level security;
 alter table attempt_answers enable row level security;
+alter table attempt_questions enable row level security;
 alter table skills enable row level security;
 alter table skill_signoffs enable row level security;
 alter table assignments enable row level security;
@@ -302,6 +411,7 @@ alter table module_time enable row level security;
 
 drop policy if exists "own profile or staff" on profiles;
 create policy "own profile or staff" on profiles for select using (id = auth.uid() or is_staff());
+-- A trainee may change only full_name (see the column grant under Table access).
 drop policy if exists "edit own name" on profiles;
 create policy "edit own name" on profiles for update using (id = auth.uid())
   with check (id = auth.uid() and role = (select role from profiles where id = auth.uid()));
@@ -310,20 +420,23 @@ drop policy if exists "read course" on modules;
 create policy "read course" on modules for select using (true);
 drop policy if exists "read quizzes" on quizzes;
 create policy "read quizzes" on quizzes for select using (true);
+-- questions and attempt_questions: no policies on purpose. The browser gets
+-- questions only from start_attempt, which returns the drawn set.
 drop policy if exists "read questions" on questions;
-create policy "read questions" on questions for select using (auth.uid() is not null);
 drop policy if exists "read skills" on skills;
 create policy "read skills" on skills for select using (true);
 -- question_keys: no policies on purpose.
 
+-- Progress is written only by grade_attempt.
 drop policy if exists "own progress" on module_progress;
-create policy "own progress" on module_progress for all
-  using (user_id = auth.uid() or is_staff()) with check (user_id = auth.uid());
+drop policy if exists "read progress" on module_progress;
+create policy "read progress" on module_progress for select
+  using (user_id = auth.uid() or is_staff());
 drop policy if exists "own bookmarks" on bookmarks;
 create policy "own bookmarks" on bookmarks for all
   using (user_id = auth.uid()) with check (user_id = auth.uid());
 
--- Attempts are written only by grade_attempt.
+-- Attempts are written only by start_attempt and grade_attempt.
 drop policy if exists "read own attempts" on quiz_attempts;
 create policy "read own attempts" on quiz_attempts for select using (user_id = auth.uid() or is_staff());
 drop policy if exists "read own answers" on attempt_answers;
@@ -344,34 +457,44 @@ create policy "read assignments" on assignments for select
   using (trainee_id = auth.uid() or instructor_id = auth.uid() or is_staff());
 
 -- ---------- Table access ----------
+-- Start from nothing on this site's tables, then grant what the pages use.
 grant usage on schema public to anon, authenticated;
+revoke all on profiles, admin_emails, modules, module_progress, bookmarks, quizzes,
+  questions, question_keys, quiz_attempts, attempt_questions, attempt_answers,
+  skills, skill_signoffs, assignments, module_time from anon, authenticated;
 grant select on modules, quizzes, skills to anon, authenticated;
--- Questions: no access to explanation, which can give away the answer.
-revoke select on questions from anon, authenticated;
-grant select (id, quiz_id, kind, prompt, choices, code) on questions to authenticated;
-grant select, update on profiles to authenticated;
-grant select, insert, update, delete on module_progress, bookmarks to authenticated;
-grant select on quiz_attempts, attempt_answers, assignments to authenticated;
+grant select on profiles, module_progress, quiz_attempts, attempt_answers,
+  assignments, module_time to authenticated;
+grant update (full_name) on profiles to authenticated;
+grant select, insert, update, delete on bookmarks to authenticated;
 grant select, insert on skill_signoffs to authenticated;
-revoke all on question_keys from anon, authenticated;
+-- questions, question_keys, attempt_questions, admin_emails: no access.
+
+revoke execute on function start_attempt(bigint) from public, anon;
+grant execute on function start_attempt(bigint) to authenticated;
 revoke execute on function grade_attempt(bigint, jsonb) from public, anon;
 grant execute on function grade_attempt(bigint, jsonb) to authenticated;
-grant select on module_time to authenticated;
 revoke execute on function log_attempt_time(bigint, int) from public, anon;
 grant execute on function log_attempt_time(bigint, int) to authenticated;
-revoke execute on function admin_attempt_answers(bigint) from public, anon;
-grant execute on function admin_attempt_answers(bigint) to authenticated;
-revoke all on admin_emails from anon, authenticated;
 revoke execute on function log_module_time(int, int) from public, anon;
 grant execute on function log_module_time(int, int) to authenticated;
+revoke execute on function admin_attempt_answers(bigint) from public, anon;
+grant execute on function admin_attempt_answers(bigint) to authenticated;
 revoke execute on function admin_users() from public, anon;
 grant execute on function admin_users() to authenticated;
+-- The sign-up trigger is never called through the API; role checks are for signed-in users.
+revoke execute on function handle_new_user() from public, anon, authenticated;
+revoke execute on function is_admin() from public, anon;
+grant execute on function is_admin() to authenticated;
+revoke execute on function is_staff() from public, anon;
+grant execute on function is_staff() to authenticated;
 
 -- Promote anyone already registered whose email is on the admin list.
 update profiles set role = 'admin'
 where role <> 'admin'
   and id in (select u.id from auth.users u join admin_emails a on lower(a.email) = lower(u.email));
 
--- To make someone an admin, add their email to admin_emails in the SQL Editor:
+-- To make someone an admin: have them register and sign in first. Then add their
+-- email to admin_emails in the SQL Editor:
 --   insert into admin_emails (email) values ('you@example.com') on conflict do nothing;
--- then run this file again (or the update just above). New sign-ups on the list become admins automatically.
+-- and run this file again (or the update just above). Signing up never grants admin.
