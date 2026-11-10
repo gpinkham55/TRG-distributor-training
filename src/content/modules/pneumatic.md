@@ -266,7 +266,7 @@ The tech asked for "a dozen of these elbows." The elbow was the wrong size for t
 4. Which quick coupler interchange is the most common in North American plants?
 5. A plug goes into a coupler of a different type. What can happen?
 6. What marking must air brake fittings carry?
-7. What is the pressure limit for compressed air used for cleaning?
+7. What is the pressure limit for compressed air used to clean parts and work surfaces?
 8. A tool "has no power." What do you ask about the hose?
 
 Work these on your own, then check your answers with your Manager.

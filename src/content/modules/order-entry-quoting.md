@@ -124,7 +124,7 @@ Your branch may use only some of these codes. Confirm the active codes with your
 | Where does the vendor ship? | To your branch | To the customer's address |
 | Who delivers? | Your branch: will call, branch truck, or carrier | The vendor's carrier |
 | Does the customer see the vendor? | No; you repack it in your branch's box | Yes; the vendor's packing list goes with it |
-| What goes on the PO? | Your branch as the ship-to | Only the direct-ship lines for that order, with the customer's address as the ship-to |
+| What goes on the PO? | Your branch as the ship-to | Every direct-ship line from that supplier going to the same customer and address, with the customer's address as the ship-to |
 
 ### Steps: stock is short
 
@@ -281,7 +281,7 @@ Check every price, get the full spec on every assembly, and confirm every quanti
 | A new ship-to address | Add the ship-to first (Module 3) | Orders pull carrier, tax, and instructions from the ship-to |
 | Stock is short | Check other locations and open POs, then ask the customer: partial now or all together | The disposition depends on the customer's answer |
 | The item is unstocked and the customer picks up | Disposition S | The vendor ships to your branch |
-| The vendor ships straight to the customer and that is fine with them | Disposition D | The PO carries only the direct-ship lines for that order, with the customer's ship-to |
+| The vendor ships straight to the customer and that is fine with them | Disposition D | The PO carries every direct-ship line from that supplier going to the same customer and address |
 | A price looks far off history | Check Sales Pricing Inquiry and ask your Manager | Price libraries and costs change |
 | The customer accepts an expired quote | Confirm cost before you honor it | Vendor costs move |
 | A received PO line hasn't shipped | Ask the warehouse to find it | The product is likely in the building |
