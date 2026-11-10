@@ -23,7 +23,7 @@ const d = m.data;
     <h1>{d.title}</h1>
     <div class="meta">
       <span>About {d.minutes} minutes</span>
-      <span>{d.signoff ? 'Manager sign-off required' : 'No Manager sign-off'}</span>
+      {d.signoff && <span>Manager sign-off required</span>}
     </div>
     <Content />
     <div class="complete" id="complete" data-module={d.number}>
