@@ -81,7 +81,7 @@ Round each count **down**: a partial part is scrap.
 
 [IMAGE EXAMPLE: Two nests of the same ring gasket side by side, a square grid and a staggered grid, with parts-per-sheet counts labeled]
 
-> 💡 KEY TAKEAWAY: Price from the footprint. A 9 in round gasket has a 63.6 in² area and uses 83.3 in² of sheet.
+> 💡 KEY TAKEAWAY: Price from the square-grid footprint, on staggered nests too. A 9 in round gasket has a 63.6 in² area and uses 83.3 in² of sheet.
 
 ## 12.3 Scrap and Remnants
 
