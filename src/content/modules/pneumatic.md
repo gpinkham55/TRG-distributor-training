@@ -17,7 +17,7 @@ After this module you will be able to:
 1. Trace a plant air system from the compressor to the tool.
 2. Pick an air hose or tubing material.
 3. Size tubing by OD and hose by ID, and tell inch tubing from metric.
-4. Identify push-to-connect, compression, and barbed fittings, and install one.
+4. Identify push-to-connect, compression, and barbed fittings.
 5. Match quick couplers and plugs by interchange type.
 6. Follow the rules for air brake (DOT) hose, tubing, and fittings.
 7. Follow the safety rules for compressed air.
@@ -166,7 +166,7 @@ Trucks, trailers, and buses stop with air brakes. Brake hose, tubing, and fittin
 - Air brake hose, tubing, and fittings must be **DOT rated** and marked on the part.
 - Air brake tubing is usually nylon made to SAE J844, sized by OD.
 - DOT push-to-connect and compression fittings are made for brake tubing. Use only DOT fittings on a brake line.
-- We build DOT air brake hose assemblies. FMVSS 106 requires each assembly to carry a label with our NHTSA manufacturer ID, *674, and the build date.
+- A shop that builds air brake hose assemblies labels each one as FMVSS 106 requires. Ask your Manager whether your branch builds them.
 
 > ⚠️ SAFETY & COMPLIANCE: A failed brake line can cause a crash. Sell only DOT-rated parts for air brakes, and never substitute a non-DOT part to fill an order.
 
@@ -175,7 +175,7 @@ Trucks, trailers, and buses stop with air brakes. Brake hose, tubing, and fittin
 | Rule | Reason |
 |---|---|
 | Air used to clean parts and work surfaces is reduced below 30 psi with chip guarding (OSHA 1910.242(b)). Never use air on a person at any pressure. | Higher pressure drives debris or air into skin or eyes |
-| Whip checks on universal couplings and large air hose | A loose hose whips with great force |
+| Whip checks on every air hose connection | A loose hose whips with great force |
 | Relieve pressure before disconnecting any line | Lines whip or blow off |
 | Safety glasses and hearing protection around air tools | Flying debris and noise |
 

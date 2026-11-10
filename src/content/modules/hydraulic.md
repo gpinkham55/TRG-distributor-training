@@ -110,7 +110,7 @@ Every hydraulic connection seals one of three ways: on the threads, on a metal s
 | Connection | Thread | Seals on | How to spot it |
 |---|---|---|---|
 | NPT and NPTF | Tapered, 60° thread form | The threads (with sealant, or a tight dryseal fit on NPTF) | Threads get smaller toward the end; no seat or O-ring |
-| NPSM | Straight 60° pipe thread | A 30° seat in the female swivel, against the male's 30° cone or the chamfer on an NPT male | Female swivel on pipe-thread hose ends; mates with an NPT or NPSM male |
+| NPSM | Straight 60° pipe thread | The 30° nose of the female swivel seats on the 30° chamfer machined into the male: a metal-to-metal seal | Female swivel on pipe-thread hose ends; mates with an NPT or NPSM male |
 | JIC 37° flare | Straight UN/UNF | Metal 37° cone seat | Male has a 37° cone at the tip; the most common hydraulic fitting in North America |
 | SAE 45° flare | Straight UN/UNF | Metal 45° seat | Looks like JIC; used on low-pressure fuel, oil, and refrigerant lines |
 | ORFS (O-ring face seal) | Straight UN | O-ring in a groove on the flat face of the male | Flat face with an O-ring; very leak resistant |
@@ -125,7 +125,7 @@ Every hydraulic connection seals one of three ways: on the threads, on a metal s
 
 [IMAGE EXAMPLE: NPSM and NPT: an NPSM female swivel seals on a 30° seat, and the threads only hold]
 
-> ⚠️ SAFETY & COMPLIANCE: Some different thread types screw together for a few turns, then leak or blow apart under pressure. JIC 37° and SAE 45° share thread sizes; NPT and BSPT look alike. Never force a fitting, and never use thread sealant to try and make a mismatched pair seal.
+> ⚠️ SAFETY & COMPLIANCE: Some different thread types screw together for a few turns, then leak or blow apart under pressure. JIC 37° and SAE 45° threads match in some sizes, and their seat angles differ. Never interchange them: the seal will not hold. NPT and BSPT look alike. Never force a fitting, and never use thread sealant to try and make a mismatched pair seal.
 
 > 📌 INDUSTRY INSIGHT: Heavy equipment built in the US uses mostly JIC, ORFS, and O-ring boss. European and Asian machines often use BSPP, metric, or JIS connections. Ask who made the machine; it narrows the search fast.
 
@@ -188,7 +188,7 @@ O-ring fittings resist leaks and vibration well and go back together many times 
 
 Two machined surfaces press together, with no rubber in the seal.
 
-- **JIC 37°** and **SAE 45°** flares seal cone to seat. They share thread sizes and do not seal to each other.
+- **JIC 37°** and **SAE 45°** flares seal cone to seat. Their threads match in some sizes and they do not seal to each other. Never interchange them.
 - **DIN 2353 cutting ring** fittings bite into a metal tube as the nut tightens. The ring grips the tube and seals it.
 
 Metal seals handle high pressure and heat and last a long time. A nicked or flattened cone leaks, and more torque only flattens it further.
@@ -334,7 +334,7 @@ Pipe thread sizes are nominal. The actual outside diameter is larger than the si
 | Banjo | A ring fitting with a hollow bolt | Bolt thread and ring size |
 | Flange head | Code 61 or Code 62 head with a split or captive flange | Code, flange size, and bolt pattern |
 
-With an elbow on each end, measure the **orientation**: lay the hose flat and measure the angle from the back elbow to the front elbow, clockwise. Write it in the order line's extended description.
+With an elbow on each end, measure the **orientation**: sight down the hose with the far elbow pointing straight up, and read the angle clockwise to the near elbow. Write it in the order line's extended description.
 
 ### Quick couplers
 

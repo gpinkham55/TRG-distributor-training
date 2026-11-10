@@ -55,7 +55,7 @@ Each steel flange has a **class**: 150, 300, 600, 900, 1500, or 2500. The class 
 
 | Class | Where you see it |
 |---|---|
-| 150 | Most water, air, and low-pressure steam and chemical lines |
+| 150 | Most water and air lines; steam and chemical lines inside the Class 150 pressure-temperature rating |
 | 300 | Higher-pressure steam and process lines |
 | 600 and up | High-pressure steam, boiler, and process lines; usually spiral wound or metal gaskets |
 

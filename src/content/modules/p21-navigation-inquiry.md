@@ -26,7 +26,7 @@ After this module you will be able to:
 
 ## 2.1 Signing In and Reading the P21 Screen
 
-TRG runs two copies of P21. **Live P21** is the real system: orders saved there print, ship, and bill. The **P21Play System** is a copy of live data for training. Do every practice task in this course in the P21Play System until your Manager moves you to live P21.
+TRG runs two copies of P21. **Live P21** is the real system: orders saved there print, ship, and bill. The **P21Play System** is a copy of live data for training. Do every practice task in this course in the P21Play System until your Manager moves you to live P21. The P21Play System can email a real purchase order to a vendor. Never email or send a document from the P21Play System.
 
 Stock and order status in the P21Play System lag behind live P21. When an exercise and the P21Play System disagree, trust the P21Play System and write down what you found.
 
@@ -173,7 +173,7 @@ One customer has many ship-to's and many contacts. Some companies have several c
 1. Press **F8** to open Customer Master Inquiry.
 2. Search by customer ID, part of the company, phone number, or city.
 3. **Confirm the right account.** Check the physical address and the ship-to list. When two accounts look alike, ask the caller which plant, location, or address they are calling about.
-4. On the **Credit Status** tab, check the account status and terms. An account on COD or Hold changes what you can promise. On Hold, take the order and bring in your Manager before you promise anything. On COD, take the order and collect payment before release.
+4. On the **Credit Status** tab, check the account status and terms. An account on COD or Hold changes what you can promise. On Hold, take the order and send it to accounting; when accounting is unavailable, bring in your Manager. Promise nothing until the hold is released. On COD, take the order and collect payment by credit or debit card before release.
 5. Read the **Customer Notes**: PO required, release numbers, receiving hours, tax exemption, brand preferences.
 6. Check the **Ship To / Salesrep** tab. Is the delivery address on file? Who is the salesperson?
 7. Check the **contacts**. Is the caller listed, with the right phone and email?
@@ -199,8 +199,8 @@ One customer has many ship-to's and many contacts. Some companies have several c
 | Status | What you do |
 |---|---|
 | Good | Take the order on the account's terms |
-| COD | Take the order; payment by credit or debit card at pickup and before delivery |
-| Hold | Take the order, tell the customer you need to check one thing, and bring in your manager. Only a manager or accounting releases a hold. |
+| COD | Take the order; payment by credit or debit card only, at pickup or before delivery. The branch takes no cash |
+| Hold | Take the order, tell the customer you need to check one thing, and send it to accounting. When accounting is unavailable, bring in your Manager. Only accounting or a Manager releases a hold. |
 
 > 📌 INDUSTRY INSIGHT: Large customers often have many accounts. A paper company may have one account per mill; an equipment dealer may have one per store. The company alone rarely tells you which account to use. The physical address and the ship-to list do.
 
@@ -220,7 +220,7 @@ Most requests come down to three questions: do you have it, where is it, and whe
 1. Press **F2** to open Item Master Inquiry.
 2. Search by item ID, a word from the description, a manufacturer part number, or the customer's part number. Your Manager will show you how your branch builds item IDs.
 3. Read the full **description** and the **unit of measure** (UOM).
-4. Check your **location**: net quantity available.
+4. On the **Inventory** tab, find your **location** and read its net quantity available.
 5. On the **Inventory** tab, check other locations. Another branch may have it and can transfer it.
 6. On the **Open PO** tab, check what is coming and the expected date.
 7. On the **Open Order** tab, check which orders hold the stock you see on hand.
@@ -233,8 +233,8 @@ Most requests come down to three questions: do you have it, where is it, and whe
 
 | Where | What to read | What it tells you |
 |---|---|---|
-| Main screen | Item ID, description, location, net quantity available, UOM | What the item is and how many you can promise |
-| Inventory tab | Stock at every location | Which branch has it |
+| Main screen | Item ID and description | What the item is |
+| Inventory tab | Location, net quantity available, and UOM for every location | How many you can promise and which branch has it |
 | Open PO tab | PO number, quantity, expected date | When more arrives |
 | Open Order tab | Orders holding stock | Who the allocated stock belongs to |
 | Transfer tab | Transfers in and out | Stock already on its way between branches |
@@ -246,7 +246,7 @@ Most requests come down to three questions: do you have it, where is it, and whe
 |---|---|---|
 | On hand | Physically in your building | 100 FT |
 | Allocated | Already promised to open orders | 60 FT |
-| Net available | On hand minus allocated: what you can promise | 40 FT |
+| Net available | On hand minus allocated and minus any stock P21 holds back (non-pickable, quarantined, or frozen): what you can promise | 40 FT |
 | On order | Coming in on open POs | 200 FT, expected in 5 business days |
 
 > ⚠️ SAFETY & COMPLIANCE: Promise only the net available quantity. Stock that is on hand and allocated belongs to another customer's order.
@@ -331,7 +331,7 @@ Order Inquiry shows one order from entry to invoice. Open it by order or by item
 
 | The customer asks | Where you look | What you read |
 |---|---|---|
-| "Do you have it?" | F2, main screen | Net quantity available at your location |
+| "Do you have it?" | F2, Inventory tab | Net quantity available at your location |
 | "Does another branch have it?" | F2, Inventory tab | Stock at every location |
 | "When will more come in?" | F2, Open PO tab | Expected date and quantity |
 | "Where's my order?" | Order Inquiry | Status, shipments, carrier |
@@ -405,7 +405,7 @@ The planner described the hose in one sentence. Sales history supplied the item,
 | UOM | Unit of measure: EA, FT, SI, SF, RL |
 | On hand | Stock physically in the building |
 | Allocated | Stock promised to open orders |
-| Net available | On hand minus allocated: what you can promise |
+| Net available | On hand minus allocated and minus any stock P21 holds back: what you can promise |
 | Open PO | A purchase order not yet fully received |
 | Transfer | Stock moving between branches |
 | Substitute | An approved alternate item |

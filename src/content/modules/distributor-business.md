@@ -112,9 +112,9 @@ Every request, from any channel, follows the same path: identify the customer, u
 | Blanket PO and release | One PO covers many orders over time; each shipment carries a release number |
 | Net terms (Net 30, Net 60) | The invoice is due 30 or 60 days after it is issued |
 | Discount terms (2% 15, Net 60) | 2% off if paid within 15 days, otherwise due in 60 |
-| COD (cash on delivery) | Paid via credit or debit card at pickup and before delivery |
+| COD (cash on delivery) | Paid by credit or debit card only, at pickup or before delivery. The branch takes no cash |
 
-> ⚠️ SAFETY & COMPLIANCE: Never promise to ship to a customer whose account is on credit hold without approval from your manager or accounting. Take the order, explain politely that you need to check one thing, and route it to accounting.
+> ⚠️ SAFETY & COMPLIANCE: Never promise to ship to a customer whose account is on credit hold without approval from accounting or your Manager. Take the order, explain politely that you need to check one thing, and route it to accounting. When accounting is unavailable, bring in your Manager.
 
 ### The four industries
 
@@ -176,7 +176,7 @@ Almost every hose tube, cover, gasket, and seal is made from one of these materi
 | PTFE | Teflon (a brand) | Nearly every chemical, wide temperature range | Cold flow (creep) under bolt load, stiffness | -100 to 500°F |
 | PVC | Vinyl | Water, air, light chemicals, low cost | Heat, many solvents | 25 to 150°F |
 
-Temperature ranges are typical. When temperature is part of the application, check the rating of the exact product you are supplying. Hoses differ between manufacturers, and shelf stock may come from one maker on one buy and another maker on the next.
+Temperature ranges are typical and vary by vendor and product. When temperature is part of the application, check the rating of the exact product you are supplying. Hoses differ between manufacturers, and shelf stock may come from one maker on one buy and another maker on the next.
 
 > ⚠️ SAFETY & COMPLIANCE: The most common material mistake is EPDM in oil service. EPDM swells and fails in petroleum oil and fuel. Nitrile is the opposite: good in oil, poor outdoors in sun and ozone. Never substitute one for the other without checking the media.
 
@@ -211,7 +211,7 @@ Every request passes through several hands before it becomes an invoice.
 | Shop and fabrication | Builds assemblies, cuts gaskets and sheet, tests and tags | A complete spec and a realistic promise date |
 | Purchasing | Buys stock and special orders, manages vendors, arranges vendor returns | Special-order details and the customer's required date |
 | Delivery driver | Runs the branch truck route, collects signatures, brings back returns | Orders staged by route with correct paperwork |
-| Branch manager | Approves credit releases, pricing exceptions, returns, and adjustments | The facts, early, when something is outside the normal path |
+| Branch Manager | Approves credit releases, pricing exceptions, returns, and adjustments | The facts, early, when something is outside the normal path |
 
 ### The order life cycle
 
@@ -299,7 +299,7 @@ Prophet 21 (P21) records every step of the order life cycle. This section is a m
 |---|---|---|
 | The customer only knows "the same hose as last time" | Open Customer Sales History, find the line, and read the item and description back | The order history shows exactly what was sold |
 | The item shows on hand but nothing is available | Check Open Order for what is allocated, then Open PO and Transfer for what is coming | On-hand stock that is allocated belongs to another customer |
-| The account is on Hold | Take the order, tell the customer you need to check one thing, and bring in your manager | Only a manager or accounting releases a hold; the customer never hears the details |
+| The account is on Hold | Take the order, tell the customer you need to check one thing, and send it to accounting; when accounting is unavailable, bring in your Manager | Only accounting or a Manager releases a hold; the customer never hears the details |
 | A chemical customer says "it's just an acid" | Ask for the exact chemical, concentration, and temperature, or the SDS | Compatibility depends on all three |
 | The PO lists a standard you do not recognize | Write it down and ask your Manager before you promise a date | The standard is part of the order and may need paperwork |
 
@@ -374,7 +374,7 @@ Three hazards from the products we sell come up again and again in this course:
 
 1. **Find the customer.** Search for one of your branch's large accounts by part of its name, then by phone number. Write down the customer ID, the number of ship-tos, and the terms.
 2. **Find an item.** Look up a stocked hose and a stocked fitting. Write down the net quantity available and the unit of measure for each.
-3. **Follow an order.** Open a recent order for that customer in Order Inquiry. Write down each line's item, quantity, unit, and disposition.
+3. **Follow an order.** Open a recent order for that customer in Order Inquiry. Write down each line's item, quantity, and unit.
 4. **Walk the branch.** With your Manager, find the counter, the will-call area, the staging area, the remnant rack, and the shop. Write down who works in each.
 
 ### Knowledge check (practice)
@@ -385,8 +385,7 @@ Three hazards from the products we sell come up again and again in this course:
 4. Which material fails in petroleum oil: EPDM or nitrile?
 5. Which ASME standard covers the flanges a standard 4 in Class 150 gasket fits?
 6. An order needs 22 ft of hose. The rack holds 18 ft, 25 ft, and 30 ft remnants. Which do you cut?
-7. Which line disposition sends a special-order need to purchasing?
-8. How should you look for a leak on a pressurized hydraulic hose?
+7. How should you look for a leak on a pressurized hydraulic hose?
 
 Work these on your own, then check your answers with your Manager.
 

@@ -61,7 +61,7 @@ A purchase order (PO) is your branch's order to a vendor. It tells the vendor wh
 
 ## 13.2 Lead Times, Promise Dates, and Expediting
 
-**Lead time** is how long the vendor takes to ship after it gets the PO. The **promise date** is the date the vendor commits to. The customer's date comes from the promise date plus freight time.
+**Lead time** is how long the vendor takes to ship after it gets the PO. The **promise date** on a PO is the ship date the supplier promises. The customer's date comes from that ship date plus freight time. On a customer order (Module 6), the promise date is the arrival date promised to the customer.
 
 ### Steps: follow up on a PO
 
@@ -80,8 +80,8 @@ When an order line uses the **S (special order)** or **D (direct ship)** disposi
 |  | S: special order | D: direct ship |
 |---|---|---|
 | PO ship-to | Your branch | The customer's address |
-| What goes on the PO | The item, often with stock items for the branch | Only that item |
-| Received at your branch? | Yes; the receipt sets the stock aside for the order | No; shipment is received at the drop ship address |
+| What goes on the PO | The item, often with stock items for the branch | Every direct-ship line from that supplier going to the same customer and address |
+| Received at your branch? | Yes; the receipt sets the stock aside for the order | No; shipment is received at the drop ship address. Accounts payable vouches the supplier's invoice, and that creates the customer's invoice |
 | Who delivers | Your branch: will call, branch truck, or carrier | The vendor's carrier |
 | Does the customer see the vendor? | No; you repack it in your branch's box | Yes; the vendor's packing list goes with it |
 
@@ -208,6 +208,8 @@ A planner calls: "You told me our PTFE expansion joint would be here last week. 
 ## 13.8 Practice, Knowledge Check, and Module Quiz
 
 ### Practice in the P21Play System
+
+The P21Play System can email a real purchase order to a vendor. Never email or send a PO from the P21Play System.
 
 1. **Read a PO.** Open three open POs and write the vendor, items, quantities, units, and promise dates.
 2. **Enter a PO.** Enter a stock PO for two items your Manager gives you. Check the purchasing unit on each.

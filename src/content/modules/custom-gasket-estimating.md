@@ -8,7 +8,7 @@ status: published
 summary: Waterjet, die, and hand cutting, job intake, material yield and nesting, scrap and remnants, cutting time, the house pricing formula with placeholder values, and quoting and selling cut gaskets as kits in P21.
 ---
 
-Many branches cut custom gaskets from sheet on a waterjet or with a steel rule die. This module covers how custom gaskets are made, how to take in a job, how to figure the material and time it takes, and how to price it with the house formula. A pricing mistake on a cut gasket shows up on every piece in the order. All rates, costs, and markups here are placeholder values for teaching; your manager gives you your branch's figures.
+Many branches cut custom gaskets from sheet on a waterjet or with a steel rule die. This module covers how custom gaskets are made, how to take in a job, how to figure the material and time it takes, and how to price it with the house formula. A pricing mistake on a cut gasket shows up on every piece in the order. All rates, costs, and markups here are placeholder values for teaching; your Manager gives you your branch's figures.
 
 ### Learning objectives
 
@@ -88,11 +88,11 @@ Round each count **down**: a partial part is scrap.
 Some leftover material goes back to stock; the rest is scrap. A **scrap factor** adds a percentage to the material used to cover what is thrown away.
 
 - **Material used** = footprint × quantity × (1 + scrap factor)
+- Always factor in at least 5% scrap.
 
 | Situation | Typical scrap factor (illustrative) |
 |---|---|
-| Cut from a remnant that would otherwise be scrapped | 0% |
-| Simple rings or rectangles; leftover sheet goes back to stock | 5% |
+| Simple rings or rectangles, or a job cut from a remnant | 5% |
 | Irregular shapes, odd-shaped leftovers | 10% to 20% |
 | Roll width divides unevenly into the part width | 15% to 25% |
 | Small job that opens a full sheet of an expensive material nobody else buys | Charge the full sheet |
@@ -148,7 +148,7 @@ Die cutting trades a one-time tooling cost for very fast cutting.
 
 ## 12.6 The House Pricing Formula
 
-Custom gasket quotes start from a two-part formula: material at cost times a markup multiplier, plus labor at the shop hourly rate in 15-minute increments. Die cost and full-sheet charges are added when they apply. This module uses placeholder values, a **3.00 multiplier** and **$150 per hour**, so the math is easy to follow. Your manager gives you your branch's figures.
+Custom gasket quotes start from a two-part formula: material at cost times a markup multiplier, plus labor at the shop hourly rate in 15-minute increments. Die cost and full-sheet charges are added when they apply. This module uses placeholder values, a **3.00 multiplier** and **$150 per hour**, so the math is easy to follow. Your Manager gives you your branch's figures.
 
 - **Material price** = square inches used × cost per square inch × markup multiplier
 - **Labor price** = labor hours, rounded up to the next quarter hour × shop rate
@@ -232,7 +232,7 @@ The planner emails a sketch of a tank manway cover: an 18 in × 24 in oval, 2 in
 1. **Intake.** The rep asks for a DXF; the mill has none. The planner traces the old gasket on paper with the bolt holes marked and emails a photo with a tape measure beside it.
 2. **Material.** White water is mill process water at about 120°F. 1/8 in EPDM fits the service.
 3. **Programming.** Drawing the shape from a tracing takes 45 min. The rep saves the DXF for the next outage.
-4. **Yield.** The footprint is 18.125 × 24.125 = 437.27 in². Six parts use 2,624 in²; the leftover goes back to stock.
+4. **Yield.** The footprint is 18.125 × 24.125 = 437.27 in². Six parts with 5% scrap use 437.27 × 6 × 1.05 = 2,755 in²; the leftover goes back to stock.
 5. **Price.** The rep works the house formula with the branch's figures and quotes a price each.
 6. **P21.** The Manager sets up a kit item for the gasket with the DXF file reference in the description. The next outage reorder is one line.
 

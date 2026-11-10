@@ -40,7 +40,7 @@ Elastomer sheet is solid rubber in rolls or sheets. It seals well at low pressur
 
 ### Common elastomers
 
-Temperature ranges are approximate. Check the maker's data sheet for the exact grade.
+Temperature ranges are approximate and vary by vendor and product. Check the maker's data sheet for the exact grade.
 
 | Elastomer | Good with | Poor with | Approx. range (°F) |
 |---|---|---|---|
@@ -65,7 +65,7 @@ Temperature ranges are approximate. Check the maker's data sheet for the exact g
 
 > 📌 INDUSTRY INSIGHT: Sheet rubber often goes by color: "red rubber," "black neoprene," "white food grade." Read the polymer and durometer on the roll label before you cut; the color only narrows it down.
 
-> 💡 KEY TAKEAWAY: Rubber gaskets fit low pressure and moderate heat. For steam, high heat, or high pressure, step up to compressed fiber, PTFE, or graphite.
+> 💡 KEY TAKEAWAY: Rubber gaskets fit low pressure and moderate heat. For steam, high heat, or high pressure, step up to compressed fiber, PTFE, or graphite. Low-pressure steam means 15 psig and under, at or below 250°F.
 
 ## 10.2 ASTM D2000 and F104 Callouts
 
@@ -118,7 +118,7 @@ ASTM F104 classifies fiber and other nonmetallic gasket sheet with a line callou
 
 ## 10.3 Compressed Fiber Sheet and the P×T Chart
 
-Compressed fiber sheet is fibers (aramid, glass, carbon, or mineral) bound with a rubber binder such as nitrile. It is the everyday gasket material for plant piping: water, low-pressure steam, oils, air, and many mild chemicals.
+Compressed fiber sheet is fibers (aramid, glass, carbon, or mineral) bound with a rubber binder such as nitrile. It is the everyday gasket material for plant piping: water, steam inside the sheet's P×T rating, oils, air, and many mild chemicals.
 
 | Feature | What to know |
 |---|---|
@@ -153,7 +153,7 @@ PTFE resists almost every chemical. Plain (virgin) PTFE creeps under bolt load, 
 
 | Type | What it is | Where it fits |
 |---|---|---|
-| Filled PTFE (silica) | PTFE with silica filler | Strong acids |
+| Filled PTFE (silica) | PTFE with silica filler | Strong acids except hydrofluoric acid |
 | Filled PTFE (barium sulfate) | PTFE with barium sulfate filler | Strong caustics and many acids |
 | Filled PTFE (glass microspheres) | PTFE with hollow glass spheres; more compressible | Lower bolt loads, plastic and lined flanges |
 | ePTFE (expanded) | Soft, stretched PTFE that conforms to the flange | Uneven, damaged, glass-lined, or FRP flanges |
@@ -178,11 +178,11 @@ Start with the media, then check temperature and pressure, then the flange.
 | Service | First choices | Avoid |
 |---|---|---|
 | Cold water, air, low pressure | Red SBR, neoprene, EPDM, compressed fiber | Nothing special |
-| Hot water and low-pressure steam | EPDM (lower pressure), compressed fiber | Nitrile, neoprene, natural rubber |
+| Hot water and low-pressure steam (15 psig and under, at or below 250°F) | EPDM, compressed fiber | Nitrile, neoprene, natural rubber |
 | Higher-pressure steam | Flexible graphite, high-temperature compressed fiber | Rubber sheet |
 | Oils, fuels, hydraulic fluid | Nitrile, FKM, nitrile-bound compressed fiber | EPDM, natural rubber |
-| Strong acids | Silica-filled PTFE, ePTFE, FKM for some acids | Most rubber, most fiber sheet |
-| Strong caustics | Barium sulfate-filled PTFE, EPDM at lower temperatures | Silica-filled PTFE |
+| Strong acids | Silica-filled PTFE (every strong acid except hydrofluoric), ePTFE, FKM for some acids. For hydrofluoric acid, follow the maker's chart | Most rubber, most fiber sheet. Silica-filled PTFE on hydrofluoric acid |
+| Strong caustics | Barium sulfate-filled PTFE, EPDM at lower temperatures | Silica-filled PTFE, glass-filled PTFE, FKM |
 | Food and beverage | FDA-compliant white nitrile, EPDM, silicone, or PTFE | Anything unmarked for food |
 | Glass-lined, plastic, or FRP flanges | ePTFE, soft rubber | Hard sheet that needs high bolt load |
 
@@ -206,7 +206,7 @@ Only sheet the maker's label or data sheet states is FDA-compliant goes in food 
 |---|---|---|
 | Pulp and paper | Steam headers, digester flanges, bleach plant piping, paper machine seals | Graphite, compressed fiber, ePTFE, EPDM |
 | Agriculture | Pump and tank lid gaskets, irrigation flanges, equipment covers | EPDM, nitrile, neoprene, fiber sheet |
-| Chemical | Acid and caustic lines, lined vessels, tank manways | Filled PTFE, ePTFE, FKM, EPDM |
+| Chemical | Acid and caustic lines, lined vessels, tank manways | Filled PTFE, ePTFE, EPDM; FKM on acid lines only |
 | Heavy equipment | Hydraulic tank and manifold gaskets, covers, pads | Nitrile, neoprene, fiber sheet |
 
 > 📌 INDUSTRY INSIGHT: High-pressure flanges (Class 600 and up) often use spiral-wound metal gaskets, bought as finished parts. Module 11 covers flange classes.

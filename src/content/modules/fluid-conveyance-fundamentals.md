@@ -155,7 +155,7 @@ The fitting on the end of a hose has its own size. A -8 hose can end in a -6, -8
 1. **ID:** measure across the inside of a clean, square cut with calipers. Measuring the OD and guessing the ID gives the wrong hose.
 2. **Overall length:** measure from the end of one fitting to the end of the other, along the hose. On an elbow, measure to the center line of the fitting's sealing face.
 3. **Cut length:** the length of bulk hose before the fittings go on. The shop works it out from the overall length and the fitting dimensions. You give the shop the overall length.
-4. **Orientation:** with an elbow on each end, lay the hose flat and measure the angle from one elbow to the other, looking down the hose from the back elbow.
+4. **Orientation:** with an elbow on each end, sight down the hose with the far elbow pointing straight up. Read the angle clockwise to the near elbow.
 
 [IMAGE EXAMPLE: A hose assembly with two elbow fittings, showing where overall length is measured and the angle between the elbows]
 
@@ -177,7 +177,8 @@ Match the hose to the customer's working pressure, highest surge, vacuum, and bo
 | Hose type | Typical safety factor |
 |---|---|
 | Hydraulic hose | 4 to 1 |
-| Most industrial water and air hose | 4 to 1 |
+| Water hose on clean water at moderate pressure | 3 to 1 |
+| Industrial hose on air, on abrasive or corrosive media, or at higher pressure | 4 to 1 |
 | Steam hose | 10 to 1 |
 
 A hydraulic hose with a 3,000 psi working pressure and a 4 to 1 safety factor has a 12,000 psi minimum burst pressure. The customer runs it at 3,000 psi or less, surges included.
