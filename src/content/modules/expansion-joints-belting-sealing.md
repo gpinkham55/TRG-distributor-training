@@ -193,7 +193,7 @@ Check the item's unit of measure in Item Maintenance before you enter a quantity
 2. Enter the quantity in the item's unit of measure.
 3. Put the full spec in the line's **extended description**: for an expansion joint, size, face-to-face, drilling, elastomer, control rods, and tag number; for conveyor belt, width, plies, covers, grade, length, and splice.
 4. For a quote, mark the order as a quote. Set the expiration 30 days out unless the customer asks for longer (Module 6).
-5. For a special-order or direct-ship line, set the disposition and enter the PO to the vendor.
+5. For a special-order or direct-ship line, set the disposition. The buyer enters the PO to the vendor from the spec on the line.
 6. Set up a customer part number when the customer orders the same item by their own number or tag.
 
 > ⚠️ SAFETY & COMPLIANCE: Special-order expansion joints and seals usually can't be returned (Module 15). Read the full spec back to the customer and get it confirmed before the PO goes to the vendor.
@@ -209,7 +209,7 @@ A practice caller, a maintenance planner at Southeastern Paper Mill, emails an o
 3. The planner mentions the old joint is stretched and the bolts keep loosening. The rep asks how the pipe is anchored and suggests the planner have their engineer check whether control rods are needed.
 4. The engineer calls back: add control rods.
 5. The rep enters a quote with the item and the full spec in the extended description, including "tag P-204" and "with control rods."
-6. The planner sends a PO. The rep converts the quote, sets the line to special order, and enters the PO to the vendor.
+6. The planner sends a PO. The rep converts the quote and sets the line to special order. The buyer enters the PO to the vendor.
 7. The rep sets up a customer part number for tag P-204 with the spec in the item notes.
 
 The next outage, the planner orders "P-204" and the order repeats.

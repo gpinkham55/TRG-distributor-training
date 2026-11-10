@@ -142,7 +142,7 @@ Example kit: the 48 in, -8 two-wire assembly from 9.2.
 | -8 female JIC swivel, 90° elbow | EA | 1 |
 | Assembly labor | HR | 0.25 |
 
-Labor is priced at the shop rate. This course uses a placeholder shop rate of $150 per hour; your manager gives you your branch's rate.
+Labor is priced at the shop rate. This course uses a placeholder shop rate of $150 per hour; your Manager gives you your branch's rate.
 
 ### Steps: sell an assembly
 

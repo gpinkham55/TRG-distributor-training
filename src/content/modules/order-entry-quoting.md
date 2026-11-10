@@ -57,7 +57,7 @@ When the account requires a PO and the customer has none, do not enter the order
 
 ### Required date and promise date
 
-The **required date** is when the customer needs the product. Give a promise only after you check stock, the shop, or the vendor. A promise you can't keep costs more than an honest later date.
+The **required date** is when the customer needs the product. The **promise date** is the arrival date you promise the customer. Give a promise only after you check stock, the shop, or the vendor. A promise you can't keep costs more than an honest later date.
 
 ### Counter sales
 
@@ -109,6 +109,7 @@ The disposition tells P21 what to do with the part of a line you can't ship from
 | Code | Disposition | What happens | Use it when |
 |---|---|---|---|
 | B | Backorder | Ships what you have; the rest waits for stock | The customer takes a partial shipment |
+| H | Hold | Holds the line so the whole order ships together | The customer wants one complete shipment; set the order's packing basis to Order Complete |
 | S | Special order | Creates a purchase need; the vendor ships to your branch, and you ship or deliver | The item is unstocked at your branch, and the customer picks up, you deliver, or the vendor stays out of sight |
 | D | Direct ship | The vendor ships straight to the customer | It is fine for the customer to see the vendor |
 | T | Transfer | Pulls stock from another location | Another branch has it |
@@ -130,7 +131,7 @@ Your branch may use only some of these codes. Confirm the active codes with your
 1. Check other locations on the Inventory tab (F2). A transfer often beats waiting for the vendor.
 2. Check the Open PO tab for stock on its way.
 3. Ask the customer: ship what you have now, or wait and ship it all together?
-4. Set the disposition to match the answer.
+4. Set the disposition to match the answer. To ship what you have now, use **B**. To ship it all together, set the order's packing basis to **Order Complete** and put **H** on the short lines.
 5. Give the customer a real date for the rest.
 
 > ⚠️ SAFETY & COMPLIANCE: Tell the customer about every backorder before you hang up or they leave the counter. A surprise backorder costs more trust than the delay.
@@ -157,7 +158,7 @@ P21 prices each line. Know where the price came from, check it against history, 
 
 ### Price overrides
 
-An override needs a reason: a quote, a contract, or your manager's approval. Note the reason on the line, then check the line's margin.
+Every price override needs your Manager's approval. Note the reason on the line, such as a quote or a contract, then check the line's margin.
 
 ### Margin and markup
 
@@ -177,9 +178,9 @@ Example with placeholder numbers: a material costs $20.00 and sells at a ×3.00 
 
 Shop labor is priced at the shop rate times the build time. At a placeholder shop rate of $150/hr, a 20-minute build adds $50.00 of labor to the assembly price.
 
-> ⚠️ SAFETY & COMPLIANCE: Never share cost or margin with a customer. Your branch sets a minimum acceptable margin %. A price below it needs your manager's approval before it goes on an order or a quote.
+> ⚠️ SAFETY & COMPLIANCE: Never share cost or margin with a customer. Your branch sets a minimum acceptable margin %. A price below it needs your Manager's approval before it goes on an order or a quote.
 
-> 💡 KEY TAKEAWAY: Let P21 price the line, compare it with history, and change it only with a reason you can explain to your manager.
+> 💡 KEY TAKEAWAY: Let P21 price the line, compare it with history, and change it only with a reason you can explain to your Manager.
 
 ## 6.5 Quoting and Converting
 
@@ -201,7 +202,7 @@ A quote is your written price, quantity, lead time, and expiration date. Every l
 ### Steps: send and follow up
 
 1. Send the quote to the contact by the method they prefer.
-2. Set a follow-up: a call within 2 business days on large quotes, within 5 on the rest.
+2. Set a follow-up on every quote: a call within 2 business days on large quotes, within 5 on the rest.
 3. Review your open quotes every week. Follow up, revise, or close them.
 4. Close lost quotes with a reason: price, lead time, or project canceled.
 
@@ -228,6 +229,7 @@ A quote is your written price, quantity, lead time, and expiration date. Every l
 4. Stage the order by route, carrier, or will call.
 5. Confirm the shipment in the **Shipping** module. Confirm only what actually shipped.
 6. The confirmed shipment creates the invoice for the shipped quantity.
+7. A direct-ship (D) line has no branch shipment to confirm. Accounts payable vouches the supplier's invoice, and that creates the customer's invoice.
 
 > ⚠️ SAFETY & COMPLIANCE: Confirm a shipment only after it is picked, checked, and on its way. A shipment confirmed early bills the customer for product still on the shelf.
 
@@ -249,9 +251,9 @@ A quote is your written price, quantity, lead time, and expiration date. Every l
 | The customer wants | Before picking | After picking |
 |---|---|---|
 | More of an item | Add to the line or add a line; check stock again | Add a line; check stock again |
-| Less of an item | Change the quantity | Get your manager's approval, then tell the warehouse |
-| A different item | Change the line; tell the shop if they started a build | Get your manager's approval, then tell the warehouse and shop |
-| The whole order canceled | Get your manager's approval; special-order and direct-ship lines may already be on a vendor PO | Get your manager's approval |
+| Less of an item | Change the quantity | Get your Manager's approval, then tell the warehouse |
+| A different item | Change the line; tell the shop if they started a build | Get your Manager's approval, then tell the warehouse and shop |
+| The whole order canceled | Get your Manager's approval; special-order and direct-ship lines may already be on a vendor PO | Get your Manager's approval |
 
 Keep the original order. Cancel-and-reenter breaks the link to the PO and the history.
 
@@ -263,7 +265,7 @@ A practice caller, the buyer at Southeastern Paper Mill, emails an RFQ for the s
 
 1. **Order Entry as a quote.** The rep enters the account, the No. 2 machine ship-to, the buyer as contact, and the RFQ number. Expiration: 60 days.
 2. **Lines.** 32 lines are stocked items. 8 are unstocked. The rep gets current vendor cost and lead time on the 8 before pricing them.
-3. **Price check.** Sales Pricing Inquiry gives the customer's price on each stocked item. Two lines come in far above last year's history. The rep finds a price library change and asks the manager before quoting.
+3. **Price check.** Sales Pricing Inquiry gives the customer's price on each stocked item. Two lines come in far above last year's history. The rep finds a price library change and asks the Manager before quoting.
 4. **Hose assemblies.** Six steam assemblies are on the RFQ with only a length. The rep calls the planner, gets all seven STAMPED answers, and quotes them as kit items with the spec in the extended description.
 5. **Lead times.** Each line carries "Stock" or a real lead time. The rep adds a note: "Unstocked lead times start at receipt of order."
 6. **Follow-up.** The rep sends the quote and sets a call for two business days later.
@@ -346,6 +348,7 @@ Check every price, get the full spec on every assembly, and confirm every quanti
 5. The customer accepts a quote. How do you turn it into an order?
 6. Where do you print a pick ticket, and what creates the invoice?
 7. A PO shows received and the order line hasn't shipped. What does that usually mean?
+8. Which line disposition sends a special-order need to purchasing?
 
 Work these on your own, then check your answers with your Manager.
 

@@ -40,7 +40,7 @@ Elastomer sheet is solid rubber in rolls or sheets. It seals well at low pressur
 
 ### Common elastomers
 
-Temperature ranges are approximate. Check the maker's data sheet for the exact grade.
+Temperature ranges are approximate and vary by vendor and product. Check the maker's data sheet for the exact grade.
 
 | Elastomer | Good with | Poor with | Approx. range (°F) |
 |---|---|---|---|

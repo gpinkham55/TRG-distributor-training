@@ -21,7 +21,7 @@ After this module you will be able to:
 5. Explain min and max and how replenishment suggestions work.
 6. Request, ship, and receive a transfer between locations.
 
-> ⚠️ SAFETY & COMPLIANCE: Never change on-hand quantities to make an order ship or a count match. Your supervisor or manager approves every adjustment.
+> ⚠️ SAFETY & COMPLIANCE: Never change on-hand quantities to make an order ship or a count match. Your supervisor or Manager approves every adjustment.
 
 ## 14.1 Why P21 and the Shelf Drift Apart
 
@@ -56,7 +56,7 @@ The warehouse runs cycle counts. Everyone helps at the annual count.
 4. Write the count, the bin, and your initials.
 5. Enter the counts in P21.
 6. Recount any item where the count and P21 differ by more than your branch's limit. A second person counts when possible.
-7. Your supervisor or manager approves the adjustments.
+7. Your supervisor or Manager approves the adjustments.
 
 [IMAGE EXAMPLE: A count sheet on a clipboard next to a bin of fittings, with the counted quantity written and no expected quantity shown]
 
@@ -68,7 +68,7 @@ The warehouse runs cycle counts. Everyone helps at the annual count.
 | Hose remnants | Measure each remnant; add them to the reel total in FT |
 | Sheet and roll goods | Measure each piece and convert to the item's unit (SI, SF, or roll) |
 | Boxed fittings | Count open boxes by the piece; for sealed boxes, multiply the boxes by the quantity on the label |
-| Kits and assemblies on the shelf | Count the finished kit item in EA; leave its components alone |
+| Kits and assemblies on the shelf | Count each built assembly as one kit under the kit part number, in EA |
 | Special-order stock set aside for a customer | Count it under its own item; tell your Manager it is allocated |
 
 > 💡 KEY TAKEAWAY: Count what is there, in the unit P21 uses. A count of "1 reel" on an item kept in feet is a 499-foot error on a 500 FT reel.
@@ -93,7 +93,7 @@ A **variance** is the difference between your count and P21's on-hand quantity. 
 3. Check receipts and transfers waiting to be received.
 4. Check recent shipments for the item and its look-alikes (a -8 for a -10).
 5. When the recount still differs, write the count, the likely cause, and your initials.
-6. Hand it to your supervisor or manager to approve the adjustment.
+6. Hand it to your supervisor or Manager to approve the adjustment.
 
 | Variance found | Likely cause | Check |
 |---|---|---|
@@ -102,30 +102,30 @@ A **variance** is the difference between your count and P21's on-hand quantity. 
 | One item over, a look-alike short | Picking or putaway mix-up | Both items' bins |
 | Feet way off on hose | A reel entered as 1 FT, or remnants missed | Unit of measure, remnant rack |
 
-> ⚠️ SAFETY & COMPLIANCE: Only a supervisor or manager approves an inventory adjustment. Write down the cause you find; it shows which step to fix.
+> ⚠️ SAFETY & COMPLIANCE: Only a supervisor or Manager approves an inventory adjustment. Write down the cause you find; it shows which step to fix.
 
 ## 14.4 Min, Max, and Replenishment
 
 Each stocked item at a location can carry a **min** (reorder point) and a **max** (order-up-to level).
 
-- When **net available** stock falls to or below the min, the item needs reordering.
+- When **net available** stock falls to or below the min, the item needs reordering. The trigger also counts customer backordered quantities and unreceived quantities on POs.
 - The reorder quantity brings stock back up to the max, rounded to the vendor's pack or reel size.
 
-**Example:** a fitting has a min of 10 and a max of 40. Net available is 8. The suggested order is 40 − 8 = 32. The vendor sells in boxes of 10, so the buyer orders 30 or 40.
+**Example:** a fitting has a min of 10 and a max of 40. Net available is 8, with nothing backordered and nothing on a PO. The suggested order is 40 − 8 = 32. The vendor sells in boxes of 10, so the buyer orders 30 or 40.
 
 ### Setting min and max
 
 | Factor | Effect |
 |---|---|
 | Sales history | Fast sellers carry a higher min and max |
-| Vendor lead time | A long lead time needs a higher min to cover sales until the PO arrives |
+| Vendor lead time | A long lead time plus freight time needs a higher min to cover sales until the PO arrives |
 | Pack or reel size | The max should land on a full pack or reel |
 | Slow or dead stock | Lower the min and max so cash stays free |
 | One-time large sales | Leave them out of the min and max |
 
 ### Replenishment
 
-P21 compares each item's net available, open orders, and open POs to its min and max, and lists what to buy. The buyer reviews the list, adjusts it, and turns it into POs (Module 13).
+P21 compares each item's net available, customer backorders, and unreceived PO quantities to its min and max, and lists what to buy. The buyer reviews the list, adjusts it, and turns it into POs (Module 13).
 
 | Check before buying | Reason |
 |---|---|
@@ -146,7 +146,7 @@ A transfer moves stock from one location to another. Use it for a customer order
 2. Enter the customer's order line with the T disposition and the sending location.
 3. Tell the other location what is coming and why, especially for a customer order.
 4. The sending location picks, ships, and confirms the transfer.
-5. When it arrives, **receive the transfer** in P21, the same way you receive a PO.
+5. When it arrives, receive the transfer in P21 in the **Transfer Receipts** window.
 6. Put stock away or set it aside for the customer's order.
 
 [IMAGE EXAMPLE: Order Entry with a line set to the T disposition and the sending location highlighted, and the tab that holds the transfer quantities highlighted]
@@ -206,7 +206,7 @@ A cycle count lists 1 in steam hose. P21 shows 375 FT on hand.
 | Spot count | A one-off count when something looks wrong |
 | Blind count | A count list that hides the expected quantity |
 | Variance | The difference between the count and P21 |
-| Adjustment | A change to P21's on-hand quantity, approved by a supervisor or manager |
+| Adjustment | A change to P21's on-hand quantity, approved by a supervisor or Manager |
 | Min | The reorder point |
 | Max | The order-up-to level |
 | Replenishment | P21's list of what to buy to restore stock to max |

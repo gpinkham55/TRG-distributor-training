@@ -5,7 +5,7 @@ week: 1
 minutes: 180
 signoff: false
 status: published
-summary: Add and maintain contacts and ship-to's in P21, with the tax, carrier, freight, and delivery settings on each ship-to, and know which records belong to your manager or accounting.
+summary: Add and maintain contacts and ship-to's in P21, with the tax, carrier, freight, and delivery settings on each ship-to, and know which records belong to your Manager or accounting.
 ---
 
 Every quote, order acknowledgment, pick ticket, packing list, and invoice pulls its data from the customer record. A wrong contact email loses the quote. A wrong ship-to sends the truck to the wrong gate. A wrong tax setting bills tax the customer does not owe, or leaves the branch owing tax it never collected. This module teaches you to add and maintain the two records you will change most: **contacts** and **ship-to's**, with the tax, carrier, and delivery settings on each ship-to.
@@ -15,7 +15,7 @@ Every quote, order acknowledgment, pick ticket, packing list, and invoice pulls 
 After this module you will be able to:
 
 1. Explain what one bad field costs on every order that uses it.
-2. Tell which customer records you maintain and which belong to your manager or accounting.
+2. Tell which customer records you maintain and which belong to your Manager or accounting.
 3. Search P21 for a contact or ship-to before you add one.
 4. Add a contact, link it to the right customer and ship-to, and set its roles and documents.
 5. Retire a contact who left and keep the history.
@@ -50,9 +50,9 @@ You start changing records in this module. Change only the records your role own
 | Contacts: add, update, retire | You, once trained | Search, add or update, confirm on the account |
 | Ship-to's: add and update address, carrier, instructions | You, once trained | Search, add or update, add a dated note |
 | Ship-to tax exemption | Accounting | Collect the certificate and send it to accounting |
-| New customer account | Accounting | Gather the details and hand them off |
-| Terms, credit limit, credit status | Your manager or accounting | Never change them; report what the customer told you |
-| Salesperson on the account | Your manager | Report a mismatch to your Manager |
+| New customer account | Accounting only | Gather the details and send them to accounting |
+| Terms, credit limit, credit status | Your Manager or accounting | Never change them; report what the customer told you |
+| Salesperson on the account | Your Manager | Report a mismatch to your Manager |
 
 > ⚠️ SAFETY & COMPLIANCE: Never delete a contact or ship-to. Old orders and invoices point to them. Mark the record inactive.
 
@@ -68,7 +68,7 @@ A contact is a person at the customer. Contacts decide who gets each quote, ackn
 |---|---|---|
 | Purchasing | Buyer, purchasing agent | Quotes, order acknowledgments |
 | Accounts payable | AP clerk or a shared AP mailbox | Invoices, statements |
-| Maintenance or engineering | Planner, mechanic, engineer | Technical questions, delivery calls |
+| Maintenance or engineering | Planner, mechanic, engineer | Technical questions |
 | Receiving | Dock or warehouse lead | Delivery appointments |
 
 At a small customer one person often holds every role. At a large plant each role is usually a different person. A shared AP mailbox is fine for invoices; the account still needs a buyer who is a real person.
@@ -80,7 +80,7 @@ At a small customer one person often holds every role. At a large plant each rol
 3. **Link** the contact to the customer. If the person works at one site, link them to that ship-to too.
 4. Enter **direct phone**, extension, **mobile**, and **email**. Read the email back to the caller one letter at a time.
 5. Set the contact's **role** or roles.
-6. Set which **documents** the contact receives by email: quotes, acknowledgments, invoices.
+6. Set which **documents** the contact receives by email: quotes and acknowledgments. Only accounting sets which contact receives invoices.
 7. Save with **Ctrl + S**.
 8. Press **F8**, open the account, and confirm the contact shows on it.
 
@@ -94,15 +94,15 @@ Enter every contact the same way so the next person can find it.
 |---|---|---|
 | First and last name | Capitalize the first letter; spell it the way the person spells it | Dana Ruiz |
 | Title | Job title as the person gives it | Maintenance Planner |
-| Phone | 10 digits with the area code; extension in its own field | (205) 555-0142, ext. 318 |
+| Phone | 10 digits with the area code; extension in its own field. Phone and extension typed together are allowed. Get the number entered | (205) 555-0142, ext. 318 |
 | Email | All lowercase, read back one letter at a time | druiz@southeasternpaper.com |
 
 ### Steps: a contact leaves the company
 
 1. Mark the record **inactive**. Keep it on file; old quotes and orders point to it.
-2. Move the person's roles and document settings to the replacement. Add the replacement first when needed.
+2. Move the person's roles and their quote and acknowledgment settings to the replacement. Add the replacement first when needed.
 3. Add a dated note with your initials and who told you.
-4. If the person received invoices, tell accounting.
+4. If the person received invoices, tell accounting. Accounting sets the new invoice contact.
 
 > 📌 INDUSTRY INSIGHT: Plants change buyers and planners often. When a caller says "I'm new here," add them and ask who they replaced. That one question keeps the account clean.
 
@@ -159,7 +159,7 @@ Enter addresses the way the postal service and freight carriers read them.
 | "Our dock moved to the other side of the building." | Update the ship-to: same site, new detail |
 | "Our receiving hours changed." | Update the delivery instructions |
 | "We moved to a new plant across town." | Add a new ship-to; mark the old one inactive when the customer confirms it closed |
-| "Ship this one to our contractor." | Add a new ship-to, or use a one-time address on the order (Module 6) |
+| "Ship this one to our contractor." | Add a new ship-to |
 
 Before you update a ship-to, write the old values in your notebook. After you save, add a dated note with your initials and who asked for the change.
 
@@ -252,10 +252,10 @@ One call changed three records. Every later order to the warehouse pulls its doc
 | The caller is already in P21 on another account | Ask which account they buy for; link them to the right one | A contact on the wrong account gets the wrong documents |
 | One address has two ship-to's | Tell your Manager; keep using the one with the order history | Duplicates split sales history |
 | A customer asks to ship to a PO box | Ask for the street address of the receiving site. | Company policy: We can't ship to a P.O. Box |
-| A customer wants their terms or credit limit changed | Take the details and hand them to your manager | Terms and credit belong to your manager and accounting |
-| A caller says "put me on the invoices" | Pass the call to accounting - only accounting changes the contact that receives receipts | AP changes affect how the branch gets paid |
+| A customer wants their terms or credit limit changed | Take the details and hand them to your Manager | Terms and credit belong to your Manager and accounting |
+| A caller says "put me on the invoices" | Pass the call to accounting. Only accounting sets which contact receives invoices | AP changes affect how the branch gets paid |
 | The ship-to's salesperson differs from the account's | Tell your Manager | Commissions and account ownership follow the salesperson |
-| A new customer with no account calls to order | Take the details and send them to accounting | Accounting directs customers in creating new customer accounts |
+| A new customer with no account calls to order | Take the details and send them to accounting | Only accounting creates a new customer account. Anyone trained can add a new site or ship-to address |
 
 ### Rookie mistakes
 
@@ -289,7 +289,6 @@ One call changed three records. Every later order to the warehouse pulls its doc
 | Collect | The customer pays the carrier |
 | Tax jurisdiction | The tax area set by the delivery address |
 | Exemption certificate | The customer's signed form showing a tax exemption |
-| One-time address | A delivery address entered on one order (Module 6) |
 
 ## 3.7 Practice, Knowledge Check, and Module Quiz
 

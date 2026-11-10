@@ -17,7 +17,7 @@ After this module you will be able to:
 1. Trace a plant air system from the compressor to the tool.
 2. Pick an air hose or tubing material.
 3. Size tubing by OD and hose by ID, and tell inch tubing from metric.
-4. Identify push-to-connect, compression, and barbed fittings, and install one.
+4. Identify push-to-connect, compression, and barbed fittings.
 5. Match quick couplers and plugs by interchange type.
 6. Follow the rules for air brake (DOT) hose, tubing, and fittings.
 7. Follow the safety rules for compressed air.
