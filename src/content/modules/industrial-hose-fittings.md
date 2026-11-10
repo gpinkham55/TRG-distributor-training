@@ -66,7 +66,7 @@ A coupling joins the hose to a pump, a tank, a valve, or another hose. Five coup
 
 ### Cam and groove
 
-Cam and groove couplings connect and disconnect by hand. The female half (the **coupler**) has two cam arms. The male half (the **adapter**) has a groove. Close the arms and the cams pull the adapter into a gasket in the coupler. Cam and groove dimensions follow a common standard (A-A-59326), so one maker's half connects to another maker's half of the same size.
+Cam and groove couplings connect and disconnect by hand. The female half (the **coupler**) has two cam arms. The male half (the **adapter**) has a groove. Close the arms and the cams pull the adapter into a gasket in the coupler. Cam and groove dimensions follow a common standard (A-A-59326), so one maker's half connects to another maker's half of the same size. Keep cam and groove off compressed air, gas, and steam unless the maker rates that coupling for it.
 
 | Type | Half | Other end |
 |---|---|---|
@@ -110,8 +110,7 @@ Universal couplings join with a quarter turn of two lugs. The lugs are the same 
 
 | Fitting | Use |
 |---|---|
-| King nipple (hose shank by male NPT) | General water, air, and suction hose with a clamp |
-| Combination nipple | Water and suction hose, held with a double-bolt clamp |
+| King (combination) nipple, also called a KC nipple: male NPT by barbed hose shank | General water, air, and suction hose, held with a clamp or crimp sleeve |
 | Hose barb | Light-duty hose with a worm gear clamp |
 | GHT (garden hose thread) | Washdown and light water hose |
 | NST (National Standard Thread) | Fire hose and some municipal water equipment |
@@ -138,7 +137,7 @@ A coupling holds only as well as the way it is attached. Pick the method from th
 |---|---|---|
 | Worm gear clamp | A band tightened by a screw | Light-duty, low-pressure water and air |
 | T-bolt clamp | A heavy band with a bolt | Larger suction and discharge hose |
-| Double-bolt clamp | Two bolted halves around the hose | Combination nipples on water and suction hose |
+| Double-bolt clamp | Two bolted halves around the hose | King (combination) nipples on water and suction hose |
 | Interlocking clamp | Bolted halves that grip the hose and a shoulder on the stem | Ground joint couplings on steam and high-pressure air |
 | Banding | Steel band pulled tight and locked with a tool | Water, air, and chemical hose; fast to build in the shop |
 | Crimped ferrule | A metal sleeve squeezed onto the hose by a crimper | Permanent fittings with high holding power; many industrial and all hydraulic hose |
@@ -151,7 +150,7 @@ A coupling holds only as well as the way it is attached. Pick the method from th
 | If the job is... | Use |
 |---|---|
 | Steam | Ground joint couplings with interlocking clamps, or crimped steam fittings the hose maker approves |
-| High-pressure air (jackhammer, air drill) | Crimped fittings or interlocking clamps; safety pins and whip checks on universal couplings |
+| High-pressure air (jackhammer, air drill) | Crimped fittings or interlocking clamps; safety pins on universal couplings and a whip check on every air hose connection |
 | Suction and discharge, 2 in and up | Crimped ferrules, banding, or T-bolt or double-bolt clamps per the maker's chart |
 | Chemical transfer | Crimped ferrules or banding with stainless fittings; factory ends on PTFE-lined hose |
 | Light water or air at low pressure | Worm gear clamp on a barb or king nipple |
@@ -179,7 +178,7 @@ A coupling holds only as well as the way it is attached. Pick the method from th
 | Agriculture | Liquid fertilizer and spray rigs | Chemical-resistant suction and spray hose | Polypropylene or stainless cam and groove |
 | Chemical | Unloading tank trucks and railcars | Chemical transfer or PTFE-lined hose with static wire | Stainless cam and groove or flanged; gaskets matched to the chemical |
 | Heavy equipment | Dewatering a job site | Suction and discharge hose, layflat | Cam and groove |
-| Heavy equipment | Jackhammers and air tools | Air drill hose | Universal couplings with safety pins and whip checks |
+| Heavy equipment | Jackhammers and air tools | Air drill hose | Universal couplings with safety pins; a whip check on every air hose connection |
 
 > 📌 INDUSTRY INSIGHT: Tank truck drivers often carry their own hose and arrive with the wrong coupling for the plant. A plant that unloads many chemicals may need a hose and coupling set for each one, marked so they are never mixed up.
 
@@ -266,8 +265,7 @@ The pump starved for water: layflat was on the suction side. The right hose on e
 | Ground joint | A ball-and-seat coupling sealed metal to metal; the steam standard |
 | Universal (Chicago) coupling | A quarter-turn lug coupling for air |
 | Whip check | A cable restraint across an air hose joint |
-| King nipple | A hose shank by male NPT fitting |
-| Combination nipple | A fitting held with a double-bolt clamp |
+| King (combination) nipple | One fitting, also called a KC nipple: a male NPT end and a barbed hose shank, held in the hose with a clamp or crimp sleeve |
 | NPT / GHT / NST | National Pipe Thread / garden hose thread / National Standard Thread (fire hose) |
 | Interlocking clamp | A bolted clamp that grips the hose and a shoulder on the stem |
 | Banding | A steel band locked around the hose with a tool |
@@ -280,7 +278,7 @@ The pump starved for water: layflat was on the suction side. The right hose on e
 
 1. **Hose families.** Walk the hose racks with your Manager. For each family in 5.1, find one hose in stock and read its layline.
 2. **Cam and groove.** Your Manager lays out a mixed set of cam and groove fittings. Sort them by type letter, size, and material.
-3. **Coupling ID.** Identify a ground joint coupling, a universal coupling, a king nipple, a combination nipple, a GHT fitting, and a flanged end.
+3. **Coupling ID.** Identify a ground joint coupling, a universal coupling, a king (combination) nipple, a GHT fitting, and a flanged end.
 4. **Attachment.** Look at three finished assemblies in the shop. Say how each coupling is attached and why that method fits the hose.
 5. **STAMPED.** Your Manager plays a farmer: "I need a hose for my irrigation pump." Ask the STAMPED questions, including which side of the pump.
 6. **P21.** Press F2 and find a 2 in suction hose, a 2 in type C aluminum coupler, a 2 in type E aluminum adapter, and the clamps or ferrules the maker lists. Write net available for each.

@@ -16,7 +16,7 @@ After this module you will be able to:
 
 1. Write a complete assembly spec from a customer request or a failed hose.
 2. Figure the cut length from the overall length and the fitting cutoffs.
-3. Explain the build steps: cut, clean, skive when required, insert, crimp, check, and cap.
+3. Explain the build steps: cut, clean, skive when required, insert, crimp, check, and cap an open end when it needs sealing.
 4. Read a crimp chart and check a crimp diameter with calipers against its tolerance.
 5. Explain hydrostatic testing, test certificates, and what goes on an assembly tag.
 6. Enter an assembly as a kit item in P21 with the spec in the extended description.
@@ -64,6 +64,7 @@ The spec is everything the shop needs to build the assembly. Get it before you q
 | 6. Crimp | Crimp with the die set and setting from the maker's chart | Too little squeeze leaks or blows off; too much cuts the wire |
 | 7. Check | Measure the crimp diameter with calipers; check length and orientation | Catches a wrong die or setting before the hose leaves the shop |
 | 8. Sleeve or guard | Slide on any sleeve or spring guard | Protects the cover where it rubs |
+| 9. Cap, when needed | Cap a hose end that is open and needs sealing | An open end lets dirt into a clean hose |
 
 ### Figuring the cut length
 
@@ -110,7 +111,7 @@ Every hose and fitting maker publishes a crimp chart. For each hose type, size, 
 
 ### Hydrostatic testing
 
-A hydrostatic test fills the assembly with water, raises it to the test pressure, and holds it for a set time. The test pressure and hold time come from the hose maker or the NAHAD guidelines for that hose type. A good assembly shows no leaks, no bulges, and no movement at the fittings. A test certificate is the record of the test pressure, date, and result; print one for each tested assembly when the order asks for it.
+A hydrostatic test fills the assembly with water, raises it to the test pressure, and holds it for a set time. Water is the standard test fluid. The test pressure and hold time come from the hose maker's specifications, the applicable code or NAHAD guideline for that hose type, or the customer's requirements. A good assembly shows no leaks, no bulges, and no movement at the fittings. A test certificate is the record of the test pressure, date, and result; print one for each tested assembly when the order asks for it.
 
 > ⚠️ SAFETY & COMPLIANCE: Test with water. A hose that fails under air or gas releases stored energy and can whip or explode. Close the guard and stay clear when performing the test.
 
