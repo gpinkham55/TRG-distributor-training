@@ -49,7 +49,9 @@ The header holds everything that applies to the whole order. Most of it fills in
 | Goes in the PO field | Goes somewhere else |
 |---|---|
 | The customer's PO number, exactly as given | The caller's name or phone: the contact |
-| A blanket PO with its release number, in the fields your branch uses for each | When a PO is required and the customer has none, the order waits for it |
+| A blanket PO number | The release number: the release field |
+
+When the account requires a PO and the customer has none, do not enter the order until you have it.
 
 > ⚠️ SAFETY & COMPLIANCE: Many customers refuse to pay an invoice without their PO number on it. A missing or wrong PO delays payment for weeks, if we get paid at all.
 
@@ -68,7 +70,7 @@ Each line is one item. Get the item, the quantity, and the unit right on every l
 
 ### Steps
 
-1. Enter the **item ID**. When the customer gives their own part number, enter it; if it has been set up the cross-reference finds your item. For another company's part number, use item search (F2).
+1. Enter the **item ID**. When the customer gives their own part number, enter it; if it has been set up the cross-reference finds your item. For a manufacturer or competitor part number, use item search (F2).
 2. Enter the **quantity** and confirm the **unit of measure** (EA, FT, SI, SF).
 3. Check **net available** at your location.
 4. When stock is short, set the **disposition** (6.3).
@@ -83,14 +85,16 @@ Each line is one item. Get the item, the quantity, and the unit right on every l
 | The customer says | Enter |
 |---|---|
 | "25 feet of 1 inch hose" | 25 FT of the bulk hose item |
-| "A 12 by 24 piece of 1/8 red rubber" | 288 SI of the sheet item (12 × 24) |
-| "A 3 by 4 sheet" | 12 SF of the sheet item (3 × 4) |
+| "A 12 inch by 24 inch piece of 1/8 red rubber" | 288 SI of the sheet item (12 in × 24 in) |
+| "A 3 foot by 4 foot sheet" | 12 SF of the sheet item (3 ft × 4 ft) |
 | "Six of the 2 inch cam C's" | 6 EA of the cam-lock coupler item |
 | "A full reel" | The reel length in FT; confirm the length on the reel first |
 
+Ask inches or feet when the customer does not say.
+
 ### Hose assemblies as kits
 
-Enter a hose assembly as a **kit item** with its components: hose, both fittings, and any clamps, ferrules, guard, or sleeve. Put the STAMPED answers, overall length, and orientation in the line's extended description. Module 9 covers kits in full. Check the shop's schedule before you promise a same-day assembly.
+Enter a hose assembly as a **kit item** with its components: hose, both fittings, and any clamps, ferrules, guard, or sleeve. Put the STAMPED answers, overall length, and orientation (the angle between two elbow fittings) in the line's extended description. Module 9 covers kits in full. Check the shop's schedule before you promise a same-day assembly.
 
 ### Customer part numbers
 
@@ -119,7 +123,7 @@ Your branch may use only some of these codes. Confirm the active codes with your
 | Where does the vendor ship? | To your branch | To the customer's address |
 | Who delivers? | Your branch: will call, branch truck, or carrier | The vendor's carrier |
 | Does the customer see the vendor? | No; you repack it in your branch's box | Yes; the vendor's packing list goes with it |
-| What goes on the PO? | Your branch as the ship-to | Only that item, with the customer's address as the ship-to |
+| What goes on the PO? | Your branch as the ship-to | Only the direct-ship lines for that order, with the customer's address as the ship-to |
 
 ### Steps: stock is short
 
@@ -171,9 +175,9 @@ Example with placeholder numbers: a material costs $20.00 and sells at a ×3.00 
 | Margin | $40.00 ÷ $60.00 | 66.7% |
 | Markup | $40.00 ÷ $20.00 | 200% |
 
-Shop labor uses the same math. At a placeholder shop rate of $150/hr, a 20-minute build adds $50.00 of labor to the assembly price.
+Shop labor is priced at the shop rate times the build time. At a placeholder shop rate of $150/hr, a 20-minute build adds $50.00 of labor to the assembly price.
 
-> ⚠️ SAFETY & COMPLIANCE: Never share cost or margin with a customer. Your branch sets a minimum acceptable margin %./; a price below it needs your manager's approval before it goes on an order or a quote.
+> ⚠️ SAFETY & COMPLIANCE: Never share cost or margin with a customer. Your branch sets a minimum acceptable margin %. A price below it needs your manager's approval before it goes on an order or a quote.
 
 > 💡 KEY TAKEAWAY: Let P21 price the line, compare it with history, and change it only with a reason you can explain to your manager.
 
@@ -203,9 +207,9 @@ A quote is your written price, quantity, lead time, and expiration date. Every l
 
 ### Steps: convert a quote to an order
 
-1. When the customer accepts, open the quote and right click anywhere on the order header to **convert** it to an order. Retyping it leaves the quote open and loses the link.
-2. Enter the customer's PO.
-3. Recheck quantity, price, and the expiration date. On an expired quote, confirm cost before you honor it.
+1. When the customer accepts, open the quote and recheck quantity, price, and the expiration date. On an expired quote, confirm cost before you honor it.
+2. Right click anywhere on the order header to **convert** the quote to an order. Retyping it leaves the quote open and loses the link.
+3. Enter the customer's PO.
 4. Confirm the quote shows as converted.
 
 [IMAGE EXAMPLE: Order Entry main screen for a quote with the quote flag, expiration date, and lead time highlighted, and the tabs or buttons that hold the line items and convert-to-order option highlighted]
@@ -238,7 +242,7 @@ A quote is your written price, quantity, lead time, and expiration date. Every l
 7. Tell the customer what you found and when they will hear from you next. Call back when you said you would.
 8. Add a dated note to the order.
 
-> 💡 KEY TAKEAWAY: "I'll find out and call you back within the hour" is a good answer. Never guess when you don't know. You'll often be wrong and lose the customers trust by guessing and calling it a fact.
+> 💡 KEY TAKEAWAY: "I'll find out and call you back within the hour" is a good answer. Never guess when you don't know. You'll often be wrong and lose the customer's trust by guessing and calling it a fact.
 
 ### Changing an order
 
@@ -255,9 +259,9 @@ Keep the original order. Cancel-and-reenter breaks the link to the PO and the hi
 
 ### Case study: the outage quote
 
-The buyer at Southeastern Paper Mill emails an RFQ for the spring outage: 40 lines of gaskets, hose, and fittings, with pricing held 60 days.
+A practice caller, the buyer at Southeastern Paper Mill, emails an RFQ for the spring outage: 40 lines of gaskets, hose, and fittings, with pricing held 60 days.
 
-1. **Order Entry as a quote****.** The rep enters the account, the No. 2 machine ship-to, the buyer as contact, and the RFQ number. Expiration: 60 days.
+1. **Order Entry as a quote.** The rep enters the account, the No. 2 machine ship-to, the buyer as contact, and the RFQ number. Expiration: 60 days.
 2. **Lines.** 32 lines are stocked items. 8 are unstocked. The rep gets current vendor cost and lead time on the 8 before pricing them.
 3. **Price check.** Sales Pricing Inquiry gives the customer's price on each stocked item. Two lines come in far above last year's history. The rep finds a price library change and asks the manager before quoting.
 4. **Hose assemblies.** Six steam assemblies are on the RFQ with only a length. The rep calls the planner, gets all seven STAMPED answers, and quotes them as kit items with the spec in the extended description.
@@ -265,7 +269,7 @@ The buyer at Southeastern Paper Mill emails an RFQ for the spring outage: 40 lin
 6. **Follow-up.** The rep sends the quote and sets a call for two business days later.
 7. **Convert.** The buyer accepts 36 lines. The rep converts the quote, enters the PO, and closes the other 4 lines as lost on lead time.
 
-The quote was good for the whole outage: every price checked, every assembly fully spec'd, every quantity confirmed.
+Check every price, get the full spec on every assembly, and confirm every quantity before you send a quote.
 
 ### What if...
 
@@ -275,7 +279,7 @@ The quote was good for the whole outage: every price checked, every assembly ful
 | A new ship-to address | Add the ship-to first (Module 3) | Orders pull carrier, tax, and instructions from the ship-to |
 | Stock is short | Check other locations and open POs, then ask the customer: partial now or all together | The disposition depends on the customer's answer |
 | The item is unstocked and the customer picks up | Disposition S | The vendor ships to your branch |
-| The vendor ships straight to the customer and that is fine with them | Disposition D | The PO carries only that item, with the customer's ship-to |
+| The vendor ships straight to the customer and that is fine with them | Disposition D | The PO carries only the direct-ship lines for that order, with the customer's ship-to |
 | A price looks far off history | Check Sales Pricing Inquiry and ask your Manager | Price libraries and costs change |
 | The customer accepts an expired quote | Confirm cost before you honor it | Vendor costs move |
 | A received PO line hasn't shipped | Ask the warehouse to find it | The product is likely in the building |

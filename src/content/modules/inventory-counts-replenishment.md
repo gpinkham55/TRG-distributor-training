@@ -31,12 +31,12 @@ P21 changes the on-hand quantity every time stock is received, shipped, transfer
 |---|---|---|
 | Receiving error | Received 10 boxes when 8 arrived | Stock promised that isn't there |
 | Picking error | Picked the -8 fitting, shipped it as the -10 | The order shipped wrong and the shelf stock is off |
-| Wrong unit | Shipped 1 reel but entered 1 FT | A 249 FT gap on the shelf and we paid for a reel and sold it for a foot |
+| Wrong unit | Shipped one 250 FT reel but entered 1 FT | A 249 FT gap on the shelf and we paid for a reel and sold it for a foot |
 | Wrong bin | Stock put away in an open bin | Lost stock; a reorder for stock already on hand |
 | Damaged or scrapped items | Stock thrown out or missing with no adjustment | Phantom stock in P21 |
 | Unreceived transfer or PO | Product in the building, still in transit in P21 | Orders that can't ship |
 
-> 💡 KEY TAKEAWAY: Every count error starts with a step done wrong upstream: receiving, picking, building, or putaway. Do it right the first time, and the counts stay right.
+> 💡 KEY TAKEAWAY: Most variances start with a step done wrong upstream: receiving, picking, building, or putaway. Do it right the first time, and the counts stay right.
 
 ## 14.2 Cycle, Annual, and Spot Counts
 
@@ -64,10 +64,10 @@ The warehouse runs cycle counts. Everyone helps at the annual count.
 
 | Item | How to count it |
 |---|---|
-| Hose on reels | Read the footage on the reel tag, or measure what is left; enter in FT |
+| Hose on reels | Measure what is left on the reel unless the tag was updated after the last cut; enter in FT |
 | Hose remnants | Measure each remnant; add them to the reel total in FT |
 | Sheet and roll goods | Measure each piece and convert to the item's unit (SI, SF, or roll) |
-| Boxed fittings | Count open boxes by the piece; count sealed boxes by the box quantity |
+| Boxed fittings | Count open boxes by the piece; for sealed boxes, multiply the boxes by the quantity on the label |
 | Kits and assemblies on the shelf | Count the finished kit item in EA; leave its components alone |
 | Special-order stock set aside for a customer | Count it under its own item; tell your Manager it is allocated |
 
@@ -164,16 +164,14 @@ A transfer moves stock from one location to another. Use it for a customer order
 
 ### Case study: the missing feet
 
-A cycle count lists 1 in steam hose. P21 shows 380 FT on hand.
+A cycle count lists 1 in steam hose. P21 shows 375 FT on hand.
 
 1. **Count.** The counter finds one reel tagged 250 FT, now measured at 140 FT, and two remnants of 22 FT and 9 FT. Total: 171 FT.
-2. **Variance.** 380 − 171 = 209 FT short.
+2. **Variance.** 375 − 171 = 204 FT short.
 3. **Recount.** A second person measures the reel and remnants: 171 FT. Overstock and staging hold no more.
-4. **Look for the cause.** Customer Sales History shows four steam assemblies shipped last month as loose lines: hose, fittings, and clamps entered separately, with the hose entered as 4 EA. The shop used 4 × 52 FT = 208 FT of hose. P21 took out 4 FT.
-5. **Adjust.** The supervisor approves the adjustment with the cause written on it.
-6. **Fix the step.** The rep and the shop set up the steam assembly as a kit item, so the next order takes the right feet out of stock.
-
-The count found the gap. The kit item stops it from happening again.
+4. **Look for the cause.** Customer Sales History shows four steam assemblies shipped last month as loose lines: hose, fittings, and clamps entered separately, with the hose line entered as quantity 4 (4 FT) when each assembly used 52 FT. The shop used 4 × 52 FT = 208 FT of hose. P21 took out 4 FT. 208 − 4 = 204 FT.
+5. **Adjust.** The supervisor approves the 204 FT adjustment with the cause written on it.
+6. **Fix the step.** The Manager sets up the steam assembly as a kit item, so the next order takes the right feet out of stock.
 
 ### What if...
 
@@ -192,7 +190,7 @@ The count found the gap. The kit item stops it from happening again.
 |---|---|---|
 | Counting a reel as 1 | A huge variance on a feet item | Count in the item's unit |
 | Skipping remnants and overstock | A false short count | Check every spot the item can be |
-| Peeking at the expected quantity | Counts that match P21 and the shelf drifts | Count blind |
+| Peeking at the expected quantity | Counts copied from P21, and the shelf stays wrong | Count blind |
 | Adjusting without a recount | A wrong adjustment | Recount every variance over the limit |
 | Entering an assembly as loose lines | Hose and fittings missing from stock | Enter assemblies as kits |
 | Leaving a transfer unreceived | Stock stuck in transit | Receive the day it arrives |
@@ -232,10 +230,10 @@ The count found the gap. The kit item stops it from happening again.
 1. Why is a cycle count list blind?
 2. An item is kept in feet. You count one full 500 FT reel. What do you enter?
 3. Who approves inventory adjustments?
-4. An item has a min of 10, a max of 40, and 8 net available. What is the suggested order before pack size?
-5. What should you check before buying stock another branch has?
+4. An item has a min of 20, a max of 60, and 15 net available. What is the suggested order before pack size?
+5. Name two things the buyer checks before buying an item on the replenishment list.
 6. What happens when a transfer ships and is never received?
-7. A count is short. List three places to check before you call it a variance.
+7. A count is short. List three places to check before you hand it in for an adjustment.
 
 Work these on your own, then check your answers with your Manager.
 

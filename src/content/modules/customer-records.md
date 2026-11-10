@@ -117,7 +117,7 @@ A ship-to is a delivery address under a customer. It controls where the product 
 1. **Search first.** Press **F8**, open the account, and read the Ship To / Salesrep tab. Most "new" addresses are a building, gate, or dock already on file.
 2. Open **Ship To Maintenance** and enter the customer ID.
 3. Enter the **ship-to name** as it should print on the packing list. Add the site so drivers and receivers can tell sites apart: "Southeastern Paper Mill, Mill No. 2."
-4. Enter **Address 1**, **Address 2**, **City**, **State**, and **ZIP code**. Put the building, gate, or dock in Address 2.
+4. Enter **Address 1**, **Address 2**, **City**, **State**, and **ZIP code**. The dock or building that is part of the address goes in Address 2. Directions for the driver go in delivery instructions.
 5. Enter the site's **phone number**.
 6. Set the **salesperson** and **territory** to match the account.
 7. Set the default **carrier** and **freight terms** (3.4).
@@ -200,7 +200,7 @@ Sales tax follows the delivery address. P21 uses the ship-to's tax settings to c
 | Carrier | When it fits |
 |---|---|
 | Branch truck | Local deliveries on your branch's route |
-| Will call | The customer picks up at the counter |
+| Will call | The customer picks up the order |
 | Parcel (UPS, FedEx) | Small, light orders off your route |
 | LTL freight | Heavy or bulky orders: rolls of sheet, reels of hose, expansion joints |
 | Customer's carrier or account | The customer arranges freight and pays the carrier (collect) |
@@ -215,7 +215,7 @@ Freight terms say who pays shipping and how it shows on the invoice.
 | Prepaid and add | The branch pays the carrier; the customer pays the branch | A freight line on the invoice |
 | Collect | The customer pays the carrier | No freight line; the carrier bills the customer |
 
-Set the terms the customer buys on. When you don't know them, ask your Manager before you set them.
+Set the freight terms the customer buys on. When you don't know them, ask your Manager before you set them.
 
 ### Delivery instructions
 
@@ -223,7 +223,7 @@ Write instructions a driver and the warehouse can act on:
 
 - Receiving hours
 - Call ahead, with the phone number
-- Gate, dock, or door number
+- Directions for the driver: which gate, dock, or door to use
 - PO or release number required on the label or packing list
 - Safety gear required on site: hard hat, safety glasses, steel toes
 
@@ -233,17 +233,17 @@ Write instructions a driver and the warehouse can act on:
 
 ### Case study: the new warehouse
 
-Dana Ruiz calls from Southeastern Paper Mill: "I'm the new buyer. We opened a parts warehouse at 410 Industrial Park Road, Building C. Ship our gasket orders there. Dock 4, and call the dock before you come. Send quotes to me. Pat Owens retired."
+A practice caller, Dana Ruiz, calls from Southeastern Paper Mill: "I'm the new buyer. We opened a parts warehouse at 410 Industrial Park Road, Building C. Ship our gasket orders there. Dock 4, and call the dock before you come. Send quotes to me. Pat Owens retired."
 
 1. **F8.** The rep finds the account and reads the Ship To / Salesrep tab. No ship-to at 410 Industrial Park Rd.
 2. **Contact Maintenance.** The rep searches "Ruiz," then Dana's email. No match. The rep adds Dana: title Buyer, direct phone, email read back one letter at a time, role Purchasing, receives quotes and acknowledgments. Linked to the account.
 3. **Retire Pat.** The rep marks Pat Owens inactive, moves Pat's quote setting to Dana, and adds a dated note: "Retired per Dana Ruiz."
-4. **Ship To Maintenance.** The rep adds the ship-to: "Southeastern Paper Mill, Parts Warehouse." Address 1: 410 Industrial Park Rd. Address 2: Bldg C, Dock 4. Delivery instructions: "Call dock before delivery" with the dock phone.
+4. **Ship To Maintenance.** The rep adds the ship-to: "Southeastern Paper Mill, Parts Warehouse." Address 1: 410 Industrial Park Rd. Address 2: Bldg C, Dock 4. Delivery instructions: "Call dock before delivery" with the dock phone. The rep enters the site's phone number, sets the salesperson and territory to match the account, and sets the default location to the branch that ships to this address.
 5. **Carrier and freight.** The warehouse is on the branch truck route. The rep sets the branch truck and the account's freight terms.
-6. **Tax.** The rep asks whether the warehouse buys under the same exemption as the mill. Dana isn't sure. The rep leaves the ship-to taxable and asks Dana to email the certificate for accounting.
-7. The rep saves, reopens both records, and confirms they show on the account.
+6. **Tax.** The rep sets the tax jurisdiction for the delivery address. The rep asks whether the warehouse buys under the same exemption as the mill. Dana isn't sure. The rep leaves the ship-to taxable and asks Dana to email the certificate for accounting.
+7. The rep saves, reopens all three records, and confirms they show on the account.
 
-One call changed three records. The next gasket order to the warehouse prints the right dock, reaches the right buyer, and taxes the right way.
+One call changed three records. Every later order to the warehouse pulls its dock, buyer, and tax settings from them. Reopen each record after you save and read every field.
 
 ### What if...
 
@@ -262,7 +262,7 @@ One call changed three records. The next gasket order to the warehouse prints th
 | Mistake | What it causes | The habit that prevents it |
 |---|---|---|
 | Adding a contact without searching | Two records for one person; history split | Search by last name, email, and phone first |
-| One contact set to receive everything | Invoices reach a maintenance planner | Send each document to the person who acts on it |
+| One contact set to receive everything at a customer with several roles | Invoices reach a maintenance planner | Send each document to the person who acts on it |
 | A typo in an email | Quotes and acknowledgments disappear | Read the email back one letter at a time |
 | Deleting a contact who left | Old quotes and orders lose their contact | Mark the contact inactive |
 | Names or instructions in address lines | The label and packing list print wrong | Use the delivery instructions and contact fields |
