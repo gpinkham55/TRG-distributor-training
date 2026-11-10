@@ -8,7 +8,7 @@ status: published
 summary: How purchase needs start, purchase orders and purchasing units in P21, lead times and promise dates, special orders and direct ships, receiving and putaway, the three-way match, and problems at the dock.
 ---
 
-Every item a branch sells has to first be purchased. Purchasing keeps stock on the shelf and gets special orders moving. Receiving checks what arrived, tells P21 it is here, puts it where it belongs, and moves special orders on to the customer. Every shipment should be received the same day it arrives so the shelves get restocked, customers get their backorders and special orders, and vendor's invoices get paid on time.  This module covers purchase orders in P21, lead times and promise dates, special orders and direct ships, receiving, and problems at the dock.
+Every item a branch sells has to first be purchased. Purchasing keeps stock on the shelf and gets special orders moving. Receiving checks what arrived, tells P21 it is here, puts it where it belongs, and moves special orders on to the customer. Receive every shipment the day it arrives so the shelves get restocked, customers get their backorders and special orders, and vendors' invoices get paid on time. This module covers purchase orders in P21, lead times and promise dates, special orders and direct ships, receiving, and problems at the dock.
 
 ### Learning objectives
 
@@ -67,11 +67,11 @@ A purchase order (PO) is your branch's order to a vendor. It tells the vendor wh
 
 1. Ask the vendor to confirm every PO with a promise date.
 2. Verify the pricing and enter the promise date on each PO line.
-3. If the pricing on the PO does not match the vendor's acknowledgement, verify the vendor is accurate and update the items cost in P21.
+3. When the cost on the vendor's confirmation differs from the PO, ask the buyer which is right, then correct the cost on the PO line.
 4. Follow up before the promise date on anything a customer is waiting for.
 5. When a date slips, update the PO and tell the customer right away, with the new date.
 
-> 💡 KEY TAKEAWAY: "The items cost and the vendors price should match on every PO prior to the receipt. Otherwise, a discrepancy is created in accounting and the inventory is on the shelf at the wrong price.
+> 💡 KEY TAKEAWAY: Make the cost on every PO line match the vendor's confirmed cost before the receipt. A mismatch puts inventory on the shelf at the wrong cost and creates an accounting discrepancy.
 
 ## 13.3 Special Orders and Direct Ships
 
@@ -96,11 +96,11 @@ Receiving is where P21 learns that stock arrived. Until a PO is received, P21 sh
 
 ### Steps: receive a PO
 
-1. Match the packing list to the **PO number** on the shipment.
+1. Find the **PO number** on the packing list and pull up that PO.
 2. Count every line. Check the item, quantity, and unit against the PO, and against the packing list.
 3. Check for damage. Open boxes that look crushed or wet.
-4. Open the **PO ****Receipts** window in P21 and pull up the PO.
-5. Enter the quantity received on each line. Receive only what is physically there.
+4. Open the **PO Receipts** window in P21 and pull up the PO.
+5. Enter the quantity received on each line. Receive what is physically there, up to the PO quantity. Set any extra aside for the buyer.
 6. Save the receipt. P21 adds the stock to inventory and allocates special-order stock to its order.
 7. **Put away** stock items in their bin locations. Set special-order items aside, tagged with the customer and order number, for shipping or will call.
 8. Give the packing list to whoever reconciles vendor invoices.
@@ -125,17 +125,17 @@ Accounting pays the vendor when three things agree:
 | Receipt | What arrived |
 | Vendor invoice | What you were billed |
 
-A wrong receipt creates a discrepancy that holds up payment. Everyone's job is easy when things are done right the first time.
+A wrong receipt creates a discrepancy that holds up payment. Do the receipt right the first time.
 
 ## 13.5 Problems at the Dock and Freight Claims
 
 | Problem | What to do |
 |---|---|
-| Short shipment | Receive what arrived. Leave the rest open on the PO and tell the buyer. |
-| Over shipment | Receive only what was ordered unless the buyer approves the extra. Set the rest aside. |
-| Wrong item | Set it aside unreceived and notify the buyer, who arranges a return with the vendor (Module 15). |
-| Visible freight damage | Note the damage on the carrier's delivery receipt (bill of lading) **before** you sign. Take photos. Tell the buyer. |
-| Hidden damage found later | Take photos, keep all packing, and tell the buyer right away; carriers set short deadlines for claims. |
+| Short shipment | Receive what arrived. Leave the rest open on the PO and tell the buyer, or the rep on a special order. |
+| Over shipment | Receive what is physically there, up to the PO quantity. Set any extra aside for the buyer. |
+| Wrong item | Set it aside unreceived and tell the buyer, or the rep on a special order, who arranges a return with the vendor (Module 15). |
+| Visible freight damage | Note the damage on the carrier's delivery receipt (bill of lading) **before** you sign. Take photos. Tell the buyer, or the rep on a special order. |
+| Hidden damage found later | Take photos, keep all packing, and tell the buyer, or the rep on a special order, right away; carriers set short deadlines for claims. |
 | No PO number on the shipment | Search open POs by vendor and item before you set it aside. |
 
 ### Steps: freight damage
@@ -164,7 +164,7 @@ A planner calls: "You told me our PTFE expansion joint would be here last week. 
 5. **Ship.** The rep prints the pick ticket from the Front Counter tab and schedules the branch truck for the next run.
 6. **Call back.** The rep tells the planner the delivery date and adds a dated note to the order.
 
-**Th****is**** should never happen****.** The joint was in the building for five days. Receiving it the day it arrived would have shipped it on time.
+**This should never happen.** The joint was in the building for five days. Receiving it the day it arrived would have shipped it on time.
 
 ### What if...
 
@@ -172,15 +172,15 @@ A planner calls: "You told me our PTFE expansion joint would be here last week. 
 |---|---|---|
 | A vendor misses the promise date | Get a new date, update the PO, tell the customer | The customer plans around your date |
 | A shipment arrives with no PO number | Search open POs by vendor and item | It likely belongs to an open PO |
-| The packing list and the PO disagree | Count the product and receive what is physically there | The receipt drives inventory and payment |
-| The vendor ships 10 extra | Receive the ordered quantity; ask the buyer about the extra | Unapproved overages get billed |
+| The packing list and the PO disagree | Count the product. Receive what is physically there, up to the PO quantity. Set any extra aside for the buyer. | The receipt drives inventory and payment |
+| The vendor ships 10 extra | Receive what is physically there, up to the PO quantity. Set the 10 extra aside for the buyer. | Unapproved overages get billed |
 | A reel arrives with a broken flange | Note it on the delivery receipt before signing, take photos | A clean signature loses the claim |
 
 ### Rookie mistakes
 
 | Mistake | What it causes | The habit that prevents it |
 |---|---|---|
-| PO in the wrong unit | 250 reels bought in place of 250 feet | Check purchasing and selling units |
+| PO in the wrong unit | An order meant for 250 feet buys 250 reels | Check purchasing and selling units |
 | Giving the customer the lead time as a date | A missed date | Use the promise date plus freight |
 | Receiving from the packing list without counting | Inventory and invoice errors | Count every line |
 | Leaving a shipment unreceived | A late order and a held vendor payment | Receive the day it arrives |
@@ -192,7 +192,7 @@ A planner calls: "You told me our PTFE expansion joint would be here last week. 
 | Term | Meaning |
 |---|---|
 | Purchase order (PO) | Your branch's order to a vendor |
-| Purchase need | A line P21 creates for an S or D order line |
+| Purchase need | Something to buy: a replenishment suggestion or an S or D order line |
 | Lead time | How long the vendor takes to ship |
 | Promise date | The ship date the vendor commits to |
 | Expediting | Following up with a vendor to hold or move up a date |

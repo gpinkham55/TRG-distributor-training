@@ -72,8 +72,6 @@ These are the areas you will use most in your first weeks.
 | Inventory > Purchasing | Purchase Order Entry, Purchase Order Inquiry | Buy stock and check what is coming | 13 |
 | Inventory > Shipping | Shipping | Reprint pick tickets and confirm shipments | 6 |
 
-'
-
 Add the windows you use every day to your **favorites**: Customer Master Inquiry, Item Master Inquiry, Order Inquiry, and Order Entry.
 
 [IMAGE EXAMPLE: The P21 menu open over Order Entry. Starred windows are your favorites]
@@ -121,7 +119,7 @@ Press **Alt + F1** in P21 to see the full cheat sheet.
 Most ID fields (customer, ship-to, contact, item, order) open a search window.
 
 1. Type part of the value, then press Enter or click the Open Search button.
-2. Search on the **shortest piece that is unique**. "SOUTHEAST" finds the account; "Southeastern Paper Mill, Inc." misses it when the record spells Inc without the period.
+2. Search on a **short piece**, then confirm the city. "SOUTHEAST" finds the account; "Southeastern Paper Mill, Inc." misses it when the record spells Inc without the period.
 3. When too many records come back, add a second filter: city, phone, or ZIP code.
 4. Pick the record, then confirm it is the right one before you go on.
 
@@ -140,7 +138,7 @@ Most ID fields (customer, ship-to, contact, item, order) open a search window.
 |---|---|---|---|
 | Inquiry | Shows a record; fields are locked | You only need to look | Customer Master Inquiry, Item Master Inquiry, Order Inquiry |
 | Maintenance | Adds or changes a record | You need to add or fix something, and you are trained to | Ship To Maintenance, Contact Maintenance |
-| Entry | Creates a transaction | You are entering a new order, quote, or PO | Order Entry, Quote Entry, Purchase Order Entry |
+| Entry | Creates a transaction | You are entering a new order, quote, or PO | Order Entry (orders and quotes), Purchase Order Entry |
 
 > ⚠️ SAFETY & COMPLIANCE: Use the inquiry window when you only need to look. A maintenance window opened "just to check" is the most common way trainees change a record by accident. If you change something by mistake, press Ctrl + Z before you save, or close without saving.
 
@@ -175,7 +173,7 @@ One customer has many ship-to's and many contacts. Some companies have several c
 1. Press **F8** to open Customer Master Inquiry.
 2. Search by customer ID, part of the company, phone number, or city.
 3. **Confirm the right account.** Check the physical address and the ship-to list. When two accounts look alike, ask the caller which plant, location, or address they are calling about.
-4. On the **Credit Status** tab, check the account status and terms. An account on COD or Hold changes what you can promise; bring in your Manager before you go on.
+4. On the **Credit Status** tab, check the account status and terms. An account on COD or Hold changes what you can promise. On Hold, take the order and bring in your Manager before you promise anything. On COD, take the order and collect payment before release.
 5. Read the **Customer Notes**: PO required, release numbers, receiving hours, tax exemption, brand preferences.
 6. Check the **Ship To / Salesrep** tab. Is the delivery address on file? Who is the salesperson?
 7. Check the **contacts**. Is the caller listed, with the right phone and email?
@@ -193,7 +191,7 @@ One customer has many ship-to's and many contacts. Some companies have several c
 | Ship To / Salesrep tab | Ship-to addresses, salesperson | Where orders deliver and who owns the account |
 | Customer Notes tab | Account rules | What every order on this account needs |
 | Customer Sales History tab | Invoiced lines by date | What the customer bought, when, and at what price (2.5) |
-| Open Orders tab | Orders not yet shipped | What is already on the way |
+| Open Orders tab | Orders not yet shipped | What is entered and waiting to ship |
 | Open Quotes tab | Quotes not yet ordered | Prices already given |
 
 ### Credit status: what it means for you
@@ -263,7 +261,7 @@ The unit of measure says what one unit of the item is. Read it every time before
 |---|---|---|
 | EA | Each, one piece | Fittings, clamps, couplings, cut gaskets, assemblies |
 | FT | Foot | Bulk hose, tubing, cord |
-| SI | Square inch | Gasket sheet and sheet rubber sold by the piece |
+| SI | Square inch | Gasket sheet and sheet rubber sold in cut pieces, priced by area |
 | SF | Square foot | Sheet rubber and gasket sheet in larger pieces |
 | RL | Roll | Full rolls of sheet rubber or tape |
 
@@ -289,7 +287,7 @@ Price depends on the customer. Check a customer's price in Sales Pricing Inquiry
 1. Search again with less text, or with a manufacturer or customer part number.
 2. Try another description. A customer's "cam lock" is a cam and groove fitting; a "red rubber" sheet is SBR.
 3. Check the Substitute tab on a similar item.
-4. Ask your Manager. The item may need a special order or a new item setup; Module 6 covers both.
+4. Ask your Manager. The item may need a special order or a new item setup. Module 6 covers special orders. Your Manager or purchasing sets up new items.
 
 ## 2.5 Orders, Quotes, and Sales History
 
@@ -337,12 +335,12 @@ Order Inquiry shows one order from entry to invoice. Open it by order or by item
 | "Does another branch have it?" | F2, Inventory tab | Stock at every location |
 | "When will more come in?" | F2, Open PO tab | Expected date and quantity |
 | "Where's my order?" | Order Inquiry | Status, shipments, carrier |
-| "What did I pay last time?" | F8, Customer Sales History | Price on the last line |
+| "What did I pay last time?" | F8, Customer Sales History | Price on the most recent line for that item |
 | "Did you already quote this?" | F8, Open Quotes | Quote number, items, and expiration |
 
 ### Case study: the outage hose
 
-A maintenance planner at Southeastern Paper Mill calls: "We need the same steam hoses you made us for the outage last spring. Six of them."
+A practice caller, a maintenance planner at Southeastern Paper Mill, calls: "We need the same steam hoses you made us for the outage last spring. Six of them."
 
 1. **F8.** The rep searches "SOUTHEAST" and gets two accounts: the mill and the box plant. The planner confirms the mill on Mill Road.
 2. **Credit Status.** The account shows Good, on Net 30 terms.
@@ -351,7 +349,8 @@ A maintenance planner at Southeastern Paper Mill calls: "We need the same steam 
 5. **Order Inquiry.** The order also carried twelve interlocking clamps. The rep reads both lines back.
 6. **Changes.** The planner confirms the same length, same ends, same 150 psi steam service.
 7. **F2.** The rep checks bulk steam hose: 140 FT net available, 150 FT needed. One 100 FT reel arrives on an open PO in two days.
-8. The rep gives the planner a real ready date, gets the new PO number, and moves to Order Entry (Module 6).
+8. **Reels and remnants.** The rep has the warehouse check the reels and the remnant rack for continuous 25 FT lengths before promising a date.
+9. The rep gives the planner a real ready date, gets the new PO number, and moves to Order Entry (Module 6).
 
 The planner described the hose in one sentence. Sales history supplied the item, the length, the ends, and the clamps. The stock check caught a 10 FT shortfall before anyone promised it.
 
@@ -379,12 +378,12 @@ The planner described the hose in one sentence. Sales history supplied the item,
 |---|---|---|
 | Working in live P21 during practice | Real orders, real shipments, real invoices | Read the title bar every time you sign in |
 | Picking the first account that comes up | An order billed and shipped to the wrong plant | Confirm the physical address and ship-to with the caller |
-| Searching on the full company name | "It isn't in the system" when it is | Search on the shortest unique piece |
+| Searching on the full company name | "It isn't in the system" when it is | Search on a short piece, then confirm the city |
 | Clicking past pop-up notes | A missing PO or release number, a refused delivery | Read every note |
 | Promising on-hand stock | Stock promised twice; one customer gets shorted | Read net quantity available |
 | Reading the quantity before the unit | 100 EA entered when the customer wanted 100 FT | Read the UOM first |
 | Saying "we don't have it" after one look | A lost sale that incoming stock could have filled | Check the Inventory, Open PO, Transfer, and Substitute tabs |
-| Copying the item from history and skip viewing the whole previous order | Missing fittings or clamps that shipped with it | Open the order and read every line |
+| Copying the item from history and skipping the rest of the order | Missing fittings or clamps that shipped with it | Open the order and read every line |
 | Creating a new quote when one is open | Two prices for one request | Check Open Quotes first |
 
 ## 2.7 P21 Terms

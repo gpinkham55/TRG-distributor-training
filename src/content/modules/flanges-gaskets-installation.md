@@ -51,7 +51,7 @@ A flange is a flat ring at the end of a pipe, valve, or pump. Two flanges bolt t
 
 ### Pressure classes
 
-Each steel flange has a **class**: 150, 300, 600, 900, 1500, or 2500. A higher class means a thicker flange, more and larger bolts, and a higher pressure rating. The class is cast or stamped on the flange rim.
+Each steel flange has a **class**: 150, 300, 600, 900, 1500, or 2500. The class is a rating label. The allowed pressure comes from the ASME B16.5 pressure-temperature table for the flange material and drops as temperature rises. A carbon steel Class 150 flange is rated well above 150 psi at room temperature; read the table. A higher class means a thicker flange, more and larger bolts, and a higher pressure rating. The class is cast or stamped on the flange rim.
 
 | Class | Where you see it |
 |---|---|
@@ -59,15 +59,15 @@ Each steel flange has a **class**: 150, 300, 600, 900, 1500, or 2500. A higher c
 | 300 | Higher-pressure steam and process lines |
 | 600 and up | High-pressure steam, boiler, and process lines; usually spiral wound or metal gaskets |
 
-> 📌 INDUSTRY INSIGHT: Class 150 and Class 300 flanges of the same pipe size have different bolt circles and bolt counts. A gasket cut for one won't fit the other. Confirm the class every time.
+> 📌 INDUSTRY INSIGHT: Class 150 and Class 300 flanges of the same pipe size have different bolt circles and often different bolt counts and bolt sizes. A gasket cut for one won't fit the other. Confirm the class every time.
 
-> 💡 KEY TAKEAWAY: To quote a flange gasket you need five things: pipe size, class, face type (ring or full face), material, and thickness.
+> 💡 KEY TAKEAWAY: To quote a flange gasket you need five things: pipe size, class, flange face (raised or flat), material, and thickness, plus the service so the material can be checked.
 
 ## 11.2 Gasket Dimensions
 
 | Dimension | Ring gasket (RF) | Full-face gasket (FF) |
 |---|---|---|
-| ID (inside diameter) | Matches the pipe bore | Matches the pipe bore |
+| ID (inside diameter) | Standard gasket ID equals the pipe's outside diameter | Standard gasket ID equals the pipe's outside diameter |
 | OD (outside diameter) | Fits just inside the bolts | Same as the flange OD |
 | Bolt holes | None | Number, hole size, and bolt circle diameter |
 
@@ -161,7 +161,7 @@ A gasket seals when the bolts squeeze it evenly to the right load. Customers oft
 4. Use a new gasket every time.
 5. Lubricate the bolt threads and nut faces so the torque turns into bolt load.
 6. Center the gasket. Keep grease and sealant off the gasket unless the maker calls for it.
-7. Snug the bolts by hand, then tighten in a **star (crisscross) pattern**.
+7. Snug the bolts by hand, then tighten in a **star (crisscross) pattern**. With the bolts numbered clockwise, the order on a 4-bolt flange is 1, 3, 2, 4. The order on an 8-bolt flange is 1, 5, 3, 7, 2, 6, 4, 8.
 8. Tighten in passes: about 30%, then 60%, then 100% of the target torque, following the star pattern each time.
 9. Make a final pass around the flange in order (clockwise) at 100% until no nut turns.
 
@@ -182,7 +182,7 @@ Tightening one bolt all the way pinches the gasket on that side and leaves the f
 
 > ⚠️ SAFETY & COMPLIANCE: Torque values come from the gasket maker's chart for that material, flange, and bolt. Never give a customer a torque number from memory.
 
-> 📌 INDUSTRY INSIGHT: Many plants retighten flange bolts after the first heat cycle on steam and hot oil lines, following the gasket maker's instructions. Some materials must stay untouched once hot. Point the customer to the maker's instructions.
+> 📌 INDUSTRY INSIGHT: Many plants retighten flange bolts on steam and hot oil lines after the first heat cycle. Retighten only after the line has cooled, been depressurized, and been locked out, and only when the maker allows it. Some materials must stay untouched once hot. Point the customer to the maker's instructions.
 
 ## 11.5 Troubleshooting a Leaking Flange
 
@@ -232,7 +232,7 @@ When a customer calls about a leak, ask what changed and work through the likely
 
 ### At the counter
 
-- Read the class and size cast on the flange or stamped on the old gasket.
+- Read the class and size cast on the flange or stamped on an old spiral wound gasket's outer ring.
 - Measure an old gasket's ID, OD, and bolt holes. Old steam gaskets may contain asbestos: handle them as little as possible and ask your Manager.
 - When the customer has only a pipe size, ask the class and face before you quote.
 
@@ -240,7 +240,7 @@ When a customer calls about a leak, ask what changed and work through the likely
 
 ### Case study: the leak after heat-up
 
-A planner calls: "We put new gaskets on the 6 inch steam header last week. Two flanges started leaking once the line came up to temperature. I need better gaskets."
+A practice caller, a planner at Southeastern Paper Mill, calls: "We put new gaskets on the 6 inch steam header last week. Two flanges started leaking once the line came up to temperature. I need better gaskets."
 
 1. **The flanges.** 6 in Class 300 raised face, carbon steel. Steam at 200 psi, about 388°F.
 2. **What went in.** 1/8 in compressed fiber ring gaskets. The planner doesn't know the torque; the crew used impact wrenches, working around the flange in order.
@@ -255,8 +255,8 @@ A better gasket helped. Installing it with the star pattern and passes fixed the
 
 | Situation | What to do | Reason |
 |---|---|---|
-| The customer gives only a pipe size | Ask the class and face | Bolt circles and bolt counts change by class |
-| A cast iron pump flange | Quote a full-face gasket | A ring gasket can crack a flat face flange |
+| The customer gives only a pipe size | Ask the class and face | Classes have different bolt circles and often different bolt counts and bolt sizes |
+| A cast iron pump flange | Confirm the face first; on a flat face flange quote a full-face gasket | A ring gasket can crack a flat face flange |
 | Class 600 steam | Offer a spiral wound gasket by size and class | Sheet gaskets are rarely rated for it |
 | The customer asks for a torque number | Send the gasket maker's torque chart | Torque depends on material, bolt, lubricant, and flange |
 | A flange leaks on one side | Ask about alignment | A gasket can't fix misaligned piping |
@@ -281,12 +281,12 @@ A better gasket helped. Installing it with the star pattern and passes fixed the
 | Ring type joint (RTJ) | A flange with a groove for a metal ring |
 | Ring gasket | A gasket that fits inside the bolts |
 | Full-face gasket | A gasket that covers the whole face, with bolt holes |
-| Class | The flange pressure rating: 150, 300, 600, and up |
+| Class | A rating label: 150, 300, 600, and up. The allowed pressure comes from the ASME B16.5 pressure-temperature table for the flange material and drops as temperature rises |
 | Bolt circle | The diameter through the centers of the bolt holes |
 | ASME B16.5 / B16.47 | Steel flanges 1/2 to 24 in / 26 to 60 in |
 | ASME B16.1 | Cast iron flanges (Class 125 and 250) |
 | ASME B16.20 / B16.21 | Metal gaskets / nonmetallic flat gaskets |
-| Spiral wound gasket | Metal and filler wound together, with centering rings |
+| Spiral wound gasket | Metal and filler wound together, with an outer centering ring and sometimes an inner ring |
 | Centering ring | The outer ring that centers a spiral wound gasket |
 | Star pattern | Tightening bolts across the flange from each other |
 | Pass | One round of tightening at a set percent of torque |
@@ -301,13 +301,13 @@ A better gasket helped. Installing it with the star pattern and passes fixed the
 2. **Look-ups.** Write the full-face gasket dimensions for 3 in and 6 in Class 150 flanges, and the ring OD and bolt circle for a 4 in Class 300 flange.
 3. **Measure.** Measure a non-standard gasket or flange: ID, OD, bolt circle, number and size of holes.
 4. **Spiral wound.** Read the color code on a spiral wound gasket in stock and say the winding and filler.
-5. **Star pattern.** Number the bolts in tightening order on a 4-bolt and a 12-bolt flange drawing.
+5. **Star pattern.** Number the bolts in tightening order on a 4-bolt and an 8-bolt flange drawing.
 
 ### Knowledge check (practice)
 
 1. Which gasket goes on a raised face flange?
 2. Why use a full-face gasket on a flat face cast iron flange?
-3. What five things do you need to quote a flange gasket?
+3. What five things do you need to quote a flange gasket, and what else do you gather so the material can be checked?
 4. What is the bolt circle on a 4 in Class 150 flange, and how many bolts?
 5. How does a 4 in Class 300 flange differ from a 4 in Class 150?
 6. What does a green outer ring with a gray stripe mean on a spiral wound gasket?

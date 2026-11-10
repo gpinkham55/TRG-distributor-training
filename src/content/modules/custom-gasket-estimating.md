@@ -148,7 +148,7 @@ Die cutting trades a one-time tooling cost for very fast cutting.
 
 ## 12.6 The House Pricing Formula
 
-Every custom gasket quote uses the same two-part formula: material at cost times a markup multiplier, plus labor at the shop hourly rate in 15-minute increments. This module uses placeholder values, a **3.00 multiplier** and **$150 per hour**, so the math is easy to follow. Your manager gives you your branch's figures.
+Custom gasket quotes start from a two-part formula: material at cost times a markup multiplier, plus labor at the shop hourly rate in 15-minute increments. Die cost and full-sheet charges are added when they apply. This module uses placeholder values, a **3.00 multiplier** and **$150 per hour**, so the math is easy to follow. Your manager gives you your branch's figures.
 
 - **Material price** = square inches used × cost per square inch × markup multiplier
 - **Labor price** = labor hours, rounded up to the next quarter hour × shop rate
@@ -166,16 +166,16 @@ Always round labor **up** to the next quarter hour: 61 minutes is 1.25 hours.
 | Step | Calculation | Result |
 |---|---|---|
 | 1. Footprint | 9.125 × 9.125 | 83.27 in² |
-| 2. Material used | 83.27 × 50 parts × (1 + 0% scrap; leftover goes back to stock) | 4,163 in² |
-| 3. Material price | 4,163 × $0.05 × 3.00 | $624.49 |
+| 2. Material used | 83.27 × 50 parts × (1 + 5% scrap; leftover goes back to stock) | 4,372 in² |
+| 3. Material price | 4,372 × $0.05 × 3.00 | $655.80 |
 | 4. Cut length per part | π × (9.00 + 4.50 + 8 × 0.75) | 61.26 in |
 | 5. Cutting time | 61.26 × 50 ÷ 60 in/min | 51.1 min |
 | 6. Pierce time | 10 pierces × 50 parts × 2 sec | 16.7 min |
 | 7. Programming and handling | 15 min + 15 min | 30.0 min |
 | 8. Labor hours | 97.8 min, rounded up to 105 min | 1.75 hr |
 | 9. Labor price | 1.75 × $150 | $262.50 |
-| 10. Job price | $624.49 + $262.50 | **$886.99** |
-| 11. Price each | $886.99 ÷ 50 | **$17.74 EA** |
+| 10. Job price | $655.80 + $262.50 | **$918.30** |
+| 11. Price each | $918.30 ÷ 50 | **$18.37 EA** |
 
 **When the leftover can't go back to stock**, charge the 2 full sheets the job uses: 7,200 in² × $0.05 × 3.00 = $1,080.00 material, $1,342.50 job price, $26.85 each.
 
@@ -191,13 +191,15 @@ Set up the gasket as its own item sold by the each (EA). Its components are the 
 
 | Kit component | Quantity per EA (worked example) |
 |---|---|
-| Compressed sheet, sold in SI | 83.27 SI |
+| Compressed sheet, sold in SI | 4,372 ÷ 50 = 87.44 SI |
 | Waterjet labor, in hours | 1.75 ÷ 50 = 0.035 hr |
+
+Labor per EA is for the quoted quantity. Re-figure it when the quantity changes.
 
 ### Steps: quote and order a cut gasket
 
 1. Work the price with the house formula (12.6).
-2. In Order Entry set as a quote, enter the gasket kit item when one is on file. Your Manager sets up a new kit item.
+2. In Order Entry set as a quote, enter the gasket kit item when one is on file. When no kit item is on file, ask your Manager to set one up.
 3. Put the drawing number, material, and thickness in the line's extended description.
 4. Give the lead time from the waterjet schedule.
 5. When the customer accepts, convert the quote to an order (Module 6).
@@ -234,7 +236,7 @@ The planner emails a sketch of a tank manway cover: an 18 in × 24 in oval, 2 in
 5. **Price.** The rep works the house formula with the branch's figures and quotes a price each.
 6. **P21.** The Manager sets up a kit item for the gasket with the DXF file reference in the description. The next outage reorder is one line.
 
-The first order paid for the setup. Every reorder after it takes half the time for the same price.
+The first order paid for the setup. Reorders skip the programming time.
 
 ### What if...
 
@@ -285,7 +287,7 @@ The first order paid for the setup. Every reorder after it takes half the time f
 
 Use the placeholder values in this module (3.00 multiplier, $150 per hour, $0.05 per square inch) unless your Manager gives you others.
 
-1. **Footprint.** A rectangular gasket is 8 in × 12 in with 0.125 in spacing. Find its footprint and how many fit on a 60 in × 60 in sheet with a 0.5 in edge margin.
+1. **Footprint.** A rectangular gasket is 8 in × 12 in with 0.125 in spacing. Find its footprint and how many fit on a 60 in × 60 in sheet with a 0.5 in edge margin, all parts turned the same way.
 2. **Price a job.** Price 25 pieces of a 3 in Class 150 full-face gasket (7.50 in OD, 3.50 in ID, 4 holes at 0.75 in) using the steps in 12.6.
 3. **Waterjet or die.** For 20 pieces and for 2,000 pieces of the same part, say which method you would quote and why.
 4. **Units.** A 60 in × 60 in sheet item is bought by the sheet and sold by the square inch. How many square inches are in 4 sheets?

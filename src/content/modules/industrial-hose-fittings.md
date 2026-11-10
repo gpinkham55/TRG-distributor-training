@@ -94,7 +94,7 @@ Cam and groove pressure ratings drop as size goes up, and they vary by material.
 
 [IMAGE EXAMPLE: A set of cam and groove fittings laid out and labeled A, B, C, D, E, F, DC, and DP]
 
-> ⚠️ SAFETY & COMPLIANCE: Relieve the pressure and drain the line before anyone opens cam arms. Some couplers have locking arms that release first.
+> ⚠️ SAFETY & COMPLIANCE: Relieve the pressure and drain the line before anyone opens cam arms. Some couplers have locking arms. Release the lock before you pull the arm.
 
 ### Ground joint couplings
 
@@ -189,7 +189,7 @@ A coupling holds only as well as the way it is attached. Pick the method from th
 
 ### Finding hose and couplings
 
-1. Press **F2** and search bulk hose by family and size ("suction ," "steam "), or by the maker's part number from the layline.
+1. Press **F2** and search bulk hose by family and size ("suction," "steam"), or by the maker's part number from the layline.
 2. Search couplings by type, size, and material ("cam C 2 SS," "ground joint"). Your Manager shows you how your branch describes them.
 3. Read the **UOM**: bulk hose in FT, couplings and clamps in EA.
 4. Read **net available** for the hose and every coupling and clamp. One missing clamp holds up the whole assembly.
@@ -204,7 +204,7 @@ Enter a hose assembly as a **kit item** on the order (Module 9). Put the STAMPED
 | The customer brings | Do this |
 |---|---|
 | A failed assembly | Ask what it carried, glove up, read the layline, measure ID and overall length, and identify both ends |
-| A loose fitting | Identify the style and size; on cam and groove, read the type letter and measure the groove OD |
+| A loose fitting | Identify the style and size; on cam and groove, read the type letter, then measure the adapter OD or the coupler ID and match it to the maker's size chart |
 | A thread they can't match | Measure with calipers and a thread gauge; GHT, NPT, and NST look alike |
 | A request for "the same as last time" | Press F8 and check Customer Sales History for the kit item |
 
@@ -214,7 +214,7 @@ Enter a hose assembly as a **kit item** on the order (Module 9). Put the STAMPED
 
 ### Case study: the irrigation pump
 
-A practice caller, a farmer, comes to the counter: "My irrigation pump hose collapsed. I need new hose on both sides of the pump today."
+A practice customer, a farmer, says: "My irrigation pump hose collapsed. I need new hose on both sides of the pump today."
 
 1. **Which side.** The collapsed hose was on the suction side. It is a red layflat hose with no helix.
 2. **STAMPED, suction side.** Size: 3 in ID, 20 ft. Temperature: pond water, ambient summer heat. Application: pulled from a pond, lying in the sun. Media: water with sand. Pressure: suction, about 20 inHg. Ends: 3 in cam and groove, type C on the pump end and type E on the strainer end. Delivery: today.

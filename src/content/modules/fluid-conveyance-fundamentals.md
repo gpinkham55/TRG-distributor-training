@@ -58,8 +58,8 @@ Almost every hose has three layers, and each layer has one job.
 | Lay-flat | Woven jacket with a thin liner; rolls flat for storage | Fire hose, dewatering discharge |
 | Crush-resistant | Heavy plastic helix that springs back after a vehicle runs over it | Farm and construction sites |
 | PTFE-lined | PTFE tube with a braid or rubber cover | Chemical transfer, high heat, steam tracing |
-| Food grade | Tube compounds that meet FDA rules; white or clear tube | Food, dairy, beverage, pharmaceutical |
-| Static-dissipating or conductive | Wire or carbon in the hose carries static to ground | Fuels, solvents, dry bulk powders |
+| Food grade | Tube compounds that meet FDA rules; tube marked for food contact, often white | Food, dairy, beverage, pharmaceutical |
+| Static-dissipating or conductive | Wire or carbon in the hose carries static to ground when the wire is bonded to both couplings | Fuels, solvents, dry bulk powders |
 
 ### Terms on the hose itself
 
@@ -72,7 +72,7 @@ Almost every hose has three layers, and each layer has one job.
 
 ## 4.2 The STAMPED Method
 
-STAMPED is the checklist the hose industry uses to pick a hose. Ask all seven questions before you quote or build a hose. Customers usually give you two or three answers. You need answers to all of them to be sure it won't fail.
+STAMPED is the checklist the hose industry uses to pick a hose. Ask all seven questions before you quote or build a hose. Customers usually give you two or three answers. You need all seven to pick the hose.
 
 | Letter | Stands for | What to ask | What a wrong answer causes |
 |---|---|---|---|
@@ -104,7 +104,7 @@ With these answers you can pick a hot water washdown hose with an abrasion-resis
 
 When a customer hands you a failed hose, it answers most of the STAMPED questions.
 
-1. **Ask what it carried** before you touch it. Wear gloves until you know.
+1. **Ask what it carried, put on gloves, then handle it.**
 2. **Read the layline:** maker, hose type, ID, working pressure, date code.
 3. **Measure** the ID at a clean cut and the overall length end to end.
 4. **Identify the ends:** fitting type, thread, size, and the angle between elbows.
@@ -251,7 +251,7 @@ Use this table as a starting point. Confirm every chemical on the hose manufactu
 3. Look up the chemical in the **manufacturer's compatibility chart** for the tube material.
 4. Read the rating. Charts rate each chemical excellent, good, fair, or not recommended, by letter or number.
 5. Check the **fittings** and any **seals** the same way. A stainless fitting may hold where brass or aluminum fails.
-6. When the chemical is missing from the chart or rated fair, stop and ask your Manager or the manufacturer.
+6. When the chemical is rated not recommended, pick another material. When the chemical is missing from the chart or rated fair, stop and ask your Manager or the manufacturer.
 
 [IMAGE EXAMPLE: A page from a hose manufacturer's chemical compatibility chart with one chemical row and its ratings highlighted]
 
@@ -304,7 +304,7 @@ A hose spec in your head is lost when you hang up. Write the STAMPED answers whe
 
 ### At the counter with a failed hose
 
-1. Ask what the hose carried. Put on gloves before you handle it.
+1. Ask what it carried, put on gloves, then handle it.
 2. Read the layline and measure ID, overall length, and the ends.
 3. Ask the remaining STAMPED questions.
 4. Press **F8** and check Customer Sales History. The assembly may already be on file from an earlier order.
@@ -321,7 +321,7 @@ A hose spec in your head is lost when you hang up. Write the STAMPED answers whe
 
 A planner at Southeastern Paper Mill brings a failed hose to the counter: "Make me one just like this for the caustic unloading station. Today if you can."
 
-1. **Media first.** The rep asks what it carried: 50% caustic soda. The rep puts on gloves.
+1. **Media first.** The rep asks what it carried: 50% caustic soda. The rep puts on gloves, then handles the hose.
 2. **Layline.** 2 in ID chemical transfer hose, EPDM tube, 150 psi working pressure, with a date code from six years ago.
 3. **Failure.** The hose body is sound. The aluminum cam and groove fittings on both ends are pitted and one is cracked.
 4. **STAMPED.** Size: 2 in ID, 20 ft overall. Temperature: caustic arrives at 140°F. Application: truck unloading, dragged across a concrete pad. Media: 50% caustic soda. Pressure: 100 psi pump discharge. Ends: 2 in cam and groove, female coupler on the truck end, male adapter on the plant end. Delivery: today.
@@ -365,8 +365,8 @@ The hose did its job. The fittings were wrong for the media from the first order
 | Helix | A steel or plastic wire wound in a coil to hold a hose open |
 | Hardwall / softwall | Suction-rated hose with a helix / discharge-only hose without one |
 | ID / OD | Inside diameter / outside diameter |
-| Dash size | Hydraulic hose ID in sixteenths of an inch |
-| Overall length | End of one fitting to the end of the other |
+| Dash size | Hydraulic hose ID in sixteenths of an inch. SAE 100R5 and some thermoplastic hose use dash sizes based on tube OD |
+| Overall length | End of one fitting to the end of the other. On an elbow, measure to the center line of the sealing face |
 | Cut length | Bulk hose length before fittings go on |
 | Orientation | The angle between two elbow fittings |
 | Minimum bend radius | The tightest bend a hose takes without damage |
@@ -390,7 +390,7 @@ The hose did its job. The fittings were wrong for the media from the first order
 
 1. **Cut sections.** Your Manager gives you cut pieces of three hoses. For each, point out the tube, reinforcement, and cover, and give the reinforcement type.
 2. **Read laylines.** Read the layline on five hoses in stock. Write the maker, hose type, ID, and working pressure for each.
-3. **Measure.** Measure the ID of three unmarked hoses with calipers and give the dash size.
+3. **Measure.** Measure the ID of three unmarked hoses with calipers. Give the ID in inches, and the dash size for hydraulic hose.
 4. **Orientation.** Measure the overall length and the angle between the elbows on a stocked assembly.
 5. **STAMPED interview.** Your Manager plays a customer who asks for "a hose for our tank truck." Ask the STAMPED questions until you have all seven answers, and write them in the order line's extended description.
 6. **Compatibility.** On a maker's chart, write the rating for EPDM and for nitrile with diesel fuel, 50% caustic soda at 150°F, acetone, and hot water at 180°F.

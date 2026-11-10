@@ -63,14 +63,14 @@ Manufacturers sell in bulk. The distributor sells one hose, one gasket, or one f
 
 ### Case study: one burst hose
 
-A maintenance planner at Southeastern Paper Mill calls. A hose on the No. 2 paper machine burst and the machine is down. Here is what each person does.
+A practice caller, a maintenance planner at Southeastern Paper Mill, calls. A hose on the No. 2 paper machine burst and the machine is down. Here is what each person does.
 
 1. The inside sales rep confirms the account and the ship-to, then asks the STAMPED questions: size, temperature, application, media, pressure, ends, and delivery.
 2. The planner reads the layline from the failed hose. It is a 1 in steam hose with ground joint couplings.
 3. The rep checks stock in P21: bulk steam hose is on the shelf, and so are the couplings and interlocking clamps.
-4. The rep enters the order, sends an order acknowledgement to the customer, and prints the packing list for the shop to assemble.
+4. The rep enters the order, sends an order acknowledgement to the customer, and prints the pick ticket for the shop and warehouse.
 5. The shop builds and tests the assembly and tags it. The warehouse stages it for delivery.
-6. The mill gets the hose fast and the new assembly goes in their sales history. Next time they order it, we'll know exactly how it's built.
+6. The driver delivers the assembly. The sale goes into the customer's sales history, and the next reorder starts from that record.
 
 Each step depended on the one before it. A wrong layline reading or a missed clamp would have sent the wrong hose and kept the machine down.
 
@@ -137,7 +137,7 @@ This course draws its examples from four industries that use large amounts of ho
 
 > 📌 INDUSTRY INSIGHT: Mills plan **outages** months ahead. A buyer may ask for a quote on 200 gaskets with pricing held for 60 days. A wrong price or lead time on an outage quote can cost the next year's business. Agriculture is different: a broken hose in harvest is an emergency, and the farmer often shows up at the counter with the failed part in hand.
 
-> 💡 KEY TAKEAWAY: The same products show up in all four industries. What changes is the media, the pressure, the temperature, and the urgency. Ask about all four on every request.
+> 💡 KEY TAKEAWAY: The same products show up in all four industries. What changes is the media, the pressure, the temperature, and the urgency. Ask about media, pressure, temperature, and urgency on every request.
 
 ## 1.3 Standards and Materials Every Branch Works With
 
@@ -148,7 +148,7 @@ Hose assemblies and gaskets are built to published standards, and customers ofte
 | Standard or body | What it covers | Where you will see it |
 |---|---|---|
 | NAHAD (Association for Hose and Accessories Distribution) | Hose assembly guidelines for specifying, building, testing, tagging, and documenting industrial and hydraulic assemblies | Shop procedures, test certificates, customer quality requirements |
-| ARPM (formerly the RMA hose and rubber groups) | The Hose Handbook and Sheet Rubber Handbook: hose construction, tolerances, coupling methods, sheet rubber grades and tolerances | Manufacturer catalogs, tolerance questions, customer specs |
+| ARPM (Association for Rubber Products Manufacturers, formerly the RMA hose and rubber groups) | The Hose Handbook and Sheet Rubber Handbook: hose construction, tolerances, coupling methods, sheet rubber grades and tolerances | Manufacturer catalogs, tolerance questions, customer specs |
 | ASTM D2000 | A coding system for rubber compounds: type, heat resistance, oil swell, hardness, and tests | Gasket and molded part drawings ("ASTM D2000 M2BG714") |
 | ASTM F104 | A classification system for nonmetallic gasket materials such as fiber sheet | Gasket sheet data sheets |
 | ASME B16.5 | Pipe flanges NPS 1/2 through 24 in pressure classes 150 to 2500 | Flange size and bolt pattern for every standard gasket |
@@ -187,7 +187,7 @@ Every hose request starts with the same seven questions. Module 4 teaches each o
 | Letter | Question | Example answer |
 |---|---|---|
 | S | Size: inside diameter and length | 1 in ID, 12 ft overall |
-| T | Temperature of the media and the surroundings | 250°F steam |
+| T | Temperature of the media and the surroundings | 366°F steam |
 | A | Application: what it does and how it is used | Press clean-up line, dragged on the floor |
 | M | Media: what flows through it | Saturated steam |
 | P | Pressure, including surges | 150 psi working |
@@ -248,14 +248,14 @@ Handle every counter sale in this order:
 ### Will call, picking, and staging
 
 - **Pick ticket.** The warehouse picks from the pick ticket, which lists the item ID, bin, quantity, and unit. Pick in the unit on the ticket: 25 FT is 25 feet.
-- **Check the pick.** Match the item ID and the bin location to the ticket. A -8 fitting and a -10 fitting look alike.
+- **Check the pick.** Match the item ID and the bin location to the ticket. A -8 fitting and a -10 fitting look alike. The dash size is the size in sixteenths of an inch: -8 is 1/2 in and -10 is 5/8 in.
 - **Stage by destination.** Branch truck orders by salesperson/route, freight and parcel orders by carrier, will-call orders in the will-call area.
 - **Tag will-call orders** with the customer name, order number, and PO, then let the customer know it is ready.
 - **At pickup**, confirm who is picking up and get a signature on the pick ticket or packing list.
 
 ### Vendor returns
 
-The branch returns two kinds of product to vendors: overstock (unsold stock, usually with a restocking fee and a time limit) and defective product (through the vendor's RMA and warranty process). The buyer arranges both. Module 15 covers returns in full.
+The branch returns two kinds of product to vendors: overstock (unsold stock, usually with a restocking fee and a time limit) and defective product (through the vendor's RMA and warranty process). Purchasing arranges both. Module 15 covers returns in full.
 
 > 💡 KEY TAKEAWAY: Every step depends on the one before it being done right. A mistake in one step makes each step after more difficult and prone to subsequent errors. Do the job right every step of the way.
 
@@ -312,7 +312,7 @@ Prophet 21 (P21) records every step of the order life cycle. This section is a m
 | Ignoring the unit of measure | 100 EA when the customer wanted 100 FT | Read the unit before the quantity |
 | Picking the first account that comes up | An order shipped to the wrong plant | Confirm the physical address and ship-to |
 | Guessing a thread by eye | An adapter that will not seal | Measure with calipers and a thread gauge |
-| Cutting a new reel when a remnant fits | Untagged drops and lost money | Check the remnant rack first |
+| Cutting a new reel when a remnant fits | Untagged drops and lost money | Check the remnant rack first and use the shortest remnant that fills the order |
 
 ### Safety
 
@@ -328,11 +328,11 @@ The one shop rule every trainee follows from the first day: wear safety glasses 
 
 Three hazards from the products we sell come up again and again in this course:
 
-1. **Hydraulic fluid injection.** A pinhole leak at high pressure can push oil through skin. Never use a hand to find a hydraulic leak; use a piece of cardboard and shut the system down.
+1. **Hydraulic fluid injection.** A pinhole leak at high pressure can push oil through skin. Never use a hand to find a hydraulic leak. Pass cardboard near the hose to find the leak. Then shut down and relieve pressure before anyone touches it.
 2. **Steam.** Steam service needs steam-rated hose, steam fittings, and the right clamps. A wrong substitute can burst and cause severe burns.
 3. **Chemicals.** The wrong hose or gasket in chemical service can fail and release the chemical. Always confirm compatibility.
 
-> ⚠️ SAFETY & COMPLIANCE: Wear safety glasses whenever you cut or operate equipment. It is the one rule with no exceptions. The safest answer to a customer is sometimes "Let me check that with my Manager." Never guess on steam, chemicals, or high-pressure hydraulics.
+> ⚠️ SAFETY & COMPLIANCE: Wear safety glasses whenever you cut or operate equipment. This rule has no exceptions. The safest answer to a customer is sometimes "Let me check that with my Manager." Never guess on steam, chemicals, or high-pressure hydraulics.
 
 ## 1.7 Words You'll Hear on Day One
 
@@ -350,7 +350,7 @@ Three hazards from the products we sell come up again and again in this course:
 | Will call | The customer picks the order up at the counter |
 | Direct ship | The vendor ships straight to the customer |
 | Transfer | Stock moved from another branch |
-| Assembly | Hose with fittings attached, built to order |
+| Assembly | Hose with fittings attached, built to a spec |
 | Kit | Several parts sold together as one item |
 | Cut-to-length | Hose, sheet, or cord sold by the foot, square inch, or square foot |
 | Remnant (drop) | The piece left after a cut |
@@ -361,7 +361,7 @@ Three hazards from the products we sell come up again and again in this course:
 | Layline | The printing along a hose: size, type, pressure, maker |
 | Flange | The flat ring at a pipe joint, bolted together with a gasket between |
 | STAMPED | Size, Temperature, Application, Media, Pressure, Ends, Delivery |
-| EA, SI, SF, FT | Each, square inch, square foot, foot: the most common units of measure |
+| EA, SI, SF, FT | Each, square inch, square foot, foot. EA, SI, and SF are the most common units of measure |
 | SDS | Safety Data Sheet: the maker's document on a chemical's hazards and handling |
 | RMA | Return merchandise authorization: approval to return a product |
 | ERP | The business system (Prophet 21) used for customers, items, orders, purchasing, and inventory |
@@ -385,7 +385,7 @@ Three hazards from the products we sell come up again and again in this course:
 4. Which material fails in petroleum oil: EPDM or nitrile?
 5. Which ASME standard covers the flanges a standard 4 in Class 150 gasket fits?
 6. An order needs 22 ft of hose. The rack holds 18 ft, 25 ft, and 30 ft remnants. Which do you cut?
-7. Which line disposition sends a special-order need to the buyer?
+7. Which line disposition sends a special-order need to purchasing?
 8. How should you look for a leak on a pressurized hydraulic hose?
 
 Work these on your own, then check your answers with your Manager.

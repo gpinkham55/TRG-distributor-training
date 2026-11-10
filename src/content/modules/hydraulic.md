@@ -8,7 +8,7 @@ status: published
 summary: Hydraulic hose types and laylines, fluids, temperature, and impulse, the thread and connection families, how fittings seal, leaks and installation, identifying a thread with calipers and gauges, fitting styles, quick couplers, crimping basics, and hydraulic safety.
 ---
 
-Hydraulic hoses are pressurized lines that help machinery and heavy equipment perform work, sometimes under thousands of psi. It is the most common hose assembly a branch builds. It's also the most dangerous to get wrong. This module covers hydraulic hose types, fluids and ratings, the thread and connection families, how fittings seal and why they leak, how to identify a fitting with calipers and gauges, fitting styles, and hydraulic safety. Module 9 covers building and testing assemblies.
+Hydraulic hoses are pressurized lines that help machinery and heavy equipment perform work, sometimes under thousands of psi. They are the most common hose assemblies a branch builds. They are also the most dangerous to get wrong. This module covers hydraulic hose types, fluids and ratings, the thread and connection families, how fittings seal and why they leak, how to identify a fitting with calipers and gauges, fitting styles, and hydraulic safety. Module 9 covers building and testing assemblies.
 
 ### Learning objectives
 
@@ -16,9 +16,9 @@ After this module you will be able to:
 
 1. Tell braided hose from spiral hose and match each to its pressure and impulse needs.
 2. Read SAE and EN hose designations on a layline.
-3. Check the hoses tube against the hydraulic fluid and the temperature.
+3. Check the hose's tube against the hydraulic fluid and the temperature.
 4. Describe how NPT, NPSM, JIC, SAE 45°, ORFS, O-ring boss, BSP, metric, JIS, and flange connections seal.
-5. Tell parallel threads from tapered threads, and name the five sealing methods and the common causes of leaks.
+5. Tell parallel threads from tapered threads, and name the three sealing methods and the common causes of leaks.
 6. Identify a thread using calipers, a thread pitch gauge, and a seat angle gauge.
 7. Describe fitting styles, elbows, orientation, and quick couplers.
 8. Explain why hose and fittings should come from one maker's system, crimped to that maker's spec.
@@ -50,14 +50,14 @@ Hydraulic hose has a nitrile or similar oil-resistant tube, steel wire reinforce
 
 ### Reading a hydraulic layline
 
-A typical layline: "Manufacturer 100R2AT/2SN -8 1/2 in 4000 PSI 27.5 MPa 2Q25."
+A typical layline: "Manufacturer 100R2AT/2SN -8 1/2 in 4000 PSI 27.6 MPa 2Q25."
 
 | Part | Meaning |
 |---|---|
 | Manufacturer | The maker and often its product line |
 | 100R2AT/2SN | Meets SAE 100R2AT and EN 853 2SN |
 | -8, 1/2 in | Dash size and ID |
-| 4000 PSI, 27.5 MPa | Working pressure in psi and metric |
+| 4000 PSI, 27.6 MPa | Working pressure in psi and metric |
 | 2Q25 | Date code: when the hose was made (the format varies by maker) |
 
 ### What wears out hydraulic hose
@@ -77,7 +77,7 @@ A typical layline: "Manufacturer 100R2AT/2SN -8 1/2 in 4000 PSI 27.5 MPa 2Q25."
 
 ## 7.2 Fluids, Temperature, and Impulse
 
-Hydraulic hose is rated for pressure, and also for the fluid, the temperature, and how often the pressure cycles. Check all three before you quote.
+Hydraulic hose is rated for pressure, and also for the fluid, the temperature, and how often the pressure cycles. Check all four before you quote.
 
 ### Hydraulic fluids
 
@@ -105,7 +105,7 @@ Impulse is the repeated rise and fall of pressure each time a valve moves. Hose 
 
 ## 7.3 Thread and Connection Types
 
-Every hydraulic connection seals one of three ways: on the threads, on a metal seat, or on an O-ring. Find how a fitting seals first; it narrows the search.
+Every hydraulic connection seals one of three ways: on the threads, on a metal seat, or on a soft seal (an O-ring or a bonded washer). Find how a fitting seals first; it narrows the search.
 
 | Connection | Thread | Seals on | How to spot it |
 |---|---|---|---|
@@ -144,13 +144,15 @@ Every fitting does two jobs:
 
 On some fittings the threads do both. On others the threads only supply the clamping force, and a separate surface seals. On an ORFS fitting, the threads pull the flat face tight against the O-ring and never touch the oil.
 
-| Sealing method | Typical connections | What seals |
-|---|---|---|
-| O-ring | ORB, ORFS | A rubber O-ring |
-| Metal to metal | JIC 37°, SAE 45°, DIN 2353 cutting ring | A machined cone or a cutting ring |
-| Thread | NPT, NPTF, BSPT | Tapered threads wedged together |
-| Parallel thread | BSPP, metric | An O-ring, a bonded washer, or a seat |
-| Bonded washer | BSPP and metric male ends | Rubber bonded to a steel washer |
+The table groups the common connection types under the three sealing methods.
+
+| Sealing method | Connection type | Typical connections | What seals |
+|---|---|---|---|
+| Soft seal | O-ring | ORB, ORFS | A rubber O-ring |
+| Metal seat | Metal to metal | JIC 37°, SAE 45°, DIN 2353 cutting ring | A machined cone or a cutting ring |
+| Threads | Tapered thread | NPT, NPTF, BSPT | Tapered threads wedged together |
+| Soft seal or metal seat | Parallel thread | BSPP, metric | An O-ring, a bonded washer, or a seat |
+| Soft seal | Bonded washer | BSPP and metric male ends | Rubber bonded to a steel washer |
 
 A scratch, dent, or dirt on a sealing surface leaks even when the two fittings match. Check the seat, the face, and the O-ring before the fitting goes in.
 
@@ -199,7 +201,7 @@ The threads deform slightly as they tighten and form the seal.
 
 - **NPT** needs thread sealant or PTFE tape. Keep tape off the first thread so pieces don't get into the system.
 - **NPTF (dryseal)** threads are made to seal metal to metal without sealant.
-- **BSPT** seals the same way with a 55° thread.
+- **BSPT** seals on the threads with sealant, like NPT, and has a 55° thread.
 
 Thread seals are simple and easy to find. They have limited reuse and are sensitive to torque.
 
@@ -218,7 +220,6 @@ A bonded washer (often called a Dowty washer) is a steel washer with a rubber ri
 | BSPP with O-ring or bonded washer | Excellent | Excellent | Excellent | Easy |
 | DIN 2353 cutting ring | Excellent | Good | Excellent | Moderate |
 | JIC 37° | Very good | Very good | Good | Moderate |
-| Bonded washer | Very good | Moderate | Good | Easy |
 | NPT | Good | Limited | Moderate | Difficult |
 
 The machine and its pressure, heat, and vibration decide the connection. Replace like with like.
@@ -268,7 +269,7 @@ You need three tools: **calipers**, a **thread pitch gauge** (inch and metric), 
 2. **Tapered or straight?** Hold the fitting at eye level. Tapered threads get smaller toward the end; measure the first and last full thread with calipers to check.
 3. **Measure the thread diameter.** On a male thread, measure the outside diameter across the threads. On a female thread, measure the inside diameter. A female measures a little smaller than its matching male.
 4. **Measure the pitch.** Try the inch leaves first; find the one that sits flat in the threads with no light showing. When no inch leaf fits, try metric.
-5. **Check the seat angle.** Set the seat gauge against the cone or flare: JIC 37°, SAE flare 45°, DIN metric 24°, JIS and NPSM 30°.
+5. **Check the seat angle.** Set the seat gauge against the cone or flare: JIC 37°, SAE flare 45°, DIN metric 24°, JIS and NPSM 30°. A BSPP 60° cone reads 30° on the seat gauge, the same as JIS. The thread tells them apart.
 6. **Match it to a chart.** Use the tables below and the maker's thread ID guide. Never identify a fitting by thread size alone; several standards share sizes.
 
 [IMAGE EXAMPLE: Calipers measuring a male thread OD, a pitch gauge seated in the threads, and a seat angle gauge on a JIC cone]
@@ -318,7 +319,7 @@ Pipe thread sizes are nominal. The actual outside diameter is larger than the si
 
 > 💡 KEY TAKEAWAY: A 1/2 in pipe thread measures about 0.84 in across. When a customer says "half-inch fitting," it's best to measure before you assume.
 
-> 📌 INDUSTRY INSIGHT: At 1/2 in and 3/4 in, NPT and BSP both have 14 threads per inch, so the pitch gauge can't tell them apart. Check the thread angle (60° NPT, 55° BSP) and ask where the machine was built.
+> 📌 INDUSTRY INSIGHT: At 1/2 in and 3/4 in, NPT and BSP both have 14 threads per inch, so the pitch gauge can't tell them apart. Measure the OD (0.840 in NPT, 0.825 in BSP), check for taper, look for a seat or washer, and ask where the machine was built.
 
 ## 7.6 Fitting Styles, Quick Couplers, and Crimping Basics
 
@@ -351,10 +352,10 @@ The shop builds the assembly (Module 9). You need to know enough to give the sho
 
 - **One system.** Hose, fittings, and dies come from one maker's system. The maker's crimp chart gives the die and the crimp diameter for each hose and fitting.
 - **Crimp diameter.** The shop measures the finished crimp with calipers and checks it against the chart's tolerance.
-- **Insertion depth.** The hose goes fully into the fitting before crimping and the depth is marked.
-- **Skive or no-skive.** Some fittings require removing a layer on the cover (skiving) before crimping. Most current fittings are no-skive. Check the crimp chart if you're unsure.
+- **Insertion depth.** Mark the insertion depth, then push the hose in to the mark.
+- **Skive or no-skive.** Some fittings require removing the cover at the hose end (skiving) before crimping. Most current fittings are no-skive. Check the crimp chart if you're unsure.
 
-> ⚠️ SAFETY & COMPLIANCE: A crimp outside the maker's tolerance can blow off under pressure. If a particular fitting is not in stock, shops often re-crimp a customers fitting on a new hose as a temporary fix to get the customer working again. Never guarantee a hydraulic assembly built from another maker's fittings on your hose.
+> ⚠️ SAFETY & COMPLIANCE: A crimp outside the maker's tolerance can blow off under pressure. Never re-crimp a used fitting. Never build a hydraulic assembly from another maker's fittings. When the fitting is out of stock, bring in your Manager.
 
 ## 7.7 Hydraulic Safety, Industry Applications, and P21
 
@@ -362,7 +363,7 @@ The shop builds the assembly (Module 9). You need to know enough to give the sho
 
 | Hazard | What happens | What to tell the customer |
 |---|---|---|
-| Fluid injection | A pinhole leak shoots oil through skin. It can look like a small cut and needs emergency medical care. | Never feel for a leak. Use cardboard or wood. |
+| Fluid injection | A pinhole leak shoots oil through skin. It can look like a small cut and needs emergency medical care. | Never feel for a leak. Hold cardboard or wood at arm's length to find the leak. Then shut down and relieve pressure before touching the hose. |
 | Stored pressure | A system can hold pressure after the engine stops; a raised boom holds pressure in the cylinder. | Lower the load to the ground and relieve pressure before removing any hose. |
 | Hose whip | A hose or fitting that lets go under pressure whips with great force. | Replace damaged hose. Use hose restraints where a failure could cause an injury. |
 | Hot oil | Hydraulic oil can be hot enough to burn. | Let the system cool before work. |
@@ -393,7 +394,7 @@ The shop builds the assembly (Module 9). You need to know enough to give the sho
 
 1. Press **F8** and check Customer Sales History. Many customers reorder the same assembly; the kit item may already be on file.
 2. Press **F2** and check net available on the bulk hose and both fittings from one maker's system.
-3. Enter the assembly as a **kit item** with the spec in the line's **extended description** (Module 6).
+3. Enter the assembly as a **kit item** (Module 9) with the spec in the line's **extended description** (Module 6).
 4. Check the shop's schedule before you promise a date and time.
 
 > 💡 KEY TAKEAWAY: When an equipment customer calls with a burst hose, get the machine make and model, the layline, and both fitting ends. The shop can build it with this info.
@@ -404,12 +405,12 @@ The shop builds the assembly (Module 9). You need to know enough to give the sho
 
 A contractor brings a burst hose to the counter: "Excavator boom hose. The crew is standing around. How fast can you make one?"
 
-1. **Safety first.** The rep puts on gloves; the hose is oily.
+1. **Safety first.** The rep asks what it carried: hydraulic oil. The rep puts on gloves, then handles the hose.
 2. **Layline.** EN 856 4SH, -16, 5,500 psi working pressure.
-3. **Ends.** One end is a flange head; the seal is an O-ring on the face, four bolts. The caliper and flange size match Code 62. The other end is a female swivel with a flat face and O-ring groove on the mating male: ORFS, 1-7/16-12 thread, -16.
+3. **Ends.** One end is a flange head; the seal is an O-ring on the face, four bolts. The flange head diameter, measured with calipers, matches Code 62. The other end is a female swivel with a flat face and O-ring groove on the mating male: ORFS, 1-7/16-12 thread, -16.
 4. **Length and orientation.** 64 in overall. The flange head and the 90° ORFS elbow sit at 90° from each other.
 5. **Failure.** The cover is worn through to the wire where the hose rubbed the boom. The rep asks for a sleeve on the new hose.
-6. **P21.** F8 shows no history for this machine. F2 shows the 4SH hose, the Code 62 flange head, and the -16 ORFS elbow in one maker's system, all in stock.
+6. **P21.** F8 shows no earlier order for this assembly. F2 shows the 4SH hose, the Code 62 flange head, and the -16 ORFS elbow in one maker's system, all in stock.
 7. **Order.** The rep enters the kit item with the layline, ends, length, orientation, and sleeve in the extended description, and checks the shop: ready in 45 minutes.
 
 The abrasion caused the failure. The sleeve keeps the new hose from failing the same way.
@@ -436,7 +437,7 @@ The abrasion caused the failure. The sleeve keeps the new hose from failing the 
 | Stepping down from spiral to braid | Early failure from surges | Match pressure and impulse ratings |
 | Skipping the orientation on two elbows | An assembly that won't line up | Measure and record orientation |
 | Quoting without the fluid | A tube that swells on special fluids | Ask the exact fluid |
-| Feeling for a leak | Fluid injection | Cardboard or wood, with the system shut down |
+| Feeling for a leak | Fluid injection | Hold cardboard or wood at arm's length to find the leak. Then shut down and relieve pressure before touching the hose. |
 
 ## 7.9 Hydraulic Terms
 
@@ -465,7 +466,7 @@ The abrasion caused the failure. The sleeve keeps the new hose from failing the 
 | Drop | The length of an elbow's bend |
 | Orientation | The angle between two elbows on one hose |
 | Crimp diameter | The measured diameter of a finished crimp |
-| Skive | Removing the cover before crimping |
+| Skive | Removing the cover at the hose end before crimping |
 | Flat face coupler | A quick coupler with flat mating faces (ISO 16028) |
 | Fluid injection | Oil forced through skin by a pinhole leak |
 
@@ -475,7 +476,7 @@ The abrasion caused the failure. The sleeve keeps the new hose from failing the 
 
 1. **Laylines.** Read the layline on five hydraulic hoses in stock. Write the type, dash size, working pressure, and date code.
 2. **Braid and spiral.** Look at cut ends of braid and spiral hose and count the wire layers.
-3. **Seal types.** Your Manager hands you 6 male fittings. Sort them by how they seal: threads, metal seat, or O-ring.
+3. **Seal types.** Your Manager hands you 6 male fittings. Sort them by how they seal: threads, metal seat, or soft seal.
 4. **Thread ID.** Using calipers, a pitch gauge, and a seat gauge, identify 5 fittings by type and dash size. Write each step.
 5. **Orientation.** Measure the overall length and the orientation of a stocked assembly with two elbows.
 6. **Couplers.** Identify a poppet ag coupler and a flat face coupler by sight.

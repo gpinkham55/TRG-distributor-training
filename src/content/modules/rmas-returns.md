@@ -69,7 +69,7 @@ An RMA (return merchandise authorization) is the record that approves a return a
 4. Fill in any known info (Item ID, invoice number, customer PO number) to narrow the selection.
 5. **Right-click** anywhere in Previously Sold Items Query and select **Apply Query**.
 6. Select the **Add** checkbox for the item(s) being returned. *P21 will not allow the return of items that are not in the customer's sales history.*
-7. Save the RMA and print the RMA Acknowledgement, one for the customer and one for your Manager. **Managers evaluate returns, apply any restocking fees and return freight to the vendor, and issue credit.**
+7. Save the RMA and print the RMA Acknowledgement, one for the customer and one for your Manager. **Managers evaluate the return, charge the customer any restocking fee and return freight, and issue the credit.**
 
 [IMAGE EXAMPLE: RMA Entry main screen with the customer, original invoice, and RMA number highlighted, and the Order Notes tab highlighted.]
 
@@ -91,10 +91,10 @@ An RMA (return merchandise authorization) is the record that approves a return a
 |---|---|---|
 | Credit | The customer doesn't want the part again | The RMA creates a credit memo once the return is received |
 | Replacement | The customer still needs the right part | Enter a new order for the replacement, with the RMA number in a note |
-| Advance replacement | The customer is down and can't wait for the return | Ship the replacement now on a new order; credit or charge when the return arrives and is inspected |
+| Advance replacement | The customer is down and can't wait for the return | Ship and bill the replacement on a new order. Credit the original after the return is received and inspected. |
 | Inspect first | A failure in service, or the cause is unclear | Hold the decision until the part is inspected |
 
-Customers can request to return material even when the vendor and branch did everything right. **Restocking fees** cover the cost of handling, disassembling, and replacing the item(s) on the shelf. They usually don't apply when the branch made the error. Your branch sets the amount; your manager approves waivers.
+Customers can request to return material even when the vendor and branch did everything right. **Restocking fees** cover the cost of inspecting, handling, and putting the item back on the shelf. They usually don't apply when the branch made the error. Your branch sets the amount; your manager approves waivers.
 
 > ⚠️ SAFETY & COMPLIANCE: Credit goes on the account only after the return is received and inspected. Make sure the customer understands that the RMA is authorization to return material, not a credit memo.
 
@@ -125,7 +125,7 @@ Stock you bought and can't sell can sometimes go back to the vendor, usually wit
 
 ### Warranty claims
 
-When a product fails in service and the cause appears to be a defective product, the vendor may replace it or allow the distributor to be credited. Request the defective return from the vendor and hold the item for their response. They may issue a distributor credit without returning the item, and the distributor then issues the customer's credit. Or, they may want the item sent back for evaluation, and credit issued only after the item is confirmed to be defective. During this time, the customer's RMA remains open, waiting on the vendor to decide whether credit will be issued or not. If the vendor refuses to issue credit, usually due to product misuse, then the customer does not receive credit.
+When a product fails in service and the cause appears to be a defective product, the vendor may replace it or allow the distributor to be credited. Ask the vendor for a return authorization for the defective item and hold the item until they answer. They may issue a distributor credit without returning the item, and the distributor then issues the customer's credit. Or, they may want the item sent back for evaluation, and credit issued only after the item is confirmed to be defective. During this time, the customer's RMA remains open, waiting on the vendor to decide whether credit will be issued or not. If the vendor refuses to issue credit, usually due to product misuse, then the customer does not receive credit.
 
 > ⚠️ SAFETY & COMPLIANCE: If a defective credit is given to a customer before the vendor evaluates the item, and the vendor then refuses credit due to misuse, the distributor pays. Returns are a drain on a distributor's profitability, as they take time and effort to process. When a credit is issued to a customer and the distributor doesn't receive credit from the vendor, the loss can have an enormous effect on the distributor's profitability and take days, and sometimes weeks, to recover from.
 
@@ -145,14 +145,13 @@ When a product fails in service and the cause appears to be a defective product,
 
 A maintenance planner calls. A steam hose assembly the branch built six weeks ago burst at the fitting. The line is down and they need a replacement today.
 
-1. The rep enters an RMA and tags the previously sold item and invoice.
-2. The rep asks what the line carried, the pressure and temperature, and how it failed. The planner says saturated steam at 150 psi, and the hose split right behind the fitting.
-3. The rep checks the hose rating against the service. It is rated for the service.
-4. The rep enters an **RMA** with reason "failed in service" and action "inspect first," and notes the service details.
-5. The rep enters a **new order** for an advance replacement, notes the RMA number on it, and the shop builds it.
-6. The planner sends the failed assembly back, uncut, tagged with the RMA number.
-7. The Manager inspects the crimp: it measures in spec. The buyer sends the hose to the vendor on a warranty claim.
-8. The vendor finds a hose defect and credits the branch. The rep credits the customer and calls the planner with the result.
+1. The rep asks what the line carried, the pressure and temperature, and how it failed. The planner says saturated steam at 150 psi, and the hose split right behind the fitting.
+2. The rep checks the hose rating against the service. It is rated for the service.
+3. The rep enters an **RMA**, tags the previously sold item and invoice, sets the reason "failed in service" and the action "inspect first," and notes the service details.
+4. The rep enters a **new order** for an advance replacement, notes the RMA number on it, and the shop builds it.
+5. The planner sends the failed assembly back, uncut, tagged with the RMA number.
+6. The Manager inspects the crimp: it measures in spec. The buyer sends the hose to the vendor on a warranty claim.
+7. The vendor finds a hose defect and credits the branch. The rep credits the customer and calls the planner with the result.
 
 If the crimp had measured out of spec, the branch would cover the replacement and the shop would review its crimp check procedure.
 
@@ -163,7 +162,7 @@ If the crimp had measured out of spec, the branch would cover the replacement an
 | The customer has no invoice or PO | Search Customer Sales History by item and date; returns are not allowed when there is no record of sale. |
 | The part came back used | It goes to scrap or back to the customer; a credit needs your manager's approval |
 | The part came back without an RMA | Refuse it, or while the customer waits, enter the RMA and confirm it can be tagged to a previous sale |
-| The customer wants a credit for a special-order item | Return authorized only if the vendor will allow the item to be returned. Restocking fee always charged |
+| The customer wants a credit for a special-order item | Return authorized only if the vendor will allow the item to be returned. The vendor's restocking fee is passed on unless the branch made the error. |
 | A returned assembly is cut apart | Reason for failure cannot be determined on a product that has been destroyed. Return and credit is refused. |
 
 ### Rookie mistakes
@@ -184,7 +183,7 @@ If the crimp had measured out of spec, the branch would cover the replacement an
 | Credit memo | The document that reduces what the customer owes |
 | Advance replacement | A replacement shipped before the return arrives |
 | Restocking fee | A charge for handling a return the customer caused |
-| Disposition | Where a returned part goes: stock, vendor, or scrap |
+| Return disposition | Where a returned part goes: stock, vendor, or scrap |
 | Warranty claim | A request to the vendor to cover a failed product |
 | Vendor return | Stock the branch sends back to the vendor |
 

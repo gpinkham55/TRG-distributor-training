@@ -41,7 +41,7 @@ Air leaves the compressor, gets cleaned and dried, travels through pipe and hose
 
 ### Pressure and flow
 
-Air tools need both pressure (psi) and flow (cfm, cubic feet per minute). A hose too small or too long for the tool drops the pressure at the tool, and the tool runs poorly. When a customer says a tool "has no power," ask the hose ID and length and the tool's cfm rating before you sell a new tool hose.
+Air tools need both pressure (psi) and flow (cfm, cubic feet per minute). A hose too small or too long for the tool drops the pressure at the tool, and the tool runs poorly. When a customer says a tool "has no power," ask the hose ID and length and the tool's cfm rating before you sell a new hose or tool.
 
 > 💡 KEY TAKEAWAY: Ask what the air runs: a hand tool, a jackhammer, a cylinder, or a control. The answer decides the hose, the tubing, the fitting, and the coupler.
 
@@ -130,7 +130,7 @@ Quick couplers let workers connect and disconnect air tools in seconds. A set ha
 
 ### Interchange types
 
-Couplers and plugs work only within the same **interchange type**. A plug of one type may go into a coupler of another type and leak, or fail to lock.
+Couplers and plugs work only within the same **interchange type**, unless the coupler is sold as a universal type. A plug of one type may go into a coupler of another type and leak, or fail to lock.
 
 | Interchange | Also called | Where you see it |
 |---|---|---|
@@ -174,7 +174,7 @@ Trucks, trailers, and buses stop with air brakes. Brake hose, tubing, and fittin
 
 | Rule | Reason |
 |---|---|
-| Air used for cleaning is reduced below 30 psi, with chip guarding (OSHA 1910.242(b)) | Higher pressure drives debris or air into skin or eyes |
+| Air used to clean parts and work surfaces is reduced below 30 psi with chip guarding (OSHA 1910.242(b)). Never use air on a person at any pressure. | Higher pressure drives debris or air into skin or eyes |
 | Whip checks on universal couplings and large air hose | A loose hose whips with great force |
 | Relieve pressure before disconnecting any line | Lines whip or blow off |
 | Safety glasses and hearing protection around air tools | Flying debris and noise |
@@ -194,7 +194,7 @@ Trucks, trailers, and buses stop with air brakes. Brake hose, tubing, and fittin
 
 1. Press **F2** and search tubing by material and OD ("PU 1/4," "nylon 6mm"), fittings by type, tube OD, and thread, and couplers by interchange and body size.
 2. Read the **UOM**: tubing in FT or by the roll, fittings and couplers in EA.
-3. A customer replacing a full roll: confirm the roll length and enter it in FT, or the roll item in its own unit.
+3. A customer replacing a full roll: confirm the roll length and read the item's UOM. When the item sells by the roll, enter the number of rolls. When the item sells in FT, enter the roll length in FT.
 4. Check **net available** on every fitting. Machine plumbing jobs often need a dozen of one fitting.
 5. For DOT parts, confirm the item description shows DOT before you sell it for a brake line.
 
@@ -205,13 +205,13 @@ Trucks, trailers, and buses stop with air brakes. Brake hose, tubing, and fittin
 A maintenance tech brings in a cut piece of blue tubing and a push-to-connect elbow: "This line on the wrapper keeps blowing out. I need 50 feet of tubing and a dozen of these elbows."
 
 1. **Measure.** The rep measures the tube OD with calipers: 6.0 mm. The wrapper was built in Europe.
-2. **The cause.** The plant had been running 1/4 in tubing in 6 mm fittings. The grip ring never seated; the line blew out under pressure.
+2. **The cause.** The elbow is a 1/4 in fitting. The plant had been running 6 mm tubing in 1/4 in fittings. The grip ring never seated; the line blew out under pressure.
 3. **The thread.** The elbow's port thread measures as 1/8 BSPP with a sealing ring.
 4. **P21.** F2 shows 6 mm blue polyurethane tubing in FT and 6 mm by 1/8 BSPP push-to-connect elbows, 30 EA net available.
 5. **Units.** The tubing sells in FT. The rep confirms the UOM and enters 50 FT.
-6. **Order.** The rep enters the tubing and 12 EA of elbows, and adds a note to the account: "Wrapper on No. 2 line uses 6 mm metric tubing."
+6. **Order.** The rep enters the tubing and 12 EA of elbows, and adds a note to the account: "Wrapper on No. 2 line uses 6 mm metric tubing and 6 mm fittings."
 
-The tech asked for "the same as last time." The last time was the wrong size. Measuring the tube found the error and the account note keeps it from happening again.
+The tech asked for "a dozen of these elbows." The elbow was the wrong size for the tube. Measuring the tube found the error and the account note keeps it from happening again.
 
 ### What if...
 
@@ -256,7 +256,7 @@ The tech asked for "the same as last time." The last time was the wrong size. Me
 | SAE J844 | The standard for nylon air brake tubing |
 | Whip check | A cable restraint across a hose joint |
 
-## 8.8 Knowledge Check, and Module Quiz
+## 8.8 Knowledge Check and Module Quiz
 
 ### Knowledge check (practice)
 
