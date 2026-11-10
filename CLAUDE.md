@@ -13,7 +13,7 @@ Generic four-week training course for any TRG branch or distributor (industrial 
 - The outline is `src/data/syllabus.ts`; module slugs there must match the content file names and the `modules` rows in `supabase/schema.sql`.
 - Callouts: a blockquote starting with 💡, ⚠️, or 📌 becomes a styled box. A paragraph `[IMAGE EXAMPLE: ...]` becomes an image placeholder, or the picture `public/img/modules/<slug>-<n>.jpg|png|webp` when that file is in the repo (n counts placeholders in the module from 1). `public/img/modules/README.md` lists every slot; regenerate it when placeholders change. All handled in `src/lib/callouts.mjs`.
 - Quizzes: no test-out. Each module quiz is 10 questions, 80% to pass, 3 tries. Scenario questions (codes `Mxx-S1`, `Mxx-S2`, ...) appear on every attempt; the rest are drawn from the module's 25-question pool. Final exam: 48 questions, 85%, 2 tries.
-- Answer keys never go in this repo or the browser. Quiz answers live in the `question_keys` table, which has no read policy; `grade_attempt()` grades on the server.
+- Answer keys never go in this repo or the browser. Quiz answers live in the `question_keys` table, which has no read policy. `start_attempt()` draws the questions on the server and returns them; `grade_attempt()` grades that stored draw. The browser has no direct read access to `questions`. A try is used when an attempt is graded; an open attempt shows the same questions after a reload. The final exam opens after every module quiz is passed.
 
 ## Content rules
 - Professional textbook tone, plain English. No em dashes. Avoid: "because", "matters", "while" as a contrast, "exists/existing", times of day and days of the week, "naming/named".
@@ -38,8 +38,9 @@ Generic four-week training course for any TRG branch or distributor (industrial 
 
 ## Database
 - `supabase/schema.sql` is re-runnable. Run it in the Supabase SQL Editor after any change.
-- Progress is tracked per module in `module_progress`.
-- Roles: trainee (default on sign-up), instructor, admin. Promote with the SQL at the bottom of schema.sql.
+- Progress is tracked per module in `module_progress`. Only `grade_attempt()` writes it; trainees have read access only.
+- Roles: trainee (default on sign-up), instructor, admin. Signing up never grants admin. Promote with the SQL at the bottom of schema.sql after the person has registered.
+- After a schema change that the pages depend on, run schema.sql first, then merge the site change right after.
 
 ## Build
 - `npm install`, then `npm run dev` to preview or `npm run build` to check.

@@ -34,33 +34,20 @@ const { eyebrow, title, back, backLabel, module, final } = Astro.props;
       if (!quiz) return say('This quiz is not ready yet.', 'err');
       $('q-rules').textContent = `${quiz.draw_count} questions · ${quiz.pass_pct}% to pass · ${quiz.max_attempts} ${quiz.max_attempts === 1 ? 'try' : 'tries'}`;
 
-      const { data: tries } = await supabase.from('quiz_attempts').select('score_pct, passed').eq('quiz_id', quiz.id);
+      // Graded tries only; an open attempt has no submitted_at yet.
+      const { data: tries } = await supabase.from('quiz_attempts').select('score_pct, passed').eq('quiz_id', quiz.id).not('submitted_at', 'is', null);
       const used = tries?.length || 0;
       const passed = tries?.some((t) => t.passed);
       if (passed) return say(isFinal ? `You passed the final exam with ${Math.max(...tries!.map((t) => t.score_pct))}%. See your Manager for final sign-off.` : `You passed this quiz with ${Math.max(...tries!.map((t) => t.score_pct))}%. Module ${moduleId} is complete.`, 'ok');
       if (used >= quiz.max_attempts) return say(`You have used all ${quiz.max_attempts} ${quiz.max_attempts === 1 ? 'try' : 'tries'}. Talk to your Manager about next steps.`, 'err');
-      if (used) say(`Try ${used + 1} of ${quiz.max_attempts}. Your best so far: ${Math.max(...tries!.map((t) => t.score_pct))}%.`);
 
-      let drawn: any[] = [];
-      if (isFinal) {
-        // Draw evenly from every module quiz pool.
-        const { data: mods } = await supabase.from('quizzes').select('id').eq('kind', 'module');
-        const ids = (mods || []).map((m) => m.id);
-        const { data: pool } = await supabase.from('questions').select('id, prompt, choices, quiz_id').in('quiz_id', ids).limit(5000);
-        const per = Math.floor(quiz.draw_count / Math.max(ids.length, 1));
-        for (const id of ids) drawn.push(...shuffle((pool || []).filter((q) => q.quiz_id === id)).slice(0, per));
-        const used = new Set(drawn.map((q) => q.id));
-        drawn.push(...shuffle((pool || []).filter((q) => !used.has(q.id))).slice(0, quiz.draw_count - drawn.length));
-        if (drawn.length < quiz.draw_count) return say('The final exam is not ready yet.', 'err');
-        drawn = shuffle(drawn);
-      } else {
-        const { data: pool } = await supabase.from('questions').select('id, prompt, choices, code').eq('quiz_id', quiz.pool_quiz_id || quiz.id);
-        if (!pool || pool.length < quiz.draw_count) return say('This quiz is not ready yet.', 'err');
-        // Scenario questions (codes ending -S1, -S2, ...) are on every attempt; the rest are drawn at random.
-        const scen = pool.filter((q) => /-S\d+$/.test(q.code || ''));
-        const rest = pool.filter((q) => !/-S\d+$/.test(q.code || ''));
-        drawn = shuffle([...scen.slice(0, quiz.draw_count), ...shuffle(rest).slice(0, Math.max(quiz.draw_count - scen.length, 0))]);
-      }
+      // The server draws the questions and keeps the draw until it is graded,
+      // so a reload shows the same set.
+      const { data: started, error: startErr } = await supabase.rpc('start_attempt', { p_quiz_id: quiz.id });
+      if (startErr || !started?.questions?.length) return say(esc(startErr?.message || 'This quiz is not ready yet.'), 'err');
+      const attemptId: number = started.attempt_id;
+      const drawn: { id: number; prompt: string; choices: string[] }[] = started.questions;
+      if (used) say(`Try ${used + 1} of ${quiz.max_attempts}. Your best so far: ${Math.max(...tries!.map((t) => t.score_pct))}%.`);
 
       const form = $('q-form') as HTMLFormElement;
       form.innerHTML = drawn.map((q, n) => {
@@ -72,11 +59,17 @@ const { eyebrow, title, back, backLabel, module, final } = Astro.props;
       form.classList.remove('hidden');
 
       // Active seconds on the quiz: page visible and some activity in the last 5 minutes.
-      let quizSec = 0, lastActive = Date.now();
+      // The count survives a reload of the same attempt.
+      const secKey = `quiz-sec-${attemptId}`;
+      const stored = (() => { try { return Number(sessionStorage.getItem(secKey)) || 0; } catch { return 0; } })();
+      let quizSec = stored, lastActive = Date.now();
       const mark = () => { lastActive = Date.now(); };
       for (const ev of ['mousemove', 'keydown', 'scroll', 'touchstart', 'click']) window.addEventListener(ev, mark, { passive: true });
       const timer = setInterval(() => {
-        if (document.visibilityState === 'visible' && Date.now() - lastActive < 5 * 60 * 1000) quizSec += 1;
+        if (document.visibilityState === 'visible' && Date.now() - lastActive < 5 * 60 * 1000) {
+          quizSec += 1;
+          if (quizSec % 10 === 0) { try { sessionStorage.setItem(secKey, String(quizSec)); } catch { /* storage off */ } }
+        }
       }, 1000);
 
       form.addEventListener('submit', async (e) => {
@@ -88,10 +81,11 @@ const { eyebrow, title, back, backLabel, module, final } = Astro.props;
           answers[q.id] = [Number(v)];
         }
         const btn = form.querySelector('button')!; btn.disabled = true;
-        const { data, error } = await supabase.rpc('grade_attempt', { p_quiz_id: quiz.id, answers });
-        if (error) { btn.disabled = false; return say(error.message, 'err'); }
+        const { data, error } = await supabase.rpc('grade_attempt', { p_attempt_id: attemptId, answers });
+        if (error) { btn.disabled = false; return say(esc(error.message), 'err'); }
         const r = data[0];
         clearInterval(timer);
+        try { sessionStorage.removeItem(secKey); } catch { /* storage off */ }
         supabase.rpc('log_attempt_time', { p_attempt_id: r.attempt_id, p_seconds: quizSec }).then(() => {});
         const { data: marks } = await supabase.from('attempt_answers').select('question_id, correct').eq('attempt_id', r.attempt_id);
         for (const mk of marks || []) {
@@ -105,7 +99,7 @@ const { eyebrow, title, back, backLabel, module, final } = Astro.props;
         res.innerHTML = r.passed
           ? (isFinal ? `<p><b>You scored ${r.score_pct}%. You passed the final exam.</b> See your Manager for final sign-off.</p>` : `<p><b>You scored ${r.score_pct}%. You passed.</b> Module ${moduleId} is marked complete.</p>`)
           : `<p><b>You scored ${r.score_pct}%.</b> You need ${quiz.pass_pct}% to pass. ` +
-            (left > 0 ? `You have ${left} ${left === 1 ? 'try' : 'tries'} left. Review, then <a href="">try again</a>; you will get a new set of questions.</p>`
+            (left > 0 ? `You have ${left} ${left === 1 ? 'try' : 'tries'} left. Review, then <a href="">try again</a>. The scenario questions repeat; the other questions are drawn again.</p>`
                       : `You have no tries left. Talk to your Manager about next steps.</p>`);
         res.classList.remove('hidden'); $('q-msg').classList.add('hidden');
         res.scrollIntoView({ behavior: 'smooth' });
