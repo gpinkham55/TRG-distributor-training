@@ -268,7 +268,7 @@ Prophet 21 (P21) records every step of the order life cycle. This section is a m
 | Step | P21 window | Main screen: what to read | Tabs that hold the rest | Module |
 |---|---|---|---|---|
 | Identify the customer | Customer Master Inquiry | Customer ID, name, contacts | Physical Address, Credit Status, Ship To / Salesrep, Customer Notes | 2, 3 |
-| Look up the item | Item Master Inquiry | Item ID, description, location, net quantity available, unit of measure | Inventory, Open PO, Open Order, Transfer, Substitute | 2 |
+| Look up the item | Item Master Inquiry | Item ID and description | Inventory (location, net quantity available, unit of measure), Open PO, Open Order, Transfer, Substitute | 2 |
 | Find a past order | Customer Master Inquiry | Customer ID | Customer Sales History, Open Orders, Open Quotes | 2 |
 | Quote or order | Order Entry | Customer, ship-to, contact, PO number, required date | Line items, shipping and carrier details | 6 |
 | Buy a special order | Purchase Order Entry | Vendor, ship-to, promise date | Line items | 13 |
