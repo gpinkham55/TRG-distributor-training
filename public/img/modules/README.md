@@ -63,7 +63,6 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `purchasing-receiving-1` | 13 | Purchase Order Entry main screen with the vendor, required date, and expected date highlighted, and the Ship To and Items tabs highlighted. Every cost is covered | Yes |
 | `purchasing-receiving-2` | 13 | A receiving bench with a packing list, the PO on screen, and a special-order item tagged with a customer order number | Yes |
 | `inventory-counts-replenishment-1` | 14 | A count sheet on a clipboard next to a bin of fittings, with the counted quantity written and no expected quantity shown | Yes |
-| `inventory-counts-replenishment-2` | 14 | Order Entry with a line set to the T disposition, with the sending location highlighted and the tab that holds the transfer quantities highlighted |  |
 | `expansion-joints-belting-sealing-1` | 16 | A single-arch rubber expansion joint with control rods installed between a pump and its discharge pipe | Yes |
 | `expansion-joints-belting-sealing-2` | 16 | A section of conveyor belt showing the plies and covers, beside classical and narrow V-belts with their part numbers visible | Yes |
 | `expansion-joints-belting-sealing-3` | 16 | An O-ring kit, a coil of braided packing with cut rings, and a cartridge mechanical seal side by side | Yes |
