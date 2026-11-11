@@ -64,8 +64,13 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `purchasing-receiving-2` | 13 | A receiving bench with a packing list, the PO on screen, and a special-order item tagged with a customer order number | Yes |
 | `inventory-counts-replenishment-1` | 14 | A count sheet on a clipboard next to a bin of fittings, with the counted quantity written and no expected quantity shown | Yes |
 | `inventory-counts-replenishment-2` | 14 | Order Entry with a line set to the T disposition, with the sending location highlighted and the tab that holds the transfer quantities highlighted |  |
-| `rmas-returns-1` | 15 | RMA Entry main screen, blank, with the customer and RMA number fields highlighted, and the Order Notes tab highlighted | Yes |
-| `rmas-returns-2` | 15 | Previously Sold Items Query screen with the Invoice No., Item ID, Customer PO number, and the Add checkbox highlighted |  |
 | `expansion-joints-belting-sealing-1` | 16 | A single-arch rubber expansion joint with control rods installed between a pump and its discharge pipe | Yes |
 | `expansion-joints-belting-sealing-2` | 16 | A section of conveyor belt showing the plies and covers, beside classical and narrow V-belts with their part numbers visible | Yes |
 | `expansion-joints-belting-sealing-3` | 16 | An O-ring kit, a coil of braided packing with cut rings, and a cartridge mechanical seal side by side | Yes |
+## Module videos
+
+Videos go in `public/video/modules/` as .mp4 files. A `[VIDEO EXAMPLE: ...]` line in a module shows the file `<module-slug>-<n>.mp4`, where n counts the video lines in that module from 1.
+
+| File name | Module | What the video shows | Done |
+|---|---|---|---|
+| `rmas-returns-1` | 15 | Entering an RMA in the P21Play System: the return note, tying the item to its previous invoice, the restocking fee, and the credit. Approved is checked by default; the person entering a simple return handles the fee and the credit | Yes |

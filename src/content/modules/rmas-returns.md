@@ -15,7 +15,7 @@ After this module you will be able to:
 
 1. Sort a return by its reason, and know which items can be returned.
 2. Enter an RMA in P21 against the original order or invoice.
-3. Propose credit, replacement, advance replacement, or inspect first for your Manager to approve, and know when a restocking fee applies.
+3. Handle a simple return yourself, take a complicated return to your Manager, and know when a restocking fee applies.
 4. Receive and inspect a return and know where it goes: back to stock, to vendor return, or to an adjustment.
 5. Start a vendor return or a warranty claim with the information the vendor needs.
 6. Trace an RMA to the reason it was returned.
@@ -61,6 +61,17 @@ Almost every valid return should be able to be traced back to the breakdown in t
 
 An RMA (return merchandise authorization) is the record that approves a return and ties it to the original sale.
 
+### Simple and complicated returns
+
+Whoever enters the RMA handles a simple return from start to finish. A complicated return needs your Manager's decision.
+
+| Return | What makes it this kind | Who handles it |
+|---|---|---|
+| Simple | The reason is clear. The part is unused and resalable. It traces to a previous invoice and is inside the 90-day window. The standard restocking fee applies, or the branch made the error. | The person who enters the RMA |
+| Complicated | The part failed in service or the cause is unclear. The item is a special order. The return is past 90 days. The customer asks for a fee waiver. A vendor return or warranty claim is involved. | Your Manager decides |
+
+When you are unsure which kind it is, treat it as complicated and ask your Manager.
+
 ### Steps
 
 1. Open **RMA Entry** and enter the customer and header info.
@@ -69,12 +80,12 @@ An RMA (return merchandise authorization) is the record that approves a return a
 4. Fill in any known info (Item ID, invoice number, customer PO number) to narrow the selection.
 5. **Right-click** anywhere in Previously Sold Items Query and select **Apply Query**.
 6. Select the **Add** checkbox for the item(s) being returned. *Policy: tag every returned item to its previous invoice. When a customer bought 1 of an item and returns 2, only 1 traces to an invoice. The untraceable item gets no credit.*
-7. Leave the RMA's **Approved** checkbox unchecked. Only a Manager approves an RMA.
-8. Save the RMA and print the RMA Acknowledgement, one for the customer and one for your Manager. **Managers evaluate the return, decide the action, charge the customer any restocking fee and return freight, and issue the credit.**
+7. P21 checks the RMA's **Approved** checkbox by default. Leave it checked.
+8. Decide whether the return is simple or complicated. Use the table above.
+9. **Simple return:** inspect the part. When a restocking fee applies, add the item **RESTOCK FEE** as a line and enter the fee as a negative unit price (the item's unit price times your branch's fee percent). Save the RMA and print the RMA Acknowledgement for the customer.
+10. **Complicated return:** type what you know in the note, print the RMA Acknowledgement, and take it to your Manager. **The Manager decides the action, any restocking fee and return freight, and the credit.**
 
-[IMAGE EXAMPLE: RMA Entry main screen with the customer, original invoice, and RMA number highlighted, and the Order Notes tab highlighted.]
-
-[IMAGE EXAMPLE: Previously Sold Items Query screen with the Invoice No., Item ID, Customer PO number, and the Add checkbox highlighted.]
+[VIDEO EXAMPLE: Entering an RMA in the P21Play System: the return note, tying the item to its previous invoice, the restocking fee, and the credit.]
 
 ### Questions to ask
 
@@ -90,7 +101,7 @@ An RMA (return merchandise authorization) is the record that approves a return a
 
 | Option | When it fits | In P21 |
 |---|---|---|
-| Credit | The customer doesn't want the part again | The Manager approves the RMA and issues the credit after the return is received and inspected |
+| Credit | The customer doesn't want the part again | Simple return: the person who enters the RMA issues the credit after the return is received and inspected. Complicated return: the Manager decides first. |
 | Replacement | The customer still needs the right part | Enter a new order for the replacement, with the RMA number in a note |
 | Advance replacement | The customer is down and can't wait for the return | Ship and bill the replacement on a new order. Credit the original after the return is received and inspected. |
 | Inspect first | A failure in service, or the cause is unclear | Hold the decision until the part is inspected |
@@ -196,7 +207,7 @@ If the crimp had measured out of spec, the branch would cover the replacement an
 2. Enter an RMA for one piece with the reason "ordered wrong" and the action "credit."
 3. Enter a second RMA for an assembly with the reason "failed in service" and the action "inspect first."
 4. Receive the first RMA and send the item back to stock.
-5. Receive the second RMA to vendor return and save as unapproved.
+5. Receive the second RMA to vendor return. This is a complicated return, so take it to your Manager for the decision.
 6. Your Manager reviews the RMAs for process and procedure accuracy.
 
 ### Knowledge check
