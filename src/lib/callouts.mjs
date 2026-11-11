@@ -3,6 +3,8 @@
 // - "[IMAGE EXAMPLE: ...]" paragraphs become image placeholders. If a matching
 //   picture is in public/img/modules/ (<module-slug>-<n>.jpg|jpeg|png|webp, where n
 //   counts the placeholders in that module from 1), the picture shows instead.
+// - "[VIDEO EXAMPLE: ...]" paragraphs work the same way with
+//   public/video/modules/<module-slug>-<n>.mp4, counted separately from pictures.
 // - Tables get a scroll wrapper for small screens.
 import { existsSync } from 'node:fs';
 import { basename } from 'node:path';
@@ -24,6 +26,7 @@ export function callouts({ base = '' } = {}) {
     const path = (file.path || (file.history && file.history[0]) || '').replace(/\\/g, '/');
     const slug = path.includes('content/modules') ? basename(path).replace(/\.md$/, '') : '';
     let n = 0;
+    let v = 0;
 
     function walk(node) {
       if (!node.children) return;
@@ -48,6 +51,27 @@ export function callouts({ base = '' } = {}) {
             }
             return el('figure', { className: ['ph'] }, [
               el('figcaption', {}, [txt(`Image to come: ${m[1]}`)]),
+            ]);
+          }
+        }
+        if (c.type === 'element' && c.tagName === 'p') {
+          const m = textOf(c).trim().match(/^\[VIDEO EXAMPLE:\s*(.+)\]$/s);
+          if (m) {
+            v += 1;
+            if (slug && existsSync(`public/video/modules/${slug}-${v}.mp4`)) {
+              return el('figure', { className: ['pic'] }, [
+                el('video', {
+                  src: `${base}/video/modules/${slug}-${v}.mp4`,
+                  controls: true,
+                  preload: 'metadata',
+                  playsInline: true,
+                  ariaLabel: m[1],
+                }),
+                el('figcaption', {}, [txt(m[1])]),
+              ]);
+            }
+            return el('figure', { className: ['ph'] }, [
+              el('figcaption', {}, [txt(`Video to come: ${m[1]}`)]),
             ]);
           }
         }

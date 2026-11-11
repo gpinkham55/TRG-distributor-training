@@ -72,9 +72,7 @@ An RMA (return merchandise authorization) is the record that approves a return a
 7. Leave the RMA's **Approved** checkbox unchecked. Only a Manager approves an RMA.
 8. Save the RMA and print the RMA Acknowledgement, one for the customer and one for your Manager. **Managers evaluate the return, decide the action, charge the customer any restocking fee and return freight, and issue the credit.**
 
-[IMAGE EXAMPLE: RMA Entry main screen with the customer, original invoice, and RMA number highlighted, and the Order Notes tab highlighted.]
-
-[IMAGE EXAMPLE: Previously Sold Items Query screen with the Invoice No., Item ID, Customer PO number, and the Add checkbox highlighted.]
+[VIDEO EXAMPLE: Entering an RMA in the P21Play System: the return note, tying the item to its previous invoice, the restocking fee, and the credit.]
 
 ### Questions to ask
 
