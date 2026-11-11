@@ -19,7 +19,7 @@ After this module you will be able to:
 3. Search for any record with the fewest characters that find it.
 4. Use inquiry windows to look, and recognize the maintenance and entry windows that change records.
 5. Read a customer account in Customer Master Inquiry: address, credit status and terms, ship-tos, salesperson, contacts, and notes.
-6. Read an item in Item Master Inquiry: description, unit of measure, stock by location, open POs, open orders, transfers, and substitutes.
+6. Read an item in Item Master Inquiry: description, unit of measure, stock by location, open POs, open orders, and substitutes.
 7. Convert between the common units of measure: EA, FT, SI, and SF.
 8. Find a past sale in Customer Sales History and open the order behind it.
 9. Answer the most common phone and counter questions with P21 lookups alone.
@@ -221,23 +221,20 @@ Most requests come down to three questions: do you have it, where is it, and whe
 2. Search by item ID, a word from the description, a manufacturer part number, or the customer's part number. Your Manager will show you how your branch builds item IDs.
 3. Read the full **description** and the **unit of measure** (UOM).
 4. On the **Inventory** tab, find your **location** and read its net quantity available.
-5. On the **Inventory** tab, check other locations. Another branch may have it and can transfer it.
-6. On the **Open PO** tab, check what is coming and the expected date.
-7. On the **Open Order** tab, check which orders hold the stock you see on hand.
-8. On the **Transfer** tab, check stock already moving between branches.
-9. On the **Substitute** tab, check approved alternates when the item is out.
+5. On the **Open PO** tab, check what is coming and the expected date.
+6. On the **Open Order** tab, check which orders hold the stock you see on hand.
+7. On the **Substitute** tab, check approved alternates when the item is out.
 
-[IMAGE EXAMPLE: Item Master Inquiry main screen with the item ID, description, location, net quantity available, and unit of measure highlighted, and the Inventory, Open PO, Open Order, Transfer, and Substitute tabs highlighted]
+[IMAGE EXAMPLE: Item Master Inquiry main screen with the item ID, description, location, net quantity available, and unit of measure highlighted, and the Inventory, Open PO, Open Order, and Substitute tabs highlighted]
 
 ### What each part holds
 
 | Where | What to read | What it tells you |
 |---|---|---|
 | Main screen | Item ID and description | What the item is |
-| Inventory tab | Location, net quantity available, and UOM for every location | How many you can promise and which branch has it |
+| Inventory tab | Location, net quantity available, and UOM for every location | How many you can promise |
 | Open PO tab | PO number, quantity, expected date | When more arrives |
 | Open Order tab | Orders holding stock | Who the allocated stock belongs to |
-| Transfer tab | Transfers in and out | Stock already on its way between branches |
 | Substitute tab | Approved alternate items | What to offer when the item is out |
 
 ### Reading stock quantities
@@ -365,7 +362,7 @@ The planner described the hose in one sentence. Sales history supplied the item,
 | A customer search finds nothing | Search again with less text, then by phone number and city | The account may be spelled differently than the caller says it |
 | Two accounts match the caller | Read both physical addresses and ask which plant, location, or address | Each account bills and ships differently |
 | The caller is missing from the contacts | Take their phone and email, finish the request, and tell your Manager so the contact gets added (Module 3) | Every order needs a contact who can answer questions |
-| An item shows on hand and 0 net available | Check the Open Order tab for who holds it, then Open PO and Transfer for what is coming | Allocated stock belongs to another customer's order |
+| An item shows on hand and 0 net available | Check the Open Order tab for who holds it, then Open PO for what is coming | Allocated stock belongs to another customer's order |
 | The item is out everywhere | Check the Substitute tab, then ask your Manager about a special order | A substitute or a special order can still fill the need |
 | A customer needs one continuous length | Have the warehouse check the reels and remnants before you promise it | P21 counts total feet; it can be in several pieces |
 | Sales history shows the item at an old price | Check the current price in Sales Pricing Inquiry | Prices change; last year's price is history |
@@ -382,7 +379,7 @@ The planner described the hose in one sentence. Sales history supplied the item,
 | Clicking past pop-up notes | A missing PO or release number, a refused delivery | Read every note |
 | Promising on-hand stock | Stock promised twice; one customer gets shorted | Read net quantity available |
 | Reading the quantity before the unit | 100 EA entered when the customer wanted 100 FT | Read the UOM first |
-| Saying "we don't have it" after one look | A lost sale that incoming stock could have filled | Check the Inventory, Open PO, Transfer, and Substitute tabs |
+| Saying "we don't have it" after one look | A lost sale that incoming stock could have filled | Check the Inventory, Open PO, and Substitute tabs |
 | Copying the item from history and skipping the rest of the order | Missing fittings or clamps that shipped with it | Open the order and read every line |
 | Creating a new quote when one is open | Two prices for one request | Check Open Quotes first |
 
@@ -407,7 +404,6 @@ The planner described the hose in one sentence. Sales history supplied the item,
 | Allocated | Stock promised to open orders |
 | Net available | On hand minus allocated and minus any stock P21 holds back: what you can promise |
 | Open PO | A purchase order not yet fully received |
-| Transfer | Stock moving between branches |
 | Substitute | An approved alternate item |
 | Sales history | Invoiced lines for a customer or an item |
 | Disposition | The code on an order line that says how it will be filled (Module 6) |

@@ -215,22 +215,22 @@ Every request passes through several hands before it becomes an invoice.
 
 ### The order life cycle
 
-Every order follows the same steps. The source changes: the shelf, the shop, another branch, or a vendor.
+Every order follows the same steps. The source changes: the shelf, the shop, or a vendor.
 
 1. **Request.** A call, email, text, counter visit, or sales rep brings in a need.
 2. **Identify.** Confirm the customer account, ship-to, and contact.
 3. **Specify.** Get the full spec: STAMPED for hose, dimensions and material for gaskets, part number or old part for everything else.
 4. **Check.** Look up stock, price, and lead time.
 5. **Quote or order.** A quote when the customer wants a price first; an order when they are ready to buy.
-6. **Source.** Pick from stock, build in the shop, transfer from another branch, or buy from a vendor (special order or direct ship).
+6. **Source.** Pick from stock, build in the shop, or buy from a vendor (special order or direct ship).
 7. **Stage.** Pull, check, and stage the order by route, carrier, or will call.
 8. **Deliver.** Branch truck, freight, parcel, or counter pickup, with a signed delivery record.
 9. **Invoice.** P21 invoices the shipped quantity.
 10. **Follow up.** Confirm the customer has what they need and note anything for next time.
 
-[IMAGE EXAMPLE: Order sourcing: one saved order fills from stock, the shop, a transfer, a special order, or a direct ship, and every path ends in one invoice]
+[IMAGE EXAMPLE: Order sourcing: one saved order fills from stock, the shop, a special order, or a direct ship, and every path ends in one invoice]
 
-Stock, shop, transfer, and special-order lines all pass through the branch; a direct-ship line goes from the vendor to the customer and still invoices from the branch.
+Stock, shop, and special-order lines all pass through the branch; a direct-ship line goes from the vendor to the customer and still invoices from the branch.
 
 ### Counter sales
 
@@ -268,7 +268,7 @@ Prophet 21 (P21) records every step of the order life cycle. This section is a m
 | Step | P21 window | Main screen: what to read | Tabs that hold the rest | Module |
 |---|---|---|---|---|
 | Identify the customer | Customer Master Inquiry | Customer ID, name, contacts | Physical Address, Credit Status, Ship To / Salesrep, Customer Notes | 2, 3 |
-| Look up the item | Item Master Inquiry | Item ID and description | Inventory (location, net quantity available, unit of measure), Open PO, Open Order, Transfer, Substitute | 2 |
+| Look up the item | Item Master Inquiry | Item ID and description | Inventory (location, net quantity available, unit of measure), Open PO, Open Order, Substitute | 2 |
 | Find a past order | Customer Master Inquiry | Customer ID | Customer Sales History, Open Orders, Open Quotes | 2 |
 | Quote or order | Order Entry | Customer, ship-to, contact, PO number, required date | Line items, shipping and carrier details | 6 |
 | Buy a special order | Purchase Order Entry | Vendor, ship-to, promise date | Line items | 13 |
@@ -298,7 +298,7 @@ Prophet 21 (P21) records every step of the order life cycle. This section is a m
 | Situation | What to do | Reason |
 |---|---|---|
 | The customer only knows "the same hose as last time" | Open Customer Sales History, find the line, and read the item and description back | The order history shows exactly what was sold |
-| The item shows on hand but nothing is available | Check Open Order for what is allocated, then Open PO and Transfer for what is coming | On-hand stock that is allocated belongs to another customer |
+| The item shows on hand but nothing is available | Check Open Order for what is allocated, then Open PO for what is coming | On-hand stock that is allocated belongs to another customer |
 | The account is on Hold | Take the order, tell the customer you need to check one thing, and send it to accounting; when accounting is unavailable, bring in your Manager | Only accounting or a Manager releases a hold; the customer never hears the details |
 | A chemical customer says "it's just an acid" | Ask for the exact chemical, concentration, and temperature, or the SDS | Compatibility depends on all three |
 | The PO lists a standard you do not recognize | Write it down and ask your Manager before you promise a date | The standard is part of the order and may need paperwork |
@@ -349,7 +349,6 @@ Three hazards from the products we sell come up again and again in this course:
 | Backorder | Part of an order waiting on stock |
 | Will call | The customer picks the order up at the counter |
 | Direct ship | The vendor ships straight to the customer |
-| Transfer | Stock moved from another branch |
 | Assembly | Hose with fittings attached, built to a spec |
 | Kit | Several parts sold together as one item |
 | Cut-to-length | Hose, sheet, or cord sold by the foot, square inch, or square foot |

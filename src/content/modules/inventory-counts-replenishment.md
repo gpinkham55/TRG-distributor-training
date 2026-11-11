@@ -5,10 +5,10 @@ week: 4
 minutes: 210
 signoff: false
 status: published
-summary: Why P21 and the shelf drift apart, cycle, annual, and spot counts, counting hose, sheet, and remnants, variances and adjustments, min and max, replenishment, and transfers between locations.
+summary: Why P21 and the shelf drift apart, cycle, annual, and spot counts, counting hose, sheet, and remnants, variances and adjustments, min and max, and replenishment.
 ---
 
-Every answer you give a customer about stock depends on P21 matching the shelf. Counts keep them accurate. Replenishment keeps the right items on the shelf and dead stock to a minimum. Inventory inaccuracy means promising stock that isn't there or buying stock you already have. This module covers cycle, annual, and spot counts, variances and adjustments, min and max, replenishment, and transfers between locations.
+Every answer you give a customer about stock depends on P21 matching the shelf. Counts keep them accurate. Replenishment keeps the right items on the shelf and dead stock to a minimum. Inventory inaccuracy means promising stock that isn't there or buying stock you already have. This module covers cycle, annual, and spot counts, variances and adjustments, min and max, and replenishment.
 
 ### Learning objectives
 
@@ -19,13 +19,12 @@ After this module you will be able to:
 3. Explain how an annual count runs and how to prepare for it.
 4. Recount a variance and route an adjustment for approval.
 5. Explain min and max and how replenishment suggestions work.
-6. Request, ship, and receive a transfer between locations.
 
 > ⚠️ SAFETY & COMPLIANCE: Never change on-hand quantities to make an order ship or a count match. Your supervisor or Manager approves every adjustment.
 
 ## 14.1 Why P21 and the Shelf Drift Apart
 
-P21 changes the on-hand quantity every time stock is received, shipped, transferred, or adjusted. When any of those is wrong, P21 and the shelf drift apart.
+P21 changes the on-hand quantity every time stock is received, shipped, or adjusted. When any of those is wrong, P21 and the shelf drift apart.
 
 | Cause | Example | What it costs |
 |---|---|---|
@@ -34,7 +33,7 @@ P21 changes the on-hand quantity every time stock is received, shipped, transfer
 | Wrong unit | Shipped one 250 FT reel but entered 1 FT | A 249 FT gap on the shelf and we paid for a reel and sold it for a foot |
 | Wrong bin | Stock put away in an open bin | Lost stock; a reorder for stock already on hand |
 | Damaged or scrapped items | Stock thrown out or missing with no adjustment | Phantom stock in P21 |
-| Unreceived transfer or PO | Product in the building, still in transit in P21 | Orders that can't ship |
+| Unreceived PO | Product in the building, still on order in P21 | Orders that can't ship |
 
 > 💡 KEY TAKEAWAY: Most variances start with a step done wrong upstream: receiving, picking, building, or putaway. Do it right the first time, and the counts stay right.
 
@@ -75,7 +74,7 @@ The warehouse runs cycle counts. Everyone helps at the annual count.
 
 ### Preparing for the annual count
 
-1. Receive every PO and transfer in the building.
+1. Receive every PO in the building.
 2. Confirm every shipment that left.
 3. Put away everything on the dock and in staging.
 4. Label every bin, reel, and remnant with the item ID.
@@ -90,7 +89,7 @@ A **variance** is the difference between your count and P21's on-hand quantity. 
 
 1. Recount the bin, and check nearby bins, overstock, staging, and the dock.
 2. Check open orders that were picked but not yet shipped.
-3. Check receipts and transfers waiting to be received.
+3. Check POs waiting to be received.
 4. Check recent shipments for the item and its look-alikes (a -8 for a -10).
 5. When the recount still differs, write the count, the likely cause, and your initials.
 6. Hand it to your supervisor or Manager to approve the adjustment.
@@ -129,36 +128,13 @@ P21 compares each item's net available, customer backorders, and unreceived PO q
 
 | Check before buying | Reason |
 |---|---|
-| Is it at another location? | A transfer may be faster and frees that location's extra stock |
 | Did one large order cause the drop? | A one-time sale may need no restock |
 | Is the vendor's pack size or minimum order met? | Buying below a minimum can add charges |
 | Is the item still a good seller? | Slow movers stay below the old max |
 
 > 💡 KEY TAKEAWAY: Min and max follow what sells. Review them when sales change, and lower them on items that stopped moving.
 
-## 14.5 Transfers Between Locations
-
-A transfer moves stock from one location to another. The buyer uses it to rebalance stock between branches.
-
-### Steps: request and receive a transfer
-
-1. Press **F2** and find the item at the other location on the Inventory tab.
-2. Ask the buyer to enter the transfer.
-3. Tell the other location what is coming and why.
-4. The sending location picks, ships, and confirms the transfer.
-5. When it arrives, receive the transfer in P21 in the **Transfer Receipts** window.
-6. Put the stock away.
-
-### Sending a transfer
-
-1. Pick the stock from the transfer's pick list, in its unit of measure.
-2. Tag it with the receiving branch and the transfer number.
-3. Confirm the transfer shipped in P21.
-4. Send it on the branch truck or carrier the receiving branch expects.
-
-> 📌 INDUSTRY INSIGHT: A transfer that ships and never gets received leaves stock in transit in P21. Neither branch can sell it. Receive transfers the day they arrive.
-
-## 14.6 Case Study, What If, and Rookie Mistakes
+## 14.5 Case Study, What If, and Rookie Mistakes
 
 ### Case study: the missing feet
 
@@ -178,7 +154,6 @@ A cycle count lists 1 in steam hose. P21 shows 375 FT on hand.
 | The count differs from P21 | Recount, check nearby bins, staging, and open picks | Many variances are stock in another spot |
 | An item is in the wrong bin | Move it to the bin P21 shows and note it | Wrong bins cause short counts and extra buys |
 | A reel has no footage tag | Measure it and tag it | Hose counts in FT |
-| A transfer shows in transit for a week | Ask the receiving branch whether it arrived and was received | Neither branch can sell it |
 | An item hits its min after one big order | Ask the buyer whether to restock | A one-time sale may need no restock |
 | Someone asks you to adjust stock to ship an order | Decline and bring in your supervisor | Adjustments need approval |
 
@@ -191,9 +166,8 @@ A cycle count lists 1 in steam hose. P21 shows 375 FT on hand.
 | Peeking at the expected quantity | Counts copied from P21, and the shelf stays wrong | Count blind |
 | Adjusting without a recount | A wrong adjustment | Recount every variance over the limit |
 | Entering an assembly as loose lines | Hose and fittings missing from stock | Enter assemblies as kits |
-| Leaving a transfer unreceived | Stock stuck in transit | Receive the day it arrives |
 
-## 14.7 Inventory Terms
+## 14.6 Inventory Terms
 
 | Term | Meaning |
 |---|---|
@@ -210,10 +184,8 @@ A cycle count lists 1 in steam hose. P21 shows 375 FT on hand.
 | Replenishment | P21's list of what to buy to restore stock to max |
 | Pack size | The vendor's selling quantity: a box, a reel |
 | Dead stock | Stock that has stopped selling |
-| Transfer | Stock moved between locations |
-| In transit | Transfer stock shipped and still unreceived |
 
-## 14.8 Practice, Knowledge Check, and Module Quiz
+## 14.7 Practice, Knowledge Check, and Module Quiz
 
 ### Practice
 
@@ -229,8 +201,7 @@ A cycle count lists 1 in steam hose. P21 shows 375 FT on hand.
 3. Who approves inventory adjustments?
 4. An item has a min of 20, a max of 60, and 15 net available. What is the suggested order before pack size?
 5. Name two things the buyer checks before buying an item on the replenishment list.
-6. What happens when a transfer ships and is never received?
-7. A count is short. List three places to check before you hand it in for an adjustment.
+6. A count is short. List three places to check before you hand it in for an adjustment.
 
 Work these on your own, then check your answers with your Manager.
 
