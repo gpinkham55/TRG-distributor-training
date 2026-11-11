@@ -40,7 +40,7 @@ const written = new Map((await getCollection('modules')).map((m) => [m.data.numb
     (async () => { if (supabase) {
       const { data } = await supabase.auth.getSession();
       if (data.session) {
-        const { data: rows } = await supabase.from('module_progress').select('module_id');
+        const { data: rows } = await supabase.from('module_progress').select('module_id').eq('user_id', data.session.user.id);
         for (const r of rows || []) document.querySelector(`[data-module="${r.module_id}"] .done`)?.classList.remove('hidden');
       }
     } })();

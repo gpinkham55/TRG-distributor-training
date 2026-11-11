@@ -73,7 +73,7 @@ const d = m.data;
       const { data } = await supabase.auth.getSession();
       if (!data.session) return;
       trackTime(id);
-      const { data: row } = await supabase.from('module_progress').select('completed_at').eq('module_id', id).maybeSingle();
+      const { data: row } = await supabase.from('module_progress').select('completed_at').eq('user_id', data.session.user.id).eq('module_id', id).maybeSingle();
       if (row) {
         const st = document.getElementById('c-status')!;
         st.innerHTML = '<span class="badge done">Complete</span>';
