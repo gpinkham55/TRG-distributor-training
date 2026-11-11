@@ -14,20 +14,20 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `distributor-business-6` | 1 | Order sourcing: one saved order fills from stock, the shop, a transfer, a special order, or a direct ship, and every path ends in one invoice | Yes |
 | `p21-navigation-inquiry-1` | 2 | The P21 sign-in window. The title shows which system you are signing in to; this one says LIVE | Yes |
 | `p21-navigation-inquiry-2` | 2 | The P21 menu open over Order Entry. Starred windows are your favorites | Yes |
-| `p21-navigation-inquiry-3` | 2 | Customer Master Inquiry main screen with the customer ID and contacts highlighted, and the Physical Address, Credit Status, Ship To / Salesrep, Customer Notes, Customer Sales History, Open Orders, and Open Quotes tabs highlighted | Yes |
-| `p21-navigation-inquiry-4` | 2 | Item Master Inquiry main screen with the item ID, description, location, net quantity available, and unit of measure highlighted, and the Inventory, Open PO, Open Order, Transfer, and Substitute tabs highlighted | Yes |
+| `p21-navigation-inquiry-3` | 2 | Customer Master Inquiry main screen with the customer ID highlighted, and the tab overflow menu open with the Customer Notes, Customer Sales History, and Ship To / Salesrep tabs highlighted | Yes |
+| `p21-navigation-inquiry-4` | 2 | Item Master Inquiry main screen with the item ID, description, location, and unit of measure highlighted, and the Inventory, Open PO, Open Order, Transfer, and Substitute tabs highlighted. The branch name is covered | Yes |
 | `p21-navigation-inquiry-5` | 2 | Customer Master Inquiry main screen with the customer ID highlighted and the Customer Sales History tab highlighted, open to a date range with one hose line and its order number | Yes |
-| `p21-navigation-inquiry-6` | 2 | Order Inquiry main screen with the order number, customer, PO number, status, and line items highlighted, and the Shipments and Invoices tabs highlighted |  |
-| `customer-records-1` | 3 | Contact Maintenance main screen with the name, title, phone, and email highlighted, and the tabs that hold the customer link and document settings highlighted |  |
-| `customer-records-2` | 3 | Ship To Maintenance main screen with the ship-to name and address highlighted, and the tabs that hold the carrier, delivery instructions, and tax settings highlighted |  |
+| `p21-navigation-inquiry-6` | 2 | Order Drill Down By Order (the order inquiry window) with the order number, customer, PO number, status, and line items highlighted, and the Shipments tab highlighted. Invoices show as a column on the Shipments tab | Yes |
+| `customer-records-1` | 3 | Contact Maintenance main screen with the name, title, and email highlighted, and the Phone / Email and Document tabs highlighted. The customer link is the grid on the main screen | Yes |
+| `customer-records-2` | 3 | Ship To Maintenance main screen with the ship-to name and address highlighted, and the Delivery tab (carrier and delivery instructions) and the Tax tab highlighted | Yes |
 | `fluid-conveyance-fundamentals-1` | 4 | Cut hose ends showing the tube, the wire reinforcement, and the cover | Yes |
 | `fluid-conveyance-fundamentals-2` | 4 | A hose assembly with two elbow fittings, showing where overall length is measured and the angle between the elbows | Yes |
 | `fluid-conveyance-fundamentals-3` | 4 | A page from a hose manufacturer's chemical compatibility chart with one chemical row and its ratings highlighted | Yes |
 | `industrial-hose-fittings-1` | 5 | Cut sections of five industrial hoses side by side: water, air, suction with helix, steam, and chemical | Yes |
 | `industrial-hose-fittings-2` | 5 | A set of cam and groove fittings laid out and labeled A, B, C, D, E, F, DC, and DP | Yes |
 | `industrial-hose-fittings-3` | 5 | Four hose ends side by side: a worm gear clamp, a double-bolt clamp, an interlocking clamp on a ground joint coupling, and a crimped ferrule | Yes |
-| `order-entry-quoting-1` | 6 | Order Entry main screen with the customer, ship-to, contact, PO number, and required date highlighted, and the tabs that hold the carrier and line items highlighted |  |
-| `order-entry-quoting-2` | 6 | Order Entry main screen for a quote with the quote flag and expiration date highlighted, and the tabs or buttons that hold the lead time and convert-to-order option highlighted |  |
+| `order-entry-quoting-1` | 6 | Order Entry main screen with the customer, ship-to, contact, PO number, and required date highlighted, and the Ship Info tab (carrier) and the Items tab highlighted | Yes |
+| `order-entry-quoting-2` | 6 | Order Entry main screen for a quote with the quote flag and expiration date highlighted, the Items tab highlighted, and the right-click menu open with Convert to Order highlighted | Yes |
 | `hydraulic-1` | 7 | Cut ends of 1-wire braid, 2-wire braid, and 4-spiral hydraulic hose side by side, showing the wire layers | Yes |
 | `hydraulic-2` | 7 | Male ends of NPT, JIC 37°, ORFS, O-ring boss, BSPP, and metric 24° fittings lined up and labeled | Yes |
 | `hydraulic-3` | 7 | NPSM and NPT: an NPSM female swivel seals on a 30° seat, and the threads only hold | Yes |
@@ -60,11 +60,11 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `custom-gasket-estimating-3` | 12 | Two nests of the same ring gasket side by side, a square grid and a staggered grid, with parts-per-sheet counts labeled | Yes |
 | `custom-gasket-estimating-4` | 12 | A full-face PTFE gasket installed on an FRP flange in a chemical plant, bolts in a star pattern | Yes |
 | `custom-gasket-estimating-5` | 12 | An irrigation pump discharge flange on a farm, with an EPDM gasket visible between the flanges | Yes |
-| `purchasing-receiving-1` | 13 | Purchase Order Entry main screen with the vendor, ship-to, and promise date highlighted, and the tab that holds the item lines highlighted; blur any cost |  |
+| `purchasing-receiving-1` | 13 | Purchase Order Entry main screen with the vendor, required date, and expected date highlighted, and the Ship To and Items tabs highlighted. Every cost is covered | Yes |
 | `purchasing-receiving-2` | 13 | A receiving bench with a packing list, the PO on screen, and a special-order item tagged with a customer order number | Yes |
 | `inventory-counts-replenishment-1` | 14 | A count sheet on a clipboard next to a bin of fittings, with the counted quantity written and no expected quantity shown | Yes |
-| `inventory-counts-replenishment-2` | 14 | Transfer Entry main screen with the from location and to location highlighted, and the tab that holds the items and the quantities shipped and received highlighted |  |
-| `rmas-returns-1` | 15 | RMA Entry main screen with the customer, original invoice, and RMA number highlighted, and the Order Notes tab highlighted |  |
+| `inventory-counts-replenishment-2` | 14 | Order Entry with a line set to the T disposition, with the sending location highlighted and the tab that holds the transfer quantities highlighted |  |
+| `rmas-returns-1` | 15 | RMA Entry main screen, blank, with the customer and RMA number fields highlighted, and the Order Notes tab highlighted | Yes |
 | `rmas-returns-2` | 15 | Previously Sold Items Query screen with the Invoice No., Item ID, Customer PO number, and the Add checkbox highlighted |  |
 | `expansion-joints-belting-sealing-1` | 16 | A single-arch rubber expansion joint with control rods installed between a pump and its discharge pipe | Yes |
 | `expansion-joints-belting-sealing-2` | 16 | A section of conveyor belt showing the plies and covers, beside classical and narrow V-belts with their part numbers visible | Yes |
