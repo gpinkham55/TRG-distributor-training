@@ -289,7 +289,6 @@ Check every price, get the full spec on every assembly, and confirm every quanti
 |---|---|---|
 | A name or "verbal" in the PO field | A rejected invoice and late payment | Enter the customer's PO exactly as given |
 | Wrong unit of measure | The wrong amount picked and billed | Read the unit before the quantity |
-| Backordering when another branch has stock | A late order that could have shipped | Check the Inventory tab first |
 | Retyping a quote as an order | An open quote and a lost link | Convert the quote |
 | Quoting non-stocked items from an old cost | A loss on the order | Get current vendor cost and lead time |
 | Confirming a shipment before it ships | An invoice for product still on the shelf | Confirm only what actually shipped |

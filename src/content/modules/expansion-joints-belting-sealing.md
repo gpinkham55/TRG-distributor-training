@@ -259,7 +259,7 @@ Your Manager plays the practice caller. Ask every spec question and enter the re
 | Pulp and paper | A mill planner calls: a steam hose at the No. 2 machine washdown station burst, and they need one replacement now and two spares for the outage list with a quote on 40 Class 150 compressed fiber gaskets. | 2, 4, 5, 6, 9, 10, 11, 12 |
 | Agriculture | A farmer walks in with a split sprayer hose and a worn drive belt off a combine during harvest. He has an account but no PO. | 3, 5, 6, 8, 9, 16 |
 | Chemical | A plant buyer needs PTFE-lined transfer hose with stainless cam and groove ends for 50% caustic soda, plus gaskets for the unloading flange. The hose is not in stock. | 4, 5, 6, 10, 11, 13 |
-| Heavy equipment | A contractor's excavator boom hose burst on a job site. He sends a photo of the layline and needs it the same day. Your branch is short one fitting; another branch has it. Later, he returns an extra fitting he didn't use. | 2, 6, 7, 9, 14, 15 |
+| Heavy equipment | A contractor's excavator boom hose burst on a job site. He sends a photo of the layline and needs it the same day. Your branch is short one fitting, and an alternate item may work. Later, he returns an extra fitting he didn't use. | 2, 6, 7, 9, 14, 15 |
 | Water and wastewater | A city water plant needs a 10 in expansion joint for a pump discharge and packing for the same pump. | 6, 10, 11, 16 |
 
 ### What your Manager checks

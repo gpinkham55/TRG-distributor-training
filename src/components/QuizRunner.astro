@@ -35,7 +35,7 @@ const { eyebrow, title, back, backLabel, module, final } = Astro.props;
       $('q-rules').textContent = `${quiz.draw_count} questions · ${quiz.pass_pct}% to pass · ${quiz.max_attempts} ${quiz.max_attempts === 1 ? 'try' : 'tries'}`;
 
       // Graded tries only; an open attempt has no submitted_at yet.
-      const { data: tries } = await supabase.from('quiz_attempts').select('score_pct, passed').eq('quiz_id', quiz.id).not('submitted_at', 'is', null);
+      const { data: tries } = await supabase.from('quiz_attempts').select('score_pct, passed').eq('user_id', s.session.user.id).eq('quiz_id', quiz.id).not('submitted_at', 'is', null);
       const used = tries?.length || 0;
       const passed = tries?.some((t) => t.passed);
       if (passed) return say(isFinal ? `You passed the final exam with ${Math.max(...tries!.map((t) => t.score_pct))}%. See your Manager for final sign-off.` : `You passed this quiz with ${Math.max(...tries!.map((t) => t.score_pct))}%. Module ${moduleId} is complete.`, 'ok');

@@ -168,6 +168,8 @@ begin
   if auth.uid() is null then raise exception 'Sign in first'; end if;
   select * into q from quizzes where id = p_quiz_id;
   if not found then raise exception 'Quiz not found'; end if;
+  -- The course has no test-out. Rows of that kind stay in the table unused.
+  if q.kind = 'test_out' then raise exception 'Quiz not found'; end if;
   -- One draw at a time for each trainee and quiz.
   perform pg_advisory_xact_lock(hashtextextended(auth.uid()::text || ':' || p_quiz_id::text, 0));
 

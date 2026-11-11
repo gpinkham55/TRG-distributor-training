@@ -29,7 +29,7 @@ import { u } from '../lib/url';
       document.getElementById('out')!.classList.add('hidden');
       document.getElementById('in')!.classList.remove('hidden');
       document.getElementById('who')!.textContent = `Signed in as ${user.email}`;
-      const { data: rows } = await supabase.from('module_progress').select('module_id, completed_at');
+      const { data: rows } = await supabase.from('module_progress').select('module_id, completed_at').eq('user_id', user.id);
       for (const r of rows || []) {
         const td = document.querySelector(`tr[data-module="${r.module_id}"] .st`);
         if (td) td.textContent = `Complete (${new Date(r.completed_at).toLocaleDateString()})`;
@@ -38,7 +38,7 @@ import { u } from '../lib/url';
       // Best graded score on each quiz.
       const [{ data: quizzes }, { data: tries }] = await Promise.all([
         supabase.from('quizzes').select('id, module_id, kind'),
-        supabase.from('quiz_attempts').select('quiz_id, score_pct, passed').not('submitted_at', 'is', null),
+        supabase.from('quiz_attempts').select('quiz_id, score_pct, passed').eq('user_id', user.id).not('submitted_at', 'is', null),
       ]);
       const best = new Map<number, { pct: number; passed: boolean }>();
       for (const t of tries || []) {
