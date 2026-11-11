@@ -67,3 +67,10 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `expansion-joints-belting-sealing-1` | 16 | A single-arch rubber expansion joint with control rods installed between a pump and its discharge pipe | Yes |
 | `expansion-joints-belting-sealing-2` | 16 | A section of conveyor belt showing the plies and covers, beside classical and narrow V-belts with their part numbers visible | Yes |
 | `expansion-joints-belting-sealing-3` | 16 | An O-ring kit, a coil of braided packing with cut rings, and a cartridge mechanical seal side by side | Yes |
+## Module videos
+
+Videos go in `public/video/modules/` as .mp4 files. A `[VIDEO EXAMPLE: ...]` line in a module shows the file `<module-slug>-<n>.mp4`, where n counts the video lines in that module from 1.
+
+| File name | Module | What the video shows | Done |
+|---|---|---|---|
+| `rmas-returns-1` | 15 | Entering an RMA in the P21Play System: the return note, tying the item to its previous invoice, the restocking fee, and the credit. Approved is checked by default; the person entering a simple return handles the fee and the credit | Yes |
