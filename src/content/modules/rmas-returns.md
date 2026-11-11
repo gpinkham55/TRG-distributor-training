@@ -83,7 +83,7 @@ When you are unsure which kind it is, treat it as complicated and ask your Manag
 7. P21 checks the RMA's **Approved** checkbox by default. Leave it checked.
 8. Decide whether the return is simple or complicated. Use the table above.
 9. **Simple return:** inspect the part. When a restocking fee applies, add the item **RESTOCK FEE** as a line and enter the fee as a negative unit price (the item's unit price times your branch's fee percent). Save the RMA and print the RMA Acknowledgement for the customer.
-10. **Complicated return:** type what you know in the note. On the **Front Counter** tab of the RMA header, make sure the box to create or print an invoice is unchecked. Creating an invoice issues the credit. Save the RMA, print the RMA Acknowledgement, and take it to your Manager. **The Manager decides the action, any restocking fee and return freight, and the credit.**
+10. **Complicated return:** type what you know in the note. Open the **Front Counter** tab of the RMA header. This tab prints packing lists, pick tickets, order acknowledgements, and invoices. Make sure the invoice box is unchecked. Creating an invoice issues the credit. Save the RMA, print the RMA Acknowledgement, and take it to your Manager. **The Manager decides the action, any restocking fee and return freight, and the credit.**
 
 [VIDEO EXAMPLE: Entering an RMA in the P21Play System: the return note, tying the item to its previous invoice, the restocking fee, and the credit.]
 
