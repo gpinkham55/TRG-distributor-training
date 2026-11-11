@@ -268,7 +268,7 @@ Your Manager plays the practice caller. Ask every spec question and enter the re
 - Customer, contact, and ship-to correct in P21
 - Items, quantities, and units of measure correct
 - Spec in the extended description on every special or built item
-- Disposition, PO, or transfer entered where needed
+- Disposition or PO entered where needed
 - Return or credit handled by the RMA steps (heavy equipment scenario)
 
 ## 16.8 Final Exam, Final Sign-Off, Knowledge Check, and Module Quiz

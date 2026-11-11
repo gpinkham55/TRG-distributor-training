@@ -138,18 +138,16 @@ P21 compares each item's net available, customer backorders, and unreceived PO q
 
 ## 14.5 Transfers Between Locations
 
-A transfer moves stock from one location to another. Use it for a customer order (the T disposition, Module 6) or to rebalance stock between branches. Reps move stock for customer orders with the T disposition; the buyer handles rebalancing transfers.
+A transfer moves stock from one location to another. The buyer uses it to rebalance stock between branches.
 
 ### Steps: request and receive a transfer
 
 1. Press **F2** and find the item at the other location on the Inventory tab.
-2. Enter the customer's order line with the T disposition and the sending location.
-3. Tell the other location what is coming and why, especially for a customer order.
+2. Ask the buyer to enter the transfer.
+3. Tell the other location what is coming and why.
 4. The sending location picks, ships, and confirms the transfer.
 5. When it arrives, receive the transfer in P21 in the **Transfer Receipts** window.
-6. Put stock away or set it aside for the customer's order.
-
-[IMAGE EXAMPLE: Order Entry with a line set to the T disposition and the sending location highlighted, and the tab that holds the transfer quantities highlighted]
+6. Put the stock away.
 
 ### Sending a transfer
 
@@ -222,8 +220,7 @@ A cycle count lists 1 in steam hose. P21 shows 375 FT on hand.
 1. **Cycle count.** Count 10 bins your Manager assigns, using a blind count list. Include one hose reel with remnants and one sheet item.
 2. **Variance.** Compare your counts to P21 with your Manager. For each difference, work the steps in 14.3 and suggest a likely cause.
 3. **Min and max.** For three items, look up the min, max, and net available in the P21Play System. Work out what replenishment would suggest, rounded up to the next full pack.
-4. **Transfer.** Enter a customer order line with the T disposition from another location in the P21Play System, then receive the transfer.
-5. **Annual count prep.** Walk one aisle with your Manager and list what must happen before an annual count there.
+4. **Annual count prep.** Walk one aisle with your Manager and list what must happen before an annual count there.
 
 ### Knowledge check (practice)
 

@@ -17,7 +17,7 @@ After this module you will be able to:
 1. Fill in an order header: customer, ship-to, contact, PO, required date, carrier, and freight terms.
 2. Enter order lines with the right item, quantity, and unit of measure.
 3. Enter a hose assembly as a kit item with the spec in the extended description.
-4. Pick the line disposition when stock is short: backorder, hold, special order, direct ship, transfer, or cancel.
+4. Pick the line disposition when stock is short: backorder, hold, special order, direct ship, or cancel.
 5. Check a customer's price in Sales Pricing Inquiry, explain where it came from, and calculate margin and markup.
 6. Build a quote, send it, follow it up, and convert it to an order.
 7. Print a pick ticket, and explain how a confirmed shipment creates the invoice.
@@ -112,7 +112,6 @@ The disposition tells P21 what to do with the part of a line you can't ship from
 | H | Hold | Holds the line so the whole order ships together | The customer wants one complete shipment; set the order's packing basis to Order Complete |
 | S | Special order | Creates a purchase need; the vendor ships to your branch, and you ship or deliver | The item is unstocked at your branch, and the customer picks up, you deliver, or the vendor stays out of sight |
 | D | Direct ship | The vendor ships straight to the customer | It is fine for the customer to see the vendor |
-| T | Transfer | Pulls stock from another location | Another branch has it |
 | C | Cancel | Cancels the short quantity | The customer declines the rest |
 
 Your branch may use only some of these codes. Confirm the active codes with your Manager.
@@ -128,11 +127,10 @@ Your branch may use only some of these codes. Confirm the active codes with your
 
 ### Steps: stock is short
 
-1. Check other locations on the Inventory tab (F2). A transfer often beats waiting for the vendor.
-2. Check the Open PO tab for stock on its way.
-3. Ask the customer: ship what you have now, or wait and ship it all together?
-4. Set the disposition to match the answer. To ship what you have now, use **B**. To ship it all together, set the order's packing basis to **Order Complete** and put **H** on the short lines.
-5. Give the customer a real date for the rest.
+1. Check the Open PO tab for stock on its way.
+2. Ask the customer: ship what you have now, or wait and ship it all together?
+3. Set the disposition to match the answer. To ship what you have now, use **B**. To ship it all together, set the order's packing basis to **Order Complete** and put **H** on the short lines.
+4. Give the customer a real date for the rest.
 
 > ⚠️ SAFETY & COMPLIANCE: Tell the customer about every backorder before you hang up or they leave the counter. A surprise backorder costs more trust than the delay.
 
@@ -240,9 +238,8 @@ A quote is your written price, quantity, lead time, and expiration date. Every l
 3. Read the **Shipments** tab for ship date and carrier, and the **Invoices** tab for what billed.
 4. For backordered or special-order lines, open the **purchase order** behind it: vendor, promise date, and quantity received.
 5. A PO that shows **received** on a line that hasn't shipped means the product is likely in your building. Ask the warehouse to find it and get it moving.
-6. Check **other locations** for stock you could transfer.
-7. Tell the customer what you found and when they will hear from you next. Call back when you said you would.
-8. Add a dated note to the order.
+6. Tell the customer what you found and when they will hear from you next. Call back when you said you would.
+7. Add a dated note to the order.
 
 > 💡 KEY TAKEAWAY: "I'll find out and call you back within the hour" is a good answer. Never guess when you don't know. You'll often be wrong and lose the customer's trust by guessing and calling it a fact.
 
@@ -279,7 +276,7 @@ Check every price, get the full spec on every assembly, and confirm every quanti
 |---|---|---|
 | The account requires a PO and the caller has none | Get the PO before you enter the order | An order without a required PO gets rejected at invoice |
 | A new ship-to address | Add the ship-to first (Module 3) | Orders pull carrier, tax, and instructions from the ship-to |
-| Stock is short | Check other locations and open POs, then ask the customer: partial now or all together | The disposition depends on the customer's answer |
+| Stock is short | Check open POs, then ask the customer: partial now or all together | The disposition depends on the customer's answer |
 | The item is unstocked and the customer picks up | Disposition S | The vendor ships to your branch |
 | The vendor ships straight to the customer and that is fine with them | Disposition D | The PO carries every direct-ship line from that supplier going to the same customer and address |
 | A price looks far off history | Check Sales Pricing Inquiry and ask your Manager | Price libraries and costs change |
@@ -309,11 +306,10 @@ Check every price, get the full spec on every assembly, and confirm every quanti
 | Extended description | The order line field that carries the spec to the shop and warehouse |
 | Kit item | A hose assembly or set entered as one item with its components |
 | Customer part number | The customer's own number for one of your items |
-| Disposition | The code that says how a short line is filled: B, H, S, D, T, C |
+| Disposition | The code that says how a short line is filled: B, H, S, D, C |
 | Backorder (B) | Ship what you have; the rest waits for stock |
 | Special order (S) | Bought for one order and shipped to your branch |
 | Direct ship (D) | Bought for one order and shipped by the vendor to the customer |
-| Transfer (T) | Stock moved from another branch |
 | Sales Pricing Inquiry | The window that shows a customer's price for an item |
 | Price override | A price changed by hand on a line |
 | Margin | Gross profit as a share of the selling price |
@@ -330,7 +326,7 @@ Check every price, get the full spec on every assembly, and confirm every quanti
 
 1. **Stock order.** A practice caller from Southeastern Paper Mill, Mill No. 2 orders 25 FT of a stocked hose and 4 fittings on their PO. Enter the order, read it back, save it.
 2. **Units.** Enter a line for a 12 in × 24 in piece of a sheet item sold in SI. Show your Manager the quantity you entered.
-3. **Short stock.** Enter an order for more than you have available. Check other locations, pick the disposition, and explain why.
+3. **Short stock.** Enter an order for more than you have available. Pick the disposition and explain why.
 4. **Special order and direct ship.** Enter one unstocked item as S and one as D. Tell your Manager what is different about each PO.
 5. **Kit item.** Enter a hose assembly as a kit item with the STAMPED answers in the extended description.
 6. **Price.** Check one item's price for two customers in Sales Pricing Inquiry and compare each with history.
