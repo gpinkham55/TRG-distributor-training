@@ -37,7 +37,7 @@ Stock and order status in the P21Play System lag behind live P21. When an exerci
 3. Read the **title bar** for the system before you start. Do this every time you sign in.
 4. Lock your screen or sign out when you step away.
 
-[IMAGE EXAMPLE: The P21 sign-in window. The title shows which system you are signing in to; this one says LIVE]
+[IMAGE EXAMPLE: The P21 sign-in window. The title shows which system you are signing in to; this one says PLAY]
 
 > ⚠️ SAFETY & COMPLIANCE: Check which system you are in before you save anything. An order saved in live P21 by mistake can ship product and bill a customer for something they never ordered.
 

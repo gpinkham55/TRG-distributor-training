@@ -12,7 +12,7 @@ Keep each file under 1 MB; about 1600 px wide is plenty. Blur customer names and
 | `distributor-business-4` | 1 | A chemical plant: process piping, tanks, and pumps | Yes |
 | `distributor-business-5` | 1 | An excavator at work. Hydraulic hoses run along the boom to the cylinders | Yes |
 | `distributor-business-6` | 1 | Order sourcing: one saved order fills from stock, the shop, a transfer, a special order, or a direct ship, and every path ends in one invoice | Yes |
-| `p21-navigation-inquiry-1` | 2 | The P21 sign-in window. The title shows which system you are signing in to; this one says LIVE | Yes |
+| `p21-navigation-inquiry-1` | 2 | The P21 sign-in window. The title shows which system you are signing in to; this one says PLAY | Yes |
 | `p21-navigation-inquiry-2` | 2 | The P21 menu open over Order Entry. Starred windows are your favorites | Yes |
 | `p21-navigation-inquiry-3` | 2 | Customer Master Inquiry main screen with the customer ID highlighted, and the tab overflow menu open with the Customer Notes, Customer Sales History, and Ship To / Salesrep tabs highlighted | Yes |
 | `p21-navigation-inquiry-4` | 2 | Item Master Inquiry main screen with the item ID, description, location, and unit of measure highlighted, and the Inventory, Open PO, Open Order, Transfer, and Substitute tabs highlighted. The branch name is covered | Yes |
