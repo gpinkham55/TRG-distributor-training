@@ -20,7 +20,8 @@ function textOf(node) {
 
 export function callouts({ base = '' } = {}) {
   return (tree, file) => {
-    const path = file.path || (file.history && file.history[0]) || '';
+    // Windows paths use backslashes; normalize so the check below works on any OS.
+    const path = (file.path || (file.history && file.history[0]) || '').replace(/\\/g, '/');
     const slug = path.includes('content/modules') ? basename(path).replace(/\.md$/, '') : '';
     let n = 0;
 
